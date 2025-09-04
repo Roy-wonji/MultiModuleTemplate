@@ -1,0 +1,2491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		014C818627146A13D97BE3AC /* TuistBundle+MultiModuleTemplateProd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276354B8FE1FAB984DAEA431 /* TuistBundle+MultiModuleTemplateProd.swift */; };
+		05B364F0222BD044AA51510A /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079A636401F049C17899A281 /* CasePathsCore.framework */; };
+		06E35FF7D9614799AC9E6F6A /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06219534C0D624CF40B28672 /* IssueReporting.framework */; };
+		07691A859978C98FE031CE14 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830A79FE9E9D450666FA0FA /* TCACoordinators.framework */; };
+		077B068A08E3124F930BC0C6 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20538A66F8048D70CDCF2B3 /* ConcurrencyExtras.framework */; };
+		0B0DA2B81EE38DCB6656E030 /* Utill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A940C79B9C7B911D8F4371B /* Utill.framework */; };
+		0B4C0E04F343E08027424EE2 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61131FED3717D59FF25DF50A /* Perception.framework */; };
+		0E5520CACF7CD2C2E823681C /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */; };
+		0F6937C52ECE634AAA95BE7E /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830A79FE9E9D450666FA0FA /* TCACoordinators.framework */; };
+		0FFFCC95DB397A55BDBA0084 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AD4116759439F983EC011E /* ComposableArchitecture.framework */; };
+		10C78FC41CB672D7A20D8DA1 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE6EC6CF6E76727C664D71A /* Shared.framework */; };
+		1176195E2AC155D31D84A777 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A3C97F3ED0F99E379587BD /* Sharing2.framework */; };
+		129E59B99AC9FEB55FEC08A0 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68D2AC7955D87FDF1937718 /* Repository.framework */; };
+		159AEFE3C8FE6027031F2F8D /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04AB09BA8D541AD45670DA1 /* InternalCollectionsUtilities.framework */; };
+		1644E028BCFE35E1FE901E5A /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68D2AC7955D87FDF1937718 /* Repository.framework */; };
+		177642F04C50D321FE47AD0F /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C080144DAA90761C92668E8 /* DependenciesMacros.framework */; };
+		17C5D6BD963E018F5AAB8364 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49122DDAAC993BE80E3CDF2A /* SwiftNavigation.framework */; };
+		1A36A1921669E030D53051EB /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		1A8F9C7CE399915D6032FE3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3676B34EE1E4C77C774C525 /* Preview Assets.xcassets */; };
+		1D248909978567C9D6699BA6 /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C080144DAA90761C92668E8 /* DependenciesMacros.framework */; };
+		1DE1FEB47FA0D70261CE783D /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE6EC6CF6E76727C664D71A /* Shared.framework */; };
+		1E1CACE3358A02B3080DD638 /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */; };
+		1EC50B97F6EBAB932D122182 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A3C97F3ED0F99E379587BD /* Sharing2.framework */; };
+		202FA1A3D54716154CEB2F99 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D88A9F982015A86C6F8A0E /* UseCase.framework */; };
+		27C7C34DD146CC2B7A53C4B4 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20538A66F8048D70CDCF2B3 /* ConcurrencyExtras.framework */; };
+		28DF75AF3E7E4BBEBA7110D5 /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079A636401F049C17899A281 /* CasePathsCore.framework */; };
+		29C406057651C5E2CF5F6CED /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04AB09BA8D541AD45670DA1 /* InternalCollectionsUtilities.framework */; };
+		29D8988ACA8C8210309A0163 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61131FED3717D59FF25DF50A /* Perception.framework */; };
+		29D8DDA0DEFCD8911C438A29 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6FC42E0B113D98A45A83DA /* Network.framework */; };
+		2BE90D2AB560DD2ADA8E8FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F1A424C2A0E65B6B493B40 /* Assets.xcassets */; };
+		2E0FAF160562BCD84B2E0027 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAA3018527A0607B2960045 /* CasePaths.framework */; };
+		2E77F0A0346C749453988444 /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DB0FD2C1BB23DD08A105B9 /* CombineSchedulers.framework */; };
+		31B127BEA1F2455DB25BFFBD /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF78C8B74AE9A90E41C4A2C0 /* Model.framework */; };
+		338DB4D24200AD3143959D28 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE6EC6CF6E76727C664D71A /* Shared.framework */; };
+		36326F2B6E7AD3556564866A /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D35987AFE5314A02C74F192 /* IssueReportingPackageSupport.framework */; };
+		364778D5F2A8726F8D30AF87 /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED7C47CBA51332FEB6C454A /* ThirdParty.framework */; };
+		3649B769A2F86EC0CE562208 /* Utill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A940C79B9C7B911D8F4371B /* Utill.framework */; };
+		379D4A4ED15312B604673E00 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625E4D18A1ACF9D1A312649D /* XCTestDynamicOverlay.framework */; };
+		37A971255510E45AD037CF68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3676B34EE1E4C77C774C525 /* Preview Assets.xcassets */; };
+		3AEB8964ED9077F7E5840192 /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED7C47CBA51332FEB6C454A /* ThirdParty.framework */; };
+		3B0FFBFD285AAC9B8E3E39E3 /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */; };
+		3B4DA116A4AF1DF575A3AA06 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D8D707EE4C40E5E5A24984 /* OrderedCollections.framework */; };
+		3EC8760E46E79366CC315D6D /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C30F188C31CE1AF203C7C9C /* Dependencies.framework */; };
+		3EE09F2535380049FCA0A6DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8B1A946B0B00EE363607 /* ContentView.swift */; };
+		3FA9AC55B422E71790E4ED91 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49122DDAAC993BE80E3CDF2A /* SwiftNavigation.framework */; };
+		3FC9962B2B34DF820F939E49 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		40745E86EA64271505CCCF2F /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FC8A847BFD01FDC41CEFC /* DomainInterface.framework */; };
+		4091FA3964ADD206BFD93164 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B52FF65F07137C90F447DE0 /* SwiftUINavigation.framework */; };
+		4133CE4E9FB9E676357A8B30 /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */; };
+		41C33BEFF8117F47B3418467 /* DesignSystem_DesignSystem.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */; };
+		425E3643662519A6B55B3031 /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E321102738E16309E3B9A7E3 /* PerceptionCore.framework */; };
+		47046D2DB64E0CEC182CDF01 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830A79FE9E9D450666FA0FA /* TCACoordinators.framework */; };
+		47EB9EF1F70325AE38F4997F /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D8D707EE4C40E5E5A24984 /* OrderedCollections.framework */; };
+		47FE972F6A919486EE835BA2 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04426152F79C5FE16AB626B4 /* DesignSystem.framework */; };
+		49D14D19A0CA724850DCA98E /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5BE59499C910F06931561B /* Presentation.framework */; };
+		4A250CCDC0BE1F92CCDA86BA /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */; };
+		4C864F685DC5082D868941A7 /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D35987AFE5314A02C74F192 /* IssueReportingPackageSupport.framework */; };
+		4E6D317A251BE17B3B59DCCA /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04426152F79C5FE16AB626B4 /* DesignSystem.framework */; };
+		4E955AEF9599B8AD0CE9A5A2 /* FlowStacks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6151360D0929FEDF3D81973 /* FlowStacks.xcframework */; };
+		4EE26991BF9D8C59C65E214F /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFC75113D6B86B1AB970057 /* UIKitNavigationShim.framework */; };
+		4FE2AA1BB8A54AEC25F4D5F9 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9410FAF4701930F375102C /* Service.framework */; };
+		4FF40BFF078F3464AB76B718 /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		516050D12657780656F64F89 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220E2FDBB532BA915DD79BEB /* Core.framework */; };
+		524401CE63D517B70D32F054 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625E4D18A1ACF9D1A312649D /* XCTestDynamicOverlay.framework */; };
+		529779E2B6105519712D6972 /* TuistAssets+MultiModuleTemplateStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0735E3AC622DCE8F867FB4 /* TuistAssets+MultiModuleTemplateStage.swift */; };
+		52FE730CB96EB17D26978BC6 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830A79FE9E9D450666FA0FA /* TCACoordinators.framework */; };
+		532610B4C1E89DEE54D21331 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D88A9F982015A86C6F8A0E /* UseCase.framework */; };
+		53F28C98A653EF51D20EC3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F1A424C2A0E65B6B493B40 /* Assets.xcassets */; };
+		5475B831C1460A9B3F8F5A6D /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20538A66F8048D70CDCF2B3 /* ConcurrencyExtras.framework */; };
+		54E09DB8DBBA78E8E5F055B3 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02961852E9611DE48E440C5B /* CustomDump.framework */; };
+		56B35929C855CE9F3941EDDA /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE73C3938B24A8317A4CB01 /* Clocks.framework */; };
+		56E09E81EB00E1ED1F2FF479 /* TuistBundle+MultiModuleTemplateDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C866F10878F3FF992702855 /* TuistBundle+MultiModuleTemplateDebug.swift */; };
+		58245ABFB7844635F19F6746 /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFC75113D6B86B1AB970057 /* UIKitNavigationShim.framework */; };
+		598FEFD416944C62304C09CC /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C30F188C31CE1AF203C7C9C /* Dependencies.framework */; };
+		5BD6EE75E3456D04601BCE3B /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EB808CB87DBA46CF809C5E /* Sharing.framework */; };
+		5D5AAC0F6891F042D043D23B /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D8D707EE4C40E5E5A24984 /* OrderedCollections.framework */; };
+		60322DCC4052BA0A183CCB11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8B1A946B0B00EE363607 /* ContentView.swift */; };
+		606A3F9D216C29DA290463E8 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68D2AC7955D87FDF1937718 /* Repository.framework */; };
+		6317B50E365E49192D65482B /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4872617D32AEF24690DA133C /* Sharing1.framework */; };
+		6358F3189B366340E8E6F636 /* TuistAssets+MultiModuleTemplateProd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72956D46A2C1EFCDB1922A /* TuistAssets+MultiModuleTemplateProd.swift */; };
+		63B594F2E9825587CEAB3E92 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9410FAF4701930F375102C /* Service.framework */; };
+		64D40515DD20C79ECA7C4F7D /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5BE59499C910F06931561B /* Presentation.framework */; };
+		66166BD870004283E1BA0649 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625E4D18A1ACF9D1A312649D /* XCTestDynamicOverlay.framework */; };
+		667597CF15F825E32C5641AA /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE73C3938B24A8317A4CB01 /* Clocks.framework */; };
+		691B270EEDB9B7585FFA7BF1 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE32D067CE99DC0048655C8 /* IdentifiedCollections.framework */; };
+		69203331333AC87B50E2FAFE /* TuistAssets+MultiModuleTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AEC1BFAEC38126DC904126 /* TuistAssets+MultiModuleTemplate.swift */; };
+		6923432867B0447D4E41613D /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE73C3938B24A8317A4CB01 /* Clocks.framework */; };
+		69A693E2DF2AA7C98601B10E /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5BE59499C910F06931561B /* Presentation.framework */; };
+		6D10DF203294E4EF55BC3D65 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D8D707EE4C40E5E5A24984 /* OrderedCollections.framework */; };
+		70F539F05442BA7B44D8F236 /* DesignSystem_DesignSystem.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */; };
+		710BB7817814C7711C3FDFE5 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9410FAF4701930F375102C /* Service.framework */; };
+		7371280F5FE0CC632F849A10 /* TuistBundle+MultiModuleTemplateStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B293E76EA6E6D4E5DF30BE32 /* TuistBundle+MultiModuleTemplateStage.swift */; };
+		740F60E7D516338D749D6EB8 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49122DDAAC993BE80E3CDF2A /* SwiftNavigation.framework */; };
+		75890EF52DF6A977FF9676A6 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4872617D32AEF24690DA133C /* Sharing1.framework */; };
+		75FF3D8D01B4B5A7006385F1 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04426152F79C5FE16AB626B4 /* DesignSystem.framework */; };
+		76C4E54F2D14A44993162185 /* MultiModuleTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7748CD39BA8D4126C4987 /* MultiModuleTemplateApp.swift */; };
+		779F86C7B2B3052CDC9F31C8 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		77BF89B027B152FE033570F4 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68D2AC7955D87FDF1937718 /* Repository.framework */; };
+		7CF8D2EE8C6DC14617A750C2 /* MultiModuleTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7748CD39BA8D4126C4987 /* MultiModuleTemplateApp.swift */; };
+		7D03C9B20A0F23B4506CCD8E /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06219534C0D624CF40B28672 /* IssueReporting.framework */; };
+		7EA6C64B6CBEDEC73DB59EAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3676B34EE1E4C77C774C525 /* Preview Assets.xcassets */; };
+		7F75A236F94E54F5CBCD4A87 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220E2FDBB532BA915DD79BEB /* Core.framework */; };
+		8094237FC83DF1C667AF4E33 /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06219534C0D624CF40B28672 /* IssueReporting.framework */; };
+		8174242DF618B65DDC1F4A35 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAA3018527A0607B2960045 /* CasePaths.framework */; };
+		81D4EE97E743B5A8DD675505 /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DB0FD2C1BB23DD08A105B9 /* CombineSchedulers.framework */; };
+		81EF002A7E90A8D0792D6AD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8B1A946B0B00EE363607 /* ContentView.swift */; };
+		83102A39315558F5A724ED24 /* DesignSystem_DesignSystem.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */; };
+		8400C20A1C8844BE5C5D171F /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FC8A847BFD01FDC41CEFC /* DomainInterface.framework */; };
+		844EF2CEA9AD34B9D574AC8D /* Utill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A940C79B9C7B911D8F4371B /* Utill.framework */; };
+		86DCFE746D28D785287494F8 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02961852E9611DE48E440C5B /* CustomDump.framework */; };
+		87006C8608100965BD7D7F7B /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FC8A847BFD01FDC41CEFC /* DomainInterface.framework */; };
+		89443BE65160CC30D1F14776 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220E2FDBB532BA915DD79BEB /* Core.framework */; };
+		89D4A2BE6137FEF333286138 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61131FED3717D59FF25DF50A /* Perception.framework */; };
+		8A581E698D82BA38B9F0214F /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAA3018527A0607B2960045 /* CasePaths.framework */; };
+		8C9B25E0CE3A84FADA555879 /* Utill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A940C79B9C7B911D8F4371B /* Utill.framework */; };
+		8DE44D1ADFE01CF53BAEF07C /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9410FAF4701930F375102C /* Service.framework */; };
+		8EAEC78485CD011CB680C436 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A3C97F3ED0F99E379587BD /* Sharing2.framework */; };
+		8F9530A02E334DB405E18C3F /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE32D067CE99DC0048655C8 /* IdentifiedCollections.framework */; };
+		8F992718149D325BF111F222 /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */; };
+		907435F0B5E1D45FFE9BE727 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF78C8B74AE9A90E41C4A2C0 /* Model.framework */; };
+		909FFB61AA4BDAFEBFEAEC3E /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFC75113D6B86B1AB970057 /* UIKitNavigationShim.framework */; };
+		90F05675C39932795A8FD09F /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B52FF65F07137C90F447DE0 /* SwiftUINavigation.framework */; };
+		924490745B0B60764BA339DF /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55DAB73D85E8D9F62F8455A /* UIKitNavigation.framework */; };
+		95A4C1E6555634E6186F8578 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6FC42E0B113D98A45A83DA /* Network.framework */; };
+		95D9CA0D27E96C0D892BCCF2 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02961852E9611DE48E440C5B /* CustomDump.framework */; };
+		980A767A5862429D17AE514A /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FC8A847BFD01FDC41CEFC /* DomainInterface.framework */; };
+		9838BFEEC6108A10E5F75896 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		9A666F8BAD1A2922A05D60DB /* DesignSystem_DesignSystem.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */; };
+		9C04E2E2D2025E1C450DA1F6 /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04AB09BA8D541AD45670DA1 /* InternalCollectionsUtilities.framework */; };
+		9C7086FC77D3FE932D6284A6 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625E4D18A1ACF9D1A312649D /* XCTestDynamicOverlay.framework */; };
+		9D91B52DF97F87678C165591 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EB808CB87DBA46CF809C5E /* Sharing.framework */; };
+		A01669DE6876712A0965A706 /* DesignSystem_DesignSystem.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */; };
+		A8495C08852E9831FDC4BD4D /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55DAB73D85E8D9F62F8455A /* UIKitNavigation.framework */; };
+		A85E0564F36CC218B342A41E /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		AC49BE314FCE9C41A7BCB3B3 /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		ACC5786E702A960B4FBA7B50 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4872617D32AEF24690DA133C /* Sharing1.framework */; };
+		ACE40EC19DAD0EB1ABF8B218 /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079A636401F049C17899A281 /* CasePathsCore.framework */; };
+		AFC7667AE58D72418600BC46 /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C080144DAA90761C92668E8 /* DependenciesMacros.framework */; };
+		B2C6E5A6C1DCF922CEE17782 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49122DDAAC993BE80E3CDF2A /* SwiftNavigation.framework */; };
+		B30CBBC8BC5CB75B809EB828 /* DesignSystem_DesignSystem.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */; };
+		B3F98A7FDC3D1510081ED3DA /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5BE59499C910F06931561B /* Presentation.framework */; };
+		B48B39E346524E45662BB5F4 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AD4116759439F983EC011E /* ComposableArchitecture.framework */; };
+		B9A93C1F783FF81DF4CFD36A /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61131FED3717D59FF25DF50A /* Perception.framework */; };
+		BA5741C61EF499D57F138E28 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C30F188C31CE1AF203C7C9C /* Dependencies.framework */; };
+		BBE48F3DC66359D7B670AE39 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20538A66F8048D70CDCF2B3 /* ConcurrencyExtras.framework */; };
+		BD744FEF3C1BA61D2F29EEEB /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E321102738E16309E3B9A7E3 /* PerceptionCore.framework */; };
+		BE05DFF32E5BB085101BCD96 /* TuistBundle+MultiModuleTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B58A0A89EF4CF365D1314A /* TuistBundle+MultiModuleTemplate.swift */; };
+		BE06A66E301CF8563FDAB178 /* FlowStacks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6151360D0929FEDF3D81973 /* FlowStacks.xcframework */; };
+		BE1232ACE4C01997AC881DCA /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02961852E9611DE48E440C5B /* CustomDump.framework */; };
+		BF42CA324882C15071913B14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8B1A946B0B00EE363607 /* ContentView.swift */; };
+		BFD912FA3A7A527267CC9F08 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55DAB73D85E8D9F62F8455A /* UIKitNavigation.framework */; };
+		C2242CF627558FCB243EDD87 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAA3018527A0607B2960045 /* CasePaths.framework */; };
+		C3D75C27689A1648C6EAAA3A /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE32D067CE99DC0048655C8 /* IdentifiedCollections.framework */; };
+		C42F888C5B5928408E7AE5E9 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6FC42E0B113D98A45A83DA /* Network.framework */; };
+		C4DD036F525E96C8ACD04C48 /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04AB09BA8D541AD45670DA1 /* InternalCollectionsUtilities.framework */; };
+		C6218A11DB913E26F2D66ED1 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF78C8B74AE9A90E41C4A2C0 /* Model.framework */; };
+		CA519985AB89930FB8212D51 /* DesignSystem_DesignSystem.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */; };
+		CDE581000168E92F5EB932B8 /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E321102738E16309E3B9A7E3 /* PerceptionCore.framework */; };
+		CE3BCEA2104CE5BA7CCC9199 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B52FF65F07137C90F447DE0 /* SwiftUINavigation.framework */; };
+		CEEED3E3F61809EB10156711 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EB808CB87DBA46CF809C5E /* Sharing.framework */; };
+		D3A466BF269817D808EF2331 /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D35987AFE5314A02C74F192 /* IssueReportingPackageSupport.framework */; };
+		D4BF2C074B53397E15D146CF /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AD4116759439F983EC011E /* ComposableArchitecture.framework */; };
+		D6677CD89DE4E0B3D8E994EA /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C30F188C31CE1AF203C7C9C /* Dependencies.framework */; };
+		D74FEEC4745D574DF770CEFB /* MultiModuleTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7748CD39BA8D4126C4987 /* MultiModuleTemplateApp.swift */; };
+		D798EF7280D5FC121CD34CD2 /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */; };
+		D7BAC026AE4E55A3032E6231 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55DAB73D85E8D9F62F8455A /* UIKitNavigation.framework */; };
+		DB13E5788F8F2ABB96CC0A2D /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06219534C0D624CF40B28672 /* IssueReporting.framework */; };
+		DB77DF98FD607D9F70EBCFE9 /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE73C3938B24A8317A4CB01 /* Clocks.framework */; };
+		DDD626E768F5CD3AB31F759F /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A3C97F3ED0F99E379587BD /* Sharing2.framework */; };
+		DE69E047B0FDAB7863A78080 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D88A9F982015A86C6F8A0E /* UseCase.framework */; };
+		DE87ECC4C8B35BDBF20771A4 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE32D067CE99DC0048655C8 /* IdentifiedCollections.framework */; };
+		DEC091C2C957056B49A8FD92 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B52FF65F07137C90F447DE0 /* SwiftUINavigation.framework */; };
+		DF97EA0E404F22BC26E9B813 /* FlowStacks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6151360D0929FEDF3D81973 /* FlowStacks.xcframework */; };
+		E108301A0DF86DAB450B1156 /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079A636401F049C17899A281 /* CasePathsCore.framework */; };
+		E1D503B038A19F45A02C0E66 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6FC42E0B113D98A45A83DA /* Network.framework */; };
+		E27A701CF5B91DF51E92835F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F1A424C2A0E65B6B493B40 /* Assets.xcassets */; };
+		E2A11C02404935926FC3FB18 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4872617D32AEF24690DA133C /* Sharing1.framework */; };
+		E30D48AA20E28A3A344B9B8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3676B34EE1E4C77C774C525 /* Preview Assets.xcassets */; };
+		E4A8EEEB507A57BBE44A6201 /* DesignSystem_DesignSystem.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */; };
+		E4ECECF5A36D7A348483040E /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DB0FD2C1BB23DD08A105B9 /* CombineSchedulers.framework */; };
+		E60A44F52530E7CB41A539FE /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04426152F79C5FE16AB626B4 /* DesignSystem.framework */; };
+		E62E6C2645675DE3AD6C92BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F1A424C2A0E65B6B493B40 /* Assets.xcassets */; };
+		E8CCB732C8DA5B7FAC894109 /* MultiModuleTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7748CD39BA8D4126C4987 /* MultiModuleTemplateApp.swift */; };
+		E9AE3D79CD72688E9624B3EC /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E321102738E16309E3B9A7E3 /* PerceptionCore.framework */; };
+		EAF01C24145018839898CE99 /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED7C47CBA51332FEB6C454A /* ThirdParty.framework */; };
+		EBA21E8EF2266E0CE0DE8C6D /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF78C8B74AE9A90E41C4A2C0 /* Model.framework */; };
+		EBEF96D41EC6EA464D3FF60F /* TuistAssets+MultiModuleTemplateDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14462D85644E1E4B276EFAD /* TuistAssets+MultiModuleTemplateDebug.swift */; };
+		ECBF4A9D3F1EC57601375B89 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EB808CB87DBA46CF809C5E /* Sharing.framework */; };
+		ECE1F51902511D5D6CA39E89 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE6EC6CF6E76727C664D71A /* Shared.framework */; };
+		ED4D470018117BDF96CC1AA5 /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D35987AFE5314A02C74F192 /* IssueReportingPackageSupport.framework */; };
+		EDC25230B9FC8F507AAF7FB3 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		EE5BC8EE47E365153F23A69B /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */; };
+		EE8CD63D9286AA0D96EF1F1A /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DB0FD2C1BB23DD08A105B9 /* CombineSchedulers.framework */; };
+		F2091041A27104868A6E9C65 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AD4116759439F983EC011E /* ComposableArchitecture.framework */; };
+		F422E5F767EE48CE7EC53653 /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C080144DAA90761C92668E8 /* DependenciesMacros.framework */; };
+		F7BD814BE76B31840A0788DF /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED7C47CBA51332FEB6C454A /* ThirdParty.framework */; };
+		F8DE6B49AD6829614C3C6572 /* MultiModuleTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E8C5C8DB809849F4AF35C /* MultiModuleTemplateTests.swift */; };
+		F950506AE7800740047F2705 /* FlowStacks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6151360D0929FEDF3D81973 /* FlowStacks.xcframework */; };
+		FBD2CB5E7EFB778D4437BFD5 /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFC75113D6B86B1AB970057 /* UIKitNavigationShim.framework */; };
+		FC20F646BD44181E683DA930 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D88A9F982015A86C6F8A0E /* UseCase.framework */; };
+		FC4B6C6AB732B989724CDC95 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220E2FDBB532BA915DD79BEB /* Core.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC3EE89C2A99D9BCF029994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D09E446DF12D1DF74ABE90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91689419AB4E7F63F211A948;
+			remoteInfo = MultiModuleTemplate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		262A9EEFD6A38BD438C95F4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D6314289B369F2FA010B009 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845DB2A93877CA198D4B4E21 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				83102A39315558F5A724ED24 /* DesignSystem_DesignSystem.bundle in Dependencies */,
+				1A36A1921669E030D53051EB /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */,
+				D798EF7280D5FC121CD34CD2 /* swift-sharing_Sharing.bundle in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9C5C80721858C18AA3EDB493 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				41C33BEFF8117F47B3418467 /* DesignSystem_DesignSystem.bundle in Dependencies */,
+				A85E0564F36CC218B342A41E /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */,
+				4133CE4E9FB9E676357A8B30 /* swift-sharing_Sharing.bundle in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A4B9C5713AC98FECADED0BBF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4453F6578925CDE617661AD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C772804E63B27CC1162AC915 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				9A666F8BAD1A2922A05D60DB /* DesignSystem_DesignSystem.bundle in Dependencies */,
+				AC49BE314FCE9C41A7BCB3B3 /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */,
+				0E5520CACF7CD2C2E823681C /* swift-sharing_Sharing.bundle in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D5578AD01B9C192AB4F845CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3ED6679CAF9F8CC3D00EC9F /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				B30CBBC8BC5CB75B809EB828 /* DesignSystem_DesignSystem.bundle in Dependencies */,
+				4FF40BFF078F3464AB76B718 /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */,
+				8F992718149D325BF111F222 /* swift-sharing_Sharing.bundle in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02961852E9611DE48E440C5B /* CustomDump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomDump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		041E8B1A946B0B00EE363607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04426152F79C5FE16AB626B4 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06219534C0D624CF40B28672 /* IssueReporting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReporting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		079A636401F049C17899A281 /* CasePathsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePathsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A940C79B9C7B911D8F4371B /* Utill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C080144DAA90761C92668E8 /* DependenciesMacros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependenciesMacros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C866F10878F3FF992702855 /* TuistBundle+MultiModuleTemplateDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+MultiModuleTemplateDebug.swift"; sourceTree = "<group>"; };
+		0E9410FAF4701930F375102C /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		159E8C5C8DB809849F4AF35C /* MultiModuleTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiModuleTemplateTests.swift; sourceTree = "<group>"; };
+		1827EF78843F42FBE2DA2461 /* MultiModuleTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1830A79FE9E9D450666FA0FA /* TCACoordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCACoordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6FC42E0B113D98A45A83DA /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-sharing_Sharing.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF95B1517EBF263FA2EC476 /* MultiModuleTemplate_Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleTemplate_Stage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200393A8F10D1AA7DCFD45AC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		220E2FDBB532BA915DD79BEB /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E1289E57CC74B8E866C1C5 /* MultiModuleTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiModuleTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		276354B8FE1FAB984DAEA431 /* TuistBundle+MultiModuleTemplateProd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+MultiModuleTemplateProd.swift"; sourceTree = "<group>"; };
+		29D8D707EE4C40E5E5A24984 /* OrderedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE32D067CE99DC0048655C8 /* IdentifiedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentifiedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C06C806F5D4C31BFAE78DD /* MultiModuleTemplate_Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleTemplate_Prod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AD4116759439F983EC011E /* ComposableArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComposableArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4872617D32AEF24690DA133C /* Sharing1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49122DDAAC993BE80E3CDF2A /* SwiftNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D88A9F982015A86C6F8A0E /* UseCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UseCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5BE59499C910F06931561B /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C72956D46A2C1EFCDB1922A /* TuistAssets+MultiModuleTemplateProd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+MultiModuleTemplateProd.swift"; sourceTree = "<group>"; };
+		61131FED3717D59FF25DF50A /* Perception.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		625E4D18A1ACF9D1A312649D /* XCTestDynamicOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTestDynamicOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7B2B591C91022C2BEFDDF9 /* MultiModuleTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MultiModuleTemplateTests-Info.plist"; sourceTree = "<group>"; };
+		72C7748CD39BA8D4126C4987 /* MultiModuleTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiModuleTemplateApp.swift; sourceTree = "<group>"; };
+		7D0735E3AC622DCE8F867FB4 /* TuistAssets+MultiModuleTemplateStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+MultiModuleTemplateStage.swift"; sourceTree = "<group>"; };
+		80DB0FD2C1BB23DD08A105B9 /* CombineSchedulers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineSchedulers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B58A0A89EF4CF365D1314A /* TuistBundle+MultiModuleTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+MultiModuleTemplate.swift"; sourceTree = "<group>"; };
+		8B52FF65F07137C90F447DE0 /* SwiftUINavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUINavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C30F188C31CE1AF203C7C9C /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D35987AFE5314A02C74F192 /* IssueReportingPackageSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReportingPackageSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED7C47CBA51332FEB6C454A /* ThirdParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A3C97F3ED0F99E379587BD /* Sharing2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9886F7E8B77B4B05BF052745 /* MultiModuleTemplate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MultiModuleTemplate-Info.plist"; sourceTree = "<group>"; };
+		9DE73C3938B24A8317A4CB01 /* Clocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04AB09BA8D541AD45670DA1 /* InternalCollectionsUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InternalCollectionsUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F0A938FEF53EF01450DAD8 /* Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Stage.xcconfig; sourceTree = "<group>"; };
+		ABE6EC6CF6E76727C664D71A /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B293E76EA6E6D4E5DF30BE32 /* TuistBundle+MultiModuleTemplateStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+MultiModuleTemplateStage.swift"; sourceTree = "<group>"; };
+		B3EB808CB87DBA46CF809C5E /* Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55DAB73D85E8D9F62F8455A /* UIKitNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6151360D0929FEDF3D81973 /* FlowStacks.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlowStacks.xcframework; path = /Users/suhwonji/.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6/FlowStacks.xcframework; sourceTree = "<absolute>"; };
+		CAAA3018527A0607B2960045 /* CasePaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF177ED6A5D61DAEE0E46641 /* MultiModuleTemplate-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MultiModuleTemplate-Stage-Info.plist"; sourceTree = "<group>"; };
+		D20538A66F8048D70CDCF2B3 /* ConcurrencyExtras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConcurrencyExtras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3676B34EE1E4C77C774C525 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9FD2463E25DFBFF3B500A7A /* MultiModuleTemplate-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MultiModuleTemplate-Debug-Info.plist"; sourceTree = "<group>"; };
+		E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystem_DesignSystem.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E321102738E16309E3B9A7E3 /* PerceptionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerceptionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3AEC1BFAEC38126DC904126 /* TuistAssets+MultiModuleTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+MultiModuleTemplate.swift"; sourceTree = "<group>"; };
+		E68D2AC7955D87FDF1937718 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F1A424C2A0E65B6B493B40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBFC75113D6B86B1AB970057 /* UIKitNavigationShim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigationShim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06AF950C3C5146D94F8E8FD /* MultiModuleTemplate_Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleTemplate_Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06FC8A847BFD01FDC41CEFC /* DomainInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14462D85644E1E4B276EFAD /* TuistAssets+MultiModuleTemplateDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+MultiModuleTemplateDebug.swift"; sourceTree = "<group>"; };
+		F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-composable-architecture_ComposableArchitecture.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A0F3D68494F15EF6D45F8C /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
+		FEB831F4FB6F2D768C8A2F8D /* MultiModuleTemplate-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MultiModuleTemplate-Prod-Info.plist"; sourceTree = "<group>"; };
+		FF5779DC223C622F5867341D /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		FF78C8B74AE9A90E41C4A2C0 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CE1C0BD850795CD4E1A42BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0FAF160562BCD84B2E0027 /* CasePaths.framework in Frameworks */,
+				E108301A0DF86DAB450B1156 /* CasePathsCore.framework in Frameworks */,
+				56B35929C855CE9F3941EDDA /* Clocks.framework in Frameworks */,
+				E4ECECF5A36D7A348483040E /* CombineSchedulers.framework in Frameworks */,
+				F2091041A27104868A6E9C65 /* ComposableArchitecture.framework in Frameworks */,
+				077B068A08E3124F930BC0C6 /* ConcurrencyExtras.framework in Frameworks */,
+				516050D12657780656F64F89 /* Core.framework in Frameworks */,
+				BE1232ACE4C01997AC881DCA /* CustomDump.framework in Frameworks */,
+				BA5741C61EF499D57F138E28 /* Dependencies.framework in Frameworks */,
+				1D248909978567C9D6699BA6 /* DependenciesMacros.framework in Frameworks */,
+				E60A44F52530E7CB41A539FE /* DesignSystem.framework in Frameworks */,
+				980A767A5862429D17AE514A /* DomainInterface.framework in Frameworks */,
+				691B270EEDB9B7585FFA7BF1 /* IdentifiedCollections.framework in Frameworks */,
+				C4DD036F525E96C8ACD04C48 /* InternalCollectionsUtilities.framework in Frameworks */,
+				DB13E5788F8F2ABB96CC0A2D /* IssueReporting.framework in Frameworks */,
+				4C864F685DC5082D868941A7 /* IssueReportingPackageSupport.framework in Frameworks */,
+				31B127BEA1F2455DB25BFFBD /* Model.framework in Frameworks */,
+				E1D503B038A19F45A02C0E66 /* Network.framework in Frameworks */,
+				47EB9EF1F70325AE38F4997F /* OrderedCollections.framework in Frameworks */,
+				B9A93C1F783FF81DF4CFD36A /* Perception.framework in Frameworks */,
+				BD744FEF3C1BA61D2F29EEEB /* PerceptionCore.framework in Frameworks */,
+				49D14D19A0CA724850DCA98E /* Presentation.framework in Frameworks */,
+				129E59B99AC9FEB55FEC08A0 /* Repository.framework in Frameworks */,
+				4FE2AA1BB8A54AEC25F4D5F9 /* Service.framework in Frameworks */,
+				ECE1F51902511D5D6CA39E89 /* Shared.framework in Frameworks */,
+				CEEED3E3F61809EB10156711 /* Sharing.framework in Frameworks */,
+				75890EF52DF6A977FF9676A6 /* Sharing1.framework in Frameworks */,
+				1176195E2AC155D31D84A777 /* Sharing2.framework in Frameworks */,
+				B2C6E5A6C1DCF922CEE17782 /* SwiftNavigation.framework in Frameworks */,
+				4091FA3964ADD206BFD93164 /* SwiftUINavigation.framework in Frameworks */,
+				47046D2DB64E0CEC182CDF01 /* TCACoordinators.framework in Frameworks */,
+				F7BD814BE76B31840A0788DF /* ThirdParty.framework in Frameworks */,
+				D7BAC026AE4E55A3032E6231 /* UIKitNavigation.framework in Frameworks */,
+				FBD2CB5E7EFB778D4437BFD5 /* UIKitNavigationShim.framework in Frameworks */,
+				202FA1A3D54716154CEB2F99 /* UseCase.framework in Frameworks */,
+				844EF2CEA9AD34B9D574AC8D /* Utill.framework in Frameworks */,
+				9C7086FC77D3FE932D6284A6 /* XCTestDynamicOverlay.framework in Frameworks */,
+				F950506AE7800740047F2705 /* FlowStacks.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE46F2750402B6DDD3AF630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2242CF627558FCB243EDD87 /* CasePaths.framework in Frameworks */,
+				ACE40EC19DAD0EB1ABF8B218 /* CasePathsCore.framework in Frameworks */,
+				6923432867B0447D4E41613D /* Clocks.framework in Frameworks */,
+				EE8CD63D9286AA0D96EF1F1A /* CombineSchedulers.framework in Frameworks */,
+				D4BF2C074B53397E15D146CF /* ComposableArchitecture.framework in Frameworks */,
+				BBE48F3DC66359D7B670AE39 /* ConcurrencyExtras.framework in Frameworks */,
+				FC4B6C6AB732B989724CDC95 /* Core.framework in Frameworks */,
+				54E09DB8DBBA78E8E5F055B3 /* CustomDump.framework in Frameworks */,
+				3EC8760E46E79366CC315D6D /* Dependencies.framework in Frameworks */,
+				177642F04C50D321FE47AD0F /* DependenciesMacros.framework in Frameworks */,
+				47FE972F6A919486EE835BA2 /* DesignSystem.framework in Frameworks */,
+				40745E86EA64271505CCCF2F /* DomainInterface.framework in Frameworks */,
+				8F9530A02E334DB405E18C3F /* IdentifiedCollections.framework in Frameworks */,
+				9C04E2E2D2025E1C450DA1F6 /* InternalCollectionsUtilities.framework in Frameworks */,
+				06E35FF7D9614799AC9E6F6A /* IssueReporting.framework in Frameworks */,
+				D3A466BF269817D808EF2331 /* IssueReportingPackageSupport.framework in Frameworks */,
+				EBA21E8EF2266E0CE0DE8C6D /* Model.framework in Frameworks */,
+				29D8DDA0DEFCD8911C438A29 /* Network.framework in Frameworks */,
+				3B4DA116A4AF1DF575A3AA06 /* OrderedCollections.framework in Frameworks */,
+				89D4A2BE6137FEF333286138 /* Perception.framework in Frameworks */,
+				E9AE3D79CD72688E9624B3EC /* PerceptionCore.framework in Frameworks */,
+				B3F98A7FDC3D1510081ED3DA /* Presentation.framework in Frameworks */,
+				1644E028BCFE35E1FE901E5A /* Repository.framework in Frameworks */,
+				63B594F2E9825587CEAB3E92 /* Service.framework in Frameworks */,
+				10C78FC41CB672D7A20D8DA1 /* Shared.framework in Frameworks */,
+				5BD6EE75E3456D04601BCE3B /* Sharing.framework in Frameworks */,
+				E2A11C02404935926FC3FB18 /* Sharing1.framework in Frameworks */,
+				8EAEC78485CD011CB680C436 /* Sharing2.framework in Frameworks */,
+				17C5D6BD963E018F5AAB8364 /* SwiftNavigation.framework in Frameworks */,
+				DEC091C2C957056B49A8FD92 /* SwiftUINavigation.framework in Frameworks */,
+				07691A859978C98FE031CE14 /* TCACoordinators.framework in Frameworks */,
+				3AEB8964ED9077F7E5840192 /* ThirdParty.framework in Frameworks */,
+				BFD912FA3A7A527267CC9F08 /* UIKitNavigation.framework in Frameworks */,
+				909FFB61AA4BDAFEBFEAEC3E /* UIKitNavigationShim.framework in Frameworks */,
+				DE69E047B0FDAB7863A78080 /* UseCase.framework in Frameworks */,
+				3649B769A2F86EC0CE562208 /* Utill.framework in Frameworks */,
+				66166BD870004283E1BA0649 /* XCTestDynamicOverlay.framework in Frameworks */,
+				4E955AEF9599B8AD0CE9A5A2 /* FlowStacks.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97CFA5EABE1E8B5DCB08FB57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78B089B717F81270EF06B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8174242DF618B65DDC1F4A35 /* CasePaths.framework in Frameworks */,
+				28DF75AF3E7E4BBEBA7110D5 /* CasePathsCore.framework in Frameworks */,
+				667597CF15F825E32C5641AA /* Clocks.framework in Frameworks */,
+				2E77F0A0346C749453988444 /* CombineSchedulers.framework in Frameworks */,
+				B48B39E346524E45662BB5F4 /* ComposableArchitecture.framework in Frameworks */,
+				5475B831C1460A9B3F8F5A6D /* ConcurrencyExtras.framework in Frameworks */,
+				7F75A236F94E54F5CBCD4A87 /* Core.framework in Frameworks */,
+				95D9CA0D27E96C0D892BCCF2 /* CustomDump.framework in Frameworks */,
+				598FEFD416944C62304C09CC /* Dependencies.framework in Frameworks */,
+				F422E5F767EE48CE7EC53653 /* DependenciesMacros.framework in Frameworks */,
+				4E6D317A251BE17B3B59DCCA /* DesignSystem.framework in Frameworks */,
+				8400C20A1C8844BE5C5D171F /* DomainInterface.framework in Frameworks */,
+				C3D75C27689A1648C6EAAA3A /* IdentifiedCollections.framework in Frameworks */,
+				159AEFE3C8FE6027031F2F8D /* InternalCollectionsUtilities.framework in Frameworks */,
+				8094237FC83DF1C667AF4E33 /* IssueReporting.framework in Frameworks */,
+				36326F2B6E7AD3556564866A /* IssueReportingPackageSupport.framework in Frameworks */,
+				907435F0B5E1D45FFE9BE727 /* Model.framework in Frameworks */,
+				95A4C1E6555634E6186F8578 /* Network.framework in Frameworks */,
+				5D5AAC0F6891F042D043D23B /* OrderedCollections.framework in Frameworks */,
+				0B4C0E04F343E08027424EE2 /* Perception.framework in Frameworks */,
+				CDE581000168E92F5EB932B8 /* PerceptionCore.framework in Frameworks */,
+				64D40515DD20C79ECA7C4F7D /* Presentation.framework in Frameworks */,
+				77BF89B027B152FE033570F4 /* Repository.framework in Frameworks */,
+				710BB7817814C7711C3FDFE5 /* Service.framework in Frameworks */,
+				1DE1FEB47FA0D70261CE783D /* Shared.framework in Frameworks */,
+				9D91B52DF97F87678C165591 /* Sharing.framework in Frameworks */,
+				6317B50E365E49192D65482B /* Sharing1.framework in Frameworks */,
+				1EC50B97F6EBAB932D122182 /* Sharing2.framework in Frameworks */,
+				3FA9AC55B422E71790E4ED91 /* SwiftNavigation.framework in Frameworks */,
+				90F05675C39932795A8FD09F /* SwiftUINavigation.framework in Frameworks */,
+				52FE730CB96EB17D26978BC6 /* TCACoordinators.framework in Frameworks */,
+				EAF01C24145018839898CE99 /* ThirdParty.framework in Frameworks */,
+				A8495C08852E9831FDC4BD4D /* UIKitNavigation.framework in Frameworks */,
+				4EE26991BF9D8C59C65E214F /* UIKitNavigationShim.framework in Frameworks */,
+				FC20F646BD44181E683DA930 /* UseCase.framework in Frameworks */,
+				8C9B25E0CE3A84FADA555879 /* Utill.framework in Frameworks */,
+				524401CE63D517B70D32F054 /* XCTestDynamicOverlay.framework in Frameworks */,
+				DF97EA0E404F22BC26E9B813 /* FlowStacks.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F752E31601F390861660F98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A581E698D82BA38B9F0214F /* CasePaths.framework in Frameworks */,
+				05B364F0222BD044AA51510A /* CasePathsCore.framework in Frameworks */,
+				DB77DF98FD607D9F70EBCFE9 /* Clocks.framework in Frameworks */,
+				81D4EE97E743B5A8DD675505 /* CombineSchedulers.framework in Frameworks */,
+				0FFFCC95DB397A55BDBA0084 /* ComposableArchitecture.framework in Frameworks */,
+				27C7C34DD146CC2B7A53C4B4 /* ConcurrencyExtras.framework in Frameworks */,
+				89443BE65160CC30D1F14776 /* Core.framework in Frameworks */,
+				86DCFE746D28D785287494F8 /* CustomDump.framework in Frameworks */,
+				D6677CD89DE4E0B3D8E994EA /* Dependencies.framework in Frameworks */,
+				AFC7667AE58D72418600BC46 /* DependenciesMacros.framework in Frameworks */,
+				75FF3D8D01B4B5A7006385F1 /* DesignSystem.framework in Frameworks */,
+				87006C8608100965BD7D7F7B /* DomainInterface.framework in Frameworks */,
+				DE87ECC4C8B35BDBF20771A4 /* IdentifiedCollections.framework in Frameworks */,
+				29C406057651C5E2CF5F6CED /* InternalCollectionsUtilities.framework in Frameworks */,
+				7D03C9B20A0F23B4506CCD8E /* IssueReporting.framework in Frameworks */,
+				ED4D470018117BDF96CC1AA5 /* IssueReportingPackageSupport.framework in Frameworks */,
+				C6218A11DB913E26F2D66ED1 /* Model.framework in Frameworks */,
+				C42F888C5B5928408E7AE5E9 /* Network.framework in Frameworks */,
+				6D10DF203294E4EF55BC3D65 /* OrderedCollections.framework in Frameworks */,
+				29D8988ACA8C8210309A0163 /* Perception.framework in Frameworks */,
+				425E3643662519A6B55B3031 /* PerceptionCore.framework in Frameworks */,
+				69A693E2DF2AA7C98601B10E /* Presentation.framework in Frameworks */,
+				606A3F9D216C29DA290463E8 /* Repository.framework in Frameworks */,
+				8DE44D1ADFE01CF53BAEF07C /* Service.framework in Frameworks */,
+				338DB4D24200AD3143959D28 /* Shared.framework in Frameworks */,
+				ECBF4A9D3F1EC57601375B89 /* Sharing.framework in Frameworks */,
+				ACC5786E702A960B4FBA7B50 /* Sharing1.framework in Frameworks */,
+				DDD626E768F5CD3AB31F759F /* Sharing2.framework in Frameworks */,
+				740F60E7D516338D749D6EB8 /* SwiftNavigation.framework in Frameworks */,
+				CE3BCEA2104CE5BA7CCC9199 /* SwiftUINavigation.framework in Frameworks */,
+				0F6937C52ECE634AAA95BE7E /* TCACoordinators.framework in Frameworks */,
+				364778D5F2A8726F8D30AF87 /* ThirdParty.framework in Frameworks */,
+				924490745B0B60764BA339DF /* UIKitNavigation.framework in Frameworks */,
+				58245ABFB7844635F19F6746 /* UIKitNavigationShim.framework in Frameworks */,
+				532610B4C1E89DEE54D21331 /* UseCase.framework in Frameworks */,
+				0B0DA2B81EE38DCB6656E030 /* Utill.framework in Frameworks */,
+				379D4A4ED15312B604673E00 /* XCTestDynamicOverlay.framework in Frameworks */,
+				BE06A66E301CF8563FDAB178 /* FlowStacks.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B2E9F3C169257CBFC7F91A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				404756BFA759883973562A43 /* Preview Content */,
+				E7F1A424C2A0E65B6B493B40 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1143B7A2ADCFA2CE32460F12 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				D9FD2463E25DFBFF3B500A7A /* MultiModuleTemplate-Debug-Info.plist */,
+				9886F7E8B77B4B05BF052745 /* MultiModuleTemplate-Info.plist */,
+				FEB831F4FB6F2D768C8A2F8D /* MultiModuleTemplate-Prod-Info.plist */,
+				CF177ED6A5D61DAEE0E46641 /* MultiModuleTemplate-Stage-Info.plist */,
+				6C7B2B591C91022C2BEFDDF9 /* MultiModuleTemplateTests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		3EFBF45409AA6A52C53B7A1F = {
+			isa = PBXGroup;
+			children = (
+				85626DC4F5DA80C4DAA03E7E /* Project */,
+				7909A2EE691D64C541B7C8D9 /* Products */,
+				47085DC635AC8EDDB8F5F5E2 /* Cache */,
+			);
+			sourceTree = "<group>";
+		};
+		404756BFA759883973562A43 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D3676B34EE1E4C77C774C525 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47085DC635AC8EDDB8F5F5E2 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				C6151360D0929FEDF3D81973 /* FlowStacks.xcframework */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		4A09FFDC6D4635DBBE7A406E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E3AEC1BFAEC38126DC904126 /* TuistAssets+MultiModuleTemplate.swift */,
+				F14462D85644E1E4B276EFAD /* TuistAssets+MultiModuleTemplateDebug.swift */,
+				4C72956D46A2C1EFCDB1922A /* TuistAssets+MultiModuleTemplateProd.swift */,
+				7D0735E3AC622DCE8F867FB4 /* TuistAssets+MultiModuleTemplateStage.swift */,
+				88B58A0A89EF4CF365D1314A /* TuistBundle+MultiModuleTemplate.swift */,
+				0C866F10878F3FF992702855 /* TuistBundle+MultiModuleTemplateDebug.swift */,
+				276354B8FE1FAB984DAEA431 /* TuistBundle+MultiModuleTemplateProd.swift */,
+				B293E76EA6E6D4E5DF30BE32 /* TuistBundle+MultiModuleTemplateStage.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5AB1808282A814CB6FA78AB0 /* MultiModuleTemplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1AF855488E3B3E7C48274AD /* Sources */,
+			);
+			path = MultiModuleTemplateTests;
+			sourceTree = "<group>";
+		};
+		7909A2EE691D64C541B7C8D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAAA3018527A0607B2960045 /* CasePaths.framework */,
+				079A636401F049C17899A281 /* CasePathsCore.framework */,
+				9DE73C3938B24A8317A4CB01 /* Clocks.framework */,
+				80DB0FD2C1BB23DD08A105B9 /* CombineSchedulers.framework */,
+				45AD4116759439F983EC011E /* ComposableArchitecture.framework */,
+				D20538A66F8048D70CDCF2B3 /* ConcurrencyExtras.framework */,
+				220E2FDBB532BA915DD79BEB /* Core.framework */,
+				02961852E9611DE48E440C5B /* CustomDump.framework */,
+				8C30F188C31CE1AF203C7C9C /* Dependencies.framework */,
+				0C080144DAA90761C92668E8 /* DependenciesMacros.framework */,
+				E0904A14DC1843C9571086D2 /* DesignSystem_DesignSystem.bundle */,
+				04426152F79C5FE16AB626B4 /* DesignSystem.framework */,
+				F06FC8A847BFD01FDC41CEFC /* DomainInterface.framework */,
+				2CE32D067CE99DC0048655C8 /* IdentifiedCollections.framework */,
+				A04AB09BA8D541AD45670DA1 /* InternalCollectionsUtilities.framework */,
+				06219534C0D624CF40B28672 /* IssueReporting.framework */,
+				8D35987AFE5314A02C74F192 /* IssueReportingPackageSupport.framework */,
+				FF78C8B74AE9A90E41C4A2C0 /* Model.framework */,
+				F06AF950C3C5146D94F8E8FD /* MultiModuleTemplate_Debug.app */,
+				39C06C806F5D4C31BFAE78DD /* MultiModuleTemplate_Prod.app */,
+				1CF95B1517EBF263FA2EC476 /* MultiModuleTemplate_Stage.app */,
+				1827EF78843F42FBE2DA2461 /* MultiModuleTemplate.app */,
+				22E1289E57CC74B8E866C1C5 /* MultiModuleTemplateTests.xctest */,
+				1A6FC42E0B113D98A45A83DA /* Network.framework */,
+				29D8D707EE4C40E5E5A24984 /* OrderedCollections.framework */,
+				61131FED3717D59FF25DF50A /* Perception.framework */,
+				E321102738E16309E3B9A7E3 /* PerceptionCore.framework */,
+				4B5BE59499C910F06931561B /* Presentation.framework */,
+				E68D2AC7955D87FDF1937718 /* Repository.framework */,
+				0E9410FAF4701930F375102C /* Service.framework */,
+				ABE6EC6CF6E76727C664D71A /* Shared.framework */,
+				B3EB808CB87DBA46CF809C5E /* Sharing.framework */,
+				4872617D32AEF24690DA133C /* Sharing1.framework */,
+				96A3C97F3ED0F99E379587BD /* Sharing2.framework */,
+				F6485319E0E50A9A62C411E2 /* swift-composable-architecture_ComposableArchitecture.bundle */,
+				1B5F0920279D2CA2B6972C4E /* swift-sharing_Sharing.bundle */,
+				49122DDAAC993BE80E3CDF2A /* SwiftNavigation.framework */,
+				8B52FF65F07137C90F447DE0 /* SwiftUINavigation.framework */,
+				1830A79FE9E9D450666FA0FA /* TCACoordinators.framework */,
+				8ED7C47CBA51332FEB6C454A /* ThirdParty.framework */,
+				B55DAB73D85E8D9F62F8455A /* UIKitNavigation.framework */,
+				EBFC75113D6B86B1AB970057 /* UIKitNavigationShim.framework */,
+				49D88A9F982015A86C6F8A0E /* UseCase.framework */,
+				0A940C79B9C7B911D8F4371B /* Utill.framework */,
+				625E4D18A1ACF9D1A312649D /* XCTestDynamicOverlay.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85626DC4F5DA80C4DAA03E7E /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				9044CC51088FBA5F1EB39269 /* Config */,
+				ECD7C57DE67BBA84AAE2F562 /* Derived */,
+				5AB1808282A814CB6FA78AB0 /* MultiModuleTemplateTests */,
+				02B2E9F3C169257CBFC7F91A /* Resources */,
+				AFDFD7307663C7D9EC80B445 /* Sources */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		9044CC51088FBA5F1EB39269 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FF5779DC223C622F5867341D /* Dev.xcconfig */,
+				F7A0F3D68494F15EF6D45F8C /* Prod.xcconfig */,
+				200393A8F10D1AA7DCFD45AC /* Release.xcconfig */,
+				A4F0A938FEF53EF01450DAD8 /* Stage.xcconfig */,
+			);
+			name = Config;
+			path = ../../Config;
+			sourceTree = "<group>";
+		};
+		AFDFD7307663C7D9EC80B445 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				041E8B1A946B0B00EE363607 /* ContentView.swift */,
+				72C7748CD39BA8D4126C4987 /* MultiModuleTemplateApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ECD7C57DE67BBA84AAE2F562 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				1143B7A2ADCFA2CE32460F12 /* InfoPlists */,
+				4A09FFDC6D4635DBBE7A406E /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		F1AF855488E3B3E7C48274AD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				159E8C5C8DB809849F4AF35C /* MultiModuleTemplateTests.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11DFC0DEDF4D7820FF80077D /* MultiModuleTemplate-Stage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CD34131E6F1BE682E790997 /* Build configuration list for PBXNativeTarget "MultiModuleTemplate-Stage" */;
+			buildPhases = (
+				5692A98FCAD6B94959BDD5E2 /* Sources */,
+				F9D9F30AC63DF7893C6DD7ED /* Resources */,
+				0CE1C0BD850795CD4E1A42BB /* Frameworks */,
+				B4453F6578925CDE617661AD /* Embed Frameworks */,
+				F3ED6679CAF9F8CC3D00EC9F /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultiModuleTemplate-Stage";
+			packageProductDependencies = (
+			);
+			productName = MultiModuleTemplate_Stage;
+			productReference = 1CF95B1517EBF263FA2EC476 /* MultiModuleTemplate_Stage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91689419AB4E7F63F211A948 /* MultiModuleTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97345BFB43E5F8D228420361 /* Build configuration list for PBXNativeTarget "MultiModuleTemplate" */;
+			buildPhases = (
+				F3A004AB5841A2D849F1A967 /* Sources */,
+				6C0D00BE49632C3BACE3D680 /* Resources */,
+				B78B089B717F81270EF06B9E /* Frameworks */,
+				D5578AD01B9C192AB4F845CE /* Embed Frameworks */,
+				9C5C80721858C18AA3EDB493 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiModuleTemplate;
+			packageProductDependencies = (
+			);
+			productName = MultiModuleTemplate;
+			productReference = 1827EF78843F42FBE2DA2461 /* MultiModuleTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA18F910C115E1C68869700E /* MultiModuleTemplate-Prod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B56C61C10587AFDAC1E68C /* Build configuration list for PBXNativeTarget "MultiModuleTemplate-Prod" */;
+			buildPhases = (
+				0D30D89FD9EE0A78A8005514 /* Sources */,
+				29383C7C4345BA014D65C8D3 /* Resources */,
+				5CE46F2750402B6DDD3AF630 /* Frameworks */,
+				A4B9C5713AC98FECADED0BBF /* Embed Frameworks */,
+				C772804E63B27CC1162AC915 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultiModuleTemplate-Prod";
+			packageProductDependencies = (
+			);
+			productName = MultiModuleTemplate_Prod;
+			productReference = 39C06C806F5D4C31BFAE78DD /* MultiModuleTemplate_Prod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E16DE698B0A919965EEEFE6A /* MultiModuleTemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33563C9B082A16994FFF415D /* Build configuration list for PBXNativeTarget "MultiModuleTemplateTests" */;
+			buildPhases = (
+				6C9BCF3B1029D24B7DF90693 /* Sources */,
+				88D65314EE9C866C04B4756E /* Resources */,
+				97CFA5EABE1E8B5DCB08FB57 /* Frameworks */,
+				7D6314289B369F2FA010B009 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA3F0931C9FE2B11045B84EE /* PBXTargetDependency */,
+			);
+			name = MultiModuleTemplateTests;
+			packageProductDependencies = (
+			);
+			productName = MultiModuleTemplateTests;
+			productReference = 22E1289E57CC74B8E866C1C5 /* MultiModuleTemplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8C8E146F6090A4818022514 /* MultiModuleTemplate-Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BF6E29023A4EE3551D78618 /* Build configuration list for PBXNativeTarget "MultiModuleTemplate-Debug" */;
+			buildPhases = (
+				ACEEA43B01BDF3ADDA69C84E /* Sources */,
+				F416476271004864C9FAD51D /* Resources */,
+				F752E31601F390861660F98A /* Frameworks */,
+				262A9EEFD6A38BD438C95F4F /* Embed Frameworks */,
+				845DB2A93877CA198D4B4E21 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultiModuleTemplate-Debug";
+			packageProductDependencies = (
+			);
+			productName = MultiModuleTemplate_Debug;
+			productReference = F06AF950C3C5146D94F8E8FD /* MultiModuleTemplate_Debug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52D09E446DF12D1DF74ABE90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					E16DE698B0A919965EEEFE6A = {
+						TestTargetID = 91689419AB4E7F63F211A948;
+					};
+				};
+			};
+			buildConfigurationList = 4E49904B689EE23D4C77D634 /* Build configuration list for PBXProject "MultiModuleTemplate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ko,
+			);
+			mainGroup = 3EFBF45409AA6A52C53B7A1F;
+			productRefGroup = 7909A2EE691D64C541B7C8D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91689419AB4E7F63F211A948 /* MultiModuleTemplate */,
+				F8C8E146F6090A4818022514 /* MultiModuleTemplate-Debug */,
+				BA18F910C115E1C68869700E /* MultiModuleTemplate-Prod */,
+				11DFC0DEDF4D7820FF80077D /* MultiModuleTemplate-Stage */,
+				E16DE698B0A919965EEEFE6A /* MultiModuleTemplateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29383C7C4345BA014D65C8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E62E6C2645675DE3AD6C92BD /* Assets.xcassets in Resources */,
+				1A8F9C7CE399915D6032FE3F /* Preview Assets.xcassets in Resources */,
+				70F539F05442BA7B44D8F236 /* DesignSystem_DesignSystem.bundle in Resources */,
+				779F86C7B2B3052CDC9F31C8 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */,
+				EE5BC8EE47E365153F23A69B /* swift-sharing_Sharing.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C0D00BE49632C3BACE3D680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F28C98A653EF51D20EC3CE /* Assets.xcassets in Resources */,
+				37A971255510E45AD037CF68 /* Preview Assets.xcassets in Resources */,
+				CA519985AB89930FB8212D51 /* DesignSystem_DesignSystem.bundle in Resources */,
+				3FC9962B2B34DF820F939E49 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */,
+				1E1CACE3358A02B3080DD638 /* swift-sharing_Sharing.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D65314EE9C866C04B4756E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F416476271004864C9FAD51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE90D2AB560DD2ADA8E8FDF /* Assets.xcassets in Resources */,
+				7EA6C64B6CBEDEC73DB59EAF /* Preview Assets.xcassets in Resources */,
+				A01669DE6876712A0965A706 /* DesignSystem_DesignSystem.bundle in Resources */,
+				EDC25230B9FC8F507AAF7FB3 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */,
+				3B0FFBFD285AAC9B8E3E39E3 /* swift-sharing_Sharing.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D9F30AC63DF7893C6DD7ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27A701CF5B91DF51E92835F /* Assets.xcassets in Resources */,
+				E30D48AA20E28A3A344B9B8E /* Preview Assets.xcassets in Resources */,
+				E4A8EEEB507A57BBE44A6201 /* DesignSystem_DesignSystem.bundle in Resources */,
+				9838BFEEC6108A10E5F75896 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */,
+				4A250CCDC0BE1F92CCDA86BA /* swift-sharing_Sharing.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D30D89FD9EE0A78A8005514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6358F3189B366340E8E6F636 /* TuistAssets+MultiModuleTemplateProd.swift in Sources */,
+				014C818627146A13D97BE3AC /* TuistBundle+MultiModuleTemplateProd.swift in Sources */,
+				81EF002A7E90A8D0792D6AD4 /* ContentView.swift in Sources */,
+				7CF8D2EE8C6DC14617A750C2 /* MultiModuleTemplateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5692A98FCAD6B94959BDD5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529779E2B6105519712D6972 /* TuistAssets+MultiModuleTemplateStage.swift in Sources */,
+				7371280F5FE0CC632F849A10 /* TuistBundle+MultiModuleTemplateStage.swift in Sources */,
+				BF42CA324882C15071913B14 /* ContentView.swift in Sources */,
+				D74FEEC4745D574DF770CEFB /* MultiModuleTemplateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C9BCF3B1029D24B7DF90693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DE6B49AD6829614C3C6572 /* MultiModuleTemplateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEEA43B01BDF3ADDA69C84E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEF96D41EC6EA464D3FF60F /* TuistAssets+MultiModuleTemplateDebug.swift in Sources */,
+				56E09E81EB00E1ED1F2FF479 /* TuistBundle+MultiModuleTemplateDebug.swift in Sources */,
+				3EE09F2535380049FCA0A6DE /* ContentView.swift in Sources */,
+				E8CCB732C8DA5B7FAC894109 /* MultiModuleTemplateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A004AB5841A2D849F1A967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69203331333AC87B50E2FAFE /* TuistAssets+MultiModuleTemplate.swift in Sources */,
+				BE05DFF32E5BB085101BCD96 /* TuistBundle+MultiModuleTemplate.swift in Sources */,
+				60322DCC4052BA0A183CCB11 /* ContentView.swift in Sources */,
+				76C4E54F2D14A44993162185 /* MultiModuleTemplateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA3F0931C9FE2B11045B84EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MultiModuleTemplate;
+			target = 91689419AB4E7F63F211A948 /* MultiModuleTemplate */;
+			targetProxy = 4CC3EE89C2A99D9BCF029994 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A8B52F1A080513C7CE66A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Stage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Stage;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1827A6B7524E2D651E0D292C /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Stage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Stage;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Stage;
+		};
+		202DA5AF43492823C140C080 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.MultiModuleTemplateTests;
+				PRODUCT_NAME = MultiModuleTemplateTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiModuleTemplate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MultiModuleTemplate";
+				TEST_TARGET_NAME = MultiModuleTemplate;
+			};
+			name = Prod;
+		};
+		3CDC39274E1025AE6ABE7B1F /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Debug-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Debug;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Prod;
+		};
+		3EF15B68BD70ABAE88297A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		44850255CF7AC46AA81B89F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Prod-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Prod;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		49AF705100813D1B555656A2 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Prod;
+		};
+		5358A799B02213DA22F953F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5FBD387C6205B75BF64CF7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.MultiModuleTemplateTests;
+				PRODUCT_NAME = MultiModuleTemplateTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiModuleTemplate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MultiModuleTemplate";
+				TEST_TARGET_NAME = MultiModuleTemplate;
+			};
+			name = Release;
+		};
+		7BF77E1BE3A1679FC235651E /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Prod-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Prod;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Prod;
+		};
+		87D90D82F6F16046AFF93329 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Prod-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Prod;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Stage;
+		};
+		8F31566583F9CC01BBDB3F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Stage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Stage;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		977B1FC1226918478888272A /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A0F3D68494F15EF6D45F8C /* Prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BACKGROUND_MODES = "remote-notification";
+				CFBundleDevelopmentRegion = ko;
+				CFBundleDisplayName = MultiModuleTemplate;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 10;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N94CS4N6VR;
+				ENABLE_BACKGROUND_MODES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC -all_load";
+				PRODUCT_NAME = "MultiModuleTemplate-Prod";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.Roy.Module";
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Prod;
+		};
+		999EB3EB5AF3A0F3E295C5F9 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Debug-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Debug;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Stage;
+		};
+		9EE67DA3AF4D44AE5C82B0DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.MultiModuleTemplateTests;
+				PRODUCT_NAME = MultiModuleTemplateTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiModuleTemplate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MultiModuleTemplate";
+				TEST_TARGET_NAME = MultiModuleTemplate;
+			};
+			name = Debug;
+		};
+		9F1C04EADD7B7DAEB14074A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Debug-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Debug;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B65350952ECC639399B3D59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Prod-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Prod;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CACB2F8BEC1C85E411491505 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Stage;
+		};
+		CDB6C38A97269CC66CB3BC04 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.MultiModuleTemplateTests;
+				PRODUCT_NAME = MultiModuleTemplateTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiModuleTemplate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MultiModuleTemplate";
+				TEST_TARGET_NAME = MultiModuleTemplate;
+			};
+			name = Stage;
+		};
+		DD504FD372C8870078FE9579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5779DC223C622F5867341D /* Dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BACKGROUND_MODES = "remote-notification";
+				CFBundleDevelopmentRegion = ko;
+				CFBundleDisplayName = MultiModuleTemplate;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 10;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N94CS4N6VR;
+				ENABLE_BACKGROUND_MODES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC -all_load";
+				PRODUCT_NAME = MultiModuleTemplate;
+				PROVISIONING_PROFILE_SPECIFIER = "match Development io.Roy.Module";
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 6.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		E37262EB07A5C7D7C09E9A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Debug-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Debug;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F051645C637875BC4E8320B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 200393A8F10D1AA7DCFD45AC /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BACKGROUND_MODES = "remote-notification";
+				CFBundleDevelopmentRegion = ko;
+				CFBundleDisplayName = MultiModuleTemplate;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 10;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N94CS4N6VR;
+				ENABLE_BACKGROUND_MODES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC -all_load";
+				PRODUCT_NAME = MultiModuleTemplate;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.Roy.Module";
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F90BB78FCEC28FAD465B9841 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F0A938FEF53EF01450DAD8 /* Stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BACKGROUND_MODES = "remote-notification";
+				CFBundleDevelopmentRegion = ko;
+				CFBundleDisplayName = MultiModuleTemplate;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 10;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N94CS4N6VR;
+				ENABLE_BACKGROUND_MODES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC -all_load";
+				PRODUCT_NAME = "MultiModuleTemplate-Stage";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development io.Roy.Module";
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 6.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Stage;
+		};
+		F9D56CFFB8EF098ECF60662D /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
+				INFOPLIST_FILE = "Derived/InfoPlists/MultiModuleTemplate-Stage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
+					"-load-plugin-executable",
+					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
+				PRODUCT_NAME = MultiModuleTemplate_Stage;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Prod;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B56C61C10587AFDAC1E68C /* Build configuration list for PBXNativeTarget "MultiModuleTemplate-Prod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65350952ECC639399B3D59D /* Debug */,
+				7BF77E1BE3A1679FC235651E /* Prod */,
+				44850255CF7AC46AA81B89F1 /* Release */,
+				87D90D82F6F16046AFF93329 /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BF6E29023A4EE3551D78618 /* Build configuration list for PBXNativeTarget "MultiModuleTemplate-Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37262EB07A5C7D7C09E9A2D /* Debug */,
+				3CDC39274E1025AE6ABE7B1F /* Prod */,
+				9F1C04EADD7B7DAEB14074A5 /* Release */,
+				999EB3EB5AF3A0F3E295C5F9 /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33563C9B082A16994FFF415D /* Build configuration list for PBXNativeTarget "MultiModuleTemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE67DA3AF4D44AE5C82B0DA /* Debug */,
+				202DA5AF43492823C140C080 /* Prod */,
+				5FBD387C6205B75BF64CF7A3 /* Release */,
+				CDB6C38A97269CC66CB3BC04 /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E49904B689EE23D4C77D634 /* Build configuration list for PBXProject "MultiModuleTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD504FD372C8870078FE9579 /* Debug */,
+				977B1FC1226918478888272A /* Prod */,
+				F051645C637875BC4E8320B1 /* Release */,
+				F90BB78FCEC28FAD465B9841 /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CD34131E6F1BE682E790997 /* Build configuration list for PBXNativeTarget "MultiModuleTemplate-Stage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F31566583F9CC01BBDB3F39 /* Debug */,
+				F9D56CFFB8EF098ECF60662D /* Prod */,
+				0A8B52F1A080513C7CE66A46 /* Release */,
+				1827A6B7524E2D651E0D292C /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97345BFB43E5F8D228420361 /* Build configuration list for PBXNativeTarget "MultiModuleTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5358A799B02213DA22F953F2 /* Debug */,
+				49AF705100813D1B555656A2 /* Prod */,
+				3EF15B68BD70ABAE88297A59 /* Release */,
+				CACB2F8BEC1C85E411491505 /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52D09E446DF12D1DF74ABE90 /* Project object */;
+}

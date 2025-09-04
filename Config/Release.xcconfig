@@ -1,0 +1,19 @@
+//
+//  realse.xcconfig
+//  GoGo
+//
+//  Created by ha sungyong on 10/29/24.
+//
+
+#include "./Shared.xcconfig"
+
+OTHER_SWIFT_FLAGS[config=PROD][sdk=*] = $(inherited) -PROD
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD
+BUNDLE_DISPLAY_NAME = DDD 출석
+BASE_URL= home.ufxpri.dev/
+GOOGLE_CLIENT_ID = 882277748169-glpolfiecue4lqqps6hmgj9t8lm1g5qp.apps.googleusercontent.com
+REVERSED_CLIENT_ID = com.googleusercontent.apps.882277748169-glpolfiecue4lqqps6hmgj9t8lm1g5qp
+
+
+
+

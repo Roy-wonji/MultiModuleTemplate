@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Projects"
+      name = "Projects">
+      <FileRef
+         location = "group:App/MultiModuleTemplate.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Core"
+         name = "Core">
+         <FileRef
+            location = "group:Core/Core.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:Data"
+            name = "Data">
+            <FileRef
+               location = "group:Model/Model.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Repository/Repository.xcodeproj">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Domain"
+            name = "Domain">
+            <FileRef
+               location = "group:DomainInterface/DomainInterface.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:UseCase/UseCase.xcodeproj">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Network"
+            name = "Network">
+            <FileRef
+               location = "group:Network/Network.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Service/Service.xcodeproj">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Presentation"
+         name = "Presentation">
+         <FileRef
+            location = "group:Presentation/Presentation.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Shared"
+         name = "Shared">
+         <FileRef
+            location = "group:DesignSystem/DesignSystem.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Shared/Shared.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:ThirdParty/ThirdParty.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Utill/Utill.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Dependencies">
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/TCACoordinators/TCACoordinators.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/combine-schedulers/combine-schedulers.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-case-paths/swift-case-paths.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-clocks/swift-clocks.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-collections/swift-collections.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-composable-architecture/swift-composable-architecture.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-concurrency-extras/swift-concurrency-extras.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-custom-dump/swift-custom-dump.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-dependencies/swift-dependencies.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-identified-collections/swift-identified-collections.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-navigation/swift-navigation.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-perception/swift-perception.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-sharing/swift-sharing.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/xctest-dynamic-overlay/xctest-dynamic-overlay.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
