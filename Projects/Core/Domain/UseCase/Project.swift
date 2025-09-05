@@ -12,7 +12,7 @@ let project = Project.makeAppModule(
   settings:  .settings(),
   dependencies: [
     .Data(implements: .Repository),
-    .SPM.composableArchitecture,
+//    .SPM.composableArchitecture,
     .Domain(implements: .DomainInterface)
   ],
   sources: ["Sources/**"]

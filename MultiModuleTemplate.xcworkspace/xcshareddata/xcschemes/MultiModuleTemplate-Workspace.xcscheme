@@ -42,6 +42,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DBD1C6C6B55C0106C2711D38"
+               BuildableName = "CasePathsMacros"
+               BlueprintName = "CasePathsMacros"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-case-paths/swift-case-paths.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1DFC045089F7370FF821C6F"
                BuildableName = "Clocks.framework"
                BlueprintName = "Clocks"
@@ -73,6 +87,20 @@
                BlueprintIdentifier = "BC4117F08C3E566F28BA80F7"
                BuildableName = "ComposableArchitecture.framework"
                BlueprintName = "ComposableArchitecture"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-composable-architecture/swift-composable-architecture.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE906E2A067FA0ACAD789F11"
+               BuildableName = "ComposableArchitectureMacros"
+               BlueprintName = "ComposableArchitectureMacros"
                ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-composable-architecture/swift-composable-architecture.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -728,6 +756,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FEF8F0119F315E02A6904938"
+               BuildableName = "PerceptionMacros"
+               BlueprintName = "PerceptionMacros"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-perception/swift-perception.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F31459B2DA9E5BB7B7E73E2"
                BuildableName = "Presentation.framework"
                BlueprintName = "Presentation"
@@ -1050,6 +1092,62 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "114FBD9E0C8A1E594FBAE26F"
+               BuildableName = "SwiftBasicFormat.framework"
+               BlueprintName = "SwiftBasicFormat"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BAA2DFDEB950C2DAB26247A4"
+               BuildableName = "SwiftCompilerPlugin.framework"
+               BlueprintName = "SwiftCompilerPlugin"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E93ACA4C8B15E51B05C2F61D"
+               BuildableName = "SwiftCompilerPluginMessageHandling.framework"
+               BlueprintName = "SwiftCompilerPluginMessageHandling"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "748FFC58591037186F21E4AF"
+               BuildableName = "SwiftDiagnostics.framework"
+               BlueprintName = "SwiftDiagnostics"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "40524DC8200B6826FB2CF42C"
                BuildableName = "SwiftNavigation.framework"
                BlueprintName = "SwiftNavigation"
@@ -1064,10 +1162,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F54B0AD0FAFCF6AA8B17783"
-               BuildableName = "SwiftUINavigation.framework"
-               BlueprintName = "SwiftUINavigation"
-               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-navigation/swift-navigation.xcodeproj">
+               BlueprintIdentifier = "B81054C7484CA28454D8B4CE"
+               BuildableName = "SwiftOperators.framework"
+               BlueprintName = "SwiftOperators"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -1078,10 +1176,136 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3AF3F349EB5391BC0A46BC8C"
-               BuildableName = "TCACoordinators.framework"
-               BlueprintName = "TCACoordinators"
-               ReferencedContainer = "container:Tuist/.build/tuist-derived/TCACoordinators/TCACoordinators.xcodeproj">
+               BlueprintIdentifier = "CB4CE5083ACF4EE5DCEA043E"
+               BuildableName = "SwiftParser.framework"
+               BlueprintName = "SwiftParser"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DF2FC39D6DEDC29667D46596"
+               BuildableName = "SwiftParserDiagnostics.framework"
+               BlueprintName = "SwiftParserDiagnostics"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F625BBB9CD69788B960E4ADB"
+               BuildableName = "SwiftSyntax.framework"
+               BlueprintName = "SwiftSyntax"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B0A8CAFAE3CA114D679D02CD"
+               BuildableName = "SwiftSyntax509.framework"
+               BlueprintName = "SwiftSyntax509"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9B5FEE59760A931CD91D78F3"
+               BuildableName = "SwiftSyntax510.framework"
+               BlueprintName = "SwiftSyntax510"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6DE4BE3F7815F5EAE293D552"
+               BuildableName = "SwiftSyntax600.framework"
+               BlueprintName = "SwiftSyntax600"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6B23134A13672C26A2911FCE"
+               BuildableName = "SwiftSyntaxBuilder.framework"
+               BlueprintName = "SwiftSyntaxBuilder"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43F82D27B454B21563A235E0"
+               BuildableName = "SwiftSyntaxMacroExpansion.framework"
+               BlueprintName = "SwiftSyntaxMacroExpansion"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "66BC27FFC6C6DA572EEAEC5C"
+               BuildableName = "SwiftSyntaxMacros.framework"
+               BlueprintName = "SwiftSyntaxMacros"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9F54B0AD0FAFCF6AA8B17783"
+               BuildableName = "SwiftUINavigation.framework"
+               BlueprintName = "SwiftUINavigation"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-navigation/swift-navigation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -1334,6 +1558,20 @@
                BuildableName = "XCTestDynamicOverlay.framework"
                BlueprintName = "XCTestDynamicOverlay"
                ReferencedContainer = "container:Tuist/.build/tuist-derived/xctest-dynamic-overlay/xctest-dynamic-overlay.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0A53192A7011B08CCC7F8D0D"
+               BuildableName = "_SwiftSyntaxCShims.framework"
+               BlueprintName = "_SwiftSyntaxCShims"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry

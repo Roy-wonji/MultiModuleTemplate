@@ -10,13 +10,11 @@ let project = Project.makeAppModule(
   settings: .appMainSetting,
   scripts: [],
   dependencies: [
-    .Shared(implements: .Shared),
-    .Core(implements: .Core),
-    .Presentation(implements: .Presentation),
+    .Presentation(implements: .Presentation)
   ],
   sources: ["Sources/**"],
   resources: ["Resources/**"],
   infoPlist: .appInfoPlist,
-//  entitlements: .file(path: "../../Entitlements/DDDAttendance.entitlements"),
+  
 )
 

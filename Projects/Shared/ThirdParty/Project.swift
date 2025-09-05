@@ -12,7 +12,6 @@ let project = Project.makeAppModule(
   settings:  .settings(),
   dependencies: [
     .SPM.composableArchitecture,
-    .SPM.tcaCoordinator
   ],
   sources: ["Sources/**"]
 )

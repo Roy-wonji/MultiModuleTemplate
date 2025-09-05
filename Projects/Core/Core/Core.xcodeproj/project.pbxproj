@@ -7,54 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0741B662DD021EE9DC285449 /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = D965F19D7CDBE741D5E4BC67 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
-		09AE17653F5CC350E8D3C66C /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */; };
-		0FD6AE119F7F25BEA636D9AA /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582C98DCCD6CD95C2BFF045F /* Base.swift */; };
-		11D6FDD5BA3A2B4D063FC74A /* UseCase.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
-		16AE2C1501853432A90AB98B /* Network.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
-		17AFA2F78FF6036B0ED5AE73 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E57E374A54F7AB6E29DC2 /* Sharing1.framework */; };
-		1D9F665899C0A1842451814E /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE351E328C333744FEAAACEF /* Clocks.framework */; };
-		1FA462C1CC95CEB52ADD430F /* UseCase.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
-		23403FE6A7A808E7C7370F1E /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */; };
-		295AF71D3FDBB3AB6A22E218 /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */; };
-		29676669F0AB5BBDC31DFDAC /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C516A0389461EC9B5D46E /* Model.framework */; };
-		29941B44EBF2A79BFE016C99 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
-		3177678FEF2629557D26904D /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582C98DCCD6CD95C2BFF045F /* Base.swift */; };
-		3DE1D52265CF97679296909C /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70750465C5300D484ABA9F60 /* PerceptionCore.framework */; };
-		4EFBB932B65FF472590F1C62 /* Network.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
-		5BEF1F499711C03A721FEFB4 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */; };
-		5CB29D72D1FE671A3BFE6D7B /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D965F19D7CDBE741D5E4BC67 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
-		5ECEAC3679704176AEDED160 /* UseCase.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
-		61D8EFBE44FD4F7F81A1EB67 /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
-		62746F1C6A885411CC423F9A /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */; };
-		66EEEE53E27FAC870E87645E /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */; };
-		6B3C0EE6CC4023996976A966 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB917DE30C69F723BDF65353 /* Dependencies.framework */; };
-		6B6DDEC8FEBDCA250F66F021 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */; };
-		6BCBCE407A28F91FFB46BF99 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED045ECCC0A0126F7A4BC13 /* Service.framework */; };
-		6CCB3859BF7263A4050DFE1B /* UseCase.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
-		73B227E88875DC723B874A3B /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */; };
-		741A5006FF2D931F1EFAC7E4 /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8D5448233F039D5A9089DCB /* swift-sharing_Sharing.bundle */; };
-		8C3236EDFEFCCD376C0BA993 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */; };
+		04950684383BD50C3C3F0634 /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
+		057E6747738EDE1A9D804300 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C68C2ED81026636D7F75 /* CoreExport.swift */; };
+		0ABD067AC835C34B144A119C /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
+		0EF10848EB1E5A8ED6641F12 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED045ECCC0A0126F7A4BC13 /* Service.framework */; };
+		10DC8B84900B315C91AF6EDD /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
+		36993172D516F95C289F2335 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
+		4136091B0498B913CAF09504 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED045ECCC0A0126F7A4BC13 /* Service.framework */; };
+		4A8A4FF21E2466F27305A4B8 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
+		57C0F9688A74616539B65893 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
+		5A9AA023C2642C5EE42E3CAE /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
+		70D5DB78FC01271FA17127DB /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
+		9020315D7561610CEF9526ED /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
 		90F9749BFCF03B4AB847C6B1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E427963EEC5B2C6424367BB /* Test.swift */; };
-		9444B626F45CA5BE86C46B75 /* Network.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
-		94B984FDB4595C62D67F76D2 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */; };
-		979007C1272DFEBD6DBD755F /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */; };
-		ACD998D5ED2BDF9CEE159409 /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = B8D5448233F039D5A9089DCB /* swift-sharing_Sharing.bundle */; };
-		BB166AEB80170DC07A59728A /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690CFF7D8527FFE80ABE74D /* Sharing2.framework */; };
+		97F28BD6F9D8D7A375441ADC /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
+		A7B8C8A10E30EC8A4499A4D7 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C68C2ED81026636D7F75 /* CoreExport.swift */; };
+		A94DFA8DD7548315BB0CF161 /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
+		AA2C8708317F5556E909D43A /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
+		AE873DF4A98FEBAC5DAB4E05 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
 		BC8595A1E286E2F5B6EF15C9 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0FA7F85F3573FB522F9478 /* Core.framework */; };
-		BDE61C949D6FB7DC56123B78 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
-		BE4475BE52AA2F4D466CB475 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6739389F41AD55401939AA3 /* CustomDump.framework */; };
-		C4C57DB2F8BD70865359C16C /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */; };
-		C92658201E234DA6A5F288A7 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
-		CE4013A0A1D971EF11B2DE7E /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */; };
-		D6DCCE123E85D8B8544D5E46 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582C98DCCD6CD95C2BFF045F /* Base.swift */; };
-		D74AAACA27391970511F0343 /* Network.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
-		DD6945DD4C2AEA0C9DD000E7 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582C98DCCD6CD95C2BFF045F /* Base.swift */; };
-		DF9B3AC64F495F0DD36AA80E /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */; };
-		E12AE583572FB769F7ADA3CF /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */; };
-		E3D39C532F29323A5E4C06CE /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */; };
-		EC65EC98E0FEC2E03E7DADFC /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */; };
-		F39BAB2993A28AD7ACBD628E /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */; };
+		BE857EFA75A291E0D632FBF8 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8B6B85F2D6B69FE70C1FBE /* Network.framework */; };
+		C1234BEE27DE517F8CE3A864 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED045ECCC0A0126F7A4BC13 /* Service.framework */; };
+		CFD8561A3158F0E8D1F37E31 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C68C2ED81026636D7F75 /* CoreExport.swift */; };
+		D6FB16CDB69D52FF171AE043 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED045ECCC0A0126F7A4BC13 /* Service.framework */; };
+		E5D416E83E8404C167333304 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
+		F4B05E023463D745BA025CD8 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C68C2ED81026636D7F75 /* CoreExport.swift */; };
+		FA3AE178AFC2EC94AE27EDDF /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,17 +66,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B67707ED35F2DA05F9FFEC7 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				4EFBB932B65FF472590F1C62 /* Network.framework in Dependencies */,
-				1FA462C1CC95CEB52ADD430F /* UseCase.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		2C70A176FC2F8BBE09A41076 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,17 +76,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		787952B97F5276648B9F3258 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				0741B662DD021EE9DC285449 /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */,
-				ACD998D5ED2BDF9CEE159409 /* swift-sharing_Sharing.bundle in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		BDF7A6E43B5BED04E4D93612 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,39 +85,6 @@
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA84D05AFEA6D9633EB4BE48 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				9444B626F45CA5BE86C46B75 /* Network.framework in Dependencies */,
-				11D6FDD5BA3A2B4D063FC74A /* UseCase.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		E0CF0C502C89B79E599E0E1D /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				D74AAACA27391970511F0343 /* Network.framework in Dependencies */,
-				5ECEAC3679704176AEDED160 /* UseCase.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		E66347834B9000A283006EA2 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				16AE2C1501853432A90AB98B /* Network.framework in Dependencies */,
-				6CCB3859BF7263A4050DFE1B /* UseCase.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
 		};
 		F09523A53F8DCAD5A57EF624 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -176,49 +99,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReporting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConcurrencyExtras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InternalCollectionsUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		141E57E374A54F7AB6E29DC2 /* Sharing1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E60B05721CBE85B6C02D7B /* Core-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Stage-Info.plist"; sourceTree = "<group>"; };
-		2690CFF7D8527FFE80ABE74D /* Sharing2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BDD2D3E7FED8CDE9A52F46 /* Core-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Info.plist"; sourceTree = "<group>"; };
 		2B0FA7F85F3573FB522F9478 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E313EC3E53C9ED17660FD3F /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED045ECCC0A0126F7A4BC13 /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F9C516A0389461EC9B5D46E /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePathsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		582C98DCCD6CD95C2BFF045F /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		5A90C6A79C8439A9A5D64BA3 /* Core-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Debug-Info.plist"; sourceTree = "<group>"; };
-		70750465C5300D484ABA9F60 /* PerceptionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerceptionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigationShim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9DCFA69D5780FF990FEFE1 /* Core_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E427963EEC5B2C6424367BB /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReportingPackageSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B638D8DB02624DD45D49E2 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB917DE30C69F723BDF65353 /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTestDynamicOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32D5F89E693F7E3F2558610 /* Core-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Prod-Info.plist"; sourceTree = "<group>"; };
-		B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUINavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6739389F41AD55401939AA3 /* CustomDump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomDump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89ECB181A314C23A60BB911 /* DomainInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8D5448233F039D5A9089DCB /* swift-sharing_Sharing.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-sharing_Sharing.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComposableArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependenciesMacros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B9CE641601ED6073ABDA8E /* Core_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2D4CD69407DE3A95F1B5E7 /* Core_Stage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core_Stage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81A5985FBB055CC8CA4FAB8 /* CoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CoreTests-Info.plist"; sourceTree = "<group>"; };
-		D965F19D7CDBE741D5E4BC67 /* swift-composable-architecture_ComposableArchitecture.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-composable-architecture_ComposableArchitecture.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE351E328C333744FEAAACEF /* Clocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE81E51C38BC7DF49AD255BD /* UseCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UseCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentifiedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineSchedulers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB3C68C2ED81026636D7F75 /* CoreExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreExport.swift; sourceTree = "<group>"; };
 		FD8B6B85F2D6B69FE70C1FBE /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -227,6 +123,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94DFA8DD7548315BB0CF161 /* DomainInterface.framework in Frameworks */,
+				10DC8B84900B315C91AF6EDD /* Network.framework in Frameworks */,
+				0ABD067AC835C34B144A119C /* Repository.framework in Frameworks */,
+				D6FB16CDB69D52FF171AE043 /* Service.framework in Frameworks */,
+				4A8A4FF21E2466F27305A4B8 /* UseCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +135,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2C8708317F5556E909D43A /* DomainInterface.framework in Frameworks */,
+				97F28BD6F9D8D7A375441ADC /* Network.framework in Frameworks */,
+				70D5DB78FC01271FA17127DB /* Repository.framework in Frameworks */,
+				C1234BEE27DE517F8CE3A864 /* Service.framework in Frameworks */,
+				5A9AA023C2642C5EE42E3CAE /* UseCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +147,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04950684383BD50C3C3F0634 /* DomainInterface.framework in Frameworks */,
+				BE857EFA75A291E0D632FBF8 /* Network.framework in Frameworks */,
+				E5D416E83E8404C167333304 /* Repository.framework in Frameworks */,
+				4136091B0498B913CAF09504 /* Service.framework in Frameworks */,
+				57C0F9688A74616539B65893 /* UseCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +159,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9020315D7561610CEF9526ED /* DomainInterface.framework in Frameworks */,
+				AE873DF4A98FEBAC5DAB4E05 /* Network.framework in Frameworks */,
+				FA3AE178AFC2EC94AE27EDDF /* Repository.framework in Frameworks */,
+				0EF10848EB1E5A8ED6641F12 /* Service.framework in Frameworks */,
+				36993172D516F95C289F2335 /* UseCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,43 +171,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B227E88875DC723B874A3B /* CasePaths.framework in Frameworks */,
-				E12AE583572FB769F7ADA3CF /* CasePathsCore.framework in Frameworks */,
-				1D9F665899C0A1842451814E /* Clocks.framework in Frameworks */,
-				DF9B3AC64F495F0DD36AA80E /* CombineSchedulers.framework in Frameworks */,
-				23403FE6A7A808E7C7370F1E /* ComposableArchitecture.framework in Frameworks */,
-				62746F1C6A885411CC423F9A /* ConcurrencyExtras.framework in Frameworks */,
 				BC8595A1E286E2F5B6EF15C9 /* Core.framework in Frameworks */,
-				BE4475BE52AA2F4D466CB475 /* CustomDump.framework in Frameworks */,
-				6B3C0EE6CC4023996976A966 /* Dependencies.framework in Frameworks */,
-				EC65EC98E0FEC2E03E7DADFC /* DependenciesMacros.framework in Frameworks */,
-				61D8EFBE44FD4F7F81A1EB67 /* DomainInterface.framework in Frameworks */,
-				8C3236EDFEFCCD376C0BA993 /* IdentifiedCollections.framework in Frameworks */,
-				C4C57DB2F8BD70865359C16C /* InternalCollectionsUtilities.framework in Frameworks */,
-				F39BAB2993A28AD7ACBD628E /* IssueReporting.framework in Frameworks */,
-				09AE17653F5CC350E8D3C66C /* IssueReportingPackageSupport.framework in Frameworks */,
-				29676669F0AB5BBDC31DFDAC /* Model.framework in Frameworks */,
-				BDE61C949D6FB7DC56123B78 /* Network.framework in Frameworks */,
-				5BEF1F499711C03A721FEFB4 /* OrderedCollections.framework in Frameworks */,
-				6B6DDEC8FEBDCA250F66F021 /* Perception.framework in Frameworks */,
-				3DE1D52265CF97679296909C /* PerceptionCore.framework in Frameworks */,
-				C92658201E234DA6A5F288A7 /* Repository.framework in Frameworks */,
-				6BCBCE407A28F91FFB46BF99 /* Service.framework in Frameworks */,
-				979007C1272DFEBD6DBD755F /* Sharing.framework in Frameworks */,
-				17AFA2F78FF6036B0ED5AE73 /* Sharing1.framework in Frameworks */,
-				BB166AEB80170DC07A59728A /* Sharing2.framework in Frameworks */,
-				CE4013A0A1D971EF11B2DE7E /* SwiftNavigation.framework in Frameworks */,
-				94B984FDB4595C62D67F76D2 /* SwiftUINavigation.framework in Frameworks */,
-				66EEEE53E27FAC870E87645E /* UIKitNavigation.framework in Frameworks */,
-				295AF71D3FDBB3AB6A22E218 /* UIKitNavigationShim.framework in Frameworks */,
-				29941B44EBF2A79BFE016C99 /* UseCase.framework in Frameworks */,
-				E3D39C532F29323A5E4C06CE /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005AF892A3A3BE740783E3C3 /* Exported */ = {
+			isa = PBXGroup;
+			children = (
+				DEB3C68C2ED81026636D7F75 /* CoreExport.swift */,
+			);
+			path = Exported;
+			sourceTree = "<group>";
+		};
 		0AA7A05CA7B8CE68A00A0D5F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,43 +197,16 @@
 		250C62EE12DB56ECEBB473C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */,
-				3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */,
-				DE351E328C333744FEAAACEF /* Clocks.framework */,
-				ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */,
-				BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */,
-				10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */,
 				8A9DCFA69D5780FF990FEFE1 /* Core_Debug.framework */,
 				C3B9CE641601ED6073ABDA8E /* Core_Prod.framework */,
 				CA2D4CD69407DE3A95F1B5E7 /* Core_Stage.framework */,
 				2B0FA7F85F3573FB522F9478 /* Core.framework */,
 				3E313EC3E53C9ED17660FD3F /* CoreTests.xctest */,
-				B6739389F41AD55401939AA3 /* CustomDump.framework */,
-				AB917DE30C69F723BDF65353 /* Dependencies.framework */,
-				C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */,
 				B89ECB181A314C23A60BB911 /* DomainInterface.framework */,
-				DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */,
-				12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */,
-				03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */,
-				9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */,
-				3F9C516A0389461EC9B5D46E /* Model.framework */,
 				FD8B6B85F2D6B69FE70C1FBE /* Network.framework */,
-				FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */,
-				1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */,
-				70750465C5300D484ABA9F60 /* PerceptionCore.framework */,
 				A6B638D8DB02624DD45D49E2 /* Repository.framework */,
 				3ED045ECCC0A0126F7A4BC13 /* Service.framework */,
-				4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */,
-				141E57E374A54F7AB6E29DC2 /* Sharing1.framework */,
-				2690CFF7D8527FFE80ABE74D /* Sharing2.framework */,
-				D965F19D7CDBE741D5E4BC67 /* swift-composable-architecture_ComposableArchitecture.bundle */,
-				B8D5448233F039D5A9089DCB /* swift-sharing_Sharing.bundle */,
-				091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */,
-				B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */,
-				AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */,
-				84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */,
 				DE81E51C38BC7DF49AD255BD /* UseCase.framework */,
-				B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,7 +242,7 @@
 		81104ECEC5CD1B0F5111557B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				582C98DCCD6CD95C2BFF045F /* Base.swift */,
+				005AF892A3A3BE740783E3C3 /* Exported */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -409,7 +276,6 @@
 				07EAA56C4A3A84EB3B22A329 /* Resources */,
 				6F0BEFA54B77D8AD5CC51C4E /* Frameworks */,
 				1E9A2FDAECA90F5696951540 /* Embed Frameworks */,
-				E0CF0C502C89B79E599E0E1D /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -430,7 +296,6 @@
 				DB514001747A8838395DE260 /* Resources */,
 				53BD653179EC7C334683F5ED /* Frameworks */,
 				F09523A53F8DCAD5A57EF624 /* Embed Frameworks */,
-				2B67707ED35F2DA05F9FFEC7 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -451,7 +316,6 @@
 				77ACEF4C04545869374F3C3D /* Resources */,
 				EAFB5A562EB01EC63021A153 /* Frameworks */,
 				BDF7A6E43B5BED04E4D93612 /* Embed Frameworks */,
-				E66347834B9000A283006EA2 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -472,7 +336,6 @@
 				1D6B11F444EAE21363FF0969 /* Resources */,
 				F678B080F62A8C8E01BCF980 /* Frameworks */,
 				2C70A176FC2F8BBE09A41076 /* Embed Frameworks */,
-				787952B97F5276648B9F3258 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -494,7 +357,6 @@
 				3FEE3D1A9FD48DDE5D5CDD8B /* Resources */,
 				BF69E59B74296DB134C1F9E4 /* Frameworks */,
 				2A34CD9447D0001C8C98AEF5 /* Embed Frameworks */,
-				CA84D05AFEA6D9633EB4BE48 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -551,8 +413,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB29D72D1FE671A3BFE6D7B /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */,
-				741A5006FF2D931F1EFAC7E4 /* swift-sharing_Sharing.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FD6AE119F7F25BEA636D9AA /* Base.swift in Sources */,
+				CFD8561A3158F0E8D1F37E31 /* CoreExport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6DCCE123E85D8B8544D5E46 /* Base.swift in Sources */,
+				A7B8C8A10E30EC8A4499A4D7 /* CoreExport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,7 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD6945DD4C2AEA0C9DD000E7 /* Base.swift in Sources */,
+				057E6747738EDE1A9D804300 /* CoreExport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3177678FEF2629557D26904D /* Base.swift in Sources */,
+				F4B05E023463D745BA025CD8 /* CoreExport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,11 +554,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Stage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -706,27 +561,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
 				PRODUCT_NAME = Core_Stage;
@@ -752,37 +586,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/CoreTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core.CoreTests;
 				PRODUCT_NAME = CoreTests;
@@ -806,11 +615,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Prod-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -818,27 +622,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
 				PRODUCT_NAME = Core_Prod;
@@ -869,11 +652,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Prod-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -881,27 +659,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
 				PRODUCT_NAME = Core_Prod;
@@ -928,11 +685,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Debug-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -940,27 +692,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
 				PRODUCT_NAME = Core_Debug;
@@ -991,11 +722,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Debug-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1003,27 +729,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
 				PRODUCT_NAME = Core_Debug;
@@ -1045,37 +750,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/CoreTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core.CoreTests;
 				PRODUCT_NAME = CoreTests;
@@ -1162,11 +842,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Stage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1174,27 +849,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
 				PRODUCT_NAME = Core_Stage;
@@ -1221,11 +875,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1233,27 +882,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
 				PRODUCT_NAME = Core;
@@ -1284,11 +912,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1296,27 +919,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
 				PRODUCT_NAME = Core;

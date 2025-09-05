@@ -8,7 +8,7 @@ import DependencyPackagePlugin
 let project = Project.makeAppModule(
   name: "Core",
   bundleId: .appBundleID(name: ".Core"),
-  product: .staticFramework,
+  product: .framework,
   settings:  .settings(),
   dependencies: [
     .Domain(implements: .UseCase),

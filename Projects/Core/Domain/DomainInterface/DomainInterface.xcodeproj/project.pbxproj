@@ -8,16 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		253ADDBA7F0F518205DA6086 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CCB4A5101AA202060F9AA /* Base.swift */; };
-		32F96CC4681C564A878EDBF1 /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
 		353BF1AD56F4CC357E19D719 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8C9CF1C2E1A74CF11222B2 /* Test.swift */; };
 		57E5E0940F81FC8D1DFD045E /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D56B0B55DD9F93D8170AD5 /* DomainInterface.framework */; };
-		7A7FB85390A2933C5CF18C9F /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
-		888B43BDDCEB71003BF1B604 /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
+		72E1BB6284DCE3777F9AFFC6 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
 		980FB81611FF729E004936AD /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CCB4A5101AA202060F9AA /* Base.swift */; };
 		B3FF7F599D59926AF7C5431F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CCB4A5101AA202060F9AA /* Base.swift */; };
-		D69D0AA905D57FF8464C9BAB /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
+		BC207C9DA5E4673477A9C014 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
 		DB51ABC4FB182C4238F4C2BE /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CCB4A5101AA202060F9AA /* Base.swift */; };
-		EB129ED46F27E04F8A934272 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
+		ECB93EACF0EFEE45B37EC544 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
+		FCC7D056697F3ACC66085599 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,26 +60,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		798B9E5851C0CD2C76474029 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				32F96CC4681C564A878EDBF1 /* Model.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		7C86E4889A3A378B3D4D7F89 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				D69D0AA905D57FF8464C9BAB /* Model.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		9D79E02ED2CC309DCC94DC6F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,16 +70,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF6B28E70C99AE2595357816 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				888B43BDDCEB71003BF1B604 /* Model.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		CD0B5B3B0D3D07140CBA60DE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,16 +79,6 @@
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0A12337EB5C5B9811017A1B /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				7A7FB85390A2933C5CF18C9F /* Model.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -144,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC7D056697F3ACC66085599 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +112,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E5E0940F81FC8D1DFD045E /* DomainInterface.framework in Frameworks */,
-				EB129ED46F27E04F8A934272 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC207C9DA5E4673477A9C014 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB93EACF0EFEE45B37EC544 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E1BB6284DCE3777F9AFFC6 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +249,6 @@
 				8CEB595AAE7E4EB32BB3299E /* Resources */,
 				88735A2EDF5C472EB4CA9C4B /* Frameworks */,
 				687EC422302A10040B95481D /* Embed Frameworks */,
-				7C86E4889A3A378B3D4D7F89 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -308,7 +269,6 @@
 				E01008495EA84D1DBFF4CCC5 /* Resources */,
 				6D6C17804B3AEBB1E5BCB21B /* Frameworks */,
 				53C7081312662314E2BBF6EA /* Embed Frameworks */,
-				AF6B28E70C99AE2595357816 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -329,7 +289,6 @@
 				AEB7ABE96530385979B3F7D6 /* Resources */,
 				C75A23A70B6EAB0F7CE475CC /* Frameworks */,
 				2DC14040DEB620BCDE1BAB4F /* Embed Frameworks */,
-				F0A12337EB5C5B9811017A1B /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -350,7 +309,6 @@
 				7388B2A88535304E0DF5D587 /* Resources */,
 				C648580FD00AC596A51289B6 /* Frameworks */,
 				9D79E02ED2CC309DCC94DC6F /* Embed Frameworks */,
-				798B9E5851C0CD2C76474029 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -503,7 +461,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
 				PRODUCT_NAME = DomainInterface;
 				SDKROOT = iphoneos;
@@ -537,7 +494,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Prod;
 				SDKROOT = iphoneos;
@@ -571,7 +527,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Debug;
 				SDKROOT = iphoneos;
@@ -609,7 +564,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Debug;
 				SDKROOT = iphoneos;
@@ -702,7 +656,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Stage;
 				SDKROOT = iphoneos;
@@ -760,7 +713,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
 				PRODUCT_NAME = DomainInterface;
 				SDKROOT = iphoneos;
@@ -798,7 +750,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Stage;
 				SDKROOT = iphoneos;
@@ -864,7 +815,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Prod;
 				SDKROOT = iphoneos;

@@ -16,7 +16,6 @@ let package = Package(
     name: "MultiModuleTemplate",
     dependencies: [
       .package(url: "http://github.com/pointfreeco/swift-composable-architecture", exact: "1.18.0"),
-      .package(url: "https://github.com/johnpatrickmorgan/TCACoordinators.git", exact: "0.11.1"),
       .package(url: "https://github.com/Roy-wonji/DiContainer.git", from: "1.1.4")
     ]
 )

@@ -11,8 +11,7 @@ let project = Project.makeAppModule(
   product: .staticFramework,
   settings:  .settings(),
   dependencies: [
-    
-    .Network(implements: .Service),
+    .Network(implements: .Service)
   ],
   sources: ["Sources/**"]
 )

@@ -8,7 +8,7 @@ import DependencyPackagePlugin
 let project = Project.makeAppModule(
   name: "Shared",
   bundleId: .appBundleID(name: ".Shared"),
-  product: .staticFramework,
+  product: .framework,
   settings:  .settings(),
   dependencies: [
     .Shared(implements: .ThirdParty),

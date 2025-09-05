@@ -19,11 +19,9 @@
 		459C5FD5AD31D8A6C6628DC6 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB088CFCF5B751E961933C0 /* ComposableArchitecture.framework */; };
 		4D34235D228D6EE9C27534F0 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AE888EDA3909F45835B514 /* Sharing.framework */; };
 		4D4CF95D400DCA4D0B3D6B51 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE127F8400BF4F674847DF5D /* Perception.framework */; };
-		4DB26A5D872C7AB1F47F04DE /* TCACoordinators.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		551ABD7544CD267AE6CC195C /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDA5D0BD3E8E323677EB026 /* Clocks.framework */; };
 		603FE92EDB472C61D8437F72 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36F1CA8CC4B96FA2609B4DF /* SwiftNavigation.framework */; };
 		653474AB185843E0DF662DD1 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBE83BD9D8603167735DBA2 /* Sharing2.framework */; };
-		6BC1A53B34C1F04511222D81 /* TCACoordinators.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		78AC8F364BB31C11BB2FEC02 /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCBFAAA9644395883C4A718 /* ThirdParty.framework */; };
 		78E505D53CA7826ADE9757E2 /* ComposableArchitecture.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3BB088CFCF5B751E961933C0 /* ComposableArchitecture.framework */; };
 		9003C2D283711C20FDBB33E0 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9510426F57C0386AD282AAA8 /* ConcurrencyExtras.framework */; };
@@ -32,7 +30,6 @@
 		96668040EAC7FFF193982EC5 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7E5510FEC285549404D23A /* XCTestDynamicOverlay.framework */; };
 		985AAB619CA4E6F97CA797F3 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AF99B4D617683E25151E3 /* OrderedCollections.framework */; };
 		98A0DA222D9BA10DFD520C3F /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E057B5A6C190B51DEA95A52C /* Dependencies.framework */; };
-		9B3801B19ADE9DA019023136 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		9C1C6C8D2E3E4B380A8C8B55 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075BC2A5FD001078D38856E6 /* CustomDump.framework */; };
 		9CFE05FA0C9CD8ADC787C716 /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A7606444B2A24E9A29BE1F /* DependenciesMacros.framework */; };
 		A1E39C81459EE28C97417885 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9962B6781CF429287378C23C /* UIKitNavigation.framework */; };
@@ -41,13 +38,10 @@
 		B15FBED9FEBEFF4C5E31049B /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FB87EE5D02B2E41676C721 /* PerceptionCore.framework */; };
 		B24DF497249FDEACB5D8334F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC163A6902C6C732FD855A /* Base.swift */; };
 		BDC04BFA40CBD6A5E3B4386C /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0606655A5FEF1EA3A2F658DD /* SwiftUINavigation.framework */; };
-		C209666CE26B391858AD9DA8 /* FlowStacks.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78C8EFC6B24CD07FD43E349 /* FlowStacks.xcframework */; };
-		C2BF74E44110BFE4F5CC9CCA /* TCACoordinators.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		C2E18D714C5C12B8DD0A521B /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76271C889E6D86C7D22CB056 /* swift-sharing_Sharing.bundle */; };
 		CDD2ABB41363C0E333172654 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC163A6902C6C732FD855A /* Base.swift */; };
 		D19BDCDFE47D3555554F163E /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 76271C889E6D86C7D22CB056 /* swift-sharing_Sharing.bundle */; };
 		D713F9D884B7FC901851460B /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE34E7FD7B776485C4F5686B /* IssueReportingPackageSupport.framework */; };
-		DCA9D19CBFFC9C21FC918FDA /* TCACoordinators.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		E97EB92A32723612E3973813 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1193D224A436351DC8E329 /* CasePaths.framework */; };
 		EAA7CEA224A883C2C0DA46BA /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F3DB55EAF01D251BFF4B56 /* IdentifiedCollections.framework */; };
 		F8931CEA6B1AF2B9FE40DCA8 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F14DEE44EEA5E5AE73AB020 /* Sharing1.framework */; };
@@ -100,7 +94,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				78E505D53CA7826ADE9757E2 /* ComposableArchitecture.framework in Dependencies */,
-				4DB26A5D872C7AB1F47F04DE /* TCACoordinators.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -111,7 +104,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				1D6C4D67EC8C19AC634855BC /* ComposableArchitecture.framework in Dependencies */,
-				DCA9D19CBFFC9C21FC918FDA /* TCACoordinators.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -122,7 +114,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				05929F461A316092B9BA2153 /* ComposableArchitecture.framework in Dependencies */,
-				C2BF74E44110BFE4F5CC9CCA /* TCACoordinators.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -164,7 +155,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				107C62AE9CD667F46B4E15A1 /* ComposableArchitecture.framework in Dependencies */,
-				6BC1A53B34C1F04511222D81 /* TCACoordinators.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -198,12 +188,10 @@
 		A0F3DB55EAF01D251BFF4B56 /* IdentifiedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentifiedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AE888EDA3909F45835B514 /* Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA036898E83738C48199540 /* ThirdParty-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdParty-Prod-Info.plist"; sourceTree = "<group>"; };
-		B20D6714E7DB36C7B061414E /* TCACoordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCACoordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36F1CA8CC4B96FA2609B4DF /* SwiftNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E1A842F278744F11160DFB /* ThirdParty_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdParty_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE127F8400BF4F674847DF5D /* Perception.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32AF99B4D617683E25151E3 /* OrderedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D78C8EFC6B24CD07FD43E349 /* FlowStacks.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlowStacks.xcframework; path = /Users/suhwonji/.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6/FlowStacks.xcframework; sourceTree = "<absolute>"; };
 		D9FB87EE5D02B2E41676C721 /* PerceptionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerceptionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCBFAAA9644395883C4A718 /* ThirdParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E057B5A6C190B51DEA95A52C /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,12 +249,10 @@
 				653474AB185843E0DF662DD1 /* Sharing2.framework in Frameworks */,
 				603FE92EDB472C61D8437F72 /* SwiftNavigation.framework in Frameworks */,
 				BDC04BFA40CBD6A5E3B4386C /* SwiftUINavigation.framework in Frameworks */,
-				9B3801B19ADE9DA019023136 /* TCACoordinators.framework in Frameworks */,
 				78AC8F364BB31C11BB2FEC02 /* ThirdParty.framework in Frameworks */,
 				A1E39C81459EE28C97417885 /* UIKitNavigation.framework in Frameworks */,
 				A268E18642DBC591738B7F88 /* UIKitNavigationShim.framework in Frameworks */,
 				96668040EAC7FFF193982EC5 /* XCTestDynamicOverlay.framework in Frameworks */,
-				C209666CE26B391858AD9DA8 /* FlowStacks.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +295,6 @@
 			children = (
 				E8CAC09490FDE4FD320C5225 /* Project */,
 				C04DB49BAFD37E93F4993806 /* Products */,
-				D2E0F771C03529478F34E406 /* Cache */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,7 +336,6 @@
 				76271C889E6D86C7D22CB056 /* swift-sharing_Sharing.bundle */,
 				B36F1CA8CC4B96FA2609B4DF /* SwiftNavigation.framework */,
 				0606655A5FEF1EA3A2F658DD /* SwiftUINavigation.framework */,
-				B20D6714E7DB36C7B061414E /* TCACoordinators.framework */,
 				23C9FE08FD9C2C513D1679DB /* ThirdParty_Debug.framework */,
 				B3E1A842F278744F11160DFB /* ThirdParty_Prod.framework */,
 				6865A708D3CFBD5D900FD8EA /* ThirdParty_Stage.framework */,
@@ -370,14 +354,6 @@
 				88DC163A6902C6C732FD855A /* Base.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		D2E0F771C03529478F34E406 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				D78C8EFC6B24CD07FD43E349 /* FlowStacks.xcframework */,
-			);
-			name = Cache;
 			sourceTree = "<group>";
 		};
 		E8CAC09490FDE4FD320C5225 /* Project */ = {
@@ -681,10 +657,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
-				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
@@ -709,13 +681,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty.ThirdPartyTests;
 				PRODUCT_NAME = ThirdPartyTests;
@@ -765,13 +737,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Prod;
@@ -828,13 +800,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Debug;
@@ -891,13 +863,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Debug;
@@ -950,13 +922,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Prod;
@@ -1009,13 +981,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Stage;
@@ -1068,13 +1040,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
 				PRODUCT_NAME = ThirdParty;
@@ -1131,13 +1103,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Stage;
@@ -1163,10 +1135,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../../../../.cache/tuist/Binaries/3d90030462538bfedffe9f57ed5703a6",
-				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
@@ -1191,13 +1159,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty.ThirdPartyTests;
 				PRODUCT_NAME = ThirdPartyTests;
@@ -1310,13 +1278,13 @@
 					"-Xcc",
 					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/165f379e9c1ee9a68b46311a5f36ae02/ComposableArchitectureMacros.macro#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/83c85f95890b6cae0f21ce31f586fa9c/CasePathsMacros.macro#CasePathsMacros",
-					"-load-plugin-executable",
-					"/Users/suhwonji/.cache/tuist/Binaries/e1b39dce57db3a127a3ec054281d5648/PerceptionMacros.macro#PerceptionMacros",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
 				PRODUCT_NAME = ThirdParty;

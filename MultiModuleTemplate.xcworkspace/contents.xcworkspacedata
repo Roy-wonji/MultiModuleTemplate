@@ -72,9 +72,6 @@
       location = "container:"
       name = "Dependencies">
       <FileRef
-         location = "group:Tuist/.build/tuist-derived/TCACoordinators/TCACoordinators.xcodeproj">
-      </FileRef>
-      <FileRef
          location = "group:Tuist/.build/tuist-derived/combine-schedulers/combine-schedulers.xcodeproj">
       </FileRef>
       <FileRef
@@ -109,6 +106,9 @@
       </FileRef>
       <FileRef
          location = "group:Tuist/.build/tuist-derived/swift-sharing/swift-sharing.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-syntax/swift-syntax.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Tuist/.build/tuist-derived/xctest-dynamic-overlay/xctest-dynamic-overlay.xcodeproj">
