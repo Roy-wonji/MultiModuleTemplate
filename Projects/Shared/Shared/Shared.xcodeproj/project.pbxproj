@@ -888,7 +888,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -950,7 +950,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1012,7 +1012,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1078,7 +1078,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1140,7 +1140,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1202,7 +1202,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1268,7 +1268,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1328,7 +1328,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared.SharedTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared.SharedTests;
 				PRODUCT_NAME = SharedTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1391,7 +1391,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1504,7 +1504,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Shared.SharedTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared.SharedTests;
 				PRODUCT_NAME = SharedTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;

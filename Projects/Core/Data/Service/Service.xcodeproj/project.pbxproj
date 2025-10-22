@@ -452,7 +452,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service;
 				PRODUCT_NAME = Service_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -486,7 +486,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service;
 				PRODUCT_NAME = Service;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -520,7 +520,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service;
 				PRODUCT_NAME = Service_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -551,7 +551,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service.ServiceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service.ServiceTests;
 				PRODUCT_NAME = ServiceTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -641,7 +641,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service;
 				PRODUCT_NAME = Service;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -679,7 +679,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service;
 				PRODUCT_NAME = Service_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -713,7 +713,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service;
 				PRODUCT_NAME = Service_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -751,7 +751,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service;
 				PRODUCT_NAME = Service_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -782,7 +782,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service.ServiceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service.ServiceTests;
 				PRODUCT_NAME = ServiceTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -870,7 +870,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Service;
 				PRODUCT_NAME = Service_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

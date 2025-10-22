@@ -452,7 +452,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations;
 				PRODUCT_NAME = Foundations_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -490,7 +490,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations;
 				PRODUCT_NAME = Foundations_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -528,7 +528,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations;
 				PRODUCT_NAME = Foundations_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -562,7 +562,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations;
 				PRODUCT_NAME = Foundations;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -589,7 +589,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations.FoundationsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations.FoundationsTests;
 				PRODUCT_NAME = FoundationsTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -620,7 +620,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations;
 				PRODUCT_NAME = Foundations;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -658,7 +658,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations;
 				PRODUCT_NAME = Foundations_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -692,7 +692,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations;
 				PRODUCT_NAME = Foundations_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -772,7 +772,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations.FoundationsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations.FoundationsTests;
 				PRODUCT_NAME = FoundationsTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -807,7 +807,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Foundations;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Foundations;
 				PRODUCT_NAME = Foundations_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

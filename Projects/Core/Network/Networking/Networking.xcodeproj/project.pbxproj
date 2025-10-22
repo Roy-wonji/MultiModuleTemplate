@@ -512,7 +512,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
 				PRODUCT_NAME = Networking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -550,7 +550,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
 				PRODUCT_NAME = Networking_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -588,7 +588,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
 				PRODUCT_NAME = Networking_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -615,7 +615,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking.NetworkingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking.NetworkingTests;
 				PRODUCT_NAME = NetworkingTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -646,7 +646,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
 				PRODUCT_NAME = Networking_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -733,7 +733,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
 				PRODUCT_NAME = Networking_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -771,7 +771,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
 				PRODUCT_NAME = Networking_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -805,7 +805,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
 				PRODUCT_NAME = Networking_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -843,7 +843,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
 				PRODUCT_NAME = Networking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -929,7 +929,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking.NetworkingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking.NetworkingTests;
 				PRODUCT_NAME = NetworkingTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;

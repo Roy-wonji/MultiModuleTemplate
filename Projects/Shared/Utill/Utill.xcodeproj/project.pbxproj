@@ -445,7 +445,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill.UtillTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill.UtillTests;
 				PRODUCT_NAME = UtillTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -480,7 +480,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill;
 				PRODUCT_NAME = Utill_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -566,7 +566,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill.UtillTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill.UtillTests;
 				PRODUCT_NAME = UtillTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -597,7 +597,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill;
 				PRODUCT_NAME = Utill_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -631,7 +631,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill;
 				PRODUCT_NAME = Utill_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -669,7 +669,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill;
 				PRODUCT_NAME = Utill_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -703,7 +703,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill;
 				PRODUCT_NAME = Utill;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -737,7 +737,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill;
 				PRODUCT_NAME = Utill;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -775,7 +775,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill;
 				PRODUCT_NAME = Utill_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -813,7 +813,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Utill;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Utill;
 				PRODUCT_NAME = Utill_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

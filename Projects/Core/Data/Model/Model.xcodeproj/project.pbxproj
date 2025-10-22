@@ -452,7 +452,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model;
 				PRODUCT_NAME = Model_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -490,7 +490,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model;
 				PRODUCT_NAME = Model_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -528,7 +528,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model;
 				PRODUCT_NAME = Model_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -615,7 +615,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model;
 				PRODUCT_NAME = Model_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -653,7 +653,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model;
 				PRODUCT_NAME = Model_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -746,7 +746,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model;
 				PRODUCT_NAME = Model;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -784,7 +784,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model;
 				PRODUCT_NAME = Model_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -811,7 +811,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model.ModelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model.ModelTests;
 				PRODUCT_NAME = ModelTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -842,7 +842,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model;
 				PRODUCT_NAME = Model;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -869,7 +869,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Model.ModelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Model.ModelTests;
 				PRODUCT_NAME = ModelTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;

@@ -720,7 +720,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Stage;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -774,7 +774,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Stage;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -831,7 +831,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.MultiModuleTemplateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.MultiModuleTemplateTests;
 				PRODUCT_NAME = MultiModuleTemplateTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -887,7 +887,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Debug;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -941,7 +941,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -995,7 +995,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Prod;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1049,7 +1049,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1103,7 +1103,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1160,7 +1160,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.MultiModuleTemplateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.MultiModuleTemplateTests;
 				PRODUCT_NAME = MultiModuleTemplateTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1216,7 +1216,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Prod;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1270,7 +1270,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Prod;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1328,7 +1328,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Stage;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1405,7 +1405,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC -all_load";
 				PRODUCT_NAME = "MultiModuleTemplate-Prod";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.Roy.Bandscape";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.Roy.Module";
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
@@ -1455,7 +1455,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Debug;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1512,7 +1512,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.MultiModuleTemplateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.MultiModuleTemplateTests;
 				PRODUCT_NAME = MultiModuleTemplateTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1572,7 +1572,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Debug;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1626,7 +1626,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Prod;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1684,7 +1684,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1741,7 +1741,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.MultiModuleTemplateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.MultiModuleTemplateTests;
 				PRODUCT_NAME = MultiModuleTemplateTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1827,7 +1827,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC -all_load";
 				PRODUCT_NAME = MultiModuleTemplate;
-				PROVISIONING_PROFILE_SPECIFIER = "match Development io.Roy.Bandscape";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development io.Roy.Module";
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 6.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1876,7 +1876,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Debug;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1953,7 +1953,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC -all_load";
 				PRODUCT_NAME = MultiModuleTemplate;
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.Roy.Bandscape";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.Roy.Module";
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
@@ -2029,7 +2029,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC -all_load";
 				PRODUCT_NAME = "MultiModuleTemplate-Stage";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development io.Roy.Bandscape";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development io.Roy.Module";
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 6.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2078,7 +2078,7 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module;
 				PRODUCT_NAME = MultiModuleTemplate_Stage;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;

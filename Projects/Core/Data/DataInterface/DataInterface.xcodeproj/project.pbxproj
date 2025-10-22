@@ -497,7 +497,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface.DataInterfaceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface.DataInterfaceTests;
 				PRODUCT_NAME = DataInterfaceTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -587,7 +587,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
 				PRODUCT_NAME = DataInterface_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -625,7 +625,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
 				PRODUCT_NAME = DataInterface_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -659,7 +659,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
 				PRODUCT_NAME = DataInterface_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -693,7 +693,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
 				PRODUCT_NAME = DataInterface;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -727,7 +727,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
 				PRODUCT_NAME = DataInterface_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -761,7 +761,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
 				PRODUCT_NAME = DataInterface_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -852,7 +852,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
 				PRODUCT_NAME = DataInterface_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -890,7 +890,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
 				PRODUCT_NAME = DataInterface;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -921,7 +921,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface.DataInterfaceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface.DataInterfaceTests;
 				PRODUCT_NAME = DataInterfaceTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
