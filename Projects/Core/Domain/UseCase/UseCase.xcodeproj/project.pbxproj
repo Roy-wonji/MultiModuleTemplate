@@ -12,8 +12,10 @@
 		4DEF70A10ABBC302AF66D19B /* Repository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 6C51192BCDE8A7E9252657C2 /* Repository.framework */; };
 		504D664D011D018429E293BF /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9702202A42059A564824B3 /* DomainInterface.framework */; };
 		541697140A6418A997A49C8E /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981DA49FF8FB5D20F6052CD5 /* UseCase.framework */; };
+		5C4F067A4986D6C4E2EB4B7F /* DataInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8685E99C5809D7529D75E04 /* DataInterface.framework */; };
 		5EBB8D1D64C397045A54E614 /* Repository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 6C51192BCDE8A7E9252657C2 /* Repository.framework */; };
 		657EB28029C3DF0D4B44A8EE /* Repository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 6C51192BCDE8A7E9252657C2 /* Repository.framework */; };
+		74CF85AA8553EF14DCDD88DB /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF7E8BB122749DE3A5B8126 /* Networking.framework */; };
 		76C16B36E81AF240140426DA /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9702202A42059A564824B3 /* DomainInterface.framework */; };
 		89E0A31F51C1EB7029936363 /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9702202A42059A564824B3 /* DomainInterface.framework */; };
 		A0A6BA747CD25B74B1C8AC63 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A794ACF5D341C1C9AFC5BB /* Base.swift */; };
@@ -130,6 +132,7 @@
 
 /* Begin PBXFileReference section */
 		156620DF42B5B603B36FFC4D /* UseCase-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UseCase-Stage-Info.plist"; sourceTree = "<group>"; };
+		3EF7E8BB122749DE3A5B8126 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C51192BCDE8A7E9252657C2 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765D2D0CA936BA6ADB4F5CE8 /* UseCase_Stage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UseCase_Stage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8A2D9DA49513C777029E76 /* UseCase_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UseCase_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +144,7 @@
 		C4016988238AD435EC070B51 /* UseCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UseCaseTests-Info.plist"; sourceTree = "<group>"; };
 		D1A794ACF5D341C1C9AFC5BB /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		D6FD9521226B13200DEB8FED /* UseCase-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UseCase-Prod-Info.plist"; sourceTree = "<group>"; };
+		F8685E99C5809D7529D75E04 /* DataInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9761AA31A39E2CCF29043E7 /* UseCase_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UseCase_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9702202A42059A564824B3 /* DomainInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,7 +162,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4F067A4986D6C4E2EB4B7F /* DataInterface.framework in Frameworks */,
 				3AD9817DB1EA153D26CA1169 /* DomainInterface.framework in Frameworks */,
+				74CF85AA8553EF14DCDD88DB /* Networking.framework in Frameworks */,
 				BB5DA4B960E719E9BC9438A5 /* Repository.framework in Frameworks */,
 				541697140A6418A997A49C8E /* UseCase.framework in Frameworks */,
 			);
@@ -256,7 +262,9 @@
 		BF0062FA29B274A2F9F0E5D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				F8685E99C5809D7529D75E04 /* DataInterface.framework */,
 				FB9702202A42059A564824B3 /* DomainInterface.framework */,
+				3EF7E8BB122749DE3A5B8126 /* Networking.framework */,
 				6C51192BCDE8A7E9252657C2 /* Repository.framework */,
 				8D8A2D9DA49513C777029E76 /* UseCase_Debug.framework */,
 				F9761AA31A39E2CCF29043E7 /* UseCase_Prod.framework */,

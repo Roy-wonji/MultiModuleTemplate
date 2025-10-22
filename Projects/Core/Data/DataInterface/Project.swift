@@ -6,13 +6,12 @@ import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
 let project = Project.makeAppModule(
-  name: "Repository",
-  bundleId: .appBundleID(name: ".Repository"),
+  name: "DataInterface",
+  bundleId: .appBundleID(name: ".DataInterface"),
   product: .staticFramework,
   settings:  .settings(),
   dependencies: [
-    .Network(implements: .Networking),
-    .Data(implements: .DataInterface)
+
   ],
   sources: ["Sources/**"]
 )

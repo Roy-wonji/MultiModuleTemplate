@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A76FED32C6B714CAF33D2B /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F92106B46658C4D05E4ABB /* Entity.framework */; };
 		253ADDBA7F0F518205DA6086 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CCB4A5101AA202060F9AA /* Base.swift */; };
 		353BF1AD56F4CC357E19D719 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8C9CF1C2E1A74CF11222B2 /* Test.swift */; };
 		57E5E0940F81FC8D1DFD045E /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D56B0B55DD9F93D8170AD5 /* DomainInterface.framework */; };
+		6DAACDFF7943CB37965B2368 /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F92106B46658C4D05E4ABB /* Entity.framework */; };
 		72E1BB6284DCE3777F9AFFC6 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
 		980FB81611FF729E004936AD /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CCB4A5101AA202060F9AA /* Base.swift */; };
+		AB7D4D041B1B69901FBE2092 /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F92106B46658C4D05E4ABB /* Entity.framework */; };
 		B3FF7F599D59926AF7C5431F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CCB4A5101AA202060F9AA /* Base.swift */; };
 		BC207C9DA5E4673477A9C014 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
+		D9737EB0F4B4152468E4B3C0 /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F92106B46658C4D05E4ABB /* Entity.framework */; };
 		DB51ABC4FB182C4238F4C2BE /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CCB4A5101AA202060F9AA /* Base.swift */; };
 		ECB93EACF0EFEE45B37EC544 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
 		FCC7D056697F3ACC66085599 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EEC0400C29FD0B52020310 /* Model.framework */; };
@@ -83,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06F92106B46658C4D05E4ABB /* Entity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1294C06A2C0D6B4FB46B28E6 /* DomainInterface-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DomainInterface-Debug-Info.plist"; sourceTree = "<group>"; };
 		2052C0678571EA088B536278 /* DomainInterface_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterface_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		276BFC70D11B277656C925C7 /* DomainInterface_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterface_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9737EB0F4B4152468E4B3C0 /* Entity.framework in Frameworks */,
 				FCC7D056697F3ACC66085599 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DAACDFF7943CB37965B2368 /* Entity.framework in Frameworks */,
 				BC207C9DA5E4673477A9C014 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A76FED32C6B714CAF33D2B /* Entity.framework in Frameworks */,
 				ECB93EACF0EFEE45B37EC544 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7D4D041B1B69901FBE2092 /* Entity.framework in Frameworks */,
 				72E1BB6284DCE3777F9AFFC6 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +221,7 @@
 				C6834A89F3FE887DA1691EBA /* DomainInterface_Stage.framework */,
 				35D56B0B55DD9F93D8170AD5 /* DomainInterface.framework */,
 				DFB2548120357952CE45DE62 /* DomainInterfaceTests.xctest */,
+				06F92106B46658C4D05E4ABB /* Entity.framework */,
 				D6EEC0400C29FD0B52020310 /* Model.framework */,
 			);
 			name = Products;

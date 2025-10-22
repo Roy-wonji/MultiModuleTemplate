@@ -11,8 +11,7 @@ let project = Project.makeAppModule(
   product: .framework,
   settings:  .settings(),
   dependencies: [
-    .Domain(implements: .UseCase),
-    .Network(implements: .Network)
+    .Domain(implements: .UseCase)
   ],
   sources: ["Sources/**"]
 )

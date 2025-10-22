@@ -2,8 +2,6 @@
 
 Tuist로 구성된 멀티 모듈 iOS 프로젝트 템플릿입니다.
 
-> 🚀 **새 기능**: 이제 프로젝트 이름을 동적으로 설정할 수 있습니다! `./tuisttool newproject`로 원하는 이름의 프로젝트를 생성하세요.
-
 ## 프로젝트 구조
 
 ```
@@ -16,18 +14,19 @@ MultiModuleTemplate/
 │   │   └── Presentation/     # 화면 및 ViewModel 구성
 │   ├── Core/
 │   │   ├── Core/             # 핵심 공통 모듈
-│   │   ├── Data/             # 데이터 계층
-│   │   │   ├── API/          # API 정의 및 클라이언트
-│   │   │   ├── Model/        # 데이터 모델
+│   │   ├── Data/             # 데이터 계층 (Clean Architecture)
+│   │   │   ├── API/          # REST API 클라이언트
+│   │   │   ├── Model/        # 데이터 전송 객체 (DTO)
 │   │   │   ├── Repository/   # Repository 구현체
-│   │   │   └── Service/      # 데이터 서비스
-│   │   ├── Domain/           # 도메인 계층
-│   │   │   ├── Entity/       # 도메인 엔티티
-│   │   │   ├── UseCase/      # 비즈니스 로직 UseCase
-│   │   │   └── DomainInterface/ # 도메인 인터페이스
-│   │   ├── Network/          # 네트워크 계층
-│   │   │   ├── Network/      # 네트워크 기본 모듈
-│   │   │   └── Service/      # 네트워크 서비스
+│   │   │   ├── Service/      # 데이터 서비스
+│   │   │   └── DataInterface/ # 🔥 Data → Domain 인터페이스
+│   │   ├── Domain/           # 도메인 계층 (Clean Architecture)
+│   │   │   ├── Entity/       # 도메인 엔티티 (비즈니스 모델)
+│   │   │   ├── UseCase/      # 비즈니스 로직 구현체
+│   │   │   └── DomainInterface/ # 🔥 Domain → Presentation 인터페이스
+│   │   ├── NetworkKit/       # 네트워크 계층
+│   │   │   ├── NetworkKit/   # 네트워크 기본 설정 및 클라이언트
+│   │   │   └── Service/      # 네트워크 서비스 구현체
 │   │   └── ThirdParty/       # Core 레벨 외부 라이브러리
 │   └── Shared/
 │       ├── DesignSystem/     # 공통 UI 컴포넌트, 폰트 등
@@ -56,6 +55,7 @@ swiftc TuistTool.swift -o tuisttool
 
 ```bash
 tuist up          # 개발환경 부트스트랩
+tuist install     # 라이브러리 다운로드
 tuist generate    # 프로젝트 생성
 tuist build       # 빌드
 tuist test        # 테스트
@@ -63,28 +63,45 @@ tuist test        # 테스트
 
 ## 주요 모듈 설명
 
-- **App**: 메인 애플리케이션 모듈
+### 📱 Application Layer
+- **App**: 메인 애플리케이션 모듈 (앱 진입점 및 설정)
 - **Presentation**: ViewController, ViewModel 등 UI 로직 담당
-- **Core**
-  - **Core**: 핵심 공통 기능 및 설정
-  - **Data**: 데이터 계층 (Clean Architecture)
-    - **API**: REST API 정의 및 클라이언트
-    - **Model**: 데이터 전송 객체 (DTO)
-    - **Repository**: Repository 패턴 구현체
-    - **Service**: 데이터 처리 서비스
-  - **Domain**: 도메인 계층 (Clean Architecture)
-    - **Entity**: 도메인 엔티티 및 비즈니스 모델
-    - **UseCase**: 비즈니스 로직 처리
-    - **DomainInterface**: 도메인 인터페이스 정의
-  - **Network**: 네트워크 통신 계층
-    - **Network**: 네트워크 기본 설정 및 클라이언트
-    - **Service**: 네트워크 서비스 구현체
-  - **ThirdParty**: Core 레벨 외부 라이브러리
-- **Shared**
-  - **DesignSystem**: 공통 UI 컴포넌트, 폰트, 색상 등 디자인 자산
-  - **Shared**: 공통 공유 모듈 및 기본 설정
-  - **ThirdParty**: 외부 라이브러리 래핑 (TCA, Alamofire 등)
-  - **Utill**: 날짜, 문자열, 로깅 등 공용 유틸리티
+
+### 🏗 Core Layer (Clean Architecture)
+
+#### Domain Layer (비즈니스 로직)
+- **Domain**
+  - **Entity**: 도메인 엔티티 및 비즈니스 모델 정의
+  - **UseCase**: 비즈니스 로직 구현체 (실제 비즈니스 규칙)
+  - **DomainInterface**: 🔥 **Domain → Presentation API** (UseCase 인터페이스)
+
+#### Data Layer (데이터 처리)
+- **Data**
+  - **Repository**: Repository 패턴 구현체 (Domain Interface 구현)
+  - **Model**: 데이터 전송 객체 (DTO, API Response/Request 모델)
+  - **API**: REST API 클라이언트 및 Endpoint 정의
+  - **Service**: 데이터 처리 서비스 (캐싱, 변환 등)
+  - **DataInterface**: 🔥 **Data → Domain API** (Repository 인터페이스)
+
+#### Infrastructure Layer
+- **Core**: 핵심 공통 기능 및 설정
+- **NetworkKit**: 네트워크 통신 계층
+  - **NetworkKit**: 네트워크 기본 설정 및 HTTP 클라이언트
+  - **Service**: 네트워크 서비스 구현체
+- **ThirdParty**: Core 레벨 외부 라이브러리
+
+### 🎨 Shared Layer
+- **DesignSystem**: 공통 UI 컴포넌트, 폰트, 색상 등 디자인 시스템
+- **Shared**: 공통 공유 모듈 및 기본 설정
+- **ThirdParty**: 외부 라이브러리 래핑 (TCA, WeaveDI, Alamofire 등)
+- **Utill**: 날짜, 문자열, 로깅 등 공용 유틸리티
+
+### 🔄 의존성 방향 (Clean Architecture)
+```
+Presentation → Domain/DomainInterface
+Domain/UseCase → Data/DataInterface
+Data/Repository implements DataInterface
+```
 
 ## 개발 환경
 
@@ -96,8 +113,85 @@ tuist test        # 테스트
 ## 사용 라이브러리
 
 - **ComposableArchitecture**: 상태 관리
-- **DiContainer**: 의존성 주입
+- **WeaveDI**: 의존성 주입
 - **SwiftLint**: 코드 스타일 체크
+
+## 🏗 Clean Architecture 설계
+
+### 🎯 인터페이스 분리 설계
+
+이 프로젝트는 **계층별 인터페이스 분리**를 통해 Clean Architecture를 구현합니다:
+
+```swift
+// Domain이 Presentation에게 제공하는 API
+// Domain/DomainInterface/UserUseCaseInterface.swift
+protocol UserUseCaseInterface {
+    func getUser(id: String) async throws -> User
+    func updateUserProfile(_ user: User) async throws
+}
+
+// Data가 Domain에게 제공하는 API
+// Data/DataInterface/UserRepositoryInterface.swift
+protocol UserRepositoryInterface {
+    func fetchUser(id: String) async throws -> UserDTO
+    func saveUser(_ user: UserDTO) async throws
+}
+```
+
+### 💡 이점
+
+#### 1. **의존성 역전 (Dependency Inversion)**
+```swift
+// Domain/UseCase/UserUseCase.swift
+final class UserUseCase: UserUseCaseInterface {
+    private let repository: UserRepositoryInterface  // 인터페이스에 의존
+
+    init(repository: UserRepositoryInterface) {
+        self.repository = repository
+    }
+}
+```
+
+#### 2. **테스트 용이성**
+```swift
+// 테스트에서 Mock 객체 쉽게 생성
+final class MockUserRepository: UserRepositoryInterface {
+    func fetchUser(id: String) async throws -> UserDTO {
+        return UserDTO(id: "test", name: "Test User")
+    }
+}
+```
+
+#### 3. **모듈 간 결합도 감소**
+- UseCase는 Repository **구현체**를 모름
+- **인터페이스**만 알면 되므로 변경에 유연함
+
+#### 4. **의존성 주입 (WeaveDI) 활용**
+```swift
+// WeaveDI를 사용한 의존성 등록
+let userRepository = UnifiedDI.register(UserRepositoryInterface.self) {
+    UserRepository()
+}
+
+let userUseCase = UnifiedDI.register(UserUseCaseInterface.self) {
+    UserUseCase(repository: UnifiedDI.resolve(UserRepositoryInterface.self))
+}
+
+// Property Wrapper를 사용한 주입 (권장)
+final class UserViewController: UIViewController {
+    @Injected(\.userUseCase) private var userUseCase: UserUseCaseInterface
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // userUseCase 자동 주입됨
+    }
+}
+
+// KeyPath 기반 등록 (TCA 스타일)
+let userUseCase = UnifiedDI.register(\.userUseCase) {
+    UserUseCase(repository: UnifiedDI.resolve(UserRepositoryInterface.self))
+}
+```
 
 ---
 
