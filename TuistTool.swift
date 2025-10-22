@@ -148,22 +148,16 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
     setenv("BUNDLE_ID_PREFIX", bundleIdPrefix, 1)
     setenv("TEAM_ID", teamId, 1)
 
-    // 디버깅: 설정된 환경변수 확인
-    print("📋 설정된 환경변수 확인:")
-    if let projectName = getenv("PROJECT_NAME") {
-        print("  PROJECT_NAME: \(String(cString: projectName))")
-    } else {
-        print("  PROJECT_NAME: 설정되지 않음")
-    }
-    if let bundleId = getenv("BUNDLE_ID_PREFIX") {
-        print("  BUNDLE_ID_PREFIX: \(String(cString: bundleId))")
-    } else {
-        print("  BUNDLE_ID_PREFIX: 설정되지 않음")
-    }
-    if let team = getenv("TEAM_ID") {
-        print("  TEAM_ID: \(String(cString: team))")
-    } else {
-        print("  TEAM_ID: 설정되지 않음")
+    prepareTemplateForNewProject(oldName: "MultiModuleTemplate", newName: name, bundleIdPrefix: bundleIdPrefix, teamId: teamId)
+
+    print("🧹 기존 프로젝트 정리 중...")
+    _ = run("tuist", arguments: ["clean"])
+
+    print("🔧 Tuist dependencies 설치 중...")
+    let installResult = run("tuist", arguments: ["install"])
+    if installResult != 0 {
+        print("❌ Dependencies 설치에 실패했습니다.")
+        return
     }
 
     print("🔧 Tuist 프로젝트 생성 중...")
@@ -186,6 +180,8 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
             }
         }
 
+        renameProjectArtifacts(oldName: "MultiModuleTemplate", newName: name)
+
         print("\n✅ 프로젝트 '\(name)'이 성공적으로 생성되었습니다!")
         print("💡 .xcworkspace 파일을 열어서 작업을 시작하세요.")
 
@@ -199,6 +195,155 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
         }
     } else {
         print("❌ 프로젝트 생성에 실패했습니다.")
+    }
+}
+
+private func prepareTemplateForNewProject(oldName: String, newName: String, bundleIdPrefix: String, teamId: String) {
+    renameProjectArtifacts(oldName: oldName, newName: newName)
+    updateEnvironmentDefaults(oldName: oldName, newName: newName, bundleIdPrefix: bundleIdPrefix, teamId: teamId)
+}
+
+private func renameProjectArtifacts(oldName: String, newName: String) {
+    guard oldName != newName else { return }
+
+    let appRoot = "Projects/App"
+
+    let oldProjectPath = "\(appRoot)/\(oldName).xcodeproj"
+    let newProjectPath = "\(appRoot)/\(newName).xcodeproj"
+    renameItemIfNeeded(at: oldProjectPath, to: newProjectPath, description: ".xcodeproj 이동")
+
+    updateXcodeProjectContent(at: newProjectPath, oldName: oldName, newName: newName)
+
+    let oldTestsFolder = "\(appRoot)/\(oldName)Tests"
+    let newTestsFolder = "\(appRoot)/\(newName)Tests"
+    renameItemIfNeeded(at: oldTestsFolder, to: newTestsFolder, description: "테스트 타겟 폴더 이동")
+    ensureDirectoryExists(at: "\(newTestsFolder)/Sources")
+
+    let oldTestFile = "\(newTestsFolder)/Sources/\(oldName)Tests.swift"
+    let newTestFile = "\(newTestsFolder)/Sources/\(newName)Tests.swift"
+    renameItemIfNeeded(at: oldTestFile, to: newTestFile, description: "테스트 파일 이름 변경")
+    replaceOccurrences(inFileAtPath: newTestFile, replacements: [oldName: newName, "\(oldName)Tests": "\(newName)Tests"])
+
+    let applicationSourcesPath = "\(appRoot)/Sources/Application"
+    let oldAppFile = "\(applicationSourcesPath)/\(oldName)App.swift"
+    let newAppFile = "\(applicationSourcesPath)/\(newName)App.swift"
+    renameItemIfNeeded(at: oldAppFile, to: newAppFile, description: "App Entry 파일 이름 변경")
+    replaceOccurrences(
+        inFileAtPath: newAppFile,
+        replacements: [
+            "\(oldName)App": "\(newName)App",
+            "TuistAssets+\(oldName)": "TuistAssets+\(newName)",
+            "TuistBundle+\(oldName)": "TuistBundle+\(newName)"
+        ]
+    )
+}
+
+private func renameItemIfNeeded(at oldPath: String, to newPath: String, description: String) {
+    let fileManager = FileManager.default
+    guard oldPath != newPath else { return }
+    guard fileManager.fileExists(atPath: oldPath) else { return }
+
+    do {
+        if fileManager.fileExists(atPath: newPath) {
+            try fileManager.removeItem(atPath: newPath)
+        }
+        try fileManager.moveItem(atPath: oldPath, toPath: newPath)
+    } catch {
+        print("⚠️ \(description) 실패: \(error)")
+    }
+}
+
+private func ensureDirectoryExists(at path: String) {
+    let fileManager = FileManager.default
+    if !fileManager.fileExists(atPath: path) {
+        do {
+            try fileManager.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
+        } catch {
+            print("⚠️ 디렉토리 생성 실패 (\(path)): \(error)")
+        }
+    }
+}
+
+private func updateEnvironmentDefaults(oldName: String, newName: String, bundleIdPrefix: String, teamId: String) {
+    let environmentPath = "Plugins/ProjectTemplatePlugin/ProjectDescriptionHelpers/Project+Templete/Project+Enviorment.swift"
+    guard FileManager.default.fileExists(atPath: environmentPath) else { return }
+
+    replacePattern(inFileAtPath: environmentPath, pattern: #"return \"[^\"]+\""#, replacement: "return \"\(newName)\"")
+    replacePattern(
+        inFileAtPath: environmentPath,
+        pattern: #"BUNDLE_ID_PREFIX"] \?\? \"[^\"]+\""#,
+        replacement: "BUNDLE_ID_PREFIX\"] ?? \"\(bundleIdPrefix)\""
+    )
+    replacePattern(
+        inFileAtPath: environmentPath,
+        pattern: #"TEAM_ID"] \?\? \"[^\"]+\""#,
+        replacement: "TEAM_ID\"] ?? \"\(teamId)\""
+    )
+    replaceOccurrences(inFileAtPath: environmentPath, replacements: [oldName: newName])
+}
+
+private func updateXcodeProjectContent(at projectPath: String, oldName: String, newName: String) {
+    let fileManager = FileManager.default
+    guard fileManager.fileExists(atPath: projectPath) else { return }
+
+    let pbxprojPath = "\(projectPath)/project.pbxproj"
+    replaceOccurrences(
+        inFileAtPath: pbxprojPath,
+        replacements: [
+            "\(oldName)": "\(newName)",
+            "\(oldName)Tests": "\(newName)Tests"
+        ]
+    )
+
+    let schemesDirectory = "\(projectPath)/xcshareddata/xcschemes"
+    guard let schemes = try? fileManager.contentsOfDirectory(atPath: schemesDirectory) else { return }
+
+    for scheme in schemes where scheme.contains(oldName) {
+        let oldSchemePath = "\(schemesDirectory)/\(scheme)"
+        let newSchemeName = scheme.replacingOccurrences(of: oldName, with: newName)
+        let newSchemePath = "\(schemesDirectory)/\(newSchemeName)"
+        renameItemIfNeeded(at: oldSchemePath, to: newSchemePath, description: "스킴 파일 이름 변경")
+        replaceOccurrences(inFileAtPath: newSchemePath, replacements: [oldName: newName])
+    }
+}
+
+private func replaceOccurrences(inFileAtPath path: String, replacements: [String: String]) {
+    let fileManager = FileManager.default
+    guard fileManager.fileExists(atPath: path) else { return }
+
+    do {
+        var content = try String(contentsOfFile: path, encoding: .utf8)
+        var updated = false
+        for (target, replacement) in replacements {
+            if content.contains(target) {
+                content = content.replacingOccurrences(of: target, with: replacement)
+                updated = true
+            }
+        }
+
+        if updated {
+            try content.write(toFile: path, atomically: true, encoding: .utf8)
+        }
+    } catch {
+        print("⚠️ 문자열 치환 실패 (\(path)): \(error)")
+    }
+}
+
+private func replacePattern(inFileAtPath path: String, pattern: String, replacement: String) {
+    let fileManager = FileManager.default
+    guard fileManager.fileExists(atPath: path) else { return }
+
+    do {
+        let content = try String(contentsOfFile: path, encoding: .utf8)
+        let regex = try NSRegularExpression(pattern: pattern, options: [])
+        let range = NSRange(location: 0, length: (content as NSString).length)
+        let template = NSRegularExpression.escapedTemplate(for: replacement)
+        let newContent = regex.stringByReplacingMatches(in: content, options: [], range: range, withTemplate: template)
+        if newContent != content {
+            try newContent.write(toFile: path, atomically: true, encoding: .utf8)
+        }
+    } catch {
+        print("⚠️ 문자열 패턴 치환 실패 (\(path)): \(error)")
     }
 }
 

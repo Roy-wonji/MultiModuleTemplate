@@ -11,7 +11,15 @@ import ProjectDescription
 public extension Project {
   enum Environment {
     // 환경변수에서 프로젝트 이름을 읽어오고, 없으면 기본값 사용
-    private static let projectName = ProcessInfo.processInfo.environment["PROJECT_NAME"] ?? "MultiModuleTemplate"
+    private static let projectName: String = {
+      if let envProjectName = ProcessInfo.processInfo.environment["PROJECT_NAME"] {
+        print("🔍 [Project+Environment] PROJECT_NAME 환경변수 발견: \(envProjectName)")
+        return envProjectName
+      } else {
+        print("🔍 [Project+Environment] PROJECT_NAME 환경변수 없음, 기본값 사용")
+        return "MultiModuleTemplate"
+      }
+    }()
     private static let bundleIdPrefix = ProcessInfo.processInfo.environment["BUNDLE_ID_PREFIX"] ?? "io.Roy.Module"
     private static let teamId = ProcessInfo.processInfo.environment["TEAM_ID"] ?? "N94CS4N6VR"
 
