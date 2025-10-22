@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2069D2DAC09B8BBF632CF0F3 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D4C1979EC3168F2C7C011 /* Base.swift */; };
+		26060CCCFA00BBCEE172C51E /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B0883D5D36210798EE6A8723 /* Model.framework */; };
 		2A88F5D99E78F45A949EE062 /* DataInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFA4D170743668E55DC05FB /* DataInterface.framework */; };
 		376A8E134F2D077D9551A786 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D4C1979EC3168F2C7C011 /* Base.swift */; };
 		5B20A84AC1E129B86D1B4E6D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E1C0477536B6ADA014FE8 /* Test.swift */; };
+		9D3E93041916AC43128C9A07 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0883D5D36210798EE6A8723 /* Model.framework */; };
+		D0EAC38B2859EDF62A580653 /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B0883D5D36210798EE6A8723 /* Model.framework */; };
 		D90AD887D4D0EFE4BF2A26A2 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D4C1979EC3168F2C7C011 /* Base.swift */; };
+		E18B0AE27410B4BED0F4B68A /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B0883D5D36210798EE6A8723 /* Model.framework */; };
+		ED6C9407A2FC3B095C3CF271 /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B0883D5D36210798EE6A8723 /* Model.framework */; };
 		F6112CF50D6145699B915F25 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D4C1979EC3168F2C7C011 /* Base.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		05A550658733C037B4230397 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				26060CCCFA00BBCEE172C51E /* Model.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		152DCC44ECF81471FE2EBFE3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +71,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33843B0DDA5ECE4415D377B0 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				E18B0AE27410B4BED0F4B68A /* Model.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		60CB1A1F2E48857F124057C4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,6 +101,26 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFE86EBEC03ADB5D136DCFBA /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				D0EAC38B2859EDF62A580653 /* Model.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DFE93A74E023978B31FD154F /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				ED6C9407A2FC3B095C3CF271 /* Model.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +131,7 @@
 		6A88F55149AF95EB216E8E4B /* DataInterface_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataInterface_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8867B26BFB94DB9064D550A6 /* DataInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		981778211ECAE8C9F3519723 /* DataInterface-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DataInterface-Stage-Info.plist"; sourceTree = "<group>"; };
+		B0883D5D36210798EE6A8723 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4588FFF4FA1A9F35AB3D39B /* DataInterface_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataInterface_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41877E7A655281D9C631C30 /* DataInterfaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DataInterfaceTests-Info.plist"; sourceTree = "<group>"; };
 		DEFA4D170743668E55DC05FB /* DataInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A88F5D99E78F45A949EE062 /* DataInterface.framework in Frameworks */,
+				9D3E93041916AC43128C9A07 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +188,7 @@
 				1500A4957FAD95EA59FF720C /* DataInterface_Stage.framework */,
 				DEFA4D170743668E55DC05FB /* DataInterface.framework */,
 				8867B26BFB94DB9064D550A6 /* DataInterfaceTests.xctest */,
+				B0883D5D36210798EE6A8723 /* Model.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +266,7 @@
 				A3F2A4FE60902E8E614E051C /* Resources */,
 				5A2F69F795E23B051E90BCFB /* Frameworks */,
 				152DCC44ECF81471FE2EBFE3 /* Embed Frameworks */,
+				05A550658733C037B4230397 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -259,6 +308,7 @@
 				A4C432D9406EEE6AA18B68AE /* Resources */,
 				17147DCA67728B5FB7C229F3 /* Frameworks */,
 				6CC4F069C0C33FCD399AA4D7 /* Embed Frameworks */,
+				CFE86EBEC03ADB5D136DCFBA /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -279,6 +329,7 @@
 				62D583F7BDBAD7E66B070A03 /* Resources */,
 				16CAF04F74B907EE5BC88DBA /* Frameworks */,
 				31B338D091851934D1B8B1B7 /* Embed Frameworks */,
+				DFE93A74E023978B31FD154F /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -299,6 +350,7 @@
 				A6E043F7BF27A45CE8D13231 /* Resources */,
 				1AB15BF1FFA3EFCCAD635D10 /* Frameworks */,
 				2263ED1F529E5FB11D9FD6F9 /* Embed Frameworks */,
+				33843B0DDA5ECE4415D377B0 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -445,7 +497,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface.DataInterfaceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface.DataInterfaceTests;
 				PRODUCT_NAME = DataInterfaceTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -535,7 +587,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
 				PRODUCT_NAME = DataInterface_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -573,7 +625,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
 				PRODUCT_NAME = DataInterface_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -607,7 +659,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
 				PRODUCT_NAME = DataInterface_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -641,7 +693,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
 				PRODUCT_NAME = DataInterface;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -675,7 +727,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
 				PRODUCT_NAME = DataInterface_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -709,7 +761,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
 				PRODUCT_NAME = DataInterface_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -800,7 +852,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
 				PRODUCT_NAME = DataInterface_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -838,7 +890,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface;
 				PRODUCT_NAME = DataInterface;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -869,7 +921,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DataInterface.DataInterfaceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DataInterface.DataInterfaceTests;
 				PRODUCT_NAME = DataInterfaceTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;

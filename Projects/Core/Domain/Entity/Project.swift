@@ -11,7 +11,7 @@ let project = Project.makeAppModule(
   product: .staticFramework,
   settings:  .settings(),
   dependencies: [
-    
+    .Data(implements: .Model)
   ],
   sources: ["Sources/**"]
 )

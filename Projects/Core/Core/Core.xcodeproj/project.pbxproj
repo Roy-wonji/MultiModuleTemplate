@@ -7,32 +7,152 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C8AC5E9D8916ADD6307109 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */; };
+		0361917575288BC2EAD1F718 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */; };
 		04950684383BD50C3C3F0634 /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
 		057E6747738EDE1A9D804300 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C68C2ED81026636D7F75 /* CoreExport.swift */; };
+		0741B662DD021EE9DC285449 /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = D965F19D7CDBE741D5E4BC67 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		0887602F05D5297DFF9512B6 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */; };
+		090FFCC091BDCB28F3096CE7 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */; };
+		0A6F0AAF346955B125A6D78E /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690CFF7D8527FFE80ABE74D /* Sharing2.framework */; };
 		0ABD067AC835C34B144A119C /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
+		0AC161F8F43479EF47B65273 /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */; };
+		0B2DBBBB0D34113CBC8D6045 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */; };
+		153DA734BD15A3E83170B825 /* Foundations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC2DBA35091C70DC51D960D /* Foundations.framework */; };
+		193C3045681EE3E35615EEF4 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */; };
+		1A4CE5864E3E0A793F262D04 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E57E374A54F7AB6E29DC2 /* Sharing1.framework */; };
+		1B0450341B849AEFCC59BC15 /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */; };
+		1B86A8C6675D3D06F3A4B422 /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE351E328C333744FEAAACEF /* Clocks.framework */; };
+		1D11E73C71A95EF9678C1727 /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */; };
+		1EF87D70918A73AFB220707D /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F52A0D92C684C59849570BB /* OSLog.framework */; };
+		20A6B1A5AF0BE97B60B780AE /* Foundations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC2DBA35091C70DC51D960D /* Foundations.framework */; };
+		21306BFBBC8970FA6C09C67A /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */; };
+		226AA78C1A3143B0A5EC1D8E /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */; };
+		23C8B915134EFE977A0AF44C /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */; };
+		25331ABA2B62C93B801F42C7 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */; };
+		28179AACF7CEE8F379C94168 /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */; };
+		283B75BE810668074615A488 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */; };
+		2D5D4F61040CC8BFD8179471 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB917DE30C69F723BDF65353 /* Dependencies.framework */; };
+		2E139BFE929C679F3FA93456 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690CFF7D8527FFE80ABE74D /* Sharing2.framework */; };
 		2FBF18D6D458964E1E7D90D7 /* DataInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4FDADB9D94372F0DF1DAB /* DataInterface.framework */; };
+		30C165DDDBA521864ADED55A /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */; };
+		3155400E555574E62DE20452 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */; };
+		356A4BB64B50FE64EFEC39A0 /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F52A0D92C684C59849570BB /* OSLog.framework */; };
 		36993172D516F95C289F2335 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
+		3AFA724175D614A70532C76C /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */; };
+		4112B6136D7137512BB47137 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */; };
+		44EF53FEAA0FD1F604AFA623 /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */; };
+		4584FA74CCA4B45BDFBC2B84 /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70750465C5300D484ABA9F60 /* PerceptionCore.framework */; };
 		4A8A4FF21E2466F27305A4B8 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
+		525351E14EA04957F3C37AAE /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */; };
 		52B4AD0DF0AC04F86A07FB86 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69722B72879FA3302F07EF38 /* Networking.framework */; };
+		53CBEAA13C914C361402B056 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */; };
+		543E087427D4A8420C2134C1 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690CFF7D8527FFE80ABE74D /* Sharing2.framework */; };
+		54DA91BADE1E4B3FBC17C12A /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */; };
 		57C0F9688A74616539B65893 /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
+		581BA75F50FE6547B2732D10 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */; };
 		5A4BF0C9B10E7CA35A6A16F2 /* DataInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4FDADB9D94372F0DF1DAB /* DataInterface.framework */; };
 		5A9AA023C2642C5EE42E3CAE /* UseCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E51C38BC7DF49AD255BD /* UseCase.framework */; };
+		5B26B9E172329F680E1F0DC8 /* Foundations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC2DBA35091C70DC51D960D /* Foundations.framework */; };
+		5CB29D72D1FE671A3BFE6D7B /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D965F19D7CDBE741D5E4BC67 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
+		5CDBF2E2AB4CD3E5B01496BE /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE691F2EA62E8BF6F213DF9 /* WeaveDI.framework */; };
+		60F926638241B9ADFD8E2777 /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70750465C5300D484ABA9F60 /* PerceptionCore.framework */; };
+		6483116BE3903CA8C541C34C /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6739389F41AD55401939AA3 /* CustomDump.framework */; };
+		657042F9411772AD1F67B4F8 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */; };
 		65D9C904FC575380ED1A65F6 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69722B72879FA3302F07EF38 /* Networking.framework */; };
+		666209C52E74FB8C6EFA853B /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */; };
+		6828F2D9954A65FFC9EC1ADA /* Foundations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC2DBA35091C70DC51D960D /* Foundations.framework */; };
+		69690E1DEF5699A93C48725C /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */; };
+		6ADBD1397C6A44688E9A4170 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */; };
+		6D302121547606A8E2023A8A /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */; };
+		6E1098966CBE1B64D1958523 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB917DE30C69F723BDF65353 /* Dependencies.framework */; };
+		705279422C0A90992618D1ED /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6739389F41AD55401939AA3 /* CustomDump.framework */; };
 		70D5DB78FC01271FA17127DB /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
+		71592F799F7E3F1E40CE7D14 /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */; };
+		71EF0FF722D9341DE7489E26 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB917DE30C69F723BDF65353 /* Dependencies.framework */; };
+		720F08719A20288CF9AAFA7E /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */; };
 		73E8511D2CFD4034A1050AA0 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69722B72879FA3302F07EF38 /* Networking.framework */; };
+		741A5006FF2D931F1EFAC7E4 /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8D5448233F039D5A9089DCB /* swift-sharing_Sharing.bundle */; };
+		743EB41AABC12C12649285B2 /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */; };
 		774D915DCAFDDA823F514A4D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69722B72879FA3302F07EF38 /* Networking.framework */; };
+		796E9382BC2BE4D1E6889FD7 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C516A0389461EC9B5D46E /* Model.framework */; };
+		7A83E67FEDA6E2128A0DBE82 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C516A0389461EC9B5D46E /* Model.framework */; };
+		7B3D1F3D101ADF89557F377A /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */; };
+		7E0F7A2E919A8E3E252C6E5E /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690CFF7D8527FFE80ABE74D /* Sharing2.framework */; };
+		7E892CACFFDCC68BB417358D /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */; };
+		7F1A303924CE85716B92157B /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */; };
+		81254654BE4451E86130BA54 /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE691F2EA62E8BF6F213DF9 /* WeaveDI.framework */; };
+		822DF876BB668FF81689C7E4 /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF88C39763A84B856476973 /* LogMacro.framework */; };
+		83AE0163C0E55279C04C6B35 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */; };
+		8460A0263EB5BB299A2ABD2E /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E57E374A54F7AB6E29DC2 /* Sharing1.framework */; };
+		84F29B64D24E2F2F7E7C75AF /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */; };
+		887EBC2FF03A101E2EAA63DA /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */; };
+		8C85E8CCC8F4BAC32A1F8956 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */; };
+		8C935BC4799F8B6E3A6223E1 /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F52A0D92C684C59849570BB /* OSLog.framework */; };
+		8EC393B68B27E55ED82E5D5F /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */; };
 		9020315D7561610CEF9526ED /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
 		90F9749BFCF03B4AB847C6B1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E427963EEC5B2C6424367BB /* Test.swift */; };
+		912F15FB808EFD42963B2181 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */; };
+		91CA37E449BC98542266178B /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */; };
+		928BF1612A4C4B5382E83F0A /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */; };
+		9759622C07EB4108F92C7BFC /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */; };
+		9B8EF829A7ECBDD6C160A24C /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */; };
+		9CC12E9DD61D2CE1545340E1 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */; };
+		9FBB462562FD1381FCB33831 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C516A0389461EC9B5D46E /* Model.framework */; };
+		A32EBE1E2A8BBF14B91E5477 /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */; };
+		A3F778774B61770A1BCA5078 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */; };
 		A7B8C8A10E30EC8A4499A4D7 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C68C2ED81026636D7F75 /* CoreExport.swift */; };
+		A7E32CD107B343A3CD465C4C /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE351E328C333744FEAAACEF /* Clocks.framework */; };
 		A94DFA8DD7548315BB0CF161 /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
 		AA2C8708317F5556E909D43A /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89ECB181A314C23A60BB911 /* DomainInterface.framework */; };
+		AC6749F009C54AB3B22C385D /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70750465C5300D484ABA9F60 /* PerceptionCore.framework */; };
+		ACD998D5ED2BDF9CEE159409 /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = B8D5448233F039D5A9089DCB /* swift-sharing_Sharing.bundle */; };
+		AD8CB953E5D441B8542F4323 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */; };
+		AF2B0313CE26DE7442DA3E5F /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */; };
+		AFC6E50E24CB3A42ADC766CA /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */; };
+		B3F6238BD291CB7780E63545 /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */; };
+		B49C0C48B313FA48AB6B5397 /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF88C39763A84B856476973 /* LogMacro.framework */; };
+		BAC14B2B430CF2FEC6001708 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */; };
 		BC8595A1E286E2F5B6EF15C9 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0FA7F85F3573FB522F9478 /* Core.framework */; };
 		BDB24F99EF91F73F88E48FDB /* DataInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4FDADB9D94372F0DF1DAB /* DataInterface.framework */; };
+		BDF58A4C856FFC3CBE67FBBD /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF88C39763A84B856476973 /* LogMacro.framework */; };
+		BE2A82C9C8D2B6E2E0078C59 /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE351E328C333744FEAAACEF /* Clocks.framework */; };
+		BF97AB1F1286F02D88CDF7BF /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6739389F41AD55401939AA3 /* CustomDump.framework */; };
+		C19440D7C9DE70C6EDF16A45 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E57E374A54F7AB6E29DC2 /* Sharing1.framework */; };
+		C6A9D0FB7BC398F04CF131AE /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF88C39763A84B856476973 /* LogMacro.framework */; };
+		C817E90B41D7B129CAAF83C4 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */; };
+		C9297C4ECC3FA3DD0DA1BB43 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6739389F41AD55401939AA3 /* CustomDump.framework */; };
+		C9DC1FC3181E0BCA557D445D /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9C516A0389461EC9B5D46E /* Model.framework */; };
+		C9F3B80FA983FA575F9B735A /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */; };
+		CAA8F9C0C53A1F3B80F97228 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */; };
+		CD91F1D61C226F8316805D3C /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */; };
 		CE60BFE1DCA1494561D5F3F0 /* DataInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4FDADB9D94372F0DF1DAB /* DataInterface.framework */; };
 		CFD8561A3158F0E8D1F37E31 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C68C2ED81026636D7F75 /* CoreExport.swift */; };
+		D1B3E19A5BAFD54933477B6F /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */; };
+		D35EE132FCBD9B30CFA96C65 /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE351E328C333744FEAAACEF /* Clocks.framework */; };
+		D807263AF515DA4FF704F991 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */; };
+		D8D02BB84AD77216D6013F99 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E57E374A54F7AB6E29DC2 /* Sharing1.framework */; };
+		D8D0B2291F7B85620B6DC4BF /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70750465C5300D484ABA9F60 /* PerceptionCore.framework */; };
+		D98CEEFAB801D7192323A352 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */; };
+		DB2E5FD322F40A6D95B7C5FB /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB917DE30C69F723BDF65353 /* Dependencies.framework */; };
+		DC7456DBD2DBD2754C15EEAF /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */; };
+		DE189ECAFE1EA2BAEA572638 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */; };
+		DE99CE98396610B0D19BD58F /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */; };
+		E02460EECD57C6BE33A4759B /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */; };
+		E5B720287B07983F7221D2EA /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */; };
 		E5D416E83E8404C167333304 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
+		E6F8049D9D48859398776FE3 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */; };
+		E8229BE9614ACFBDD107F8D2 /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */; };
+		E9700F067B085ED1D5953E61 /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE691F2EA62E8BF6F213DF9 /* WeaveDI.framework */; };
+		EE7267C14BD554AC1D7AABA6 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */; };
+		F24CE72CE67DF688867DB06D /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */; };
+		F42B79B8E602391E1A37BE6A /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */; };
 		F4B05E023463D745BA025CD8 /* CoreExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C68C2ED81026636D7F75 /* CoreExport.swift */; };
+		F6E21EB1CFC6005190879EAC /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE691F2EA62E8BF6F213DF9 /* WeaveDI.framework */; };
+		F9048C1176F9E1EE1743760B /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */; };
+		F965D44749FBCF0F5B2DA464 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */; };
 		FA3AE178AFC2EC94AE27EDDF /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B638D8DB02624DD45D49E2 /* Repository.framework */; };
+		FC5B5B01425E3F711E6994B8 /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F52A0D92C684C59849570BB /* OSLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +196,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		787952B97F5276648B9F3258 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				0741B662DD021EE9DC285449 /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */,
+				ACD998D5ED2BDF9CEE159409 /* swift-sharing_Sharing.bundle in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		BDF7A6E43B5BED04E4D93612 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,23 +230,54 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReporting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConcurrencyExtras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InternalCollectionsUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		141E57E374A54F7AB6E29DC2 /* Sharing1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E60B05721CBE85B6C02D7B /* Core-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Stage-Info.plist"; sourceTree = "<group>"; };
+		2690CFF7D8527FFE80ABE74D /* Sharing2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BDD2D3E7FED8CDE9A52F46 /* Core-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Info.plist"; sourceTree = "<group>"; };
 		2B0FA7F85F3573FB522F9478 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E313EC3E53C9ED17660FD3F /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9C516A0389461EC9B5D46E /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePathsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F52A0D92C684C59849570BB /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OSLog.framework; sourceTree = DEVELOPER_DIR; };
 		5A90C6A79C8439A9A5D64BA3 /* Core-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Debug-Info.plist"; sourceTree = "<group>"; };
 		69722B72879FA3302F07EF38 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC2DBA35091C70DC51D960D /* Foundations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Foundations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70750465C5300D484ABA9F60 /* PerceptionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerceptionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigationShim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9DCFA69D5780FF990FEFE1 /* Core_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E427963EEC5B2C6424367BB /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReportingPackageSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B638D8DB02624DD45D49E2 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB917DE30C69F723BDF65353 /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF88C39763A84B856476973 /* LogMacro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogMacro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTestDynamicOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32D5F89E693F7E3F2558610 /* Core-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Prod-Info.plist"; sourceTree = "<group>"; };
+		B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUINavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6739389F41AD55401939AA3 /* CustomDump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomDump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89ECB181A314C23A60BB911 /* DomainInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D5448233F039D5A9089DCB /* swift-sharing_Sharing.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-sharing_Sharing.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComposableArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependenciesMacros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B9CE641601ED6073ABDA8E /* Core_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2D4CD69407DE3A95F1B5E7 /* Core_Stage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core_Stage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81A5985FBB055CC8CA4FAB8 /* CoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CoreTests-Info.plist"; sourceTree = "<group>"; };
+		D965F19D7CDBE741D5E4BC67 /* swift-composable-architecture_ComposableArchitecture.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-composable-architecture_ComposableArchitecture.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE351E328C333744FEAAACEF /* Clocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE81E51C38BC7DF49AD255BD /* UseCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UseCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB3C68C2ED81026636D7F75 /* CoreExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreExport.swift; sourceTree = "<group>"; };
+		DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentifiedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineSchedulers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA4FDADB9D94372F0DF1DAB /* DataInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE691F2EA62E8BF6F213DF9 /* WeaveDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeaveDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +285,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5B5B01425E3F711E6994B8 /* OSLog.framework in Frameworks */,
+				F42B79B8E602391E1A37BE6A /* CasePaths.framework in Frameworks */,
+				CD91F1D61C226F8316805D3C /* CasePathsCore.framework in Frameworks */,
+				A7E32CD107B343A3CD465C4C /* Clocks.framework in Frameworks */,
+				525351E14EA04957F3C37AAE /* CombineSchedulers.framework in Frameworks */,
+				3155400E555574E62DE20452 /* ComposableArchitecture.framework in Frameworks */,
+				657042F9411772AD1F67B4F8 /* ConcurrencyExtras.framework in Frameworks */,
+				6483116BE3903CA8C541C34C /* CustomDump.framework in Frameworks */,
 				5A4BF0C9B10E7CA35A6A16F2 /* DataInterface.framework in Frameworks */,
+				71EF0FF722D9341DE7489E26 /* Dependencies.framework in Frameworks */,
+				7E892CACFFDCC68BB417358D /* DependenciesMacros.framework in Frameworks */,
 				A94DFA8DD7548315BB0CF161 /* DomainInterface.framework in Frameworks */,
+				20A6B1A5AF0BE97B60B780AE /* Foundations.framework in Frameworks */,
+				25331ABA2B62C93B801F42C7 /* IdentifiedCollections.framework in Frameworks */,
+				23C8B915134EFE977A0AF44C /* InternalCollectionsUtilities.framework in Frameworks */,
+				0AC161F8F43479EF47B65273 /* IssueReporting.framework in Frameworks */,
+				8EC393B68B27E55ED82E5D5F /* IssueReportingPackageSupport.framework in Frameworks */,
+				BDF58A4C856FFC3CBE67FBBD /* LogMacro.framework in Frameworks */,
+				9FBB462562FD1381FCB33831 /* Model.framework in Frameworks */,
 				774D915DCAFDDA823F514A4D /* Networking.framework in Frameworks */,
+				581BA75F50FE6547B2732D10 /* OrderedCollections.framework in Frameworks */,
+				7F1A303924CE85716B92157B /* Perception.framework in Frameworks */,
+				D8D0B2291F7B85620B6DC4BF /* PerceptionCore.framework in Frameworks */,
 				0ABD067AC835C34B144A119C /* Repository.framework in Frameworks */,
+				6ADBD1397C6A44688E9A4170 /* Sharing.framework in Frameworks */,
+				1A4CE5864E3E0A793F262D04 /* Sharing1.framework in Frameworks */,
+				2E139BFE929C679F3FA93456 /* Sharing2.framework in Frameworks */,
+				4112B6136D7137512BB47137 /* SwiftNavigation.framework in Frameworks */,
+				090FFCC091BDCB28F3096CE7 /* SwiftUINavigation.framework in Frameworks */,
+				DE189ECAFE1EA2BAEA572638 /* UIKitNavigation.framework in Frameworks */,
+				84F29B64D24E2F2F7E7C75AF /* UIKitNavigationShim.framework in Frameworks */,
 				4A8A4FF21E2466F27305A4B8 /* UseCase.framework in Frameworks */,
+				5CDBF2E2AB4CD3E5B01496BE /* WeaveDI.framework in Frameworks */,
+				283B75BE810668074615A488 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,11 +326,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF87D70918A73AFB220707D /* OSLog.framework in Frameworks */,
+				0887602F05D5297DFF9512B6 /* CasePaths.framework in Frameworks */,
+				9759622C07EB4108F92C7BFC /* CasePathsCore.framework in Frameworks */,
+				D35EE132FCBD9B30CFA96C65 /* Clocks.framework in Frameworks */,
+				7B3D1F3D101ADF89557F377A /* CombineSchedulers.framework in Frameworks */,
+				9B8EF829A7ECBDD6C160A24C /* ComposableArchitecture.framework in Frameworks */,
+				928BF1612A4C4B5382E83F0A /* ConcurrencyExtras.framework in Frameworks */,
+				C9297C4ECC3FA3DD0DA1BB43 /* CustomDump.framework in Frameworks */,
 				CE60BFE1DCA1494561D5F3F0 /* DataInterface.framework in Frameworks */,
+				6E1098966CBE1B64D1958523 /* Dependencies.framework in Frameworks */,
+				DE99CE98396610B0D19BD58F /* DependenciesMacros.framework in Frameworks */,
 				AA2C8708317F5556E909D43A /* DomainInterface.framework in Frameworks */,
+				153DA734BD15A3E83170B825 /* Foundations.framework in Frameworks */,
+				193C3045681EE3E35615EEF4 /* IdentifiedCollections.framework in Frameworks */,
+				B3F6238BD291CB7780E63545 /* InternalCollectionsUtilities.framework in Frameworks */,
+				3AFA724175D614A70532C76C /* IssueReporting.framework in Frameworks */,
+				A32EBE1E2A8BBF14B91E5477 /* IssueReportingPackageSupport.framework in Frameworks */,
+				B49C0C48B313FA48AB6B5397 /* LogMacro.framework in Frameworks */,
+				796E9382BC2BE4D1E6889FD7 /* Model.framework in Frameworks */,
 				52B4AD0DF0AC04F86A07FB86 /* Networking.framework in Frameworks */,
+				53CBEAA13C914C361402B056 /* OrderedCollections.framework in Frameworks */,
+				666209C52E74FB8C6EFA853B /* Perception.framework in Frameworks */,
+				AC6749F009C54AB3B22C385D /* PerceptionCore.framework in Frameworks */,
 				70D5DB78FC01271FA17127DB /* Repository.framework in Frameworks */,
+				F965D44749FBCF0F5B2DA464 /* Sharing.framework in Frameworks */,
+				C19440D7C9DE70C6EDF16A45 /* Sharing1.framework in Frameworks */,
+				7E0F7A2E919A8E3E252C6E5E /* Sharing2.framework in Frameworks */,
+				54DA91BADE1E4B3FBC17C12A /* SwiftNavigation.framework in Frameworks */,
+				A3F778774B61770A1BCA5078 /* SwiftUINavigation.framework in Frameworks */,
+				0B2DBBBB0D34113CBC8D6045 /* UIKitNavigation.framework in Frameworks */,
+				1D11E73C71A95EF9678C1727 /* UIKitNavigationShim.framework in Frameworks */,
 				5A9AA023C2642C5EE42E3CAE /* UseCase.framework in Frameworks */,
+				E9700F067B085ED1D5953E61 /* WeaveDI.framework in Frameworks */,
+				C9F3B80FA983FA575F9B735A /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,11 +367,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C935BC4799F8B6E3A6223E1 /* OSLog.framework in Frameworks */,
+				912F15FB808EFD42963B2181 /* CasePaths.framework in Frameworks */,
+				DC7456DBD2DBD2754C15EEAF /* CasePathsCore.framework in Frameworks */,
+				1B86A8C6675D3D06F3A4B422 /* Clocks.framework in Frameworks */,
+				44EF53FEAA0FD1F604AFA623 /* CombineSchedulers.framework in Frameworks */,
+				887EBC2FF03A101E2EAA63DA /* ComposableArchitecture.framework in Frameworks */,
+				8C85E8CCC8F4BAC32A1F8956 /* ConcurrencyExtras.framework in Frameworks */,
+				BF97AB1F1286F02D88CDF7BF /* CustomDump.framework in Frameworks */,
 				BDB24F99EF91F73F88E48FDB /* DataInterface.framework in Frameworks */,
+				DB2E5FD322F40A6D95B7C5FB /* Dependencies.framework in Frameworks */,
+				E8229BE9614ACFBDD107F8D2 /* DependenciesMacros.framework in Frameworks */,
 				04950684383BD50C3C3F0634 /* DomainInterface.framework in Frameworks */,
+				6828F2D9954A65FFC9EC1ADA /* Foundations.framework in Frameworks */,
+				0361917575288BC2EAD1F718 /* IdentifiedCollections.framework in Frameworks */,
+				71592F799F7E3F1E40CE7D14 /* InternalCollectionsUtilities.framework in Frameworks */,
+				226AA78C1A3143B0A5EC1D8E /* IssueReporting.framework in Frameworks */,
+				28179AACF7CEE8F379C94168 /* IssueReportingPackageSupport.framework in Frameworks */,
+				822DF876BB668FF81689C7E4 /* LogMacro.framework in Frameworks */,
+				7A83E67FEDA6E2128A0DBE82 /* Model.framework in Frameworks */,
 				73E8511D2CFD4034A1050AA0 /* Networking.framework in Frameworks */,
+				30C165DDDBA521864ADED55A /* OrderedCollections.framework in Frameworks */,
+				D807263AF515DA4FF704F991 /* Perception.framework in Frameworks */,
+				60F926638241B9ADFD8E2777 /* PerceptionCore.framework in Frameworks */,
 				E5D416E83E8404C167333304 /* Repository.framework in Frameworks */,
+				91CA37E449BC98542266178B /* Sharing.framework in Frameworks */,
+				D8D02BB84AD77216D6013F99 /* Sharing1.framework in Frameworks */,
+				0A6F0AAF346955B125A6D78E /* Sharing2.framework in Frameworks */,
+				D98CEEFAB801D7192323A352 /* SwiftNavigation.framework in Frameworks */,
+				9CC12E9DD61D2CE1545340E1 /* SwiftUINavigation.framework in Frameworks */,
+				83AE0163C0E55279C04C6B35 /* UIKitNavigation.framework in Frameworks */,
+				69690E1DEF5699A93C48725C /* UIKitNavigationShim.framework in Frameworks */,
 				57C0F9688A74616539B65893 /* UseCase.framework in Frameworks */,
+				81254654BE4451E86130BA54 /* WeaveDI.framework in Frameworks */,
+				BAC14B2B430CF2FEC6001708 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,11 +408,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356A4BB64B50FE64EFEC39A0 /* OSLog.framework in Frameworks */,
+				AF2B0313CE26DE7442DA3E5F /* CasePaths.framework in Frameworks */,
+				743EB41AABC12C12649285B2 /* CasePathsCore.framework in Frameworks */,
+				BE2A82C9C8D2B6E2E0078C59 /* Clocks.framework in Frameworks */,
+				E5B720287B07983F7221D2EA /* CombineSchedulers.framework in Frameworks */,
+				D1B3E19A5BAFD54933477B6F /* ComposableArchitecture.framework in Frameworks */,
+				EE7267C14BD554AC1D7AABA6 /* ConcurrencyExtras.framework in Frameworks */,
+				705279422C0A90992618D1ED /* CustomDump.framework in Frameworks */,
 				2FBF18D6D458964E1E7D90D7 /* DataInterface.framework in Frameworks */,
+				2D5D4F61040CC8BFD8179471 /* Dependencies.framework in Frameworks */,
+				F9048C1176F9E1EE1743760B /* DependenciesMacros.framework in Frameworks */,
 				9020315D7561610CEF9526ED /* DomainInterface.framework in Frameworks */,
+				5B26B9E172329F680E1F0DC8 /* Foundations.framework in Frameworks */,
+				CAA8F9C0C53A1F3B80F97228 /* IdentifiedCollections.framework in Frameworks */,
+				1B0450341B849AEFCC59BC15 /* InternalCollectionsUtilities.framework in Frameworks */,
+				6D302121547606A8E2023A8A /* IssueReporting.framework in Frameworks */,
+				21306BFBBC8970FA6C09C67A /* IssueReportingPackageSupport.framework in Frameworks */,
+				C6A9D0FB7BC398F04CF131AE /* LogMacro.framework in Frameworks */,
+				C9DC1FC3181E0BCA557D445D /* Model.framework in Frameworks */,
 				65D9C904FC575380ED1A65F6 /* Networking.framework in Frameworks */,
+				02C8AC5E9D8916ADD6307109 /* OrderedCollections.framework in Frameworks */,
+				C817E90B41D7B129CAAF83C4 /* Perception.framework in Frameworks */,
+				4584FA74CCA4B45BDFBC2B84 /* PerceptionCore.framework in Frameworks */,
 				FA3AE178AFC2EC94AE27EDDF /* Repository.framework in Frameworks */,
+				AD8CB953E5D441B8542F4323 /* Sharing.framework in Frameworks */,
+				8460A0263EB5BB299A2ABD2E /* Sharing1.framework in Frameworks */,
+				543E087427D4A8420C2134C1 /* Sharing2.framework in Frameworks */,
+				F24CE72CE67DF688867DB06D /* SwiftNavigation.framework in Frameworks */,
+				AFC6E50E24CB3A42ADC766CA /* SwiftUINavigation.framework in Frameworks */,
+				720F08719A20288CF9AAFA7E /* UIKitNavigation.framework in Frameworks */,
+				E02460EECD57C6BE33A4759B /* UIKitNavigationShim.framework in Frameworks */,
 				36993172D516F95C289F2335 /* UseCase.framework in Frameworks */,
+				F6E21EB1CFC6005190879EAC /* WeaveDI.framework in Frameworks */,
+				E6F8049D9D48859398776FE3 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,16 +475,46 @@
 		250C62EE12DB56ECEBB473C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				37D454E3D3DEA3106FC5B1D9 /* CasePaths.framework */,
+				3FFF727FDBE22876C8AC9A3D /* CasePathsCore.framework */,
+				DE351E328C333744FEAAACEF /* Clocks.framework */,
+				ED856AD323CCEEC229B2C7F9 /* CombineSchedulers.framework */,
+				BB18C1565FE3EAC96777EC0F /* ComposableArchitecture.framework */,
+				10C2E0E9FA89653EBA928FFB /* ConcurrencyExtras.framework */,
 				8A9DCFA69D5780FF990FEFE1 /* Core_Debug.framework */,
 				C3B9CE641601ED6073ABDA8E /* Core_Prod.framework */,
 				CA2D4CD69407DE3A95F1B5E7 /* Core_Stage.framework */,
 				2B0FA7F85F3573FB522F9478 /* Core.framework */,
 				3E313EC3E53C9ED17660FD3F /* CoreTests.xctest */,
+				B6739389F41AD55401939AA3 /* CustomDump.framework */,
 				FCA4FDADB9D94372F0DF1DAB /* DataInterface.framework */,
+				AB917DE30C69F723BDF65353 /* Dependencies.framework */,
+				C175D576FC2CE0FF66645233 /* DependenciesMacros.framework */,
 				B89ECB181A314C23A60BB911 /* DomainInterface.framework */,
+				6AC2DBA35091C70DC51D960D /* Foundations.framework */,
+				DF63D412AA4B009EF483F4BE /* IdentifiedCollections.framework */,
+				12A713B47F2AAA89018EAC9F /* InternalCollectionsUtilities.framework */,
+				03E9AE72F3054B4A5B3FA955 /* IssueReporting.framework */,
+				9297D43D2BEFCC0B514EFC04 /* IssueReportingPackageSupport.framework */,
+				ABF88C39763A84B856476973 /* LogMacro.framework */,
+				3F9C516A0389461EC9B5D46E /* Model.framework */,
 				69722B72879FA3302F07EF38 /* Networking.framework */,
+				FC6EA3166EAE3B4E5C3A3655 /* OrderedCollections.framework */,
+				1F8CC6237F3D4AE8F77CAE48 /* Perception.framework */,
+				70750465C5300D484ABA9F60 /* PerceptionCore.framework */,
 				A6B638D8DB02624DD45D49E2 /* Repository.framework */,
+				4E7A1228CBFFBBC21B6F7108 /* Sharing.framework */,
+				141E57E374A54F7AB6E29DC2 /* Sharing1.framework */,
+				2690CFF7D8527FFE80ABE74D /* Sharing2.framework */,
+				D965F19D7CDBE741D5E4BC67 /* swift-composable-architecture_ComposableArchitecture.bundle */,
+				B8D5448233F039D5A9089DCB /* swift-sharing_Sharing.bundle */,
+				091619AA614A7C59B502D9D5 /* SwiftNavigation.framework */,
+				B3F3F8C53FB3A64C8A67E329 /* SwiftUINavigation.framework */,
+				AEC4F1585F46781177064EC7 /* UIKitNavigation.framework */,
+				84F99CA60AD1F77541E67E93 /* UIKitNavigationShim.framework */,
 				DE81E51C38BC7DF49AD255BD /* UseCase.framework */,
+				FCE691F2EA62E8BF6F213DF9 /* WeaveDI.framework */,
+				B0E1BE020E6058D897035F31 /* XCTestDynamicOverlay.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,7 +544,16 @@
 			children = (
 				E12816BA35F79D21E0D77318 /* Project */,
 				250C62EE12DB56ECEBB473C3 /* Products */,
+				64E34141D18153ACC8D4E5F8 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		64E34141D18153ACC8D4E5F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F52A0D92C684C59849570BB /* OSLog.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		81104ECEC5CD1B0F5111557B /* Sources */ = {
@@ -336,6 +653,7 @@
 				1D6B11F444EAE21363FF0969 /* Resources */,
 				F678B080F62A8C8E01BCF980 /* Frameworks */,
 				2C70A176FC2F8BBE09A41076 /* Embed Frameworks */,
+				787952B97F5276648B9F3258 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -413,6 +731,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB29D72D1FE671A3BFE6D7B /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */,
+				741A5006FF2D931F1EFAC7E4 /* swift-sharing_Sharing.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +874,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Stage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -562,7 +887,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core;
 				PRODUCT_NAME = Core_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -586,6 +935,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/CoreTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -593,7 +947,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core.CoreTests;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core.CoreTests;
 				PRODUCT_NAME = CoreTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -615,6 +993,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Prod-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -623,7 +1006,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core;
 				PRODUCT_NAME = Core_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -652,6 +1059,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Prod-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -660,7 +1072,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core;
 				PRODUCT_NAME = Core_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -685,6 +1121,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Debug-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -693,7 +1134,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core;
 				PRODUCT_NAME = Core_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -722,6 +1187,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Debug-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -730,7 +1200,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core;
 				PRODUCT_NAME = Core_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -750,6 +1244,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/CoreTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -757,7 +1256,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core.CoreTests;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core.CoreTests;
 				PRODUCT_NAME = CoreTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -842,6 +1365,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Stage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -850,7 +1378,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core;
 				PRODUCT_NAME = Core_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -875,6 +1427,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -883,7 +1440,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core;
 				PRODUCT_NAME = Core;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -912,6 +1493,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
+					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Core-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -920,7 +1506,31 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Core;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Core;
 				PRODUCT_NAME = Core;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

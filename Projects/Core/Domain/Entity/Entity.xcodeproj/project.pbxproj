@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		300A7F2C71E9911B9DE9A5BD /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41D354D5AE38D5B1280947 /* Base.swift */; };
+		5700ECA6FD38B77D693B0091 /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 209525459216D5CD40B81F82 /* Model.framework */; };
 		66998A96645025557C41895C /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41D354D5AE38D5B1280947 /* Base.swift */; };
 		7916B50FD14F5EF38C809048 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41D354D5AE38D5B1280947 /* Base.swift */; };
 		8C520704A554D01DC2011903 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41D354D5AE38D5B1280947 /* Base.swift */; };
+		8EFBDFE48EE37EC4A310E3F5 /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 209525459216D5CD40B81F82 /* Model.framework */; };
+		9A0C98812BF5FFA414CFB1CA /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209525459216D5CD40B81F82 /* Model.framework */; };
 		A7731722AD26181D6EBEE9A0 /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3D722D8A39C97CE4035A34 /* Entity.framework */; };
+		D5AB84F03933D55C5618D8B9 /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 209525459216D5CD40B81F82 /* Model.framework */; };
 		E3A1102D7A459CEBD9454CF1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3475DDDF8FD92B3EADBBA9 /* Test.swift */; };
+		EAF9FA5186D62449AA07F8B3 /* Model.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 209525459216D5CD40B81F82 /* Model.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6847AD067831ABF30691DADF /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				D5AB84F03933D55C5618D8B9 /* Model.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		790E71595980078A98576700 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,6 +61,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F0C41C755A87888178A4114 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				EAF9FA5186D62449AA07F8B3 /* Model.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		9029698398B431466FD13A5B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +81,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90CDECEE18B16B4E58461703 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				8EFBDFE48EE37EC4A310E3F5 /* Model.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		A7853DFF760FB0BFAB0151D3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +100,16 @@
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF10AE627F596663B7AA26AA /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				5700ECA6FD38B77D693B0091 /* Model.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		EE4D2DC9DAB7D622F2DCB391 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -79,6 +124,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		209525459216D5CD40B81F82 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EBC703573820B17E0EC445 /* Entity-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Entity-Prod-Info.plist"; sourceTree = "<group>"; };
 		6D3D722D8A39C97CE4035A34 /* Entity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3475DDDF8FD92B3EADBBA9 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -127,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7731722AD26181D6EBEE9A0 /* Entity.framework in Frameworks */,
+				9A0C98812BF5FFA414CFB1CA /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +234,7 @@
 				D11CC460DEE0B2237C4DB35C /* Entity_Stage.framework */,
 				6D3D722D8A39C97CE4035A34 /* Entity.framework */,
 				A74AA0F8625D0A07993367BF /* EntityTests.xctest */,
+				209525459216D5CD40B81F82 /* Model.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +266,7 @@
 				03E6AE5A1CAF748C505A2A3E /* Resources */,
 				78B48D204637ED43D873D9F8 /* Frameworks */,
 				EE4D2DC9DAB7D622F2DCB391 /* Embed Frameworks */,
+				8F0C41C755A87888178A4114 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -238,6 +287,7 @@
 				82D1A0FF15542E58CAB73A4B /* Resources */,
 				71A87BD5B9461548749E3CCF /* Frameworks */,
 				A7853DFF760FB0BFAB0151D3 /* Embed Frameworks */,
+				90CDECEE18B16B4E58461703 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -258,6 +308,7 @@
 				3018D2525C51FDA27C2A568D /* Resources */,
 				6636972E2F623A6968B12EF0 /* Frameworks */,
 				7DC2E1D6A2AC409B804299C1 /* Embed Frameworks */,
+				CF10AE627F596663B7AA26AA /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -278,6 +329,7 @@
 				F12668D72E268CD2F925C9A0 /* Resources */,
 				212F61E0D160AB416E8F8B42 /* Frameworks */,
 				790E71595980078A98576700 /* Embed Frameworks */,
+				6847AD067831ABF30691DADF /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -511,7 +563,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity;
 				PRODUCT_NAME = Entity;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -542,7 +594,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity.EntityTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity.EntityTests;
 				PRODUCT_NAME = EntityTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -626,7 +678,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity;
 				PRODUCT_NAME = Entity_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -653,7 +705,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity.EntityTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity.EntityTests;
 				PRODUCT_NAME = EntityTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -688,7 +740,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity;
 				PRODUCT_NAME = Entity;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -722,7 +774,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity;
 				PRODUCT_NAME = Entity_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -756,7 +808,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity;
 				PRODUCT_NAME = Entity_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -794,7 +846,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity;
 				PRODUCT_NAME = Entity_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -828,7 +880,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity;
 				PRODUCT_NAME = Entity_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -866,7 +918,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Entity;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Entity;
 				PRODUCT_NAME = Entity_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

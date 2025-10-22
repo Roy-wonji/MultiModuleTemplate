@@ -828,7 +828,7 @@
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "Derived/InfoPlists/DesignSystem_DesignSystem-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.generated.resources;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.generated.resources;
 				PRODUCT_NAME = DesignSystem_DesignSystem;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -865,7 +865,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem;
 				PRODUCT_NAME = DesignSystem;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -903,7 +903,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem;
 				PRODUCT_NAME = DesignSystem_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -937,7 +937,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem;
 				PRODUCT_NAME = DesignSystem_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -968,7 +968,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.DesignSystemTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.DesignSystemTests;
 				PRODUCT_NAME = DesignSystemTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -996,7 +996,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.DesignSystemTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.DesignSystemTests;
 				PRODUCT_NAME = DesignSystemTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1017,7 +1017,7 @@
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "Derived/InfoPlists/DesignSystem_DesignSystem_Prod-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.generated.resources;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.generated.resources;
 				PRODUCT_NAME = DesignSystem_DesignSystem_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1050,7 +1050,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem;
 				PRODUCT_NAME = DesignSystem;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1084,7 +1084,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem;
 				PRODUCT_NAME = DesignSystem_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1118,7 +1118,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem;
 				PRODUCT_NAME = DesignSystem_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1205,7 +1205,7 @@
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "Derived/InfoPlists/DesignSystem_DesignSystem-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.generated.resources;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.generated.resources;
 				PRODUCT_NAME = DesignSystem_DesignSystem;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1228,7 +1228,7 @@
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "Derived/InfoPlists/DesignSystem_DesignSystem_Stage-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.generated.resources;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.generated.resources;
 				PRODUCT_NAME = DesignSystem_DesignSystem_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1261,7 +1261,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem;
 				PRODUCT_NAME = DesignSystem_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1338,7 +1338,7 @@
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "Derived/InfoPlists/DesignSystem_DesignSystem_Stage-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.generated.resources;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.generated.resources;
 				PRODUCT_NAME = DesignSystem_DesignSystem_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1375,7 +1375,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem;
 				PRODUCT_NAME = DesignSystem_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1403,7 +1403,7 @@
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "Derived/InfoPlists/DesignSystem_DesignSystem_Debug-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.generated.resources;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.generated.resources;
 				PRODUCT_NAME = DesignSystem_DesignSystem_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1426,7 +1426,7 @@
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "Derived/InfoPlists/DesignSystem_DesignSystem_Prod-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.generated.resources;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.generated.resources;
 				PRODUCT_NAME = DesignSystem_DesignSystem_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1453,7 +1453,7 @@
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "Derived/InfoPlists/DesignSystem_DesignSystem_Debug-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DesignSystem.generated.resources;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DesignSystem.generated.resources;
 				PRODUCT_NAME = DesignSystem_DesignSystem_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

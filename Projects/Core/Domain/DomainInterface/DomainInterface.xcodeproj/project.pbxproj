@@ -471,7 +471,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface;
 				PRODUCT_NAME = DomainInterface;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -504,7 +504,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -537,7 +537,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -574,7 +574,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -666,7 +666,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -693,7 +693,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface.DomainInterfaceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface.DomainInterfaceTests;
 				PRODUCT_NAME = DomainInterfaceTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -723,7 +723,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface;
 				PRODUCT_NAME = DomainInterface;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -760,7 +760,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -791,7 +791,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface.DomainInterfaceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface.DomainInterfaceTests;
 				PRODUCT_NAME = DomainInterfaceTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -825,7 +825,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.DomainInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.DomainInterface;
 				PRODUCT_NAME = DomainInterface_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

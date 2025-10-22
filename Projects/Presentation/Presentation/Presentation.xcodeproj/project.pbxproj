@@ -529,9 +529,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation;
 				PRODUCT_NAME = Presentation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -588,9 +592,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation;
 				PRODUCT_NAME = Presentation_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -700,9 +708,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation;
 				PRODUCT_NAME = Presentation_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -811,9 +823,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation.PresentationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation.PresentationTests;
 				PRODUCT_NAME = PresentationTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -867,9 +883,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation;
 				PRODUCT_NAME = Presentation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -923,9 +943,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation.PresentationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation.PresentationTests;
 				PRODUCT_NAME = PresentationTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -983,9 +1007,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation;
 				PRODUCT_NAME = Presentation_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1046,9 +1074,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation;
 				PRODUCT_NAME = Presentation_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1109,9 +1141,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation;
 				PRODUCT_NAME = Presentation_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1168,9 +1204,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Presentation;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Presentation;
 				PRODUCT_NAME = Presentation_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

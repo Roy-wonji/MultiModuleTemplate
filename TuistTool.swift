@@ -11,6 +11,23 @@ func run(_ command: String, arguments: [String] = []) -> Int32 {
   process.arguments = [command] + arguments
   process.standardOutput = FileHandle.standardOutput
   process.standardError = FileHandle.standardError
+
+  // 🔥 현재 프로세스의 환경변수를 자식 프로세스에 전달
+  var environment = ProcessInfo.processInfo.environment
+
+  // setenv로 설정된 환경변수들을 수동으로 추가
+  if let projectName = getenv("PROJECT_NAME") {
+    environment["PROJECT_NAME"] = String(cString: projectName)
+  }
+  if let bundleId = getenv("BUNDLE_ID_PREFIX") {
+    environment["BUNDLE_ID_PREFIX"] = String(cString: bundleId)
+  }
+  if let teamId = getenv("TEAM_ID") {
+    environment["TEAM_ID"] = String(cString: teamId)
+  }
+
+  process.environment = environment
+
   do {
     try process.run()
     process.waitUntilExit()
@@ -131,20 +148,53 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
     setenv("BUNDLE_ID_PREFIX", bundleIdPrefix, 1)
     setenv("TEAM_ID", teamId, 1)
 
+    // 디버깅: 설정된 환경변수 확인
+    print("📋 설정된 환경변수 확인:")
+    if let projectName = getenv("PROJECT_NAME") {
+        print("  PROJECT_NAME: \(String(cString: projectName))")
+    } else {
+        print("  PROJECT_NAME: 설정되지 않음")
+    }
+    if let bundleId = getenv("BUNDLE_ID_PREFIX") {
+        print("  BUNDLE_ID_PREFIX: \(String(cString: bundleId))")
+    } else {
+        print("  BUNDLE_ID_PREFIX: 설정되지 않음")
+    }
+    if let team = getenv("TEAM_ID") {
+        print("  TEAM_ID: \(String(cString: team))")
+    } else {
+        print("  TEAM_ID: 설정되지 않음")
+    }
+
     print("🔧 Tuist 프로젝트 생성 중...")
     let result = run("tuist", arguments: ["generate"])
 
     if result == 0 {
+        // 생성된 workspace 파일 이름 변경
+        let oldWorkspaceName = "MultiModuleTemplate.xcworkspace"
+        let newWorkspaceName = "\(name).xcworkspace"
+
+        if FileManager.default.fileExists(atPath: oldWorkspaceName) && oldWorkspaceName != newWorkspaceName {
+            do {
+                if FileManager.default.fileExists(atPath: newWorkspaceName) {
+                    try FileManager.default.removeItem(atPath: newWorkspaceName)
+                }
+                try FileManager.default.moveItem(atPath: oldWorkspaceName, toPath: newWorkspaceName)
+                print("📝 Workspace 이름 변경: \(oldWorkspaceName) → \(newWorkspaceName)")
+            } catch {
+                print("⚠️ Workspace 이름 변경 실패: \(error)")
+            }
+        }
+
         print("\n✅ 프로젝트 '\(name)'이 성공적으로 생성되었습니다!")
         print("💡 .xcworkspace 파일을 열어서 작업을 시작하세요.")
 
         // 생성된 workspace 파일 찾기
-        let workspaceName = "\(name).xcworkspace"
-        if FileManager.default.fileExists(atPath: workspaceName) {
+        if FileManager.default.fileExists(atPath: newWorkspaceName) {
             print("🚀 자동으로 Xcode에서 열까요? (y/N)")
             let openXcode = prompt("").lowercased()
             if openXcode == "y" {
-                run("open", arguments: [workspaceName])
+                run("open", arguments: [newWorkspaceName])
             }
         }
     } else {

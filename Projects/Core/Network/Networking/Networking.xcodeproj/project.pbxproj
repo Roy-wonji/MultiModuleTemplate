@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0450ADFBB506A1D7CE762ED0 /* Foundations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FD71438C1E6E73F49CA99F /* Foundations.framework */; };
 		24657E36CC62292D14E4A658 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D231E9EF830B7E53D1EA8D0 /* Test.swift */; };
+		545551BCC861A702C47E2C82 /* Foundations.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 45FD71438C1E6E73F49CA99F /* Foundations.framework */; };
 		58CF295EECF7CEF11A88967E /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D5AC172276CD51B4D7B6CA /* Networking.framework */; };
+		65E6625115D04DB6C60BD63D /* Foundations.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 45FD71438C1E6E73F49CA99F /* Foundations.framework */; };
 		6DDFE2BE580CE3C376E64317 /* NetworkExported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80142F4B9AD1A6168ED953EE /* NetworkExported.swift */; };
 		8F0A16A03779572A45993165 /* NetworkExported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80142F4B9AD1A6168ED953EE /* NetworkExported.swift */; };
+		C53259D07C7921BDE686DE35 /* Foundations.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 45FD71438C1E6E73F49CA99F /* Foundations.framework */; };
+		F619EF8386DDB6E7A135664E /* Foundations.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 45FD71438C1E6E73F49CA99F /* Foundations.framework */; };
 		F7C7E5A24D542E8027B329DA /* NetworkExported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80142F4B9AD1A6168ED953EE /* NetworkExported.swift */; };
 		FD24EF0A7BF8884B9C6AFAA3 /* NetworkExported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80142F4B9AD1A6168ED953EE /* NetworkExported.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +51,26 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4414641E097F465BC94DF5D0 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				545551BCC861A702C47E2C82 /* Foundations.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		81E53DFBB75AD11950B2F404 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				65E6625115D04DB6C60BD63D /* Foundations.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		91802F57CFB9639C7F423B15 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,12 +101,33 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B663BA12B95CAF7F4117809B /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				F619EF8386DDB6E7A135664E /* Foundations.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C7959B1B9D99ABF91E13D692 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				C53259D07C7921BDE686DE35 /* Foundations.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00D5AC172276CD51B4D7B6CA /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13525008021394917353096F /* NetworkingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NetworkingTests-Info.plist"; sourceTree = "<group>"; };
 		414B0FAA67ED0CA24A545838 /* Networking_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FD71438C1E6E73F49CA99F /* Foundations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Foundations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D231E9EF830B7E53D1EA8D0 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		7B8A15992743705E1E8144D4 /* Networking-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Networking-Prod-Info.plist"; sourceTree = "<group>"; };
 		80142F4B9AD1A6168ED953EE /* NetworkExported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExported.swift; sourceTree = "<group>"; };
@@ -98,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0450ADFBB506A1D7CE762ED0 /* Foundations.framework in Frameworks */,
 				58CF295EECF7CEF11A88967E /* Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +245,7 @@
 		AFBC324CB1CEBDA5706F4E34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				45FD71438C1E6E73F49CA99F /* Foundations.framework */,
 				414B0FAA67ED0CA24A545838 /* Networking_Debug.framework */,
 				B7065F4239BA919C0F302F5A /* Networking_Prod.framework */,
 				F06252AF65B28BCA204004FC /* Networking_Stage.framework */,
@@ -226,6 +274,7 @@
 				747531BEC4ABD5FB24084B4F /* Resources */,
 				B7A6F60B58F85431CC6ADD48 /* Frameworks */,
 				B385B57A7FF60EA704F905A5 /* Embed Frameworks */,
+				B663BA12B95CAF7F4117809B /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -246,6 +295,7 @@
 				72592999F436558FC84554F8 /* Resources */,
 				EDC35DF7348B62B9866B925F /* Frameworks */,
 				134211D308C49E5BDE5B0049 /* Embed Frameworks */,
+				C7959B1B9D99ABF91E13D692 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -266,6 +316,7 @@
 				1AE2A5148C0D92E95A9B70FE /* Resources */,
 				3AAFC064781923426C7C0B82 /* Frameworks */,
 				A581817ADE07BBB717FADD4F /* Embed Frameworks */,
+				81E53DFBB75AD11950B2F404 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -307,6 +358,7 @@
 				AB0C580233F114BF679B9B63 /* Resources */,
 				DDDAC4519DB168AE812F341B /* Frameworks */,
 				373A8A8D0B91104F752A5040 /* Embed Frameworks */,
+				4414641E097F465BC94DF5D0 /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -460,7 +512,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
 				PRODUCT_NAME = Networking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -498,7 +550,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
 				PRODUCT_NAME = Networking_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -536,7 +588,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
 				PRODUCT_NAME = Networking_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -563,7 +615,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking.NetworkingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking.NetworkingTests;
 				PRODUCT_NAME = NetworkingTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -594,7 +646,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
 				PRODUCT_NAME = Networking_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -681,7 +733,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
 				PRODUCT_NAME = Networking_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -719,7 +771,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
 				PRODUCT_NAME = Networking_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -753,7 +805,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
 				PRODUCT_NAME = Networking_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -791,7 +843,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking;
 				PRODUCT_NAME = Networking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -877,7 +929,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Networking.NetworkingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.Networking.NetworkingTests;
 				PRODUCT_NAME = NetworkingTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;

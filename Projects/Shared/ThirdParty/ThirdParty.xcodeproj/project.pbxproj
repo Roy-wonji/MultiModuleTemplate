@@ -15,33 +15,46 @@
 		1D6C4D67EC8C19AC634855BC /* ComposableArchitecture.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3BB088CFCF5B751E961933C0 /* ComposableArchitecture.framework */; };
 		2A8020A3F07A908E497F1B9E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21178B4A2A59C6B2EADC5B6C /* Test.swift */; };
 		311471A656CA889BE88C78D9 /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7224F70B4CF69C652CE68E87 /* CasePathsCore.framework */; };
+		31841B69BD9306440FA3AEED /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B768581F11B7EEC79D3C428D /* OSLog.framework */; };
 		31DF26B9CD387C3DBBD90C18 /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB4F2063102023E996F015D /* IssueReporting.framework */; };
 		459C5FD5AD31D8A6C6628DC6 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB088CFCF5B751E961933C0 /* ComposableArchitecture.framework */; };
 		4D34235D228D6EE9C27534F0 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AE888EDA3909F45835B514 /* Sharing.framework */; };
 		4D4CF95D400DCA4D0B3D6B51 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE127F8400BF4F674847DF5D /* Perception.framework */; };
+		4DB26A5D872C7AB1F47F04DE /* TCACoordinators.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		551ABD7544CD267AE6CC195C /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDA5D0BD3E8E323677EB026 /* Clocks.framework */; };
+		5FF145C217A0F03EBD65BB90 /* WeaveDI.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A1063A80E3C9DDB2A28DB892 /* WeaveDI.framework */; };
 		603FE92EDB472C61D8437F72 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36F1CA8CC4B96FA2609B4DF /* SwiftNavigation.framework */; };
 		653474AB185843E0DF662DD1 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBE83BD9D8603167735DBA2 /* Sharing2.framework */; };
+		6902F07AC977B503A0B4EF8A /* WeaveDI.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A1063A80E3C9DDB2A28DB892 /* WeaveDI.framework */; };
+		6BC1A53B34C1F04511222D81 /* TCACoordinators.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
+		70050F733D72E5D033FFC580 /* WeaveDI.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A1063A80E3C9DDB2A28DB892 /* WeaveDI.framework */; };
 		78AC8F364BB31C11BB2FEC02 /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCBFAAA9644395883C4A718 /* ThirdParty.framework */; };
 		78E505D53CA7826ADE9757E2 /* ComposableArchitecture.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3BB088CFCF5B751E961933C0 /* ComposableArchitecture.framework */; };
+		84CAAE3326DCA9E68378B7B3 /* WeaveDI.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A1063A80E3C9DDB2A28DB892 /* WeaveDI.framework */; };
 		9003C2D283711C20FDBB33E0 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9510426F57C0386AD282AAA8 /* ConcurrencyExtras.framework */; };
 		910E2DEB552042AC98EB4F08 /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529D683020BDA42AF2A467E4 /* CombineSchedulers.framework */; };
 		92C6371E1DEAA7A0B1D6F2C7 /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CE454E7ACF464177DC1FB6 /* InternalCollectionsUtilities.framework */; };
 		96668040EAC7FFF193982EC5 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7E5510FEC285549404D23A /* XCTestDynamicOverlay.framework */; };
 		985AAB619CA4E6F97CA797F3 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AF99B4D617683E25151E3 /* OrderedCollections.framework */; };
 		98A0DA222D9BA10DFD520C3F /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E057B5A6C190B51DEA95A52C /* Dependencies.framework */; };
+		9B3801B19ADE9DA019023136 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		9C1C6C8D2E3E4B380A8C8B55 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075BC2A5FD001078D38856E6 /* CustomDump.framework */; };
 		9CFE05FA0C9CD8ADC787C716 /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A7606444B2A24E9A29BE1F /* DependenciesMacros.framework */; };
+		9D2DC67BE196726BF252CB93 /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1063A80E3C9DDB2A28DB892 /* WeaveDI.framework */; };
 		A1E39C81459EE28C97417885 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9962B6781CF429287378C23C /* UIKitNavigation.framework */; };
 		A268E18642DBC591738B7F88 /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6049E02DD59C6B27D4CC5A57 /* UIKitNavigationShim.framework */; };
+		A3C53A8EC404CA02DAB4CCE9 /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840D8A58938A9CBDF6DDB6F /* LogMacro.framework */; };
+		B021FBAB6B65BC2EBD04FF38 /* FlowStacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEED0FDDAE7EA1452BBB724 /* FlowStacks.framework */; };
 		B0E03937330DFF6BED21D35C /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC163A6902C6C732FD855A /* Base.swift */; };
 		B15FBED9FEBEFF4C5E31049B /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FB87EE5D02B2E41676C721 /* PerceptionCore.framework */; };
 		B24DF497249FDEACB5D8334F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC163A6902C6C732FD855A /* Base.swift */; };
 		BDC04BFA40CBD6A5E3B4386C /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0606655A5FEF1EA3A2F658DD /* SwiftUINavigation.framework */; };
+		C2BF74E44110BFE4F5CC9CCA /* TCACoordinators.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		C2E18D714C5C12B8DD0A521B /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76271C889E6D86C7D22CB056 /* swift-sharing_Sharing.bundle */; };
 		CDD2ABB41363C0E333172654 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC163A6902C6C732FD855A /* Base.swift */; };
 		D19BDCDFE47D3555554F163E /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 76271C889E6D86C7D22CB056 /* swift-sharing_Sharing.bundle */; };
 		D713F9D884B7FC901851460B /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE34E7FD7B776485C4F5686B /* IssueReportingPackageSupport.framework */; };
+		DCA9D19CBFFC9C21FC918FDA /* TCACoordinators.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B20D6714E7DB36C7B061414E /* TCACoordinators.framework */; };
 		E97EB92A32723612E3973813 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1193D224A436351DC8E329 /* CasePaths.framework */; };
 		EAA7CEA224A883C2C0DA46BA /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F3DB55EAF01D251BFF4B56 /* IdentifiedCollections.framework */; };
 		F8931CEA6B1AF2B9FE40DCA8 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F14DEE44EEA5E5AE73AB020 /* Sharing1.framework */; };
@@ -94,6 +107,8 @@
 			dstSubfolderSpec = 16;
 			files = (
 				78E505D53CA7826ADE9757E2 /* ComposableArchitecture.framework in Dependencies */,
+				4DB26A5D872C7AB1F47F04DE /* TCACoordinators.framework in Dependencies */,
+				70050F733D72E5D033FFC580 /* WeaveDI.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -104,6 +119,8 @@
 			dstSubfolderSpec = 16;
 			files = (
 				1D6C4D67EC8C19AC634855BC /* ComposableArchitecture.framework in Dependencies */,
+				DCA9D19CBFFC9C21FC918FDA /* TCACoordinators.framework in Dependencies */,
+				6902F07AC977B503A0B4EF8A /* WeaveDI.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -114,6 +131,8 @@
 			dstSubfolderSpec = 16;
 			files = (
 				05929F461A316092B9BA2153 /* ComposableArchitecture.framework in Dependencies */,
+				C2BF74E44110BFE4F5CC9CCA /* TCACoordinators.framework in Dependencies */,
+				84CAAE3326DCA9E68378B7B3 /* WeaveDI.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -155,6 +174,8 @@
 			dstSubfolderSpec = 16;
 			files = (
 				107C62AE9CD667F46B4E15A1 /* ComposableArchitecture.framework in Dependencies */,
+				6BC1A53B34C1F04511222D81 /* TCACoordinators.framework in Dependencies */,
+				5FF145C217A0F03EBD65BB90 /* WeaveDI.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -180,17 +201,22 @@
 		6F7E5510FEC285549404D23A /* XCTestDynamicOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTestDynamicOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7224F70B4CF69C652CE68E87 /* CasePathsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePathsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76271C889E6D86C7D22CB056 /* swift-sharing_Sharing.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-sharing_Sharing.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7840D8A58938A9CBDF6DDB6F /* LogMacro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogMacro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD96CC9A07F20F545BD7529 /* ThirdParty-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdParty-Debug-Info.plist"; sourceTree = "<group>"; };
 		876C0F3CB0FC08A46906C3D9 /* swift-composable-architecture_ComposableArchitecture.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-composable-architecture_ComposableArchitecture.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DC163A6902C6C732FD855A /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		9510426F57C0386AD282AAA8 /* ConcurrencyExtras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConcurrencyExtras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9962B6781CF429287378C23C /* UIKitNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F3DB55EAF01D251BFF4B56 /* IdentifiedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentifiedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1063A80E3C9DDB2A28DB892 /* WeaveDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeaveDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AE888EDA3909F45835B514 /* Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA036898E83738C48199540 /* ThirdParty-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdParty-Prod-Info.plist"; sourceTree = "<group>"; };
+		B20D6714E7DB36C7B061414E /* TCACoordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCACoordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36F1CA8CC4B96FA2609B4DF /* SwiftNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E1A842F278744F11160DFB /* ThirdParty_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdParty_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B768581F11B7EEC79D3C428D /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OSLog.framework; sourceTree = DEVELOPER_DIR; };
 		BE127F8400BF4F674847DF5D /* Perception.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEED0FDDAE7EA1452BBB724 /* FlowStacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowStacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32AF99B4D617683E25151E3 /* OrderedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FB87EE5D02B2E41676C721 /* PerceptionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerceptionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCBFAAA9644395883C4A718 /* ThirdParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31841B69BD9306440FA3AEED /* OSLog.framework in Frameworks */,
 				E97EB92A32723612E3973813 /* CasePaths.framework in Frameworks */,
 				311471A656CA889BE88C78D9 /* CasePathsCore.framework in Frameworks */,
 				551ABD7544CD267AE6CC195C /* Clocks.framework in Frameworks */,
@@ -237,10 +264,12 @@
 				9C1C6C8D2E3E4B380A8C8B55 /* CustomDump.framework in Frameworks */,
 				98A0DA222D9BA10DFD520C3F /* Dependencies.framework in Frameworks */,
 				9CFE05FA0C9CD8ADC787C716 /* DependenciesMacros.framework in Frameworks */,
+				B021FBAB6B65BC2EBD04FF38 /* FlowStacks.framework in Frameworks */,
 				EAA7CEA224A883C2C0DA46BA /* IdentifiedCollections.framework in Frameworks */,
 				92C6371E1DEAA7A0B1D6F2C7 /* InternalCollectionsUtilities.framework in Frameworks */,
 				31DF26B9CD387C3DBBD90C18 /* IssueReporting.framework in Frameworks */,
 				D713F9D884B7FC901851460B /* IssueReportingPackageSupport.framework in Frameworks */,
+				A3C53A8EC404CA02DAB4CCE9 /* LogMacro.framework in Frameworks */,
 				985AAB619CA4E6F97CA797F3 /* OrderedCollections.framework in Frameworks */,
 				4D4CF95D400DCA4D0B3D6B51 /* Perception.framework in Frameworks */,
 				B15FBED9FEBEFF4C5E31049B /* PerceptionCore.framework in Frameworks */,
@@ -249,9 +278,11 @@
 				653474AB185843E0DF662DD1 /* Sharing2.framework in Frameworks */,
 				603FE92EDB472C61D8437F72 /* SwiftNavigation.framework in Frameworks */,
 				BDC04BFA40CBD6A5E3B4386C /* SwiftUINavigation.framework in Frameworks */,
+				9B3801B19ADE9DA019023136 /* TCACoordinators.framework in Frameworks */,
 				78AC8F364BB31C11BB2FEC02 /* ThirdParty.framework in Frameworks */,
 				A1E39C81459EE28C97417885 /* UIKitNavigation.framework in Frameworks */,
 				A268E18642DBC591738B7F88 /* UIKitNavigationShim.framework in Frameworks */,
+				9D2DC67BE196726BF252CB93 /* WeaveDI.framework in Frameworks */,
 				96668040EAC7FFF193982EC5 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +321,20 @@
 			path = ThirdPartyTests;
 			sourceTree = "<group>";
 		};
+		A20DE1C13B999322AE683CF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B768581F11B7EEC79D3C428D /* OSLog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B36E18C7964263762EDFD9B3 = {
 			isa = PBXGroup;
 			children = (
 				E8CAC09490FDE4FD320C5225 /* Project */,
 				C04DB49BAFD37E93F4993806 /* Products */,
+				A20DE1C13B999322AE683CF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -322,10 +362,12 @@
 				075BC2A5FD001078D38856E6 /* CustomDump.framework */,
 				E057B5A6C190B51DEA95A52C /* Dependencies.framework */,
 				F6A7606444B2A24E9A29BE1F /* DependenciesMacros.framework */,
+				BEEED0FDDAE7EA1452BBB724 /* FlowStacks.framework */,
 				A0F3DB55EAF01D251BFF4B56 /* IdentifiedCollections.framework */,
 				E8CE454E7ACF464177DC1FB6 /* InternalCollectionsUtilities.framework */,
 				5AB4F2063102023E996F015D /* IssueReporting.framework */,
 				FE34E7FD7B776485C4F5686B /* IssueReportingPackageSupport.framework */,
+				7840D8A58938A9CBDF6DDB6F /* LogMacro.framework */,
 				C32AF99B4D617683E25151E3 /* OrderedCollections.framework */,
 				BE127F8400BF4F674847DF5D /* Perception.framework */,
 				D9FB87EE5D02B2E41676C721 /* PerceptionCore.framework */,
@@ -336,6 +378,7 @@
 				76271C889E6D86C7D22CB056 /* swift-sharing_Sharing.bundle */,
 				B36F1CA8CC4B96FA2609B4DF /* SwiftNavigation.framework */,
 				0606655A5FEF1EA3A2F658DD /* SwiftUINavigation.framework */,
+				B20D6714E7DB36C7B061414E /* TCACoordinators.framework */,
 				23C9FE08FD9C2C513D1679DB /* ThirdParty_Debug.framework */,
 				B3E1A842F278744F11160DFB /* ThirdParty_Prod.framework */,
 				6865A708D3CFBD5D900FD8EA /* ThirdParty_Stage.framework */,
@@ -343,6 +386,7 @@
 				E40944E96BB05F258649A6B0 /* ThirdPartyTests.xctest */,
 				9962B6781CF429287378C23C /* UIKitNavigation.framework */,
 				6049E02DD59C6B27D4CC5A57 /* UIKitNavigationShim.framework */,
+				A1063A80E3C9DDB2A28DB892 /* WeaveDI.framework */,
 				6F7E5510FEC285549404D23A /* XCTestDynamicOverlay.framework */,
 			);
 			name = Products;
@@ -687,9 +731,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty.ThirdPartyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty.ThirdPartyTests;
 				PRODUCT_NAME = ThirdPartyTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -743,9 +791,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -806,9 +858,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -869,9 +925,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Debug;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -928,9 +988,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -987,9 +1051,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1046,9 +1114,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty;
 				PRODUCT_NAME = ThirdParty;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1109,9 +1181,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty;
 				PRODUCT_NAME = ThirdParty_Stage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1165,9 +1241,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty.ThirdPartyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty.ThirdPartyTests;
 				PRODUCT_NAME = ThirdPartyTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1284,9 +1364,13 @@
 					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
 					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
+					"-load-plugin-executable",
 					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
+					"-load-plugin-executable",
+					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdParty;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Bandscape.ThirdParty;
 				PRODUCT_NAME = ThirdParty;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

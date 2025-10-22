@@ -12,6 +12,8 @@ let project = Project.makeAppModule(
   settings:  .settings(),
   dependencies: [
     .SPM.composableArchitecture,
+    .SPM.weaveDI,
+    .SPM.tcaCoordinator
   ],
   sources: ["Sources/**"]
 )
