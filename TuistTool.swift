@@ -40,6 +40,118 @@ func prompt(_ message: String) -> String {
 // MARK: - Tuist 명령어
 func generate() { setenv("TUIST_ROOT_DIR", FileManager.default.currentDirectoryPath, 1); run("tuist", arguments: ["generate"]) }
 
+// MARK: - 새 프로젝트 생성
+func newProject() {
+    print("\n🚀 새 프로젝트 생성을 시작합니다.")
+
+    let projectName = prompt("프로젝트 이름을 입력하세요")
+    guard !projectName.isEmpty else {
+        print("❌ 프로젝트 이름은 필수입니다.")
+        return
+    }
+
+    let bundleIdPrefix = prompt("번들 ID 접두사를 입력하세요 (기본값: io.Roy.Module)")
+    let finalBundleId = bundleIdPrefix.isEmpty ? "io.Roy.Module" : bundleIdPrefix
+
+    let teamId = prompt("팀 ID를 입력하세요 (기본값: N94CS4N6VR)")
+    let finalTeamId = teamId.isEmpty ? "N94CS4N6VR" : teamId
+
+    print("\n📋 설정 정보:")
+    print("📱 프로젝트명: \(projectName)")
+    print("📦 번들 ID 접두사: \(finalBundleId)")
+    print("👥 팀 ID: \(finalTeamId)")
+
+    let confirm = prompt("\n위 설정으로 프로젝트를 생성하시겠습니까? (y/N)")
+    guard confirm.lowercased() == "y" else {
+        print("❌ 프로젝트 생성이 취소되었습니다.")
+        return
+    }
+
+    generateProjectWithSettings(
+        name: projectName,
+        bundleIdPrefix: finalBundleId,
+        teamId: finalTeamId
+    )
+}
+
+func generateProjectWithArgs() {
+    let args = Array(CommandLine.arguments.dropFirst(2)) // command와 하위 명령 제외
+
+    guard args.count >= 1 else {
+        print("사용법: ./tuisttool generate --name <프로젝트명> [--bundle-id <번들ID>] [--team-id <팀ID>]")
+        return
+    }
+
+    var projectName = ""
+    var bundleIdPrefix = "io.Roy.Module"
+    var teamId = "N94CS4N6VR"
+
+    var i = 0
+    while i < args.count {
+        switch args[i] {
+        case "--name", "-n":
+            if i + 1 < args.count {
+                projectName = args[i + 1]
+                i += 1
+            }
+        case "--bundle-id", "-b":
+            if i + 1 < args.count {
+                bundleIdPrefix = args[i + 1]
+                i += 1
+            }
+        case "--team-id", "-t":
+            if i + 1 < args.count {
+                teamId = args[i + 1]
+                i += 1
+            }
+        default:
+            if projectName.isEmpty {
+                projectName = args[i]
+            }
+        }
+        i += 1
+    }
+
+    guard !projectName.isEmpty else {
+        print("❌ 프로젝트 이름은 필수입니다.")
+        print("사용법: ./tuisttool newproject <프로젝트명> [--bundle-id <번들ID>] [--team-id <팀ID>]")
+        return
+    }
+
+    generateProjectWithSettings(
+        name: projectName,
+        bundleIdPrefix: bundleIdPrefix,
+        teamId: teamId
+    )
+}
+
+func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: String) {
+    print("\n⚙️ 환경변수 설정 중...")
+    setenv("PROJECT_NAME", name, 1)
+    setenv("BUNDLE_ID_PREFIX", bundleIdPrefix, 1)
+    setenv("TEAM_ID", teamId, 1)
+
+    print("🔧 Tuist 프로젝트 생성 중...")
+    let result = run("tuist", arguments: ["generate"])
+
+    if result == 0 {
+        print("\n✅ 프로젝트 '\(name)'이 성공적으로 생성되었습니다!")
+        print("💡 .xcworkspace 파일을 열어서 작업을 시작하세요.")
+
+        // 생성된 workspace 파일 찾기
+        let workspaceName = "\(name).xcworkspace"
+        if FileManager.default.fileExists(atPath: workspaceName) {
+            print("🚀 자동으로 Xcode에서 열까요? (y/N)")
+            let openXcode = prompt("").lowercased()
+            if openXcode == "y" {
+                run("open", arguments: [workspaceName])
+            }
+        }
+    } else {
+        print("❌ 프로젝트 생성에 실패했습니다.")
+    }
+}
+
 func fetch()    { run("tuist", arguments: ["fetch"]) }
 func build()    { clean(); fetch(); generate() }
 func edit()     { run("tuist", arguments: ["edit"]) }
@@ -233,7 +345,7 @@ func registerModule() {
 
 // MARK: - Entrypoint
 enum Command: String {
-  case edit, generate, fetch, build, clean, install, cache, reset, moduleinit
+  case edit, generate, fetch, build, clean, install, cache, reset, moduleinit, newproject
 }
 
 let args = CommandLine.arguments.dropFirst()
@@ -246,6 +358,12 @@ guard let cmd = args.first, let command = Command(rawValue: cmd) else {
       ./tuisttool clean
       ./tuisttool reset
       ./tuisttool moduleinit
+      ./tuisttool newproject [<프로젝트명>] [--bundle-id <번들ID>] [--team-id <팀ID>]
+
+    예시:
+      ./tuisttool newproject                          # 대화형으로 입력
+      ./tuisttool newproject MyAwesomeApp             # 간단한 사용법
+      ./tuisttool newproject MyApp --bundle-id com.company.app --team-id ABC123DEF
     """)
   exit(1)
 }
@@ -260,4 +378,11 @@ switch command {
   case .cache:      cache()
   case .reset:      reset()
   case .moduleinit: registerModule()
+  case .newproject:
+    // 인자가 있으면 인자로 처리, 없으면 대화형으로 처리
+    if CommandLine.arguments.count > 2 {
+        generateProjectWithArgs()
+    } else {
+        newProject()
+    }
 }

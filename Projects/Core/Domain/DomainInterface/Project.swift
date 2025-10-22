@@ -11,7 +11,8 @@ let project = Project.makeAppModule(
   product: .framework,
   settings:  .settings(),
   dependencies: [
-    .Data(implements: .Model)
+    .Data(implements: .Model),
+    .Domain(implements: .Entity)
   ],
   sources: ["Sources/**"]
 )

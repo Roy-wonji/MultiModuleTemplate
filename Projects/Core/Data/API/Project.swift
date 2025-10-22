@@ -6,13 +6,12 @@ import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
 let project = Project.makeAppModule(
-  name: "UseCase",
-  bundleId: .appBundleID(name: ".UseCase"),
+  name: "API",
+  bundleId: .appBundleID(name: ".API"),
   product: .staticFramework,
   settings:  .settings(),
   dependencies: [
-    .Data(implements: .Repository),
-    .Domain(implements: .DomainInterface)
+
   ],
   sources: ["Sources/**"]
 )
