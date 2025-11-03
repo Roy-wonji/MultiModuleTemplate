@@ -18,7 +18,8 @@ public extension InfoPlist {
       .setCFBundleExecutable("$(EXECUTABLE_NAME)")
       .setCFBundleIdentifier("$(PRODUCT_BUNDLE_IDENTIFIER)")
       .setCFBundleInfoDictionaryVersion("6.0")
-      .setCFBundleName("${BUNDLE_DISPLAY_NAME}")
+      .setCFBundleName("$(PRODUCT_NAME)")
+      .setCFBundleDisplayName("$(BUNDLE_DISPLAY_NAME)")  // 🎯 xconfig에서 설정
       .setCFBundlePackageType("APPL")
       .setCFBundleShortVersionString(.appVersion())
       .setAppTransportSecurity()

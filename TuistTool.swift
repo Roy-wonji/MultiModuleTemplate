@@ -336,7 +336,10 @@ private func prepareTemplateForNewProject(oldName: String, newName: String, bund
     // 3단계: ProjectConfig.swift 업데이트 (핵심!)
     updateProjectConfig(newName: newName, bundleIdPrefix: bundleIdPrefix, teamId: teamId)
 
-    // 4단계: 검증
+    // 4단계: xconfig 파일들 업데이트
+    updateXConfigFiles(newName: newName)
+
+    // 5단계: 검증
     verifyNameChange(oldName: oldName, newName: newName)
 }
 
@@ -836,6 +839,61 @@ func registerModule() {
   } else {
     print("❌ 모듈 생성 실패")
   }
+}
+
+// MARK: - XConfig 파일 업데이트
+private func updateXConfigFiles(newName: String) {
+    print("🔧 xconfig 파일들 업데이트 중...")
+
+    let configFiles = ["Dev.xcconfig", "Stage.xcconfig", "Prod.xcconfig", "Release.xcconfig"]
+
+    for configFile in configFiles {
+        let configPath = "Config/\(configFile)"
+
+        guard FileManager.default.fileExists(atPath: configPath) else {
+            print("⚠️ \(configFile) 파일을 찾을 수 없습니다: \(configPath)")
+            continue
+        }
+
+        do {
+            var content = try String(contentsOfFile: configPath, encoding: .utf8)
+            let originalContent = content
+
+            // 이미 동적 설정된 경우는 건너뛰기
+            if content.contains("PRODUCT_NAME = $(PROJECT_NAME)") && content.contains("BUNDLE_DISPLAY_NAME = $(PROJECT_NAME)") {
+                print("ℹ️ \(configFile) 이미 동적 설정됨")
+                continue
+            }
+
+            // 하드코딩된 프로젝트 이름을 동적 참조로 변경
+            let patterns = [
+                (#"PRODUCT_NAME = [^$\n\r]*$"#, "PRODUCT_NAME = $(PROJECT_NAME)"),
+                (#"PRODUCT_NAME = [^$\n\r]*-Dev$"#, "PRODUCT_NAME = $(PROJECT_NAME)-Dev"),
+                (#"PRODUCT_NAME = [^$\n\r]*-Stage$"#, "PRODUCT_NAME = $(PROJECT_NAME)-Stage"),
+                (#"PRODUCT_NAME = [^$\n\r]*-Prod$"#, "PRODUCT_NAME = $(PROJECT_NAME)-Prod"),
+                (#"BUNDLE_DISPLAY_NAME = [^$\n\r]*$"#, "BUNDLE_DISPLAY_NAME = $(PROJECT_NAME)"),
+                (#"BUNDLE_DISPLAY_NAME = [^$\n\r]*\(Dev\)$"#, "BUNDLE_DISPLAY_NAME = $(PROJECT_NAME)(Dev)"),
+                (#"BUNDLE_DISPLAY_NAME = [^$\n\r]*\(Stage\)$"#, "BUNDLE_DISPLAY_NAME = $(PROJECT_NAME)(Stage)"),
+                (#"BUNDLE_DISPLAY_NAME = [^$\n\r]*\(Prod\)$"#, "BUNDLE_DISPLAY_NAME = $(PROJECT_NAME)(Prod)")
+            ]
+
+            for (pattern, replacement) in patterns {
+                content = content.replacingOccurrences(of: pattern, with: replacement, options: .regularExpression)
+            }
+
+            if content != originalContent {
+                try content.write(toFile: configPath, atomically: true, encoding: .utf8)
+                print("✅ \(configFile) 업데이트 완료")
+            } else {
+                print("ℹ️ \(configFile) 변경사항 없음")
+            }
+
+        } catch {
+            print("❌ \(configFile) 업데이트 실패: \(error)")
+        }
+    }
+
+    print("✅ xconfig 파일들 업데이트 완료")
 }
 
 // MARK: - Entrypoint

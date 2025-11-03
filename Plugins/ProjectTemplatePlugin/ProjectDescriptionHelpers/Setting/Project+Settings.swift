@@ -63,13 +63,13 @@ extension Settings {
           ),
         xcconfig: .path(.dev)
       ),
-      .debug(
+      .release(
         name: .stage,
         settings:
           commonSettings(
             appName: Project.Environment.appStageName,
             displayName: Project.Environment.appName,
-            provisioningProfile: "match Development \(Project.Environment.bundlePrefix)",
+            provisioningProfile: "match AppStore \(Project.Environment.bundlePrefix)",
             setSkipInstall: false
           ),
         xcconfig: .path(.stage)

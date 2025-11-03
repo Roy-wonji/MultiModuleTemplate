@@ -17,8 +17,8 @@ extension ConfigurationName {
 public extension Array where Element == Configuration {
     static let `default`: [Configuration] = [
         .debug(name: .dev, xcconfig: .path(.dev)),
-        .debug(name: .stage, xcconfig: .path(.stage)),
-        .debug(name: .prod, xcconfig: .path(.prod)),
+        .release(name: .stage, xcconfig: .path(.stage)),
+        .release(name: .prod, xcconfig: .path(.prod)),
         .release(name: .release, xcconfig: .path(.release))
     ]
 }

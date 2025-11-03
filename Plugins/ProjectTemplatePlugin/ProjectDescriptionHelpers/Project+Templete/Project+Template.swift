@@ -213,13 +213,18 @@ public extension Scheme {
         case .dev, .stage: "\(appName)-\(environment.name)"
         }
 
+        let configuration: ConfigurationName = switch environment {
+        case .dev: .debug
+        case .stage, .prod: .release
+        }
+
         return .scheme(
             name: schemeName,
             buildAction: .buildAction(targets: [.target(name)]),
             runAction: .runAction(configuration: .init(stringLiteral: environment.name)),
             archiveAction: .archiveAction(configuration: .release),
             profileAction: .profileAction(configuration: .release),
-            analyzeAction: .analyzeAction(configuration: .debug)
+            analyzeAction: .analyzeAction(configuration: configuration)
         )
     }
 }

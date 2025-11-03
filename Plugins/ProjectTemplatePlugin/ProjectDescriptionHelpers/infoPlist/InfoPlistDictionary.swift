@@ -34,7 +34,11 @@ extension InfoPlistDictionary {
   func setCFBundleName(_ value: String) -> InfoPlistDictionary {
     return self.merging(["CFBundleName": .string(value)]) { (_, new) in new }
   }
-  
+
+  func setCFBundleDisplayName(_ value: String) -> InfoPlistDictionary {
+    return self.merging(["CFBundleDisplayName": .string(value)]) { (_, new) in new }
+  }
+
   func setCFBundlePackageType(_ value: String) -> InfoPlistDictionary {
     return self.merging(["CFBundlePackageType": .string(value)]) { (_, new) in new }
   }
