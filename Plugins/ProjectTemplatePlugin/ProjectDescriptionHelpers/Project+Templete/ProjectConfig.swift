@@ -14,7 +14,7 @@ public struct ProjectConfig {
 
     // MARK: - 🎯 프로젝트 이름 설정 (여기만 바꾸면 됩니다!)
     /// 프로젝트 이름을 여기서 설정하세요
-    public static let projectName: String = "StageTest"
+    public static let projectName: String = "MultiModule"
 
     // MARK: - 📱 앱 정보 (자동 생성됨)
     public static let appName = projectName

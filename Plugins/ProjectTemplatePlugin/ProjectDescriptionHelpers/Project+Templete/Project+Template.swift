@@ -182,49 +182,69 @@ public extension Project {
 
 
 extension Scheme {
-  public static func makeScheme(target: ConfigurationName, name: String) -> Scheme {
+  public static func makeScheme(target configuration: ConfigurationName, name: String) -> Scheme {
     return Scheme.scheme(
       name: name,
       shared: true,
-      buildAction: .buildAction(targets: ["\(name)"]),
+      buildAction: .buildAction(
+        targets: [.target(name)]
+      ),
       testAction: .targets(
         ["\(name)Tests"],
-        configuration: target,
-        options: .options(coverage: true, codeCoverageTargets: ["\(name)"])
+        configuration: configuration,
+        options: .options(
+          coverage: true,
+          codeCoverageTargets: [.target(name)]
+        )
       ),
-      runAction: .runAction(configuration: target),
-      archiveAction: .archiveAction(configuration: target),
-      profileAction: .profileAction(configuration: target),
-      analyzeAction: .analyzeAction(configuration: target)
-      
+      runAction: .runAction(configuration: configuration),
+      archiveAction: .archiveAction(configuration: configuration),
+      profileAction: .profileAction(configuration: configuration),
+      analyzeAction: .analyzeAction(configuration: configuration)
     )
-    
   }
-  
 
+  public static func makeTestPlanScheme(target: ConfigurationName, name: String) -> Scheme {
+    return Scheme.scheme(
+      name: name,
+      shared: true,
+      buildAction: .buildAction(targets: ["\(name)", "\(name)Tests"]),
+      testAction: .testPlans(["\(name)Tests/Sources/\(name)TestPlan.xctestplan"]),
+      runAction: .runAction(configuration: "Debug"),
+      archiveAction: .archiveAction(configuration: "Debug"),
+      profileAction: .profileAction(configuration: "Debug"),
+      analyzeAction: .analyzeAction(configuration: "Debug")
+    )
+  }
 }
 
 
 public extension Scheme {
-    static func scheme(name: String, environment: ConfiguratuonEnviroment) -> Scheme {
-      let appName = Project.Environment.appName
-        let schemeName = switch environment {
-        case .prod: appName
-        case .dev, .stage: "\(appName)-\(environment.name)"
-        }
+    static func scheme(name: String, environment: ConfigurationEnvironment) -> Scheme {
+        let appName = Project.Environment.appName
+        let schemeName: String = (environment == .prod)
+            ? appName
+            : "\(appName)-\(environment.name)"
 
-        let configuration: ConfigurationName = switch environment {
-        case .dev: .debug
-        case .stage, .prod: .release
-        }
-
-        return .scheme(
+      return Scheme.scheme(
             name: schemeName,
-            buildAction: .buildAction(targets: [.target(name)]),
-            runAction: .runAction(configuration: .init(stringLiteral: environment.name)),
+            shared: true,
+            buildAction: .buildAction(
+              targets: [.target(name)]
+            ),
+            testAction: 
+                .targets(
+                  ["\(name)Tests"],
+                  configuration: environment.configurationName,
+                  options:.options(
+                    coverage: true,
+                    codeCoverageTargets: [.target(name)]
+                  )
+            ),
+            runAction: .runAction(configuration: environment.configurationName),
             archiveAction: .archiveAction(configuration: .release),
             profileAction: .profileAction(configuration: .release),
-            analyzeAction: .analyzeAction(configuration: configuration)
+            analyzeAction: .analyzeAction(configuration: environment.configurationName)
         )
     }
 }
