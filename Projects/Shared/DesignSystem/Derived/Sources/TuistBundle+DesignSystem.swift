@@ -55,7 +55,7 @@ extension Foundation.Bundle {
 }
 // MARK: - Objective-C Bundle Accessor
 @objc
-public class DesignSystemResources: NSObject {
+public final class DesignSystemResources: NSObject {
 @objc public class var bundle: Bundle {
     return .module
 }

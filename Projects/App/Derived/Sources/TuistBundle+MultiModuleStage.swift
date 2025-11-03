@@ -11,12 +11,12 @@ import Foundation
 // MARK: - Swift Bundle Accessor for Frameworks
 private class BundleFinder {}
 extension Foundation.Bundle {
-/// Since MultiModuleTemplate-Prod is a application, the bundle for classes within this module can be used directly.
+/// Since MultiModule-Stage is a application, the bundle for classes within this module can be used directly.
     static let module = Bundle(for: BundleFinder.self)
 }
 // MARK: - Objective-C Bundle Accessor
 @objc
-public class MultiModuleTemplateProdResources: NSObject {
+public final class MultiModuleStageResources: NSObject {
 @objc public class var bundle: Bundle {
     return .module
 }

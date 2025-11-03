@@ -16,22 +16,23 @@ public extension Project {
         print("🔍 [Project+Environment] PROJECT_NAME 환경변수 발견: \(envProjectName)")
         return envProjectName
       } else {
-        print("🔍 [Project+Environment] PROJECT_NAME 환경변수 없음, 기본값 사용")
-        return "MultiModuleTemplate"
+        print("🎵 [Project+Environment] ProjectConfig에서 프로젝트 이름 사용: \(ProjectConfig.projectName)")
+        return ProjectConfig.projectName
       }
     }()
-    private static let bundleIdPrefix = ProcessInfo.processInfo.environment["BUNDLE_ID_PREFIX"] ?? "io.Roy.Module"
-    private static let teamId = ProcessInfo.processInfo.environment["TEAM_ID"] ?? "N94CS4N6VR"
+    // 🎯 모든 설정을 ProjectConfig에서 가져오거나 환경변수 우선 적용
+    private static let bundleIdPrefix = ProcessInfo.processInfo.environment["BUNDLE_ID_PREFIX"] ?? ProjectConfig.bundleIdPrefix
+    private static let teamId = ProcessInfo.processInfo.environment["TEAM_ID"] ?? ProjectConfig.teamId
 
     public static let appName = projectName
     public static let appStageName = "\(projectName)-Stage"
     public static let appProdName = "\(projectName)-Prod"
     public static let appDevName = "\(projectName)-Dev"
-    public static let deploymentTarget : ProjectDescription.DeploymentTargets = .iOS("17.0")
-    public static let deploymentDestination: ProjectDescription.Destinations = [.iPhone]
+    public static let deploymentTarget = ProjectConfig.deploymentTarget
+    public static let deploymentDestination = ProjectConfig.deploymentDestination
     public static let organizationTeamId = teamId
     public static let bundlePrefix = bundleIdPrefix
-    public static let appVersion = "1.0.0"
+    public static let appVersion = ProjectConfig.appVersion
     public static let mainBundleId = bundleIdPrefix
   }
 }

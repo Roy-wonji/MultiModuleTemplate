@@ -53,11 +53,14 @@ swiftc TuistTool.swift -o tuisttool
 ### 템플릿 그대로 사용
 
 ```bash
-tuist up          # 개발환경 부트스트랩
-tuist install     # 라이브러리 다운로드
+# Tuist 4.97.2 최신 명령어
+tuist install     # 의존성 설치 (새로운 명령어)
 tuist generate    # 프로젝트 생성
 tuist build       # 빌드
 tuist test        # 테스트
+
+# 또는 TuistTool 사용 (권장)
+./tuisttool build # clean + install + generate 한번에
 ```
 
 ## 주요 모듈 설명
@@ -103,16 +106,36 @@ Data/Repository implements DataInterface
 
 ## 개발 환경
 
-- iOS 16.0+
-- Xcode 15.0+
-- Swift 5.9+
-- Tuist 4.50+
+- iOS 17.0+
+- Xcode 26.0.1+
+- Swift 6.0+
+- **Tuist 4.97.2** (최신 최적화 적용)
 
 ## 사용 라이브러리
 
 - **ComposableArchitecture**: 상태 관리
 - **WeaveDI**: 의존성 주입
-- **SwiftLint**: 코드 스타일 체크
+- **TCACoordinators**: TCA 기반 네비게이션
+- **FlowStacks**: SwiftUI 네비게이션
+
+## ⚡ Tuist 4.97.2 최적화
+
+이 템플릿은 **Tuist 4.97.2**의 최신 기능들을 완전히 활용하여 최적화되었습니다:
+
+### 🚀 **성능 최적화**
+- **새로운 `install` 명령어**: `fetch` 대신 더 빠르고 안정적인 의존성 관리
+- **바이너리 캐시**: 의존성을 framework로 설정하여 빌드 캐시 활용
+- **Swift 6.0 지원**: 최신 Swift 언어 기능 및 성능 개선
+
+### 🔍 **새로운 분석 도구**
+- **`tuist inspect implicit-imports`**: 암시적 의존성 자동 검사
+- **`tuist inspect code-coverage`**: 코드 커버리지 분석
+- **정적 부작용 경고**: 잠재적 의존성 문제 사전 감지
+
+### 📋 **최신 API 사용**
+- **Tuist.swift**: 새로운 설정 파일 형식 (`Config.swift` → `Tuist.swift`)
+- **Package.swift**: 최적화된 패키지 설정 및 성능 향상
+- **Settings API**: 최신 타입 안전 설정 방식
 
 ## 🏗 Clean Architecture 설계
 
@@ -211,34 +234,42 @@ swiftc TuistTool.swift -o tuisttool
 
 | Command       | 설명 |
 |---------------|------|
-| `newproject`  | **🚀 새 프로젝트 생성**: 프로젝트 이름을 동적으로 설정하여 새로운 프로젝트를 생성. 대화형 입력 또는 명령어 인자 지원. |
-| `generate`    | `tuist generate` 실행. 내부적으로 `TUIST_ROOT_DIR` 환경변수를 현재 디렉토리로 설정합니다. |
-| `fetch`       | `tuist fetch` 실행(SPM/패키지 재해석). |
-| `build`       | **clean → fetch → generate** 순서로 실행(빠른 클린 빌드 워크플로우). |
-| `clean`       | `tuist clean` 실행(Tuist 캐시/생성물 정리). |
-| `edit`        | `tuist edit` 실행(Project.swift 편집용 Xcode 프로젝트 생성). |
-| `install`     | `tuist install` 실행(프로젝트 정의에 필요한 플러그인/템플릿 설치). |
-| `cache`       | `tuist cache DDDAttendance` 실행(지정 타깃을 프리빌드 캐시). 필요 시 대상 타깃으로 수정하세요. |
-| `reset`       | **강력 클린**: Tuist 캐시, Xcode DerivedData, `.tuist`, `.build` 폴더 삭제 후 `fetch → generate` 재실행. |
-| `moduleinit`  | **모듈 스캐폴딩 마법사**: 모듈 이름/의존성 입력을 받아 `tuist scaffold Module` 실행 및 `Project.swift`에 의존성 자동 삽입. Domain 모듈일 경우 Interface 폴더/템플릿 생성 옵션 제공. |
+| `newproject`  | **🚀 새 프로젝트 생성**: ProjectConfig.swift 이름 변경, 디렉토리 자동 생성, 완전 자동화된 프로젝트 생성 |
+| `generate`    | `tuist generate` 실행 |
+| `build`       | **clean → install → generate** 순서로 실행 (Tuist 4.97.2 최적화) |
+| `install`     | **새로운!** `tuist install` 실행 (의존성 설치) |
+| `clean`       | `tuist clean` 실행 |
+| `cache`       | `tuist cache` 실행 (바이너리 캐시 생성) |
+| `reset`       | **강력 클린**: 모든 캐시 삭제 후 `install → generate` 재실행 |
+| `inspect`     | **새로운!** 사용 가능한 분석 도구 표시 |
+| `inspect-imports` | **새로운!** 암시적 의존성 검사 |
+| `inspect-coverage` | **새로운!** 코드 커버리지 분석 |
+| `moduleinit`  | **모듈 스캐폴딩 마법사**: 자동 의존성 삽입 및 Interface 폴더 생성 |
 
 ### 상세 동작
 
-- **newproject**
-  - 환경변수 `PROJECT_NAME`, `BUNDLE_ID_PREFIX`, `TEAM_ID`를 설정하고 `tuist generate`를 실행합니다.
-  - 대화형 모드: 프로젝트 이름, 번들 ID 접두사, 팀 ID를 순차적으로 입력받습니다.
-  - 명령어 인자 모드: `--name`, `--bundle-id`, `--team-id` 옵션으로 바로 설정 가능합니다.
-  - 생성 완료 후 자동으로 Xcode 실행 옵션을 제공합니다.
-- **generate**
-  - `TUIST_ROOT_DIR`를 현재 경로로 설정 후 `tuist generate` 수행.
-- **build**
-  - 내부적으로 `clean → fetch → generate` 호출. CI 로컬 재현에 유용.
-- **reset**
-  - 아래 경로를 삭제합니다.
-    - `~/Library/Caches/Tuist`
-    - `~/Library/Developer/Xcode/DerivedData`
-    - 프로젝트 루트의 `.tuist`, `.build`
-  - 이후 `fetch`, `generate`를 순차 실행.
+- **newproject** (완전히 새로워짐!)
+  - 🎯 **ProjectConfig.swift 자동 수정**: 프로젝트 이름, 번들 ID, 팀 ID 자동 변경
+  - 📁 **필수 디렉토리 사전 생성**: MultiModuleTemplateTests, FontAsset 등 자동 생성
+  - 🔍 **이름 변경 검증**: 변경 완료 후 실제로 적용되었는지 확인
+  - 🧹 **기존 워크스페이스 정리**: 충돌 방지를 위한 기존 파일 삭제
+  - ✅ **완전 자동화**: 대화형 또는 명령어 인자로 완전 자동 생성
+
+- **build** (Tuist 4.97.2 최적화)
+  - 내부적으로 `clean → install → generate` 호출 (`fetch` 대신 `install` 사용)
+
+- **install** (새로운 명령어)
+  - Tuist 4.97.2의 새로운 `tuist install` 명령어 실행
+  - 의존성 설치 및 해결 담당
+
+- **inspect 시리즈** (새로운 분석 도구들)
+  - `inspect`: 사용 가능한 분석 도구 목록 표시
+  - `inspect-imports`: 암시적 의존성 검사 (enforceExplicitDependencies 대체)
+  - `inspect-coverage`: 코드 커버리지 분석
+
+- **reset** (개선됨)
+  - `~/Library/Caches/Tuist`, `~/Library/Developer/Xcode/DerivedData`, `.tuist`, `.build`, `Tuist/Dependencies` 삭제
+  - 이후 `install → generate` 순차 실행 (최신 워크플로우)
 - **moduleinit**
   - `Plugins/DependencyPlugin/ProjectDescriptionHelpers/TargetDependency+Module/Modules.swift`에서 **모듈 타입** 및 **케이스 목록**을 파싱합니다.
   - `Plugins/DependencyPackagePlugin/ProjectDescriptionHelpers/DependencyPackage/Extension+TargetDependencySPM.swift`에서 **SPM 의존성 목록**을 파싱합니다.
@@ -290,30 +321,64 @@ tuist scaffold multi-module-project --name MyNewProject
 
 ---
 
-## 자주 쓰는 명령어
+## 🎯 자주 쓰는 명령어
 
+### 새 프로젝트 생성
 ```bash
-# 새 프로젝트 생성
+# 대화형 생성 (권장)
 ./tuisttool newproject
 
-# 기본 워크플로우
-./tuisttool build      # clean → fetch → generate
-tuist test
+# 명령어로 한번에 생성
+./tuisttool newproject MyApp --bundle-id com.company.myapp --team-id ABC123
+```
 
-# 개발 환경
-tuist up               # 부트스트랩
-tuist doctor           # 문제 진단
+### 기본 개발 워크플로우
+```bash
+# Tuist 4.97.2 최적화된 워크플로우
+./tuisttool build      # clean → install → generate
+./tuisttool test       # 테스트 실행
 
-# 고급 기능
-tuist focus <모듈>     # 특정 모듈만 포커스
+# 코드 품질 검사
+./tuisttool inspect-imports    # 암시적 의존성 검사
+./tuisttool inspect-coverage   # 코드 커버리지 분석
+```
+
+### 문제 해결
+```bash
+# 강력한 클린 (모든 캐시 삭제)
+./tuisttool reset
+
+# 의존성 재설치
+./tuisttool install
+
+# 프로젝트 구조 분석
 tuist graph --format pdf --path ./graph.pdf
 ```
 
-## CI 예시 (로컬 재현과 동일한 단계)
+### 모듈 개발
 ```bash
-./tuisttool reset
-./tuisttool build
-tuist test
+# 새 모듈 생성 (자동 의존성 설정)
+./tuisttool moduleinit
+
+# 특정 모듈만 포커스
+tuist focus <모듈명>
+```
+
+## 🔧 CI/CD 예시
+
+### GitHub Actions (권장)
+```bash
+# CI 파이프라인
+./tuisttool reset      # 모든 캐시 클린
+./tuisttool build      # clean → install → generate
+./tuisttool test       # 테스트 실행
+./tuisttool inspect-imports  # 의존성 검증
+```
+
+### 로컬 재현
+```bash
+# CI와 동일한 환경에서 로컬 테스트
+./tuisttool reset && ./tuisttool build && ./tuisttool test
 ```
 
 ---

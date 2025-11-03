@@ -54,8 +54,27 @@ func prompt(_ message: String) -> String {
   return readLine()?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 }
 
-// MARK: - Tuist 명령어
-func generate() { setenv("TUIST_ROOT_DIR", FileManager.default.currentDirectoryPath, 1); run("tuist", arguments: ["generate"]) }
+// MARK: - Tuist 명령어 (tuist 4.97.2 최적화)
+func generate() {
+    setenv("TUIST_ROOT_DIR", FileManager.default.currentDirectoryPath, 1)
+    run("tuist", arguments: ["generate"])
+}
+
+// tuist 4.97.2 새로운 기능들
+func inspect() {
+    print("🔍 사용 가능한 inspect 명령어들:")
+    run("tuist", arguments: ["inspect", "--help"])
+}
+
+func inspectImplicitImports() {
+    print("🔍 암시적 의존성 검사 중...")
+    run("tuist", arguments: ["inspect", "implicit-imports"])
+}
+
+func inspectCodeCoverage() {
+    print("📊 코드 커버리지 분석 중...")
+    run("tuist", arguments: ["inspect", "code-coverage"])
+}
 
 // MARK: - 새 프로젝트 생성
 func newProject() {
@@ -148,10 +167,84 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
     setenv("BUNDLE_ID_PREFIX", bundleIdPrefix, 1)
     setenv("TEAM_ID", teamId, 1)
 
-    prepareTemplateForNewProject(oldName: "MultiModuleTemplate", newName: name, bundleIdPrefix: bundleIdPrefix, teamId: teamId)
+    // 🚨 중요: tuist generate 전에 필수 디렉토리들 미리 생성
+    print("📁 필수 디렉토리 사전 생성 중...")
+
+    // 1. 기본 테스트 디렉토리 생성 (템플릿에 필요)
+    ensureDirectoryExists(at: "Projects/App/MultiModuleTemplateTests")
+    ensureDirectoryExists(at: "Projects/App/MultiModuleTemplateTests/Sources")
+
+    // 2. FontAsset 디렉토리 생성 (경고 해결)
+    ensureDirectoryExists(at: "Projects/Shared/DesignSystem/FontAsset")
+
+    print("📁 디렉토리 생성 완료:")
+    print("   - MultiModuleTemplateTests: \(FileManager.default.fileExists(atPath: "Projects/App/MultiModuleTemplateTests") ? "✅" : "❌")")
+    print("   - FontAsset: \(FileManager.default.fileExists(atPath: "Projects/Shared/DesignSystem/FontAsset") ? "✅" : "❌")")
+
+    // 기본 테스트 파일 생성 (없으면)
+    let originalTestFilePath = "Projects/App/MultiModuleTemplateTests/Sources/MultiModuleTemplateTests.swift"
+    if !FileManager.default.fileExists(atPath: originalTestFilePath) {
+        let testFileContent = """
+        //
+        //  MultiModuleTemplateTests.swift
+        //  MultiModuleTemplateTests
+        //
+        //  Created by TuistTool.
+        //
+
+        import XCTest
+
+        final class MultiModuleTemplateTests: XCTestCase {
+
+            override func setUpWithError() throws {
+                // Put setup code here.
+            }
+
+            override func tearDownWithError() throws {
+                // Put teardown code here.
+            }
+
+            func testExample() throws {
+                // This is an example of a functional test case.
+            }
+
+            func testPerformanceExample() throws {
+                // This is an example of a performance test case.
+                self.measure {
+                    // Put the code you want to measure the time of here.
+                }
+            }
+
+        }
+        """
+
+        do {
+            try testFileContent.write(toFile: originalTestFilePath, atomically: true, encoding: .utf8)
+            print("✅ 기본 테스트 파일 생성: \(originalTestFilePath)")
+        } catch {
+            print("⚠️ 기본 테스트 파일 생성 실패: \(error)")
+        }
+    }
 
     print("🧹 기존 프로젝트 정리 중...")
     _ = run("tuist", arguments: ["clean"])
+
+    // 기존 워크스페이스 파일들 삭제
+    let filesToRemove = [
+        "MultiModuleTemplate.xcworkspace",
+        "\(name).xcworkspace"  // 혹시 이미 있을 수도 있으니
+    ]
+
+    for file in filesToRemove {
+        if FileManager.default.fileExists(atPath: file) {
+            do {
+                try FileManager.default.removeItem(atPath: file)
+                print("🗑️ 기존 워크스페이스 삭제: \(file)")
+            } catch {
+                print("⚠️ 워크스페이스 삭제 실패 (\(file)): \(error)")
+            }
+        }
+    }
 
     print("🔧 Tuist dependencies 설치 중...")
     let installResult = run("tuist", arguments: ["install"])
@@ -160,47 +253,91 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
         return
     }
 
+    // 🚨 중요: tuist generate 전에 이름 변경 수행!
+    prepareTemplateForNewProject(oldName: "MultiModuleTemplate", newName: name, bundleIdPrefix: bundleIdPrefix, teamId: teamId)
+
+    // 💯 이름 변경 완료 후 최종 검증
+    print("🔍 이름 변경 최종 검증 중...")
+    let projectConfigPath = "Plugins/ProjectTemplatePlugin/ProjectDescriptionHelpers/Project+Templete/ProjectConfig.swift"
+    if let content = try? String(contentsOfFile: projectConfigPath, encoding: .utf8) {
+        if content.contains("projectName: String = \"\(name)\"") {
+            print("✅ 최종 검증 성공: ProjectConfig.swift에서 \(name) 확인됨")
+        } else {
+            print("❌ 최종 검증 실패: ProjectConfig.swift에서 \(name)을 찾을 수 없음")
+            print("   현재 프로젝트명 라인:")
+            let lines = content.components(separatedBy: .newlines)
+            for (i, line) in lines.enumerated() {
+                if line.contains("projectName") {
+                    print("   라인 \(i+1): \(line)")
+                }
+            }
+            print("❌ 프로젝트 생성을 중단합니다.")
+            return
+        }
+    }
+
     print("🔧 Tuist 프로젝트 생성 중...")
     let result = run("tuist", arguments: ["generate"])
 
     if result == 0 {
-        // 생성된 workspace 파일 이름 변경
-        let oldWorkspaceName = "MultiModuleTemplate.xcworkspace"
-        let newWorkspaceName = "\(name).xcworkspace"
+        print("✅ Tuist 프로젝트 생성 성공!")
 
-        if FileManager.default.fileExists(atPath: oldWorkspaceName) && oldWorkspaceName != newWorkspaceName {
+        // 생성된 워크스페이스 확인 및 이름 변경
+        let expectedWorkspaceName = "\(name).xcworkspace"
+        let oldWorkspaceName = "MultiModuleTemplate.xcworkspace"
+
+        print("🔍 생성된 워크스페이스 확인 중...")
+
+        // 새 이름으로 이미 생성되었는지 확인
+        if FileManager.default.fileExists(atPath: expectedWorkspaceName) {
+            print("✅ 올바른 이름의 워크스페이스 생성됨: \(expectedWorkspaceName)")
+        }
+        // 아직 옛날 이름으로 생성되었다면 이름 변경
+        else if FileManager.default.fileExists(atPath: oldWorkspaceName) {
             do {
-                if FileManager.default.fileExists(atPath: newWorkspaceName) {
-                    try FileManager.default.removeItem(atPath: newWorkspaceName)
-                }
-                try FileManager.default.moveItem(atPath: oldWorkspaceName, toPath: newWorkspaceName)
-                print("📝 Workspace 이름 변경: \(oldWorkspaceName) → \(newWorkspaceName)")
+                try FileManager.default.moveItem(atPath: oldWorkspaceName, toPath: expectedWorkspaceName)
+                print("📝 Workspace 이름 변경: \(oldWorkspaceName) → \(expectedWorkspaceName)")
             } catch {
                 print("⚠️ Workspace 이름 변경 실패: \(error)")
             }
         }
-
-        renameProjectArtifacts(oldName: "MultiModuleTemplate", newName: name)
-
-        print("\n✅ 프로젝트 '\(name)'이 성공적으로 생성되었습니다!")
-        print("💡 .xcworkspace 파일을 열어서 작업을 시작하세요.")
-
-        // 생성된 workspace 파일 찾기
-        if FileManager.default.fileExists(atPath: newWorkspaceName) {
-            print("🚀 자동으로 Xcode에서 열까요? (y/N)")
-            let openXcode = prompt("").lowercased()
-            if openXcode == "y" {
-                run("open", arguments: [newWorkspaceName])
+        else {
+            print("⚠️ 예상된 워크스페이스 파일을 찾을 수 없습니다")
+            // 현재 디렉토리의 .xcworkspace 파일들 확인
+            if let files = try? FileManager.default.contentsOfDirectory(atPath: ".") {
+                let workspaceFiles = files.filter { $0.hasSuffix(".xcworkspace") }
+                print("   현재 디렉토리의 워크스페이스 파일들: \(workspaceFiles)")
             }
         }
+
+        // renameProjectArtifacts는 이미 prepareTemplateForNewProject에서 호출됨
+
+        print("\n✅ 프로젝트 '\(name)'이 성공적으로 생성되었습니다!")
+        print("💡 다음 명령어로 Xcode에서 열 수 있습니다:")
+        print("   open \(expectedWorkspaceName)")
     } else {
         print("❌ 프로젝트 생성에 실패했습니다.")
     }
 }
 
 private func prepareTemplateForNewProject(oldName: String, newName: String, bundleIdPrefix: String, teamId: String) {
+    print("🔄 템플릿 준비 중...")
+    print("   - 이전 이름: \(oldName)")
+    print("   - 새 이름: \(newName)")
+    print("   - 번들 ID: \(bundleIdPrefix)")
+    print("   - 팀 ID: \(teamId)")
+
+    // 1단계: 프로젝트 아티팩트 이름 변경
     renameProjectArtifacts(oldName: oldName, newName: newName)
+
+    // 2단계: 환경 설정 파일 업데이트
     updateEnvironmentDefaults(oldName: oldName, newName: newName, bundleIdPrefix: bundleIdPrefix, teamId: teamId)
+
+    // 3단계: ProjectConfig.swift 업데이트 (핵심!)
+    updateProjectConfig(newName: newName, bundleIdPrefix: bundleIdPrefix, teamId: teamId)
+
+    // 4단계: 검증
+    verifyNameChange(oldName: oldName, newName: newName)
 }
 
 private func renameProjectArtifacts(oldName: String, newName: String) {
@@ -217,7 +354,14 @@ private func renameProjectArtifacts(oldName: String, newName: String) {
     let oldTestsFolder = "\(appRoot)/\(oldName)Tests"
     let newTestsFolder = "\(appRoot)/\(newName)Tests"
     renameItemIfNeeded(at: oldTestsFolder, to: newTestsFolder, description: "테스트 타겟 폴더 이동")
+
+    // 테스트 디렉토리 강제 생성 (더 확실하게)
+    ensureDirectoryExists(at: newTestsFolder)
     ensureDirectoryExists(at: "\(newTestsFolder)/Sources")
+
+    print("📁 테스트 디렉토리 확인:")
+    print("   - \(newTestsFolder): \(FileManager.default.fileExists(atPath: newTestsFolder) ? "✅" : "❌")")
+    print("   - \(newTestsFolder)/Sources: \(FileManager.default.fileExists(atPath: "\(newTestsFolder)/Sources") ? "✅" : "❌")")
 
     let oldTestFile = "\(newTestsFolder)/Sources/\(oldName)Tests.swift"
     let newTestFile = "\(newTestsFolder)/Sources/\(newName)Tests.swift"
@@ -266,20 +410,40 @@ private func ensureDirectoryExists(at path: String) {
 
 private func updateEnvironmentDefaults(oldName: String, newName: String, bundleIdPrefix: String, teamId: String) {
     let environmentPath = "Plugins/ProjectTemplatePlugin/ProjectDescriptionHelpers/Project+Templete/Project+Enviorment.swift"
-    guard FileManager.default.fileExists(atPath: environmentPath) else { return }
 
-    replacePattern(inFileAtPath: environmentPath, pattern: #"return \"[^\"]+\""#, replacement: "return \"\(newName)\"")
-    replacePattern(
-        inFileAtPath: environmentPath,
-        pattern: #"BUNDLE_ID_PREFIX"] \?\? \"[^\"]+\""#,
-        replacement: "BUNDLE_ID_PREFIX\"] ?? \"\(bundleIdPrefix)\""
-    )
-    replacePattern(
-        inFileAtPath: environmentPath,
-        pattern: #"TEAM_ID"] \?\? \"[^\"]+\""#,
-        replacement: "TEAM_ID\"] ?? \"\(teamId)\""
-    )
-    replaceOccurrences(inFileAtPath: environmentPath, replacements: [oldName: newName])
+    print("🔧 Project+Environment.swift 업데이트 중...")
+
+    guard FileManager.default.fileExists(atPath: environmentPath) else {
+        print("⚠️ Environment 파일을 찾을 수 없습니다: \(environmentPath)")
+        return
+    }
+
+    do {
+        var content = try String(contentsOfFile: environmentPath, encoding: .utf8)
+        let originalContent = content
+
+        // ProjectConfig.projectName 참조로 변경 (하드코딩 제거)
+        let projectNamePattern = #"return \"[^\"]+\""#
+        let projectNameReplacement = "return ProjectConfig.projectName"
+        content = content.replacingOccurrences(of: projectNamePattern, with: projectNameReplacement, options: .regularExpression)
+
+        // 기존 하드코딩된 값들 업데이트 (백업용)
+        content = content.replacingOccurrences(of: #"BUNDLE_ID_PREFIX"] ?? \"[^\"]+\""#, with: "BUNDLE_ID_PREFIX\"] ?? \"\(bundleIdPrefix)\"", options: .regularExpression)
+        content = content.replacingOccurrences(of: #"TEAM_ID"] ?? \"[^\"]+\""#, with: "TEAM_ID\"] ?? \"\(teamId)\"", options: .regularExpression)
+
+        // 이전 이름을 새 이름으로 바꾸기
+        content = content.replacingOccurrences(of: oldName, with: newName)
+
+        if content != originalContent {
+            try content.write(toFile: environmentPath, atomically: true, encoding: .utf8)
+            print("✅ Project+Environment.swift 업데이트 완료")
+        } else {
+            print("ℹ️ Project+Environment.swift 변경사항 없음")
+        }
+
+    } catch {
+        print("❌ Environment 파일 업데이트 실패: \(error)")
+    }
 }
 
 private func updateXcodeProjectContent(at projectPath: String, oldName: String, newName: String) {
@@ -347,18 +511,154 @@ private func replacePattern(inFileAtPath path: String, pattern: String, replacem
     }
 }
 
+// MARK: - 핵심 ProjectConfig.swift 업데이트 함수 (강화 버전)
+private func updateProjectConfig(newName: String, bundleIdPrefix: String, teamId: String) {
+    let projectConfigPath = "Plugins/ProjectTemplatePlugin/ProjectDescriptionHelpers/Project+Templete/ProjectConfig.swift"
+
+    print("🔧 ProjectConfig.swift 업데이트 중...")
+    print("   - 새 이름: \(newName)")
+    print("   - 파일 경로: \(projectConfigPath)")
+
+    guard FileManager.default.fileExists(atPath: projectConfigPath) else {
+        print("❌ ProjectConfig.swift 파일을 찾을 수 없습니다: \(projectConfigPath)")
+        return
+    }
+
+    do {
+        var content = try String(contentsOfFile: projectConfigPath, encoding: .utf8)
+        let originalContent = content
+        print("📄 원본 파일 크기: \(content.count) 문자")
+
+        // 1. 더 강력한 프로젝트 이름 업데이트 (여러 패턴 시도)
+        let patterns = [
+            (#"public static let projectName: String = "[^"]*""#, "public static let projectName: String = \"\(newName)\""),
+            (#"projectName: String = "[^"]*""#, "projectName: String = \"\(newName)\""),
+            (#"let projectName: String = "[^"]*""#, "let projectName: String = \"\(newName)\""),
+            (#"= "MultiModuleTemplate""#, "= \"\(newName)\"")  // 직접 매칭
+        ]
+
+        var updateCount = 0
+        for (pattern, replacement) in patterns {
+            let beforeUpdate = content
+            content = content.replacingOccurrences(of: pattern, with: replacement, options: .regularExpression)
+            if content != beforeUpdate {
+                updateCount += 1
+                print("✅ 패턴 매칭 성공: \(pattern)")
+            }
+        }
+
+        // 2. 번들 ID 접두사 업데이트
+        let bundleIdPatterns = [
+            (#"public static let bundleIdPrefix = "[^"]*""#, "public static let bundleIdPrefix = \"\(bundleIdPrefix)\""),
+            (#"bundleIdPrefix = "[^"]*""#, "bundleIdPrefix = \"\(bundleIdPrefix)\"")
+        ]
+
+        for (pattern, replacement) in bundleIdPatterns {
+            let beforeUpdate = content
+            content = content.replacingOccurrences(of: pattern, with: replacement, options: .regularExpression)
+            if content != beforeUpdate {
+                updateCount += 1
+                print("✅ 번들 ID 업데이트 성공")
+            }
+        }
+
+        // 3. 팀 ID 업데이트
+        let teamIdPatterns = [
+            (#"public static let teamId = "[^"]*""#, "public static let teamId = \"\(teamId)\""),
+            (#"teamId = "[^"]*""#, "teamId = \"\(teamId)\"")
+        ]
+
+        for (pattern, replacement) in teamIdPatterns {
+            let beforeUpdate = content
+            content = content.replacingOccurrences(of: pattern, with: replacement, options: .regularExpression)
+            if content != beforeUpdate {
+                updateCount += 1
+                print("✅ 팀 ID 업데이트 성공")
+            }
+        }
+
+        if content != originalContent {
+            try content.write(toFile: projectConfigPath, atomically: true, encoding: .utf8)
+            print("✅ ProjectConfig.swift 업데이트 완료 (총 \(updateCount)개 변경)")
+
+            // 변경 내용 검증
+            let verifyContent = try String(contentsOfFile: projectConfigPath, encoding: .utf8)
+            if verifyContent.contains("projectName: String = \"\(newName)\"") {
+                print("✅ 이름 변경 검증 성공: \(newName)")
+            } else {
+                print("⚠️ 이름 변경 검증 실패!")
+                print("   현재 내용에서 projectName 라인:")
+                let lines = verifyContent.components(separatedBy: .newlines)
+                for (i, line) in lines.enumerated() {
+                    if line.contains("projectName") {
+                        print("   라인 \(i+1): \(line)")
+                    }
+                }
+            }
+        } else {
+            print("⚠️ ProjectConfig.swift 변경사항 없음 - 패턴이 매칭되지 않았습니다")
+            // 디버깅을 위해 현재 내용 출력
+            let lines = content.components(separatedBy: .newlines)
+            for (i, line) in lines.enumerated() {
+                if line.contains("projectName") {
+                    print("   기존 라인 \(i+1): \(line)")
+                }
+            }
+        }
+
+    } catch {
+        print("❌ ProjectConfig.swift 업데이트 실패: \(error)")
+    }
+}
+
+// MARK: - 이름 변경 검증 함수
+private func verifyNameChange(oldName: String, newName: String) {
+    print("🔍 이름 변경 검증 중...")
+
+    let projectConfigPath = "Plugins/ProjectTemplatePlugin/ProjectDescriptionHelpers/Project+Templete/ProjectConfig.swift"
+
+    if let content = try? String(contentsOfFile: projectConfigPath, encoding: .utf8) {
+        if content.contains("projectName: String = \"\(newName)\"") {
+            print("✅ ProjectConfig.swift 이름 변경 확인됨")
+        } else {
+            print("⚠️ ProjectConfig.swift에서 새 이름을 찾을 수 없습니다")
+            print("   파일 내용 확인이 필요합니다")
+        }
+    }
+
+    // Workspace.swift와 Project+Environment.swift 검증
+    let workspacePath = "WorkSpace.swift"
+    let environmentPath = "Plugins/ProjectTemplatePlugin/ProjectDescriptionHelpers/Project+Templete/Project+Enviorment.swift"
+
+    for path in [workspacePath, environmentPath] {
+        if FileManager.default.fileExists(atPath: path) {
+            if let content = try? String(contentsOfFile: path, encoding: .utf8) {
+                if content.contains(oldName) && oldName != newName {
+                    print("⚠️ \(path)에 이전 이름(\(oldName))이 남아있습니다")
+                } else {
+                    print("✅ \(path) 검증 통과")
+                }
+            }
+        }
+    }
+}
+
 func fetch()    { run("tuist", arguments: ["fetch"]) }
-func build()    { clean(); fetch(); generate() }
+func build()    { clean(); install(); generate() }  // fetch -> install로 변경 (tuist 4.97.2)
 func edit()     { run("tuist", arguments: ["edit"]) }
 func clean()    { run("tuist", arguments: ["clean"]) }
-func install()  { run("tuist", arguments: ["install"]) }
-func cache()    { run("tuist", arguments: ["cache", "DDDAttendance"]) }
+func install()  { run("tuist", arguments: ["install"]) }  // 새로운 install 명령어 사용
+func cache()    {
+    print("🚀 바이너리 캐시 생성 중...")
+    run("tuist", arguments: ["cache"])  // 프로젝트명 제거하고 일반화
+}
 func reset() {
   print("🧹 캐시 및 로컬 빌드 정리 중...")
   run("rm", arguments: ["-rf", "\(NSHomeDirectory())/Library/Caches/Tuist"])
   run("rm", arguments: ["-rf", "\(NSHomeDirectory())/Library/Developer/Xcode/DerivedData"])
   run("rm", arguments: ["-rf", ".tuist", ".build"])
-  fetch(); generate()
+  run("rm", arguments: ["-rf", "Tuist/Dependencies"])  // 새로운 의존성 디렉토리도 정리
+  install(); generate()  // fetch -> install로 변경
 }
 
 // MARK: - Parsers (Modules.swift / SPM 목록에서 자동 파싱)
@@ -541,21 +841,26 @@ func registerModule() {
 // MARK: - Entrypoint
 enum Command: String {
   case edit, generate, fetch, build, clean, install, cache, reset, moduleinit, newproject
+  case inspect, inspectimports = "inspect-imports", inspectcoverage = "inspect-coverage"
 }
 
 let args = CommandLine.arguments.dropFirst()
 guard let cmd = args.first, let command = Command(rawValue: cmd) else {
   print("""
-    사용법:
-      ./tuisttool generate
-      ./tuisttool build
-      ./tuisttool cache
-      ./tuisttool clean
-      ./tuisttool reset
-      ./tuisttool moduleinit
-      ./tuisttool newproject [<프로젝트명>] [--bundle-id <번들ID>] [--team-id <팀ID>]
+    🚀 Tuist 4.97.2 도구 사용법:
+      ./tuisttool generate                            # 프로젝트 생성
+      ./tuisttool build                               # 클린 + 의존성 설치 + 생성
+      ./tuisttool install                             # 의존성 설치 (새로운 명령어)
+      ./tuisttool cache                               # 바이너리 캐시 생성
+      ./tuisttool clean                               # 프로젝트 정리
+      ./tuisttool reset                               # 전체 캐시 리셋
+      ./tuisttool moduleinit                          # 새 모듈 생성
+      ./tuisttool inspect                             # 프로젝트 구조 분석
+      ./tuisttool inspect-imports                     # 암시적 의존성 검사
+      ./tuisttool inspect-coverage                    # 코드 커버리지 분석
+      ./tuisttool newproject [옵션...]                # 새 프로젝트 생성
 
-    예시:
+    새 프로젝트 생성 예시:
       ./tuisttool newproject                          # 대화형으로 입력
       ./tuisttool newproject MyAwesomeApp             # 간단한 사용법
       ./tuisttool newproject MyApp --bundle-id com.company.app --team-id ABC123DEF
@@ -564,15 +869,18 @@ guard let cmd = args.first, let command = Command(rawValue: cmd) else {
 }
 
 switch command {
-  case .edit:       edit()
-  case .generate:   generate()
-  case .fetch:      fetch()
-  case .build:      build()
-  case .clean:      clean()
-  case .install:    install()
-  case .cache:      cache()
-  case .reset:      reset()
-  case .moduleinit: registerModule()
+  case .edit:             edit()
+  case .generate:         generate()
+  case .fetch:            fetch()
+  case .build:            build()
+  case .clean:            clean()
+  case .install:          install()
+  case .cache:            cache()
+  case .reset:            reset()
+  case .moduleinit:       registerModule()
+  case .inspect:          inspect()
+  case .inspectimports:   inspectImplicitImports()
+  case .inspectcoverage:  inspectCodeCoverage()
   case .newproject:
     // 인자가 있으면 인자로 처리, 없으면 대화형으로 처리
     if CommandLine.arguments.count > 2 {

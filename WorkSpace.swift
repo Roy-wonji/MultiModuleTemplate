@@ -14,8 +14,8 @@ let workspaceName: String = {
         print("🔍 PROJECT_NAME 환경변수 발견: \(projectName)")
         return projectName
     } else {
-        print("🔍 PROJECT_NAME 환경변수 없음, 기본값 사용")
-        return "MultiModuleTemplate"
+        print("🎵 ProjectConfig에서 프로젝트 이름 사용: \(ProjectConfig.projectName)")
+        return ProjectConfig.projectName
     }
 }()
 

@@ -11,12 +11,12 @@ import Foundation
 // MARK: - Swift Bundle Accessor for Frameworks
 private class BundleFinder {}
 extension Foundation.Bundle {
-/// Since MultiModuleTemplate-Debug is a application, the bundle for classes within this module can be used directly.
+/// Since MultiModule-Debug is a application, the bundle for classes within this module can be used directly.
     static let module = Bundle(for: BundleFinder.self)
 }
 // MARK: - Objective-C Bundle Accessor
 @objc
-public class MultiModuleTemplateDebugResources: NSObject {
+public final class MultiModuleDebugResources: NSObject {
 @objc public class var bundle: Bundle {
     return .module
 }

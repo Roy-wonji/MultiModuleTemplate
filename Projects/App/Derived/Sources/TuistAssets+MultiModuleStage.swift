@@ -4,22 +4,35 @@
 // swiftformat:disable all
 // Generated using tuist — https://github.com/tuist/tuist
 
+
+
 #if os(macOS)
-  import AppKit
-#elseif os(iOS)
-  import UIKit
-#elseif os(tvOS) || os(watchOS)
-  import UIKit
+#if hasFeature(InternalImportsByDefault)
+public import AppKit
+#else
+import AppKit
 #endif
+#else
+#if hasFeature(InternalImportsByDefault)
+public import UIKit
+#else
+import UIKit
+#endif
+#endif
+
 #if canImport(SwiftUI)
-  import SwiftUI
+#if hasFeature(InternalImportsByDefault)
+public import SwiftUI
+#else
+import SwiftUI
+#endif
 #endif
 
 // MARK: - Asset Catalogs
 
-public enum MultiModuleTemplateAsset: Sendable {
+public enum MultiModuleStageAsset: Sendable {
   public enum Assets {
-  public static let accentColor = MultiModuleTemplateColors(name: "AccentColor")
+  public static let accentColor = MultiModuleStageColors(name: "AccentColor")
   }
   public enum PreviewAssets {
   }
@@ -27,7 +40,7 @@ public enum MultiModuleTemplateAsset: Sendable {
 
 // MARK: - Implementation Details
 
-public final class MultiModuleTemplateColors: Sendable {
+public final class MultiModuleStageColors: Sendable {
   public let name: String
 
   #if os(macOS)
@@ -56,9 +69,9 @@ public final class MultiModuleTemplateColors: Sendable {
   }
 }
 
-public extension MultiModuleTemplateColors.Color {
+public extension MultiModuleStageColors.Color {
   @available(iOS 11.0, tvOS 11.0, watchOS 4.0, macOS 10.13, visionOS 1.0, *)
-  convenience init?(asset: MultiModuleTemplateColors) {
+  convenience init?(asset: MultiModuleStageColors) {
     let bundle = Bundle.module
     #if os(iOS) || os(tvOS) || os(visionOS)
     self.init(named: asset.name, in: bundle, compatibleWith: nil)
@@ -73,7 +86,7 @@ public extension MultiModuleTemplateColors.Color {
 #if canImport(SwiftUI)
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, visionOS 1.0, *)
 public extension SwiftUI.Color {
-  init(asset: MultiModuleTemplateColors) {
+  init(asset: MultiModuleStageColors) {
     let bundle = Bundle.module
     self.init(asset.name, bundle: bundle)
   }
