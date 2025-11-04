@@ -39,6 +39,9 @@ MultiModuleTemplate/
 └── Plugins/
 ```
 
+## Tuist graph
+![Tuist Graph](./graph.png)
+
 ## 🚀 빠른 시작
 
 ### 새 프로젝트 생성 (권장)
