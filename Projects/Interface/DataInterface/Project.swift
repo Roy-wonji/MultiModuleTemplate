@@ -2,15 +2,16 @@ import Foundation
 import ProjectDescription
 import DependencyPlugin
 import ProjectTemplatePlugin
+import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
 let project = Project.makeAppModule(
-  name: "Core",
-  bundleId: .appBundleID(name: ".Core"),
-  product: .framework,
+  name: "DataInterface",
+  bundleId: .appBundleID(name: ".DataInterface"),
+  product: .staticFramework,
   settings:  .settings(),
   dependencies: [
-    .Core(implements: .ThirdParty)
+  .Data(implements: .Model),
   ],
   sources: ["Sources/**"]
 )

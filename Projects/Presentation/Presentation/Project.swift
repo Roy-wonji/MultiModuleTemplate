@@ -2,7 +2,6 @@ import Foundation
 import ProjectDescription
 import DependencyPlugin
 import ProjectTemplatePlugin
-import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
 let project = Project.makeAppModule(
@@ -13,6 +12,7 @@ let project = Project.makeAppModule(
   dependencies: [
     .Core(implements: .Core),
     .Shared(implements: .Shared),
+    .Domain(implements: .UseCase)
   ],
   sources: ["Sources/**"]
 )

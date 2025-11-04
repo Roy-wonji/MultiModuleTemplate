@@ -763,10 +763,10 @@ func registerModule() {
     let lower = moduleInput.lowercased()
     if lower.starts(with: "presentation") { return "Presentation" }
     else if lower.starts(with: "shared")   { return "Shared" }
-    else if lower.starts(with: "domain")   { return "Core/Domain" }
-    else if lower.starts(with: "interface"){ return "Core/Interface" }
-    else if lower.starts(with: "network"){ return "Core/Network" }
-    else if lower.starts(with: "data")     { return "Core/Data" }
+    else if lower.starts(with: "domain")   { return "Domain" }
+    else if lower.starts(with: "interface"){ return "Interface" }
+    else if lower.starts(with: "network"){ return "Network" }
+    else if lower.starts(with: "data")     { return "Data" }
     else { return "Core" }
   }()
 

@@ -8,151 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0022B71FD4E49C968604B4BA /* Utill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94F2606E7E958A55416DF32 /* Utill.framework */; };
-		017D5D3165421C7B9C201144 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32206975EC04787B73B7C1E /* Dependencies.framework */; };
-		017E8FF8C80FA1976B5BCA74 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD588A48E7F5E6AD89544592 /* CustomDump.framework */; };
-		01864F35550DE3509BCC5919 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32206975EC04787B73B7C1E /* Dependencies.framework */; };
-		01FF6F3633CFE873F3B26B24 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CB67B1B862F32C9DBF4200 /* Sharing1.framework */; };
-		02C575B70F42A311FD52B5D9 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BCCE0D4AA4B3A3079C240 /* TCACoordinators.framework */; };
 		03154FA18369CB21CC29E043 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE87645A97032776452E22F /* DesignSystem.framework */; };
-		03F1ECBEB4598DBAF3E6A96A /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3856DDE39ED5A0A35BB0A5CC /* ThirdParty.framework */; };
-		05F56538A1C3BBA57614C3F0 /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5903DAA16331C93F6AD367EC /* Clocks.framework */; };
-		087430AE0D88969AD08DD89D /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0289B94C11EC779006322480 /* ConcurrencyExtras.framework */; };
-		0975B9AFC7975169C3F4192F /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235162575549DE8FA608F9B3 /* LogMacro.framework */; };
-		0C8957912F2D02D504FFF5A9 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4595115C1E806888151C9650 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
 		0F7C51CBACDF5C4DA176E637 /* DesignSystem_DesignSystem.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */; };
-		1229F285BF6DA7F01803A6B3 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6D7141FB2589CD40FC9AF1 /* CasePaths.framework */; };
-		1405817EB985703CEC7887ED /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9EEE1B771280F5D0FC2736 /* CombineSchedulers.framework */; };
-		172456F85069BEB1C6C8F58B /* FlowStacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7D85FE8D6F11FA3462914 /* FlowStacks.framework */; };
-		1B93E1391C9D0FE688BBFD06 /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAE5989CA1A850DF2ECFFFC /* IssueReporting.framework */; };
-		1E082189B716F1F18B0D700B /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D058DC706D315B4420AC4E6E /* UIKitNavigation.framework */; };
-		1F3E89C8C85F2FEC9483E397 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BCCE0D4AA4B3A3079C240 /* TCACoordinators.framework */; };
-		1F58B6A39CA73852ED8BA66B /* FlowStacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7D85FE8D6F11FA3462914 /* FlowStacks.framework */; };
-		1F5F0EF877C78FCCA9E59B8A /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11546DC873CD070AC6AB00F2 /* SwiftNavigation.framework */; };
-		21655B7DB99F5780A90E6788 /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23608FC539D32BD921A4F27 /* OSLog.framework */; };
 		21F379B8A447A4833B6DF730 /* Utill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94F2606E7E958A55416DF32 /* Utill.framework */; };
-		222FC3802A6C04DDC14E1C91 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CB67B1B862F32C9DBF4200 /* Sharing1.framework */; };
-		22BFC8C8D17F79F1FBD5D5FC /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11546DC873CD070AC6AB00F2 /* SwiftNavigation.framework */; };
-		24F5EAEB8DC82B4AFA0E158C /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D058DC706D315B4420AC4E6E /* UIKitNavigation.framework */; };
 		25527EECE60BE10B7E6E3CD0 /* Utill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94F2606E7E958A55416DF32 /* Utill.framework */; };
-		26EAB5AC2EF0C63B1E53AD81 /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4AEBF8716AC6121D39F88E /* CasePathsCore.framework */; };
-		2888996E48AFE6DA84C82F30 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB4B57EE0B4FF57DB2E98C /* XCTestDynamicOverlay.framework */; };
 		28C60F5E86E6BBB9705E165E /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE59A41CA35A26F7854C331 /* Base.swift */; };
-		29A72758E5DE1FC170292399 /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9EEE1B771280F5D0FC2736 /* CombineSchedulers.framework */; };
-		2BF205096D6E43C76538FE10 /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7280F892588925BDA24822 /* IssueReportingPackageSupport.framework */; };
-		2CF9BC0CA6ADBED038448714 /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3856DDE39ED5A0A35BB0A5CC /* ThirdParty.framework */; };
-		2D372E9B72B7B401B04E4998 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D058DC706D315B4420AC4E6E /* UIKitNavigation.framework */; };
 		2E6247FD9FF9A4AFB51D2C33 /* DesignSystem_DesignSystem.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */; };
-		2EF86EE67C5A3BFCCED506FC /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAE5989CA1A850DF2ECFFFC /* IssueReporting.framework */; };
-		335ED6564362632724DCA331 /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17205074249DF2B59082FA58 /* InternalCollectionsUtilities.framework */; };
-		383896881F7D55B42FCC7DD3 /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9EEE1B771280F5D0FC2736 /* CombineSchedulers.framework */; };
-		3871012FF8B3FFA7BB17BD9D /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4AEBF8716AC6121D39F88E /* CasePathsCore.framework */; };
-		38FDC676BA39E6FFD0C24335 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11546DC873CD070AC6AB00F2 /* SwiftNavigation.framework */; };
-		3AE174A93A7CDA92E07F85C3 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98809FB8001A003575E411AB /* Sharing.framework */; };
-		3AE4EA711182B84E033B44D9 /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7259C25AA1A99BB1BBD3C941 /* swift-sharing_Sharing.bundle */; };
-		3D58AE887452131EABD561C6 /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B2A02B3BB5CCD75FCC2060 /* DependenciesMacros.framework */; };
 		40147577D3A33D54BD1D13A6 /* DesignSystem_DesignSystem.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */; };
-		43AE838DD16336C2A50D69DB /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235162575549DE8FA608F9B3 /* LogMacro.framework */; };
-		443B49B0DC76D7CB16725F10 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0289B94C11EC779006322480 /* ConcurrencyExtras.framework */; };
-		449609E1CA46BB1A8DE371FE /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98809FB8001A003575E411AB /* Sharing.framework */; };
-		4529F786B0A823381DC98676 /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAE5989CA1A850DF2ECFFFC /* IssueReporting.framework */; };
-		49FA13AA5CEE86932EB00B66 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888EAA25A85A8C2558C81033 /* Perception.framework */; };
-		4A9D11A89F1A720CB9834D37 /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235162575549DE8FA608F9B3 /* LogMacro.framework */; };
-		4C142838153FC801B76E58BE /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3856DDE39ED5A0A35BB0A5CC /* ThirdParty.framework */; };
-		4D744204974BE52AEDCCBD06 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D058DC706D315B4420AC4E6E /* UIKitNavigation.framework */; };
-		53F38C09B4B343628FBAE86F /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC49F23A2E6E890B28B8E87E /* ComposableArchitecture.framework */; };
-		54260EA02E8B71A45810E193 /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5903DAA16331C93F6AD367EC /* Clocks.framework */; };
-		5B58896712EA4EED7415FA70 /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7280F892588925BDA24822 /* IssueReportingPackageSupport.framework */; };
-		5DA7E9E2165F3960B3491768 /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081628E33331B4D46B161FA4 /* WeaveDI.framework */; };
-		5FDCCFACD3A87EE6217F038A /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B2A02B3BB5CCD75FCC2060 /* DependenciesMacros.framework */; };
-		63124C5C7F27B8B0D63E0178 /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235162575549DE8FA608F9B3 /* LogMacro.framework */; };
 		67A2E400A5A889969B6470C5 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE87645A97032776452E22F /* DesignSystem.framework */; };
-		6A89A6B67DA5DA9CF01F4D79 /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169DFD779D490EF6D0450319 /* PerceptionCore.framework */; };
 		6DF69F1F2E0AD3E3D12891EE /* DesignSystem_DesignSystem.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */; };
-		710D431F185628A9871B74C8 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BCCE0D4AA4B3A3079C240 /* TCACoordinators.framework */; };
-		7144E3E758DDFE7886EF225A /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD588A48E7F5E6AD89544592 /* CustomDump.framework */; };
-		7237011D28151948DD2CC9B9 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6D7141FB2589CD40FC9AF1 /* CasePaths.framework */; };
-		7676EEE4F20ADCFF07CD061A /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7280F892588925BDA24822 /* IssueReportingPackageSupport.framework */; };
-		7684101EF02DD0735FCF1BA3 /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A4FA977C0B1B989DD6F80A /* UIKitNavigationShim.framework */; };
-		770BBC9B386B522FF40CD1DA /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD588A48E7F5E6AD89544592 /* CustomDump.framework */; };
 		79D754C55D2E38EF431F6C6E /* Utill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94F2606E7E958A55416DF32 /* Utill.framework */; };
-		7C73CDA05D6E8293F2618C43 /* CustomDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD588A48E7F5E6AD89544592 /* CustomDump.framework */; };
-		7CFFD298B082478D73DD31CA /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 4595115C1E806888151C9650 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
-		7F5E54131EB05BFE2B7252D7 /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888EAA25A85A8C2558C81033 /* Perception.framework */; };
-		82115ADAA17E9AA1B92C6A84 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0289B94C11EC779006322480 /* ConcurrencyExtras.framework */; };
-		82398D6446D04F9560C91EF5 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98809FB8001A003575E411AB /* Sharing.framework */; };
-		83EDD9D875248377AE78F53C /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B640CE6746F8A788385C1B6D /* Sharing2.framework */; };
-		842F5CBD06EB61B73FBE6218 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B640CE6746F8A788385C1B6D /* Sharing2.framework */; };
-		851376FC29B8EC1BC3AEE9AA /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D222003E85442FD962122B92 /* IdentifiedCollections.framework */; };
-		85D5648DCBB70D11A36C13CF /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4AEBF8716AC6121D39F88E /* CasePathsCore.framework */; };
-		871328F385B5CBCAD8D4FB7A /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC49F23A2E6E890B28B8E87E /* ComposableArchitecture.framework */; };
-		88B75CCC3D8330C737DC1F62 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98809FB8001A003575E411AB /* Sharing.framework */; };
-		8B1743BB964CBBF3F6F4D7D6 /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9EEE1B771280F5D0FC2736 /* CombineSchedulers.framework */; };
-		8B51C1E4375FA4B8FFC0A58B /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17205074249DF2B59082FA58 /* InternalCollectionsUtilities.framework */; };
-		8B84311EDA8EA339EB2C8181 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11546DC873CD070AC6AB00F2 /* SwiftNavigation.framework */; };
-		8C0F970FC2A04050CA1AEB9D /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A4FA977C0B1B989DD6F80A /* UIKitNavigationShim.framework */; };
-		8CD1F9F5093DAE719940D55D /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17205074249DF2B59082FA58 /* InternalCollectionsUtilities.framework */; };
-		8E8DE9CE9A272B9704D55A97 /* TCACoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BCCE0D4AA4B3A3079C240 /* TCACoordinators.framework */; };
 		9369B8AFF277E22B1F471B34 /* DesignSystem_DesignSystem.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */; };
-		96D12F5126A28254E1C38F8F /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888EAA25A85A8C2558C81033 /* Perception.framework */; };
-		97BDD12713F136CCF8545DDD /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B2A02B3BB5CCD75FCC2060 /* DependenciesMacros.framework */; };
 		9817D2C943F4DA244E2C9100 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE59A41CA35A26F7854C331 /* Base.swift */; };
-		984599B22092B4B27DD6CECB /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 7259C25AA1A99BB1BBD3C941 /* swift-sharing_Sharing.bundle */; };
 		9AD170BB1D7EB98AD04D63AF /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080C58231FCEDC083F899294 /* Shared.framework */; };
-		9FC800831D2F1154475F5EDD /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB4B57EE0B4FF57DB2E98C /* XCTestDynamicOverlay.framework */; };
-		A20811E5791D407909A61124 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0289B94C11EC779006322480 /* ConcurrencyExtras.framework */; };
-		A3A0C220F3167DD8FA4241B1 /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B2A02B3BB5CCD75FCC2060 /* DependenciesMacros.framework */; };
-		A589FC6E8D9324FF5EAA5E16 /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAE5989CA1A850DF2ECFFFC /* IssueReporting.framework */; };
-		A6494C7A77083B3302F957CF /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC49F23A2E6E890B28B8E87E /* ComposableArchitecture.framework */; };
-		A95FDA4C5187D4E766AEDEA1 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32206975EC04787B73B7C1E /* Dependencies.framework */; };
-		AA7E342FF2260E1BC3A2EDB5 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E666AAA64A164B30D9BCB9 /* SwiftUINavigation.framework */; };
-		AC625C20CE748AACE305A4A1 /* FlowStacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7D85FE8D6F11FA3462914 /* FlowStacks.framework */; };
-		ACE710C2426B5522DE18FDE1 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D222003E85442FD962122B92 /* IdentifiedCollections.framework */; };
-		ADF959995AADC6DA4BE77376 /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E666AAA64A164B30D9BCB9 /* SwiftUINavigation.framework */; };
 		AF0F9B8E91F2E41D02381C5E /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE87645A97032776452E22F /* DesignSystem.framework */; };
-		B08444868E99348097563CEA /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6D7141FB2589CD40FC9AF1 /* CasePaths.framework */; };
-		B1170DFFAA8A85FEAC2A0B48 /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169DFD779D490EF6D0450319 /* PerceptionCore.framework */; };
-		B21B257C21EBBE57A9785014 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB4B57EE0B4FF57DB2E98C /* XCTestDynamicOverlay.framework */; };
-		B94E3FCA9E2CEB57A1E4A803 /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5903DAA16331C93F6AD367EC /* Clocks.framework */; };
-		BD298380FF0FE0BDBF24757F /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B05823D17AC1A01668CA17A /* OrderedCollections.framework */; };
 		BD78CC586EFA1C7CBC6F8B73 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE59A41CA35A26F7854C331 /* Base.swift */; };
-		BDC82DFC39B87F3E8706DAAA /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B640CE6746F8A788385C1B6D /* Sharing2.framework */; };
-		BE7E99D34603BB38E4960D56 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B05823D17AC1A01668CA17A /* OrderedCollections.framework */; };
-		C005DA9E2D2A576193CFC731 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D222003E85442FD962122B92 /* IdentifiedCollections.framework */; };
 		C0E9ABCA7163C2A40175E0F9 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE87645A97032776452E22F /* DesignSystem.framework */; };
 		C21BA352741E2986DB90320C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D401F44D6E4EB3BF22FD6C3 /* Test.swift */; };
 		C7568B6164C00B691F16A729 /* DesignSystem_DesignSystem.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */; };
-		C7EB8617987CD3CBDDFEF2DF /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888EAA25A85A8C2558C81033 /* Perception.framework */; };
-		C8CFFE9B5BF66548AA66623E /* InternalCollectionsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17205074249DF2B59082FA58 /* InternalCollectionsUtilities.framework */; };
-		C925CB032C3426EFFB71C51F /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E666AAA64A164B30D9BCB9 /* SwiftUINavigation.framework */; };
-		C9F5996B3A156EB4CB1A1174 /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081628E33331B4D46B161FA4 /* WeaveDI.framework */; };
-		C9F6CD9F5EC6E5B97C0F6D7E /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B640CE6746F8A788385C1B6D /* Sharing2.framework */; };
-		CB5A4AD950F3BF336ACD0E0A /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23608FC539D32BD921A4F27 /* OSLog.framework */; };
-		CB5E68CD9FD74AA66D767082 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB4B57EE0B4FF57DB2E98C /* XCTestDynamicOverlay.framework */; };
-		CE08A1DFAFF50D1D1CA19F7E /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081628E33331B4D46B161FA4 /* WeaveDI.framework */; };
-		D25C590CF89A2443F8A31C81 /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B05823D17AC1A01668CA17A /* OrderedCollections.framework */; };
-		D3ED78E579B55C00B9A278EC /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32206975EC04787B73B7C1E /* Dependencies.framework */; };
-		D5D980FC98C04BA1230543F4 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CB67B1B862F32C9DBF4200 /* Sharing1.framework */; };
 		D74723E168511D98E26924EA /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE59A41CA35A26F7854C331 /* Base.swift */; };
-		D969B235AF463F6153D0724C /* FlowStacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F7D85FE8D6F11FA3462914 /* FlowStacks.framework */; };
-		DD9BE94C2CFF68D915AADF23 /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081628E33331B4D46B161FA4 /* WeaveDI.framework */; };
-		E2D64FD1B1FF087D4C41580A /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A4FA977C0B1B989DD6F80A /* UIKitNavigationShim.framework */; };
-		E4F2FB5008B8AE95895D4930 /* IdentifiedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D222003E85442FD962122B92 /* IdentifiedCollections.framework */; };
-		E5164B07E7F32E1D32B3D1FF /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169DFD779D490EF6D0450319 /* PerceptionCore.framework */; };
-		E54E703CCE6048584DE35D9C /* SwiftUINavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E666AAA64A164B30D9BCB9 /* SwiftUINavigation.framework */; };
-		E61091888A2F0436D7EC90E5 /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7280F892588925BDA24822 /* IssueReportingPackageSupport.framework */; };
-		E6B677E8CCE5A170F1A8BA32 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CB67B1B862F32C9DBF4200 /* Sharing1.framework */; };
-		E8B459387BA7A075EA9B99AF /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC49F23A2E6E890B28B8E87E /* ComposableArchitecture.framework */; };
 		ECFF96BD9F9B79CB6CBCAA5B /* DesignSystem_DesignSystem.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */; };
 		F137F005EB97558E94BABB39 /* DesignSystem_DesignSystem.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */; };
-		F2DB58663BF653EEE5979211 /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6D7141FB2589CD40FC9AF1 /* CasePaths.framework */; };
-		F33DCD350BD74440B58A82AD /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169DFD779D490EF6D0450319 /* PerceptionCore.framework */; };
-		F73685E12A6C7F194F502922 /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5903DAA16331C93F6AD367EC /* Clocks.framework */; };
-		F85FA4C6799BC89429C9AEFA /* OrderedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B05823D17AC1A01668CA17A /* OrderedCollections.framework */; };
-		F8C8FD63766C690F598D0FC7 /* ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3856DDE39ED5A0A35BB0A5CC /* ThirdParty.framework */; };
-		F9F9EF598C20493B6EE8E8D4 /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A4FA977C0B1B989DD6F80A /* UIKitNavigationShim.framework */; };
-		FAB0492E18B6DE08C0237F1A /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23608FC539D32BD921A4F27 /* OSLog.framework */; };
-		FDE213AE063B0B583AE0FCE1 /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23608FC539D32BD921A4F27 /* OSLog.framework */; };
-		FED93E1BB229303EFA1CF084 /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4AEBF8716AC6121D39F88E /* CasePathsCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,17 +112,6 @@
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		B2C28250E1FEE98351EB810B /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				7CFFD298B082478D73DD31CA /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */,
-				984599B22092B4B27DD6CECB /* swift-sharing_Sharing.bundle in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		B74C05F69C125FB83306930B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,52 +136,20 @@
 
 /* Begin PBXFileReference section */
 		0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystem_DesignSystem.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		0289B94C11EC779006322480 /* ConcurrencyExtras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConcurrencyExtras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BA0AFDE0052B25D521E944 /* SharedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		080C58231FCEDC083F899294 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		081628E33331B4D46B161FA4 /* WeaveDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeaveDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE59A41CA35A26F7854C331 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		0D401F44D6E4EB3BF22FD6C3 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		0EAE5989CA1A850DF2ECFFFC /* IssueReporting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReporting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11546DC873CD070AC6AB00F2 /* SwiftNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		169DFD779D490EF6D0450319 /* PerceptionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerceptionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CC7160F67243B858D0A374 /* Shared-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shared-Prod-Info.plist"; sourceTree = "<group>"; };
-		17205074249DF2B59082FA58 /* InternalCollectionsUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InternalCollectionsUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		235162575549DE8FA608F9B3 /* LogMacro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogMacro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		280CB53B6DF7F64864E5482A /* Shared_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36E666AAA64A164B30D9BCB9 /* SwiftUINavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUINavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3856DDE39ED5A0A35BB0A5CC /* ThirdParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E4AEBF8716AC6121D39F88E /* CasePathsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePathsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4595115C1E806888151C9650 /* swift-composable-architecture_ComposableArchitecture.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-composable-architecture_ComposableArchitecture.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE87645A97032776452E22F /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9B7667F0D21DDF6F7FFBB4 /* Shared-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shared-Debug-Info.plist"; sourceTree = "<group>"; };
-		5903DAA16331C93F6AD367EC /* Clocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62FB4B57EE0B4FF57DB2E98C /* XCTestDynamicOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTestDynamicOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		704BCCE0D4AA4B3A3079C240 /* TCACoordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCACoordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7259C25AA1A99BB1BBD3C941 /* swift-sharing_Sharing.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-sharing_Sharing.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		78B2A02B3BB5CCD75FCC2060 /* DependenciesMacros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependenciesMacros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816DF9B49960C28F45C9B1A9 /* Shared-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shared-Stage-Info.plist"; sourceTree = "<group>"; };
-		888EAA25A85A8C2558C81033 /* Perception.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B05823D17AC1A01668CA17A /* OrderedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92A4FA977C0B1B989DD6F80A /* UIKitNavigationShim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigationShim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98809FB8001A003575E411AB /* Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA57BC4B13796776E6C9DC2 /* Shared_Stage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared_Stage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F6D7141FB2589CD40FC9AF1 /* CasePaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD7280F892588925BDA24822 /* IssueReportingPackageSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReportingPackageSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B23608FC539D32BD921A4F27 /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OSLog.framework; sourceTree = DEVELOPER_DIR; };
-		B640CE6746F8A788385C1B6D /* Sharing2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32206975EC04787B73B7C1E /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94F2606E7E958A55416DF32 /* Utill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC49F23A2E6E890B28B8E87E /* ComposableArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComposableArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD588A48E7F5E6AD89544592 /* CustomDump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomDump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D058DC706D315B4420AC4E6E /* UIKitNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D222003E85442FD962122B92 /* IdentifiedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentifiedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24D0C7082053533D4DE9314 /* Shared_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72BA6AE8B9AF02B56D8FC04 /* Shared-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shared-Info.plist"; sourceTree = "<group>"; };
-		E5CB67B1B862F32C9DBF4200 /* Sharing1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB9EEE1B771280F5D0FC2736 /* CombineSchedulers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineSchedulers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F21D59A4ECB79F8630E071 /* SharedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SharedTests-Info.plist"; sourceTree = "<group>"; };
-		F7F7D85FE8D6F11FA3462914 /* FlowStacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowStacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,38 +157,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5A4AD950F3BF336ACD0E0A /* OSLog.framework in Frameworks */,
-				B08444868E99348097563CEA /* CasePaths.framework in Frameworks */,
-				3871012FF8B3FFA7BB17BD9D /* CasePathsCore.framework in Frameworks */,
-				54260EA02E8B71A45810E193 /* Clocks.framework in Frameworks */,
-				29A72758E5DE1FC170292399 /* CombineSchedulers.framework in Frameworks */,
-				871328F385B5CBCAD8D4FB7A /* ComposableArchitecture.framework in Frameworks */,
-				443B49B0DC76D7CB16725F10 /* ConcurrencyExtras.framework in Frameworks */,
-				7144E3E758DDFE7886EF225A /* CustomDump.framework in Frameworks */,
-				017D5D3165421C7B9C201144 /* Dependencies.framework in Frameworks */,
-				97BDD12713F136CCF8545DDD /* DependenciesMacros.framework in Frameworks */,
 				67A2E400A5A889969B6470C5 /* DesignSystem.framework in Frameworks */,
-				1F58B6A39CA73852ED8BA66B /* FlowStacks.framework in Frameworks */,
-				C005DA9E2D2A576193CFC731 /* IdentifiedCollections.framework in Frameworks */,
-				335ED6564362632724DCA331 /* InternalCollectionsUtilities.framework in Frameworks */,
-				1B93E1391C9D0FE688BBFD06 /* IssueReporting.framework in Frameworks */,
-				2BF205096D6E43C76538FE10 /* IssueReportingPackageSupport.framework in Frameworks */,
-				0975B9AFC7975169C3F4192F /* LogMacro.framework in Frameworks */,
-				BD298380FF0FE0BDBF24757F /* OrderedCollections.framework in Frameworks */,
-				7F5E54131EB05BFE2B7252D7 /* Perception.framework in Frameworks */,
-				E5164B07E7F32E1D32B3D1FF /* PerceptionCore.framework in Frameworks */,
-				3AE174A93A7CDA92E07F85C3 /* Sharing.framework in Frameworks */,
-				01FF6F3633CFE873F3B26B24 /* Sharing1.framework in Frameworks */,
-				83EDD9D875248377AE78F53C /* Sharing2.framework in Frameworks */,
-				1F5F0EF877C78FCCA9E59B8A /* SwiftNavigation.framework in Frameworks */,
-				ADF959995AADC6DA4BE77376 /* SwiftUINavigation.framework in Frameworks */,
-				1F3E89C8C85F2FEC9483E397 /* TCACoordinators.framework in Frameworks */,
-				03F1ECBEB4598DBAF3E6A96A /* ThirdParty.framework in Frameworks */,
-				4D744204974BE52AEDCCBD06 /* UIKitNavigation.framework in Frameworks */,
-				F9F9EF598C20493B6EE8E8D4 /* UIKitNavigationShim.framework in Frameworks */,
 				25527EECE60BE10B7E6E3CD0 /* Utill.framework in Frameworks */,
-				C9F5996B3A156EB4CB1A1174 /* WeaveDI.framework in Frameworks */,
-				B21B257C21EBBE57A9785014 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,38 +174,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE213AE063B0B583AE0FCE1 /* OSLog.framework in Frameworks */,
-				7237011D28151948DD2CC9B9 /* CasePaths.framework in Frameworks */,
-				FED93E1BB229303EFA1CF084 /* CasePathsCore.framework in Frameworks */,
-				B94E3FCA9E2CEB57A1E4A803 /* Clocks.framework in Frameworks */,
-				383896881F7D55B42FCC7DD3 /* CombineSchedulers.framework in Frameworks */,
-				E8B459387BA7A075EA9B99AF /* ComposableArchitecture.framework in Frameworks */,
-				087430AE0D88969AD08DD89D /* ConcurrencyExtras.framework in Frameworks */,
-				770BBC9B386B522FF40CD1DA /* CustomDump.framework in Frameworks */,
-				01864F35550DE3509BCC5919 /* Dependencies.framework in Frameworks */,
-				5FDCCFACD3A87EE6217F038A /* DependenciesMacros.framework in Frameworks */,
 				03154FA18369CB21CC29E043 /* DesignSystem.framework in Frameworks */,
-				AC625C20CE748AACE305A4A1 /* FlowStacks.framework in Frameworks */,
-				E4F2FB5008B8AE95895D4930 /* IdentifiedCollections.framework in Frameworks */,
-				8B51C1E4375FA4B8FFC0A58B /* InternalCollectionsUtilities.framework in Frameworks */,
-				4529F786B0A823381DC98676 /* IssueReporting.framework in Frameworks */,
-				E61091888A2F0436D7EC90E5 /* IssueReportingPackageSupport.framework in Frameworks */,
-				4A9D11A89F1A720CB9834D37 /* LogMacro.framework in Frameworks */,
-				D25C590CF89A2443F8A31C81 /* OrderedCollections.framework in Frameworks */,
-				C7EB8617987CD3CBDDFEF2DF /* Perception.framework in Frameworks */,
-				6A89A6B67DA5DA9CF01F4D79 /* PerceptionCore.framework in Frameworks */,
-				88B75CCC3D8330C737DC1F62 /* Sharing.framework in Frameworks */,
-				222FC3802A6C04DDC14E1C91 /* Sharing1.framework in Frameworks */,
-				C9F6CD9F5EC6E5B97C0F6D7E /* Sharing2.framework in Frameworks */,
-				22BFC8C8D17F79F1FBD5D5FC /* SwiftNavigation.framework in Frameworks */,
-				E54E703CCE6048584DE35D9C /* SwiftUINavigation.framework in Frameworks */,
-				02C575B70F42A311FD52B5D9 /* TCACoordinators.framework in Frameworks */,
-				2CF9BC0CA6ADBED038448714 /* ThirdParty.framework in Frameworks */,
-				1E082189B716F1F18B0D700B /* UIKitNavigation.framework in Frameworks */,
-				7684101EF02DD0735FCF1BA3 /* UIKitNavigationShim.framework in Frameworks */,
 				0022B71FD4E49C968604B4BA /* Utill.framework in Frameworks */,
-				CE08A1DFAFF50D1D1CA19F7E /* WeaveDI.framework in Frameworks */,
-				CB5E68CD9FD74AA66D767082 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,38 +183,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21655B7DB99F5780A90E6788 /* OSLog.framework in Frameworks */,
-				F2DB58663BF653EEE5979211 /* CasePaths.framework in Frameworks */,
-				26EAB5AC2EF0C63B1E53AD81 /* CasePathsCore.framework in Frameworks */,
-				F73685E12A6C7F194F502922 /* Clocks.framework in Frameworks */,
-				1405817EB985703CEC7887ED /* CombineSchedulers.framework in Frameworks */,
-				53F38C09B4B343628FBAE86F /* ComposableArchitecture.framework in Frameworks */,
-				82115ADAA17E9AA1B92C6A84 /* ConcurrencyExtras.framework in Frameworks */,
-				017E8FF8C80FA1976B5BCA74 /* CustomDump.framework in Frameworks */,
-				D3ED78E579B55C00B9A278EC /* Dependencies.framework in Frameworks */,
-				A3A0C220F3167DD8FA4241B1 /* DependenciesMacros.framework in Frameworks */,
 				AF0F9B8E91F2E41D02381C5E /* DesignSystem.framework in Frameworks */,
-				172456F85069BEB1C6C8F58B /* FlowStacks.framework in Frameworks */,
-				851376FC29B8EC1BC3AEE9AA /* IdentifiedCollections.framework in Frameworks */,
-				8CD1F9F5093DAE719940D55D /* InternalCollectionsUtilities.framework in Frameworks */,
-				A589FC6E8D9324FF5EAA5E16 /* IssueReporting.framework in Frameworks */,
-				7676EEE4F20ADCFF07CD061A /* IssueReportingPackageSupport.framework in Frameworks */,
-				63124C5C7F27B8B0D63E0178 /* LogMacro.framework in Frameworks */,
-				BE7E99D34603BB38E4960D56 /* OrderedCollections.framework in Frameworks */,
-				49FA13AA5CEE86932EB00B66 /* Perception.framework in Frameworks */,
-				B1170DFFAA8A85FEAC2A0B48 /* PerceptionCore.framework in Frameworks */,
-				449609E1CA46BB1A8DE371FE /* Sharing.framework in Frameworks */,
-				E6B677E8CCE5A170F1A8BA32 /* Sharing1.framework in Frameworks */,
-				BDC82DFC39B87F3E8706DAAA /* Sharing2.framework in Frameworks */,
-				38FDC676BA39E6FFD0C24335 /* SwiftNavigation.framework in Frameworks */,
-				C925CB032C3426EFFB71C51F /* SwiftUINavigation.framework in Frameworks */,
-				8E8DE9CE9A272B9704D55A97 /* TCACoordinators.framework in Frameworks */,
-				F8C8FD63766C690F598D0FC7 /* ThirdParty.framework in Frameworks */,
-				24F5EAEB8DC82B4AFA0E158C /* UIKitNavigation.framework in Frameworks */,
-				8C0F970FC2A04050CA1AEB9D /* UIKitNavigationShim.framework in Frameworks */,
 				21F379B8A447A4833B6DF730 /* Utill.framework in Frameworks */,
-				5DA7E9E2165F3960B3491768 /* WeaveDI.framework in Frameworks */,
-				9FC800831D2F1154475F5EDD /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,38 +192,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB0492E18B6DE08C0237F1A /* OSLog.framework in Frameworks */,
-				1229F285BF6DA7F01803A6B3 /* CasePaths.framework in Frameworks */,
-				85D5648DCBB70D11A36C13CF /* CasePathsCore.framework in Frameworks */,
-				05F56538A1C3BBA57614C3F0 /* Clocks.framework in Frameworks */,
-				8B1743BB964CBBF3F6F4D7D6 /* CombineSchedulers.framework in Frameworks */,
-				A6494C7A77083B3302F957CF /* ComposableArchitecture.framework in Frameworks */,
-				A20811E5791D407909A61124 /* ConcurrencyExtras.framework in Frameworks */,
-				7C73CDA05D6E8293F2618C43 /* CustomDump.framework in Frameworks */,
-				A95FDA4C5187D4E766AEDEA1 /* Dependencies.framework in Frameworks */,
-				3D58AE887452131EABD561C6 /* DependenciesMacros.framework in Frameworks */,
 				C0E9ABCA7163C2A40175E0F9 /* DesignSystem.framework in Frameworks */,
-				D969B235AF463F6153D0724C /* FlowStacks.framework in Frameworks */,
-				ACE710C2426B5522DE18FDE1 /* IdentifiedCollections.framework in Frameworks */,
-				C8CFFE9B5BF66548AA66623E /* InternalCollectionsUtilities.framework in Frameworks */,
-				2EF86EE67C5A3BFCCED506FC /* IssueReporting.framework in Frameworks */,
-				5B58896712EA4EED7415FA70 /* IssueReportingPackageSupport.framework in Frameworks */,
-				43AE838DD16336C2A50D69DB /* LogMacro.framework in Frameworks */,
-				F85FA4C6799BC89429C9AEFA /* OrderedCollections.framework in Frameworks */,
-				96D12F5126A28254E1C38F8F /* Perception.framework in Frameworks */,
-				F33DCD350BD74440B58A82AD /* PerceptionCore.framework in Frameworks */,
-				82398D6446D04F9560C91EF5 /* Sharing.framework in Frameworks */,
-				D5D980FC98C04BA1230543F4 /* Sharing1.framework in Frameworks */,
-				842F5CBD06EB61B73FBE6218 /* Sharing2.framework in Frameworks */,
-				8B84311EDA8EA339EB2C8181 /* SwiftNavigation.framework in Frameworks */,
-				AA7E342FF2260E1BC3A2EDB5 /* SwiftUINavigation.framework in Frameworks */,
-				710D431F185628A9871B74C8 /* TCACoordinators.framework in Frameworks */,
-				4C142838153FC801B76E58BE /* ThirdParty.framework in Frameworks */,
-				2D372E9B72B7B401B04E4998 /* UIKitNavigation.framework in Frameworks */,
-				E2D64FD1B1FF087D4C41580A /* UIKitNavigationShim.framework in Frameworks */,
 				79D754C55D2E38EF431F6C6E /* Utill.framework in Frameworks */,
-				DD9BE94C2CFF68D915AADF23 /* WeaveDI.framework in Frameworks */,
-				2888996E48AFE6DA84C82F30 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,45 +229,14 @@
 		72723117B1BFA01E33CBB7A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F6D7141FB2589CD40FC9AF1 /* CasePaths.framework */,
-				3E4AEBF8716AC6121D39F88E /* CasePathsCore.framework */,
-				5903DAA16331C93F6AD367EC /* Clocks.framework */,
-				EB9EEE1B771280F5D0FC2736 /* CombineSchedulers.framework */,
-				CC49F23A2E6E890B28B8E87E /* ComposableArchitecture.framework */,
-				0289B94C11EC779006322480 /* ConcurrencyExtras.framework */,
-				CD588A48E7F5E6AD89544592 /* CustomDump.framework */,
-				C32206975EC04787B73B7C1E /* Dependencies.framework */,
-				78B2A02B3BB5CCD75FCC2060 /* DependenciesMacros.framework */,
 				0202CA9E6AAAC0787B68E995 /* DesignSystem_DesignSystem.bundle */,
 				4AE87645A97032776452E22F /* DesignSystem.framework */,
-				F7F7D85FE8D6F11FA3462914 /* FlowStacks.framework */,
-				D222003E85442FD962122B92 /* IdentifiedCollections.framework */,
-				17205074249DF2B59082FA58 /* InternalCollectionsUtilities.framework */,
-				0EAE5989CA1A850DF2ECFFFC /* IssueReporting.framework */,
-				AD7280F892588925BDA24822 /* IssueReportingPackageSupport.framework */,
-				235162575549DE8FA608F9B3 /* LogMacro.framework */,
-				8B05823D17AC1A01668CA17A /* OrderedCollections.framework */,
-				888EAA25A85A8C2558C81033 /* Perception.framework */,
-				169DFD779D490EF6D0450319 /* PerceptionCore.framework */,
 				D24D0C7082053533D4DE9314 /* Shared_Debug.framework */,
 				280CB53B6DF7F64864E5482A /* Shared_Prod.framework */,
 				9BA57BC4B13796776E6C9DC2 /* Shared_Stage.framework */,
 				080C58231FCEDC083F899294 /* Shared.framework */,
 				06BA0AFDE0052B25D521E944 /* SharedTests.xctest */,
-				98809FB8001A003575E411AB /* Sharing.framework */,
-				E5CB67B1B862F32C9DBF4200 /* Sharing1.framework */,
-				B640CE6746F8A788385C1B6D /* Sharing2.framework */,
-				4595115C1E806888151C9650 /* swift-composable-architecture_ComposableArchitecture.bundle */,
-				7259C25AA1A99BB1BBD3C941 /* swift-sharing_Sharing.bundle */,
-				11546DC873CD070AC6AB00F2 /* SwiftNavigation.framework */,
-				36E666AAA64A164B30D9BCB9 /* SwiftUINavigation.framework */,
-				704BCCE0D4AA4B3A3079C240 /* TCACoordinators.framework */,
-				3856DDE39ED5A0A35BB0A5CC /* ThirdParty.framework */,
-				D058DC706D315B4420AC4E6E /* UIKitNavigation.framework */,
-				92A4FA977C0B1B989DD6F80A /* UIKitNavigationShim.framework */,
 				C94F2606E7E958A55416DF32 /* Utill.framework */,
-				081628E33331B4D46B161FA4 /* WeaveDI.framework */,
-				62FB4B57EE0B4FF57DB2E98C /* XCTestDynamicOverlay.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -592,16 +274,7 @@
 			children = (
 				72723117B1BFA01E33CBB7A6 /* Products */,
 				6EC0B98B4A7FF03886AD270E /* Project */,
-				E7E2DC04443691192563DF03 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		E7E2DC04443691192563DF03 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B23608FC539D32BD921A4F27 /* OSLog.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,7 +288,6 @@
 				2894A9CBBD3488DD81A09614 /* Resources */,
 				151CED655F1E995DB8B0B885 /* Frameworks */,
 				B74C05F69C125FB83306930B /* Embed Frameworks */,
-				B2C28250E1FEE98351EB810B /* Dependencies */,
 			);
 			buildRules = (
 			);
@@ -750,8 +422,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8957912F2D02D504FFF5A9 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */,
-				3AE4EA711182B84E033B44D9 /* swift-sharing_Sharing.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,11 +521,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Shared-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -863,30 +528,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared;
@@ -913,11 +554,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Shared-Prod-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -925,30 +561,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Prod;
@@ -975,11 +587,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Shared-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -987,30 +594,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared;
@@ -1041,11 +624,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Shared-Stage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1053,30 +631,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Stage;
@@ -1103,11 +657,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Shared-Debug-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1115,30 +664,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Debug;
@@ -1165,11 +690,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Shared-Debug-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1177,30 +697,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Debug;
@@ -1231,11 +727,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Shared-Prod-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1243,30 +734,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Prod;
@@ -1292,41 +759,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/SharedTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared.SharedTests;
 				PRODUCT_NAME = SharedTests;
@@ -1354,11 +792,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/Shared-Stage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1366,30 +799,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared;
 				PRODUCT_NAME = Shared_Stage;
@@ -1468,41 +877,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-navigation/Sources/UIKitNavigationShim/include",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
 				INFOPLIST_FILE = "Derived/InfoPlists/SharedTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/tuist-derived/UIKitNavigationShim/UIKitNavigationShim.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/CasePathsMacros#CasePathsMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/ComposableArchitectureMacros#ComposableArchitectureMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/DependenciesMacrosPlugin#DependenciesMacrosPlugin",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/PerceptionMacros#PerceptionMacros",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Shared.SharedTests;
 				PRODUCT_NAME = SharedTests;

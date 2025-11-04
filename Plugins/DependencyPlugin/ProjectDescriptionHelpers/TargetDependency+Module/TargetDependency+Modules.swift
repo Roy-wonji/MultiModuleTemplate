@@ -43,6 +43,14 @@ public extension TargetDependency {
   }
 }
 
+
+// Domain
+public extension TargetDependency {
+  static func Interface(implements module: ModulePath.Interfaces) -> Self {
+    projectTarget(module.rawValue, path: .Interface(implementation: module))
+  }
+}
+
 // Domain
 public extension TargetDependency {
   static func Domain(implements module: ModulePath.Domains) -> Self {

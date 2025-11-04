@@ -12,6 +12,7 @@ public enum ModulePath {
   case Presentation(Presentations)
   case Core(Cores)
   case Network(Networks)
+  case Interface(Interfaces)
   case Domain(Domains)
   case Data(Datas)
   case Shared(Shareds)
@@ -31,8 +32,19 @@ public extension ModulePath {
 public extension ModulePath {
   enum Cores: String, CaseIterable {
     case Core
-    
+    case ThirdParty
+
     public static let name: String = "Core"
+  }
+}
+
+//MARK: -  CoreMoudule
+public extension ModulePath {
+  enum Interfaces: String, CaseIterable {
+    case DataInterface
+    case DomainInterface
+
+    public static let name: String = "Interface"
   }
 }
 
@@ -41,9 +53,7 @@ public extension ModulePath {
   enum Networks: String, CaseIterable {
     case Networking
     case Foundations
-    case ThirdPartys
-    
-    
+
     public static let name: String = "Network"
   }
 }
@@ -52,8 +62,8 @@ public extension ModulePath {
 public extension ModulePath {
   enum Datas: String, CaseIterable {
     case Model
+    case Data
     case Repository
-    case DataInterface
     case API
     case Service
 
@@ -68,7 +78,7 @@ public extension ModulePath {
     case Entity
     case UseCase
     case DomainInterface
-    case QRCode
+    case Domain
 
 
     public static let name: String = "Domain"
@@ -81,7 +91,6 @@ public extension ModulePath {
     case Shared
     case DesignSystem
     case Utill
-    case ThirdParty
     
     public static let name: String = "Shared"
   }

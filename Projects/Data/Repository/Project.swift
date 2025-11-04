@@ -5,12 +5,13 @@ import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
 let project = Project.makeAppModule(
-  name: "Core",
-  bundleId: .appBundleID(name: ".Core"),
-  product: .framework,
+  name: "Repository",
+  bundleId: .appBundleID(name: ".Repository"),
+  product: .staticFramework,
   settings:  .settings(),
   dependencies: [
-    .Core(implements: .ThirdParty)
+    .Network(implements: .Networking),
+    .Interface(implements: .DataInterface)
   ],
   sources: ["Sources/**"]
 )
