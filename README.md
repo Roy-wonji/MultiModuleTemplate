@@ -15,7 +15,8 @@ MultiModuleTemplate/
 │   ├── Domain/                 # 🔥 도메인 계층 (비즈니스 로직 + Protocol)
 │   │   ├── Entity/             # 도메인 엔티티 + Entity Protocol
 │   │   ├── UseCase/            # 비즈니스 로직 + UseCase Protocol
-│   │   └── Repository/         # Repository Protocol 정의
+│   │   ├── DomainInterface/    # Domain 계층 인터페이스 모듈
+│   │   └── DataInterface/      # Data 계층 인터페이스 모듈
 │   ├── Data/                   # 데이터 계층 (데이터 접근 + Model)
 │   │   ├── Model/              # 데이터 전송 객체 (DTO, API Response)
 │   │   ├── Repository/         # Repository 구현체 (Domain Protocol 구현)
@@ -74,7 +75,8 @@ tuist test        # 테스트
 ### 🏗 Domain Layer (비즈니스 로직 + Protocol)
 - **Entity**: 순수 도메인 엔티티 + Entity 관련 Protocol
 - **UseCase**: 비즈니스 로직 구현체 + UseCase Protocol
-- **Repository**: Repository Protocol 정의 (구현체는 Data Layer에)
+- **DomainInterface**: Domain Entity를 참조하는 인터페이스 모듈
+- **DataInterface**: Data Model을 참조하는 인터페이스 모듈
 
 ### 📊 Data Layer (데이터 접근 + Model)
 - **Model**: DTO 구현체 (Domain Entity로 변환 기능 포함)
