@@ -12,15 +12,13 @@ MultiModuleTemplate/
 │   ├── App/                    # 메인 애플리케이션
 │   ├── Presentation/
 │   │   └── Presentation/       # 화면 및 ViewModel 구성
-│   ├── Interface/              # 🔥 계층 간 인터페이스 정의
-│   │   ├── DataInterface/      # Data Layer 인터페이스 (Model, DTO)
-│   │   └── DomainInterface/    # Domain Layer 인터페이스 (Entity, Repository)
-│   ├── Domain/                 # 도메인 계층 (비즈니스 로직)
-│   │   ├── Entity/             # 순수 도메인 엔티티 (비즈니스 모델)
-│   │   └── UseCase/            # 비즈니스 로직 구현체
-│   ├── Data/                   # 데이터 계층 (데이터 접근)
+│   ├── Domain/                 # 🔥 도메인 계층 (비즈니스 로직 + Protocol)
+│   │   ├── Entity/             # 도메인 엔티티 + Entity Protocol
+│   │   ├── UseCase/            # 비즈니스 로직 + UseCase Protocol
+│   │   └── Repository/         # Repository Protocol 정의
+│   ├── Data/                   # 데이터 계층 (데이터 접근 + Model)
 │   │   ├── Model/              # 데이터 전송 객체 (DTO, API Response)
-│   │   ├── Repository/         # Repository 구현체 (Domain Interface 구현)
+│   │   ├── Repository/         # Repository 구현체 (Domain Protocol 구현)
 │   │   ├── API/                # REST API 클라이언트
 │   │   └── Service/            # 데이터 처리 서비스
 │   ├── Network/                # 네트워크 계층
@@ -73,21 +71,14 @@ tuist test        # 테스트
 - **App**: 메인 애플리케이션 모듈 (앱 진입점 및 설정)
 - **Presentation**: ViewController, ViewModel 등 UI 로직 담당
 
-### 🎯 Interface Layer (계층 간 인터페이스)
-- **DataInterface**: Data Layer 계약 정의
-  - **Model**: API Response/Request DTO 정의
-  - **Repository Interface**: Data → Domain 계약
-- **DomainInterface**: Domain Layer 계약 정의
-  - **Entity**: 순수 비즈니스 객체 정의
-  - **UseCase Interface**: Domain → Presentation 계약
+### 🏗 Domain Layer (비즈니스 로직 + Protocol)
+- **Entity**: 순수 도메인 엔티티 + Entity 관련 Protocol
+- **UseCase**: 비즈니스 로직 구현체 + UseCase Protocol
+- **Repository**: Repository Protocol 정의 (구현체는 Data Layer에)
 
-### 🏗 Domain Layer (비즈니스 로직)
-- **Entity**: 순수 도메인 엔티티 (UI, DB 의존성 없음)
-- **UseCase**: 비즈니스 로직 구현체 (Interface 구현)
-
-### 📊 Data Layer (데이터 접근)
-- **Model**: 실제 DTO 구현체 (DataInterface 구현)
-- **Repository**: Repository 패턴 구현체 (DomainInterface 구현)
+### 📊 Data Layer (데이터 접근 + Model)
+- **Model**: DTO 구현체 (Domain Entity로 변환 기능 포함)
+- **Repository**: Repository 구현체 (Domain Protocol 구현)
 - **API**: REST API 클라이언트 및 Endpoint 정의
 - **Service**: 데이터 처리 서비스 (캐싱, 변환 등)
 
@@ -102,13 +93,13 @@ tuist test        # 테스트
 
 ### 🔄 의존성 방향 (Clean Architecture)
 ```
-Presentation → DomainInterface (UseCase Interface)
+Presentation → Domain (UseCase Protocol)
        ↓
-Domain/UseCase → DomainInterface (Repository Interface)
+Domain/UseCase → Domain (Repository Protocol)
        ↓
-Data/Repository → DataInterface (Model) + DomainInterface (Entity)
+Data/Repository → Domain (Entity + Repository Protocol)
        ↓
-DataInterface/Model (DTO 구현)
+Data/Model → Domain (Entity 변환)
 ```
 
 ## 개발 환경
@@ -146,13 +137,13 @@ DataInterface/Model (DTO 구현)
 
 ## 🏗 Clean Architecture 설계
 
-### 🎯 완벽한 계층 분리 설계
+### 🎯 Domain 중심 설계
 
-이 프로젝트는 **Interface 계층 분리**를 통해 완벽한 Clean Architecture를 구현합니다:
+이 프로젝트는 **Domain 계층에 Protocol과 구현을 통합**하여 Clean Architecture를 구현합니다:
 
-#### 📋 Interface 정의 (계약)
+#### 📋 Domain Layer (Protocol + Entity + UseCase)
 ```swift
-// Interface/DomainInterface/Entity/User.swift
+// Domain/Entity/User.swift
 public struct User {
     public let id: String
     public let name: String
@@ -163,16 +154,41 @@ public struct User {
         self.name = name
         self.email = email
     }
+
+    // 비즈니스 로직
+    public var displayName: String {
+        return name.isEmpty ? "Unknown User" : name
+    }
 }
 
-// Interface/DomainInterface/Repository/UserRepository.swift
+// Domain/Repository/UserRepository.swift
 public protocol UserRepository {
     func fetchUser(id: String) async throws -> User
     func saveUser(_ user: User) async throws
 }
 
-// Interface/DataInterface/Model/UserModel.swift
-import DomainInterface
+// Domain/UseCase/GetUserUseCase.swift
+public protocol GetUserUseCase {
+    func execute(id: String) async throws -> User
+}
+
+public final class GetUserUseCaseImpl: GetUserUseCase {
+    private let repository: UserRepository
+
+    public init(repository: UserRepository) {
+        self.repository = repository
+    }
+
+    public func execute(id: String) async throws -> User {
+        return try await repository.fetchUser(id: id)
+    }
+}
+```
+
+#### 🏗️ Data Layer (Model + Repository 구현)
+```swift
+// Data/Model/UserModel.swift
+import Domain
 
 public struct UserModel: Codable {
     public let user_id: String
@@ -188,28 +204,9 @@ public struct UserModel: Codable {
         )
     }
 }
-```
-
-#### 🏗️ 구현 계층
-```swift
-// Domain/UseCase/GetUserUseCase.swift
-import DomainInterface
-
-public final class GetUserUseCase {
-    private let repository: UserRepository  // Interface에 의존
-
-    public init(repository: UserRepository) {
-        self.repository = repository
-    }
-
-    public func execute(id: String) async throws -> User {
-        return try await repository.fetchUser(id: id)
-    }
-}
 
 // Data/Repository/UserRepositoryImpl.swift
-import DomainInterface
-import DataInterface
+import Domain
 
 public final class UserRepositoryImpl: UserRepository {
     private let apiService: APIService
@@ -227,24 +224,26 @@ public final class UserRepositoryImpl: UserRepository {
 
 ### 💡 핵심 장점
 
-#### 1. **완벽한 의존성 역전**
+#### 1. **Domain 중심 의존성**
 ```
-❌ 기존 방식 (순환 의존 위험):
-Domain ↔ Data (양방향)
+✅ Domain 통합 방식:
+Presentation → Domain (Protocol + Entity)
+       ↓
+Data → Domain (Protocol 구현 + Entity 사용)
 
-✅ Interface 분리 방식:
-Data → Interface ← Domain (단방향)
+모든 계층이 Domain을 중심으로 의존
 ```
 
-#### 2. **변환 책임 명확화**
+#### 2. **응집도 향상**
 ```swift
-// Data Layer가 변환 담당
-let model = try await api.fetchUser(id: id)
-return model.toEntity()  // Model → Entity
+// 관련 Protocol과 구현이 같은 모듈에
+// Domain/UseCase/GetUserUseCase.swift
+public protocol GetUserUseCase {
+    func execute(id: String) async throws -> User
+}
 
-// Domain은 순수 비즈니스 로직만
-public var displayName: String {
-    return name.isEmpty ? "Unknown User" : name
+public final class GetUserUseCaseImpl: GetUserUseCase {
+    // 구현체도 같은 파일에
 }
 ```
 
@@ -259,14 +258,14 @@ final class MockUserRepository: UserRepository {
 
 // 테스트에서 쉽게 사용
 let mockRepo = MockUserRepository()
-let useCase = GetUserUseCase(repository: mockRepo)
+let useCase = GetUserUseCaseImpl(repository: mockRepo)
 let user = try await useCase.execute(id: "test")
 ```
 
-#### 4. **모듈 독립성**
-- **Domain**: 완전히 순수 (UI, DB, Network 의존성 없음)
-- **Data**: Domain Interface만 의존 (구현체 모름)
-- **Interface**: 계약만 정의 (구현 없음)
+#### 4. **단순한 구조**
+- **Domain**: Protocol + Entity + UseCase 통합 관리
+- **Data**: Domain Protocol 구현 + Model 변환
+- **모듈 수 감소**: Interface 별도 모듈 불필요
 
 ---
 

@@ -11,7 +11,7 @@ let project = Project.makeAppModule(
   settings:  .settings(),
   dependencies: [
     .Data(implements: .Repository),
-    .Interface(implements: .DomainInterface),
+    .Domain(implements: .DomainInterface),
     .SPM.composableArchitecture,
     .SPM.weaveDI,
   ],

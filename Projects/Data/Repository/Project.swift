@@ -11,7 +11,7 @@ let project = Project.makeAppModule(
   settings:  .settings(),
   dependencies: [
     .Network(implements: .Networking),
-    .Interface(implements: .DataInterface)
+    .Domain(implements: .DataInterface)
   ],
   sources: ["Sources/**"]
 )

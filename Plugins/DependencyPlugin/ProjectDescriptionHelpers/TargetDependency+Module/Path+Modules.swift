@@ -53,17 +53,6 @@ public extension ProjectDescription.Path {
   }
 }
 
-// MARK: - Interfaces
-public extension ProjectDescription.Path {
-  static var Interface: Self {
-    return .relativeToRoot("Projects/\(ModulePath.Interfaces.name)")
-  }
-
-  static func Interface(implementation module: ModulePath.Interfaces) -> Self {
-    return .relativeToRoot("Projects/\(ModulePath.Interfaces.name)/\(module.rawValue)")
-  }
-}
-
 // MARK: - Domain
 public extension ProjectDescription.Path {
   static var Domain: Self {
