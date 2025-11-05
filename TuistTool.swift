@@ -56,8 +56,14 @@ func prompt(_ message: String) -> String {
 
 // MARK: - Tuist 명령어 (tuist 4.97.2 최적화)
 func generate() {
-    setenv("TUIST_ROOT_DIR", FileManager.default.currentDirectoryPath, 1)
-    run("tuist", arguments: ["generate"])
+  // ✅ 루트 경로 환경 변수 설정
+  setenv("TUIST_ROOT_DIR", FileManager.default.currentDirectoryPath, 1)
+
+  // ✅ 프리뷰 모드 환경 변수 추가
+  setenv("TUIST_FOR_PREVIEW", "TRUE", 1)
+
+  // ✅ tuist generate 실행
+  run("tuist", arguments: ["generate"])
 }
 
 // tuist 4.97.2 새로운 기능들
