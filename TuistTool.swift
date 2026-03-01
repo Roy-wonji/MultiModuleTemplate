@@ -723,6 +723,80 @@ func parseSPMLibraries() -> [String] {
   }
 }
 
+// MARK: - Module Auto Registration Helper
+func addModuleToPluginAutomatically(moduleName: String, layer: String) -> Bool {
+  let modulesFilePath = "Plugins/DependencyPlugin/ProjectDescriptionHelpers/TargetDependency+Module/Modules.swift"
+
+  guard FileManager.default.fileExists(atPath: modulesFilePath) else {
+    print("❌ Modules.swift 파일을 찾을 수 없습니다: \(modulesFilePath)")
+    return false
+  }
+
+  do {
+    var content = try String(contentsOfFile: modulesFilePath, encoding: .utf8)
+    let originalContent = content
+
+    // 레이어별 enum 이름 매핑
+    let enumName: String
+    switch layer {
+    case "Presentation":
+      enumName = "Presentations"
+    case "Shared":
+      enumName = "Shareds"
+    case "Domain", "Core/Domain":
+      enumName = "Domains"
+    case "Core/Interface":
+      enumName = "Interfaces"
+    case "Core/Network", "Network":
+      enumName = "Networks"
+    case "Data", "Core/Data":
+      enumName = "Datas"
+    case "Core":
+      enumName = "Cores"
+    default:
+      print("❌ 알 수 없는 레이어: \(layer)")
+      return false
+    }
+
+    // enum 찾기 및 case 추가
+    let enumPattern = "enum \(enumName): String, CaseIterable \\{([\\s\\S]*?)\\}"
+
+    guard let enumRegex = try? NSRegularExpression(pattern: enumPattern),
+          let enumMatch = enumRegex.firstMatch(in: content, range: NSRange(content.startIndex..., in: content)),
+          let enumRange = Range(enumMatch.range, in: content) else {
+      print("❌ \(enumName) enum을 찾을 수 없습니다")
+      return false
+    }
+
+    // enum 내부 검사하여 중복 확인
+    if let innerRange = Range(enumMatch.range(at: 1), in: content) {
+      let innerContent = String(content[innerRange])
+      if innerContent.contains("case \(moduleName)") {
+        print("ℹ️ 모듈 '\(moduleName)'이 이미 \(enumName)에 존재합니다")
+        return true
+      }
+    }
+
+    // 마지막 case 뒤에 새로운 case 추가
+    let enumEndIndex = content.index(before: enumRange.upperBound)
+    let newCase = "    case \(moduleName)\n  "
+    content.insert(contentsOf: newCase, at: enumEndIndex)
+
+    // 파일 업데이트
+    if content != originalContent {
+      try content.write(toFile: modulesFilePath, atomically: true, encoding: .utf8)
+      print("✅ \(enumName)에 '\(moduleName)' 모듈이 자동으로 추가되었습니다")
+      return true
+    }
+
+  } catch {
+    print("❌ Modules.swift 파일 업데이트 실패: \(error)")
+    return false
+  }
+
+  return false
+}
+
 // MARK: - registerModule
 func registerModule() {
   print("\n🚀 새 모듈 등록을 시작합니다.")
@@ -794,6 +868,15 @@ func registerModule() {
       try? content.write(toFile: projectFile, atomically: true, encoding: .utf8)
       print("✅ 의존성 추가 완료:\n\(dependencyList)")
     }
+
+    // ✅ 자동으로 Modules.swift에 모듈 추가
+    print("\n📝 Modules.swift에 모듈 등록 중...")
+    if addModuleToPluginAutomatically(moduleName: moduleName, layer: layer) {
+      print("✅ Modules.swift 등록 완료")
+    } else {
+      print("⚠️ Modules.swift 등록 실패 - 수동으로 추가해주세요")
+    }
+
     print("✅ 모듈 생성 완료: Projects/\(layer)/\(moduleName)")
 
     // ──────────────────────────────
