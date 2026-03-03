@@ -10,7 +10,6 @@ import ProjectDescription
 
 public enum ModulePath {
   case Presentation(Presentations)
-  case Core(Cores)
   case Network(Networks)
   case Domain(Domains)
   case Data(Datas)
@@ -27,15 +26,6 @@ public extension ModulePath {
   }
 }
 
-//MARK: -  CoreMoudule
-public extension ModulePath {
-  enum Cores: String, CaseIterable {
-    case Core
-    case ThirdParty
-
-    public static let name: String = "Core"
-  }
-}
 
 
 //MARK: -  CoreDomainModule

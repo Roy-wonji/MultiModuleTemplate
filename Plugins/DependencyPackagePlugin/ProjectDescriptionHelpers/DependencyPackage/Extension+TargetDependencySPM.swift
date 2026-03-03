@@ -12,4 +12,5 @@ public extension TargetDependency.SPM {
   static let composableArchitecture = TargetDependency.external(name: "ComposableArchitecture", condition: .none)
   static let tcaCoordinator = TargetDependency.external(name: "TCACoordinators", condition: .none)
   static let weaveDI = TargetDependency.external(name: "WeaveDI", condition: .none)
+  static let sharing = TargetDependency.external(name: "Sharing", condition: .none)
 }

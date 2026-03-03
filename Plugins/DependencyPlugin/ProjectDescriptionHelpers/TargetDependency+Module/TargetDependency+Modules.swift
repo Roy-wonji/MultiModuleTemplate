@@ -29,12 +29,6 @@ public extension TargetDependency {
   }
 }
 
-// Core
-public extension TargetDependency {
-  static func Core(implements module: ModulePath.Cores) -> Self {
-    projectTarget(module.rawValue, path: .Core(implementation: module))
-  }
-}
 
 // Network
 public extension TargetDependency {

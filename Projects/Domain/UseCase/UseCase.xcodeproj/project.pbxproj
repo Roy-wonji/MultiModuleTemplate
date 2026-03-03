@@ -17,6 +17,7 @@
 		1F52B4C183ED7440BB0008C5 /* ComposableArchitecture.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A06ABB2F1523CED2E74B4851 /* ComposableArchitecture.framework */; };
 		225CEFCE42B0B52EADC274BD /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7443ABF2BF970A68F68C39 /* CombineSchedulers.framework */; };
 		27BC664E66CCF74669CFCB4A /* UIKitNavigationShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D709557E90FBEF8A8A4305 /* UIKitNavigationShim.framework */; };
+		30B8028097F694E142E10F12 /* WeaveDICore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0257DC642F90F1F35275D4 /* WeaveDICore.framework */; };
 		3AD9817DB1EA153D26CA1169 /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9702202A42059A564824B3 /* DomainInterface.framework */; };
 		4DEF70A10ABBC302AF66D19B /* Repository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 6C51192BCDE8A7E9252657C2 /* Repository.framework */; };
 		4FA5872040E01A8D68F66F8E /* ComposableArchitecture.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = A06ABB2F1523CED2E74B4851 /* ComposableArchitecture.framework */; };
@@ -42,7 +43,6 @@
 		7AC6377C2F512F8932492065 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06ABB2F1523CED2E74B4851 /* ComposableArchitecture.framework */; };
 		7DAC805575823E4D03899B13 /* Foundations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097C8502B89ACBB0F0A6B3DF /* Foundations.framework */; };
 		89E0A31F51C1EB7029936363 /* DomainInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9702202A42059A564824B3 /* DomainInterface.framework */; };
-		8D33245E18919C5183CF8240 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32355A546906AD16B4026C /* Sharing2.framework */; };
 		937A580AE4C073DC1A3135BF /* swift-composable-architecture_ComposableArchitecture.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = A733A7597F14F4728F8A5C0C /* swift-composable-architecture_ComposableArchitecture.bundle */; };
 		981D811B08EC3109C187940B /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B28AE28B75F4A08064786E /* SwiftNavigation.framework */; };
 		9A865777262F57D1BDDF8DEF /* Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C1C4DE45683C912C8DC2B4 /* Perception.framework */; };
@@ -234,7 +234,7 @@
 		D748E68EDF03BA484791AC0E /* UIKitNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE5B4C0845929AAD691396C /* Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19624172169EC662A81D26B /* WeaveDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeaveDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF32355A546906AD16B4026C /* Sharing2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0257DC642F90F1F35275D4 /* WeaveDICore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeaveDICore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E0EC679FC135E5CEC0A9AD /* IdentifiedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentifiedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8685E99C5809D7529D75E04 /* DataInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9761AA31A39E2CCF29043E7 /* UseCase_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UseCase_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,13 +282,13 @@
 				BB5DA4B960E719E9BC9438A5 /* Repository.framework in Frameworks */,
 				75D5489B5B030315F847CEC7 /* Sharing.framework in Frameworks */,
 				D5393DB4DF93417EF9EE85BB /* Sharing1.framework in Frameworks */,
-				8D33245E18919C5183CF8240 /* Sharing2.framework in Frameworks */,
 				981D811B08EC3109C187940B /* SwiftNavigation.framework in Frameworks */,
 				F2ECBEB3C9CF423819541589 /* SwiftUINavigation.framework in Frameworks */,
 				071B981F0D2DF826183B79CB /* UIKitNavigation.framework in Frameworks */,
 				27BC664E66CCF74669CFCB4A /* UIKitNavigationShim.framework in Frameworks */,
 				541697140A6418A997A49C8E /* UseCase.framework in Frameworks */,
 				731AA6801D9807916BF43DFA /* WeaveDI.framework in Frameworks */,
+				30B8028097F694E142E10F12 /* WeaveDICore.framework in Frameworks */,
 				532676483F2C2203F76AB474 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +412,6 @@
 				6C51192BCDE8A7E9252657C2 /* Repository.framework */,
 				DCE5B4C0845929AAD691396C /* Sharing.framework */,
 				48BCB17D9732330186A8333E /* Sharing1.framework */,
-				EF32355A546906AD16B4026C /* Sharing2.framework */,
 				A733A7597F14F4728F8A5C0C /* swift-composable-architecture_ComposableArchitecture.bundle */,
 				4031F1BD9A9E73F69501493A /* swift-sharing_Sharing.bundle */,
 				28B28AE28B75F4A08064786E /* SwiftNavigation.framework */,
@@ -425,6 +424,7 @@
 				981DA49FF8FB5D20F6052CD5 /* UseCase.framework */,
 				A751B0F38C9C2575198515CF /* UseCaseTests.xctest */,
 				E19624172169EC662A81D26B /* WeaveDI.framework */,
+				EF0257DC642F90F1F35275D4 /* WeaveDICore.framework */,
 				008DF05C3439EA6B9FDCF073 /* XCTestDynamicOverlay.framework */,
 			);
 			name = Products;

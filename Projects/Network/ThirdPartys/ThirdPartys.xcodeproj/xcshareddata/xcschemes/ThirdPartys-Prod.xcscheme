@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53DAF845F29676E49B99B6F8"
-               BuildableName = "Core_Prod.framework"
-               BlueprintName = "Core-Prod"
-               ReferencedContainer = "container:Core.xcodeproj">
+               BlueprintIdentifier = "3CBA0526703385E4DC5D1F27"
+               BuildableName = "ThirdPartys_Prod.framework"
+               BlueprintName = "ThirdPartys-Prod"
+               ReferencedContainer = "container:ThirdPartys.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53DAF845F29676E49B99B6F8"
-            BuildableName = "Core_Prod.framework"
-            BlueprintName = "Core-Prod"
-            ReferencedContainer = "container:Core.xcodeproj">
+            BlueprintIdentifier = "3CBA0526703385E4DC5D1F27"
+            BuildableName = "ThirdPartys_Prod.framework"
+            BlueprintName = "ThirdPartys-Prod"
+            ReferencedContainer = "container:ThirdPartys.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -60,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53DAF845F29676E49B99B6F8"
-            BuildableName = "Core_Prod.framework"
-            BlueprintName = "Core-Prod"
-            ReferencedContainer = "container:Core.xcodeproj">
+            BlueprintIdentifier = "3CBA0526703385E4DC5D1F27"
+            BuildableName = "ThirdPartys_Prod.framework"
+            BlueprintName = "ThirdPartys-Prod"
+            ReferencedContainer = "container:ThirdPartys.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

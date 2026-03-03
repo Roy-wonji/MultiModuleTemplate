@@ -12,6 +12,7 @@
 		054D8D24D8BBA33B55453697 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED236801C3C6EBF9BB755A4 /* Shared.framework */; };
 		097514984C09DCD1D4856511 /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7591663F2D1B24C4BDA756A /* IssueReporting.framework */; };
 		0ED96C609E3A38826EC31884 /* swift-sharing_Sharing.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 32DB353133F1D17C0F625336 /* swift-sharing_Sharing.bundle */; };
+		101DB6F9ABDEC1F5B9843B27 /* WeaveDICore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7BB40DC6762F9309C13FAC /* WeaveDICore.framework */; };
 		16AA1EF839323DCCE84D0BE2 /* SwiftNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B4D42BC4DDD8A43DF9671C /* SwiftNavigation.framework */; };
 		18B01B4ECB9CB6E885C4E912 /* UseCase.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 868F9D0352A18E88B6F78CDE /* UseCase.framework */; };
 		1EAAF94C2DBE6792F3DC10F0 /* UIKitNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E19ADD14C9C9B66429933E /* UIKitNavigation.framework */; };
@@ -29,15 +30,12 @@
 		49F6D986954C901DC50E5A49 /* Sharing1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232AE6BF7A1AFCF0B9B823FD /* Sharing1.framework */; };
 		4E660B1501EE176BAAEAEA27 /* PresentationExported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C60918107A83F4DDE9D417D /* PresentationExported.swift */; };
 		5248ACB941821BF3F91EA6D7 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB201D0E8BE1D1547639F88 /* Dependencies.framework */; };
-		545D713F514DF5A8B151C466 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E14D09AE76BE920545555A /* Core.framework */; };
-		56FCE4DA807E3179DEFAF470 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E14D09AE76BE920545555A /* Core.framework */; };
 		59F11625F203DCDD137E6944 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0595BAB78E7CD48075AF15B0 /* Model.framework */; };
 		610E66B1C269EBC709E677F2 /* swift-sharing_Sharing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32DB353133F1D17C0F625336 /* swift-sharing_Sharing.bundle */; };
 		6596CD1618805254CB7F40D2 /* PerceptionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD6E248067073EB598B6D86 /* PerceptionCore.framework */; };
 		69F501FFCECF1AB16A4D4752 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342AE4EAEE40294F0A26F2B8 /* Presentation.framework */; };
 		6E76AF41B3FEEF4652A7CEED /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED236801C3C6EBF9BB755A4 /* Shared.framework */; };
 		773B030F03D93F1EFE961D56 /* PresentationExported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C60918107A83F4DDE9D417D /* PresentationExported.swift */; };
-		78FA9D80A38BDA3B8DF70E4E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E14D09AE76BE920545555A /* Core.framework */; };
 		79664A1CEE05B0A135CC3F7F /* CasePaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4E2C9101CD2ABA7FC93366 /* CasePaths.framework */; };
 		79697766170F4CF0B454B74B /* CasePathsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45344C795A1109E3D0CB88C /* CasePathsCore.framework */; };
 		7A09A9ECD1ED6652C5FDA693 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2351D6B4A46469B4126F2C3B /* ConcurrencyExtras.framework */; };
@@ -58,13 +56,10 @@
 		BB7103836FAB367092054304 /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED6EB5A39A516BD1D69E911 /* Entity.framework */; };
 		C28B1DD196DC96F555D940F6 /* swift-composable-architecture_ComposableArchitecture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C470EB5F1E10C6ED803FB18 /* swift-composable-architecture_ComposableArchitecture.bundle */; };
 		C7A0C7EBE0FDA649B2B3CEA3 /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66443C80B20B08C1363E951B /* LogMacro.framework */; };
-		CDF84E548084CDEA84412160 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E14D09AE76BE920545555A /* Core.framework */; };
-		E6E44C7E8943742C85965DBB /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E14D09AE76BE920545555A /* Core.framework */; };
 		E75F407D6C39AB415E1FCE41 /* UseCase.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 868F9D0352A18E88B6F78CDE /* UseCase.framework */; };
 		E85F7B48B6FB8E385AD94FBD /* DataInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26D9853EBB0199194461471 /* DataInterface.framework */; };
 		E981CFD6DC1F1C9534C9E167 /* PresentationExported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C60918107A83F4DDE9D417D /* PresentationExported.swift */; };
 		EEE4922049DE831695B18E79 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375AA2720EF90234325320FB /* XCTestDynamicOverlay.framework */; };
-		F09DA4847204EF87C7B58C84 /* Sharing2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6748D289DD7DC16E86016069 /* Sharing2.framework */; };
 		F650CC620116BE8B2F36DE6C /* DependenciesMacros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC62388B726211C6EB4E61FE /* DependenciesMacros.framework */; };
 /* End PBXBuildFile section */
 
@@ -206,7 +201,6 @@
 		5C2D55F688109111CA472A53 /* InternalCollectionsUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InternalCollectionsUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED6EB5A39A516BD1D69E911 /* Entity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66443C80B20B08C1363E951B /* LogMacro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogMacro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6748D289DD7DC16E86016069 /* Sharing2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sharing2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EE2AB0AEF1D5CB9A2F9181 /* Presentation-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Presentation-Prod-Info.plist"; sourceTree = "<group>"; };
 		6C92AD27CF19DDC5BEFC5290 /* Presentation_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA26FE7C09459795F68303 /* Clocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,7 +216,6 @@
 		B5F6E2479E03DF9A1548AFE4 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8656113F6736A3B744BB66 /* Presentation-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Presentation-Stage-Info.plist"; sourceTree = "<group>"; };
 		BF64B8AFE4F24CC92327A710 /* PresentationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PresentationTests-Info.plist"; sourceTree = "<group>"; };
-		C3E14D09AE76BE920545555A /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB19892F3BF3A5908473514F /* IssueReportingPackageSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReportingPackageSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29941E89A40C785D8930DE4 /* DomainInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F03CD23882DA025CC86817 /* IdentifiedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentifiedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +224,7 @@
 		DBD6E248067073EB598B6D86 /* PerceptionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerceptionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED236801C3C6EBF9BB755A4 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26D9853EBB0199194461471 /* DataInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7BB40DC6762F9309C13FAC /* WeaveDICore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeaveDICore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45344C795A1109E3D0CB88C /* CasePathsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasePathsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46E1D012C0A86E9B6BF4894 /* Presentation-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Presentation-Debug-Info.plist"; sourceTree = "<group>"; };
 		FC62388B726211C6EB4E61FE /* DependenciesMacros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependenciesMacros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,7 +235,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78FA9D80A38BDA3B8DF70E4E /* Core.framework in Frameworks */,
 				B6DF9B5A0C7C2F192507AEA0 /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +250,6 @@
 				A61EBC1D0EBE7174C206C498 /* CombineSchedulers.framework in Frameworks */,
 				8E3550FAC85AAF30DDDF21BB /* ComposableArchitecture.framework in Frameworks */,
 				7A09A9ECD1ED6652C5FDA693 /* ConcurrencyExtras.framework in Frameworks */,
-				56FCE4DA807E3179DEFAF470 /* Core.framework in Frameworks */,
 				86C661AFE402190C93A089B4 /* CustomDump.framework in Frameworks */,
 				E85F7B48B6FB8E385AD94FBD /* DataInterface.framework in Frameworks */,
 				5248ACB941821BF3F91EA6D7 /* Dependencies.framework in Frameworks */,
@@ -280,13 +272,13 @@
 				315228127069BB806DAE9F24 /* Shared.framework in Frameworks */,
 				8D23DE0BD5A9E91111F24602 /* Sharing.framework in Frameworks */,
 				49F6D986954C901DC50E5A49 /* Sharing1.framework in Frameworks */,
-				F09DA4847204EF87C7B58C84 /* Sharing2.framework in Frameworks */,
 				16AA1EF839323DCCE84D0BE2 /* SwiftNavigation.framework in Frameworks */,
 				AC907DAE5D69D2EBF4A6262A /* SwiftUINavigation.framework in Frameworks */,
 				1EAAF94C2DBE6792F3DC10F0 /* UIKitNavigation.framework in Frameworks */,
 				A86F784BF54F7B2E520F174C /* UIKitNavigationShim.framework in Frameworks */,
 				353B901CF762F68E86363491 /* UseCase.framework in Frameworks */,
 				8DC55375B44415DBF295280B /* WeaveDI.framework in Frameworks */,
+				101DB6F9ABDEC1F5B9843B27 /* WeaveDICore.framework in Frameworks */,
 				EEE4922049DE831695B18E79 /* XCTestDynamicOverlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +287,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6E44C7E8943742C85965DBB /* Core.framework in Frameworks */,
 				45645207AFB4BE389739A51D /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +295,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				545D713F514DF5A8B151C466 /* Core.framework in Frameworks */,
 				6E76AF41B3FEEF4652A7CEED /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +303,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF84E548084CDEA84412160 /* Core.framework in Frameworks */,
 				054D8D24D8BBA33B55453697 /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +381,6 @@
 				2F9691EC204490112CA94915 /* CombineSchedulers.framework */,
 				1BBE3CACD554CD19E4299A9F /* ComposableArchitecture.framework */,
 				2351D6B4A46469B4126F2C3B /* ConcurrencyExtras.framework */,
-				C3E14D09AE76BE920545555A /* Core.framework */,
 				0C8972F6F03E2BD077DCB37E /* CustomDump.framework */,
 				E26D9853EBB0199194461471 /* DataInterface.framework */,
 				8DB201D0E8BE1D1547639F88 /* Dependencies.framework */,
@@ -419,7 +407,6 @@
 				DED236801C3C6EBF9BB755A4 /* Shared.framework */,
 				497184139D240D91EF50C77C /* Sharing.framework */,
 				232AE6BF7A1AFCF0B9B823FD /* Sharing1.framework */,
-				6748D289DD7DC16E86016069 /* Sharing2.framework */,
 				4C470EB5F1E10C6ED803FB18 /* swift-composable-architecture_ComposableArchitecture.bundle */,
 				32DB353133F1D17C0F625336 /* swift-sharing_Sharing.bundle */,
 				43B4D42BC4DDD8A43DF9671C /* SwiftNavigation.framework */,
@@ -428,6 +415,7 @@
 				20933EA2BA8C344219E3B1FD /* UIKitNavigationShim.framework */,
 				868F9D0352A18E88B6F78CDE /* UseCase.framework */,
 				0E53C9395F99DBE02DF9D55F /* WeaveDI.framework */,
+				EF7BB40DC6762F9309C13FAC /* WeaveDICore.framework */,
 				375AA2720EF90234325320FB /* XCTestDynamicOverlay.framework */,
 			);
 			name = Products;

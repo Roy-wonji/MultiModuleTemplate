@@ -1,6 +1,24 @@
 {
-  "originHash" : "14ea2de837d5a3e7ab81f08517310d5d2c7e74de4939e2beb1f96b609b9bdd64",
+  "originHash" : "470619d71e87cdabba583de3c9751c3dc80110235d14a8b6cde241975310ba64",
   "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "3f99050e75bbc6fe71fc323adabb039756680016",
+        "version" : "5.11.1"
+      }
+    },
+    {
+      "identity" : "asyncmoya",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Roy-wonji/AsyncMoya",
+      "state" : {
+        "revision" : "d92027d1258a8020ce57d73a7644c7dbf32f093e",
+        "version" : "1.1.8"
+      }
+    },
     {
       "identity" : "combine-schedulers",
       "kind" : "remoteSourceControl",
@@ -26,6 +44,33 @@
       "state" : {
         "revision" : "593b210346cf7145074c2d94fa4206bbc70198e0",
         "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "moya",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Moya/Moya.git",
+      "state" : {
+        "revision" : "c263811c1f3dbf002be9bd83107f7cdc38992b26",
+        "version" : "15.0.3"
+      }
+    },
+    {
+      "identity" : "reactiveswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+      "state" : {
+        "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
+        "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "132aea4f236ccadc51590b38af0357a331d51fa2",
+        "version" : "6.10.2"
       }
     },
     {
@@ -123,14 +168,14 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-sharing",
       "state" : {
-        "revision" : "3bfc408cc2d0bee2287c174da6b1c76768377818",
-        "version" : "2.7.4"
+        "revision" : "55d2fef5008b054420f90d745ea0520850955462",
+        "version" : "1.1.3"
       }
     },
     {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-syntax.git",
+      "location" : "https://github.com/swiftlang/swift-syntax",
       "state" : {
         "revision" : "0687f71944021d616d34d922343dcef086855920",
         "version" : "600.0.1"
@@ -150,8 +195,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Roy-wonji/WeaveDI.git",
       "state" : {
-        "revision" : "89728f122d41633d8ebac182fc15040065e2492c",
-        "version" : "3.3.1"
+        "revision" : "f2d44c6788d3fc8bf60314041ef2d77c86a394ad",
+        "version" : "3.4.0"
       }
     },
     {

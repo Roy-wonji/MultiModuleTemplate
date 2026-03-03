@@ -62,6 +62,9 @@ func generate() {
   // ✅ 프리뷰 모드 환경 변수 추가
   setenv("TUIST_FOR_PREVIEW", "TRUE", 1)
 
+  // 📁 hasTests: true인 모듈들의 Tests/Sources 디렉토리 자동 생성
+  ensureTestsDirectoriesForHasTestsModules()
+
   // ✅ tuist generate 실행
   run("tuist", arguments: ["generate"])
 }
@@ -414,6 +417,55 @@ private func ensureDirectoryExists(at path: String) {
         } catch {
             print("⚠️ 디렉토리 생성 실패 (\(path)): \(error)")
         }
+    }
+}
+
+// MARK: - Tests 디렉토리 자동 생성
+private func ensureTestsDirectoriesForHasTestsModules() {
+    print("🔍 hasTests: true인 모듈들의 Tests/Sources 디렉토리 확인 중...")
+
+    let fileManager = FileManager.default
+    guard let enumerator = fileManager.enumerator(atPath: "Projects") else {
+        print("⚠️ Projects 디렉토리를 찾을 수 없습니다")
+        return
+    }
+
+    var createdCount = 0
+    var existingCount = 0
+
+    while let relativePath = enumerator.nextObject() as? String {
+        guard relativePath.hasSuffix("Project.swift") else { continue }
+
+        let fullPath = "Projects/\(relativePath)"
+        let projectDir = URL(fileURLWithPath: fullPath).deletingLastPathComponent().path
+
+        // Project.swift 파일에서 hasTests: true 확인
+        do {
+            let content = try String(contentsOfFile: fullPath, encoding: .utf8)
+            if content.contains("hasTests: true") {
+                let testsSourcesPath = "\(projectDir)/Tests/Sources"
+
+                if !fileManager.fileExists(atPath: testsSourcesPath) {
+                    ensureDirectoryExists(at: testsSourcesPath)
+                    print("📁 Created Tests/Sources for \(URL(fileURLWithPath: projectDir).lastPathComponent)")
+                    createdCount += 1
+                } else {
+                    existingCount += 1
+                }
+            }
+        } catch {
+            print("⚠️ \(fullPath) 파일 읽기 실패: \(error)")
+        }
+    }
+
+    if createdCount > 0 {
+        print("✅ \(createdCount)개의 Tests/Sources 디렉토리가 생성되었습니다")
+    }
+    if existingCount > 0 {
+        print("ℹ️ \(existingCount)개의 Tests/Sources 디렉토리가 이미 존재합니다")
+    }
+    if createdCount == 0 && existingCount == 0 {
+        print("ℹ️ hasTests: true인 모듈을 찾을 수 없습니다")
     }
 }
 

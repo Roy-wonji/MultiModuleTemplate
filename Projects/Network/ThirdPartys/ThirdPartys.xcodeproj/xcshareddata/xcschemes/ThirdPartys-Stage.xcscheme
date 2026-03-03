@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E0DE906E275F69AAAD21623"
-               BuildableName = "ThirdParty_Debug.framework"
-               BlueprintName = "ThirdParty-Debug"
-               ReferencedContainer = "container:ThirdParty.xcodeproj">
+               BlueprintIdentifier = "4AC54705827147BCFA8D0549"
+               BuildableName = "ThirdPartys_Stage.framework"
+               BlueprintName = "ThirdPartys-Stage"
+               ReferencedContainer = "container:ThirdPartys.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1E0DE906E275F69AAAD21623"
-            BuildableName = "ThirdParty_Debug.framework"
-            BlueprintName = "ThirdParty-Debug"
-            ReferencedContainer = "container:ThirdParty.xcodeproj">
+            BlueprintIdentifier = "4AC54705827147BCFA8D0549"
+            BuildableName = "ThirdPartys_Stage.framework"
+            BlueprintName = "ThirdPartys-Stage"
+            ReferencedContainer = "container:ThirdPartys.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -60,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1E0DE906E275F69AAAD21623"
-            BuildableName = "ThirdParty_Debug.framework"
-            BlueprintName = "ThirdParty-Debug"
-            ReferencedContainer = "container:ThirdParty.xcodeproj">
+            BlueprintIdentifier = "4AC54705827147BCFA8D0549"
+            BuildableName = "ThirdPartys_Stage.framework"
+            BlueprintName = "ThirdPartys-Stage"
+            ReferencedContainer = "container:ThirdPartys.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

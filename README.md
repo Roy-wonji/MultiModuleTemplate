@@ -1,6 +1,6 @@
 # MultiModuleTemplate
 
-Tuist로 구성된 멀티 모듈 iOS 프로젝트 템플릿입니다.
+NomadSpot-iOS와 동일한 구조를 갖춘 Tuist 멀티 모듈 iOS 프로젝트 템플릿입니다.
 
 ## 🏗️ 프로젝트 구조 (Clean Architecture)
 
@@ -24,10 +24,8 @@ MultiModuleTemplate/
 │   │   └── Service/            # 데이터 처리 서비스
 │   ├── Network/                # 네트워크 계층
 │   │   ├── Networking/         # 네트워크 기본 설정 및 클라이언트
-│   │   └── Foundations/        # 네트워크 기반 유틸리티
-│   ├── Core/
-│   │   ├── Core/               # 핵심 공통 모듈
-│   │   └── ThirdParty/         # Core 레벨 외부 라이브러리
+│   │   ├── Foundations/        # 네트워크 기반 유틸리티
+│   │   └── ThirdPartys/        # 네트워크 써드파티 라이브러리 (AsyncMoya, WeaveDI)
 │   └── Shared/
 │       ├── DesignSystem/       # 공통 UI 컴포넌트, 폰트 등
 │       ├── Shared/             # 공통 공유 모듈
@@ -40,6 +38,13 @@ MultiModuleTemplate/
 
 ## Tuist graph
 ![Tuist Graph](./graph.png)
+
+## ✨ 주요 특징
+
+- **AsyncMoya 네트워크 통신**: 최신 비동기 네트워킹
+- **TCA SharedState**: 앱 전역 상태 관리
+- **Clean Architecture**: Domain 중심 의존성 설계
+- **Tuist 4.97.2 최적화**: 최신 빌드 시스템
 
 ## 🚀 빠른 시작
 
@@ -87,6 +92,7 @@ tuist test        # 테스트
 ### 🌐 Network Layer
 - **Networking**: 네트워크 기본 설정 및 HTTP 클라이언트
 - **Foundations**: 네트워크 기반 유틸리티
+- **ThirdPartys**: 네트워크 관련 써드파티 라이브러리 (AsyncMoya, WeaveDI)
 
 ### 🎨 Shared Layer
 - **DesignSystem**: 공통 UI 컴포넌트, 폰트, 색상 등 디자인 시스템
@@ -113,10 +119,11 @@ Data/Model → Domain (Entity 변환)
 
 ## 사용 라이브러리
 
-- **ComposableArchitecture**: 상태 관리
+- **ComposableArchitecture**: 상태 관리 및 아키텍처
+- **AsyncMoya**: 비동기 네트워크 통신
 - **WeaveDI**: 의존성 주입
 - **TCACoordinators**: TCA 기반 네비게이션
-- **FlowStacks**: SwiftUI 네비게이션
+- **swift-sharing (TCA SharedState)**: TCA 상태 공유
 
 ## ⚡ Tuist 4.97.2 최적화
 

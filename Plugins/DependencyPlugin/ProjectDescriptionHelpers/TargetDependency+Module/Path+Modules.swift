@@ -19,16 +19,6 @@ public extension ProjectDescription.Path {
   }
 }
 
-// MARK: - Core
-public extension ProjectDescription.Path {
-  static var Core: Self {
-    return .relativeToRoot("Projects/\(ModulePath.Cores.name)")
-  }
-  
-  static func Core(implementation module: ModulePath.Cores) -> Self {
-    return .relativeToRoot("Projects/\(ModulePath.Cores.name)/\(module.rawValue)")
-  }
-}
 
 
 // MARK: ProjectDescription.Path + DesignSystem
