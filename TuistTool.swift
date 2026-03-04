@@ -51,7 +51,18 @@ func runCapture(_ command: String, arguments: [String] = []) throws -> String {
 
 func prompt(_ message: String) -> String {
   print("\(message): ", terminator: "")
-  return readLine()?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+  fflush(stdout) // Force flush output buffer
+
+  guard let input = readLine() else {
+    return ""
+  }
+
+  let trimmedInput = input.trimmingCharacters(in: .whitespacesAndNewlines)
+
+  // Debug output (개발시에만 활성화)
+  // print("🔍 Debug: 입력된 값 = '\(trimmedInput)' (길이: \(trimmedInput.count))")
+
+  return trimmedInput
 }
 
 // MARK: - Tuist 명령어 (tuist 4.97.2 최적화)
@@ -795,16 +806,12 @@ func addModuleToPluginAutomatically(moduleName: String, layer: String) -> Bool {
       enumName = "Presentations"
     case "Shared":
       enumName = "Shareds"
-    case "Domain", "Core/Domain":
+    case "Domain":
       enumName = "Domains"
-    case "Core/Interface":
-      enumName = "Interfaces"
-    case "Core/Network", "Network":
+    case "Network":
       enumName = "Networks"
-    case "Data", "Core/Data":
+    case "Data":
       enumName = "Datas"
-    case "Core":
-      enumName = "Cores"
     default:
       print("❌ 알 수 없는 레이어: \(layer)")
       return false
@@ -855,6 +862,17 @@ func registerModule() {
   let moduleInput = prompt("모듈 이름을 입력하세요 (예: Presentation_Home, Shared_Logger, Domain_Auth 등)")
   let moduleName = prompt("생성할 모듈 이름을 입력하세요 (예: Home)")
 
+  // ✅ 모듈명 유효성 검사
+  guard !moduleName.isEmpty else {
+    print("❌ 모듈명이 비어있습니다.")
+    return
+  }
+
+  guard moduleName.count >= 1 else {
+    print("❌ 모듈명이 올바르지 않습니다.")
+    return
+  }
+
   var dependencies: [String] = []
   while true {
     print("의존성 종류 선택:")
@@ -887,6 +905,11 @@ func registerModule() {
     }
   }
 
+  // 🧪 hasTests 옵션 선택
+  print("\n🧪 테스트 설정:")
+  let hasTestsChoice = prompt("이 모듈에 테스트를 포함하시겠습니까? (y/N)").lowercased()
+  let hasTests = hasTestsChoice == "y" || hasTestsChoice == "yes"
+
   let author = (try? runCapture("git", arguments: ["config", "--get", "user.name"])) ?? "Unknown"
   let formatter = DateFormatter(); formatter.dateFormat = "yyyy-MM-dd"
   let currentDate = formatter.string(from: Date())
@@ -896,10 +919,9 @@ func registerModule() {
     if lower.starts(with: "presentation") { return "Presentation" }
     else if lower.starts(with: "shared")   { return "Shared" }
     else if lower.starts(with: "domain")   { return "Domain" }
-    else if lower.starts(with: "interface"){ return "Interface" }
-    else if lower.starts(with: "network"){ return "Network" }
+    else if lower.starts(with: "network")  { return "Network" }
     else if lower.starts(with: "data")     { return "Data" }
-    else { return "Core" }
+    else { return "Shared" }  // 기본값을 Shared로 변경
   }()
 
   let result = run("tuist", arguments: [
@@ -912,13 +934,96 @@ func registerModule() {
 
   if result == 0 {
     let projectFile = "Projects/\(layer)/\(moduleName)/Project.swift"
-    if var content = try? String(contentsOfFile: projectFile, encoding: .utf8),
-       let range = content.range(of: "dependencies: [") {
-      let insertIndex = content.index(after: range.upperBound)
-      let dependencyList = dependencies.map { "  \($0)" }.joined(separator: ",\n")
-      content.insert(contentsOf: "\n\(dependencyList),", at: insertIndex)
-      try? content.write(toFile: projectFile, atomically: true, encoding: .utf8)
-      print("✅ 의존성 추가 완료:\n\(dependencyList)")
+
+    // Project.swift 파일을 완전히 다시 작성
+    let dependencyList = dependencies.isEmpty ? "" : "\n    " + dependencies.joined(separator: ",\n    ") + ","
+
+    let projectContent = """
+import Foundation
+import ProjectDescription
+import DependencyPlugin
+import ProjectTemplatePlugin
+import DependencyPackagePlugin
+
+let project = Project.makeAppModule(
+  name: "\(moduleName)",
+  bundleId: .appBundleID(name: ".\(moduleName)"),
+  product: .staticFramework,
+  settings: .settings(),
+  dependencies: [\(dependencyList)
+  ],
+  sources: ["Sources/**"]\(hasTests ? ",\n  hasTests: true" : "")
+)
+"""
+
+    do {
+      try projectContent.write(toFile: projectFile, atomically: true, encoding: .utf8)
+      print("✅ Project.swift 파일 생성 완료")
+      if !dependencies.isEmpty {
+        print("✅ 의존성 추가: \(dependencies.count)개")
+      }
+      if hasTests {
+        print("✅ hasTests: true 추가")
+
+        // Tests 디렉토리 생성 및 잘못된 폴더 정리
+        let testsDir = "Projects/\(layer)/\(moduleName)/Tests/Sources"
+        let wrongTestsDir = "Projects/\(layer)/\(moduleName)/\(moduleName)Tests"
+
+        // 잘못 생성된 폴더 삭제
+        if FileManager.default.fileExists(atPath: wrongTestsDir) {
+          do {
+            try FileManager.default.removeItem(atPath: wrongTestsDir)
+            print("🗑️ 잘못된 테스트 폴더 삭제: \(moduleName)Tests")
+          } catch {
+            print("⚠️ 테스트 폴더 삭제 실패: \(error)")
+          }
+        }
+
+        ensureDirectoryExists(at: testsDir)
+        print("✅ Tests/Sources 디렉토리 생성")
+
+        // 기본 테스트 파일 생성
+        let testFilePath = "\(testsDir)/\(moduleName)Tests.swift"
+        if !FileManager.default.fileExists(atPath: testFilePath) {
+          let testFileContent = """
+          //
+          //  \(moduleName)Tests.swift
+          //  \(layer).\(moduleName)Tests
+          //
+          //  Created by \(author) on \(currentDate).
+          //
+
+          import Testing
+          @testable import \(moduleName)
+
+          struct \(moduleName)Tests {
+
+              @Test
+              func \(moduleName.lowercased())Example() {
+                  // This is an example of a test case.
+                  #expect(true)
+              }
+
+              @Test
+              func \(moduleName.lowercased())LogicTest() {
+                  // Add your test logic here.
+                  let result = true
+                  #expect(result == true)
+              }
+
+          }
+          """
+
+          do {
+            try testFileContent.write(toFile: testFilePath, atomically: true, encoding: .utf8)
+            print("✅ 기본 테스트 파일 생성: \(moduleName)Tests.swift")
+          } catch {
+            print("⚠️ 테스트 파일 생성 실패: \(error)")
+          }
+        }
+      }
+    } catch {
+      print("❌ Project.swift 파일 작성 실패: \(error)")
     }
 
     // ✅ 자동으로 Modules.swift에 모듈 추가
@@ -933,10 +1038,10 @@ func registerModule() {
 
     // ──────────────────────────────
     // ✅ Domain 모듈일 경우 Interface 폴더 생성 여부 확인
-    if layer == "Core/Domain" {
+    if layer == "Domain" {
       let askInterface = prompt("이 Domain 모듈에 Interface 폴더를 생성할까요? (y/N)").lowercased()
       if askInterface == "y" {
-        let interfaceDir = "Projects/Core/Domain/\(moduleName)/Interface/Sources"
+        let interfaceDir = "Projects/Domain/\(moduleName)/Interface/Sources"
         let baseFilePath = "\(interfaceDir)/Base.swift"
 
         if !FileManager.default.fileExists(atPath: interfaceDir) {

@@ -91,7 +91,7 @@ public extension Project {
       bundleId: "\(bundleId).\(name)Tests",
       deploymentTargets: deploymentTarget,
       infoPlist: .default,
-      sources: ["\(name)Tests/Sources/**"],
+      sources: ["Tests/Sources/**"],
       dependencies: [.target(name: name)]
     )
 
@@ -163,7 +163,7 @@ public extension Project {
       bundleId: "\(bundleId).\(name)Tests",
       deploymentTargets: deploymentTarget,
       infoPlist: .default,
-      sources: ["\(name)Tests/Sources/**"],
+      sources: ["Tests/Sources/**"],
       dependencies: [.target(name: name)]
     )
     
@@ -209,7 +209,7 @@ extension Scheme {
       name: name,
       shared: true,
       buildAction: .buildAction(targets: ["\(name)", "\(name)Tests"]),
-      testAction: .testPlans(["\(name)Tests/Sources/\(name)TestPlan.xctestplan"]),
+      testAction: .testPlans(["Tests/Sources/\(name)TestPlan.xctestplan"]),
       runAction: .runAction(configuration: "Debug"),
       archiveAction: .archiveAction(configuration: "Debug"),
       profileAction: .profileAction(configuration: "Debug"),
