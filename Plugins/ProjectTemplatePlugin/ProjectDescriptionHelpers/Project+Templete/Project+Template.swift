@@ -125,7 +125,8 @@ public extension Project {
     resources: ProjectDescription.ResourceFileElements? = nil,
     infoPlist: ProjectDescription.InfoPlist = .default,
     entitlements: ProjectDescription.Entitlements? = nil,
-    schemes: [ProjectDescription.Scheme] = []
+    schemes: [ProjectDescription.Scheme] = [],
+    hasTests: Bool = false
   ) -> Project {
     
     let appTarget: Target = .target(
@@ -156,18 +157,21 @@ public extension Project {
       dependencies: dependencies
     )
     
-    let appTestTarget : Target = .target(
-      name: "\(name)Tests",
-      destinations: destinations,
-      product: .unitTests,
-      bundleId: "\(bundleId).\(name)Tests",
-      deploymentTargets: deploymentTarget,
-      infoPlist: .default,
-      sources: ["Tests/Sources/**"],
-      dependencies: [.target(name: name)]
-    )
-    
-    let targets = [appTarget, appDevTarget, appTestTarget]
+    var targets = [appTarget, appDevTarget]
+
+    if hasTests {
+      let appTestTarget : Target = .target(
+        name: "\(name)Tests",
+        destinations: destinations,
+        product: .unitTests,
+        bundleId: "\(bundleId).\(name)Tests",
+        deploymentTargets: deploymentTarget,
+        infoPlist: .default,
+        sources: ["Tests/Sources/**"],
+        dependencies: [.target(name: name)]
+      )
+      targets.append(appTestTarget)
+    }
     
     return Project(
       name: name,
