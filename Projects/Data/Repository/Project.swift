@@ -4,7 +4,7 @@ import DependencyPlugin
 import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
-let project = Project.makeAppModule(
+let project = Project.makeModule(
   name: "Repository",
   bundleId: .appBundleID(name: ".Repository"),
   product: .staticFramework,
@@ -13,5 +13,6 @@ let project = Project.makeAppModule(
     .Network(implements: .Networking),
     .Domain(implements: .DataInterface)
   ],
-  sources: ["Sources/**"]
+  sources: ["Sources/**"],
+  hasTests: true
 )

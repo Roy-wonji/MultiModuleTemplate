@@ -142,22 +142,8 @@ public extension Project {
       scripts: scripts,
       dependencies: dependencies
     )
-    
-    let appDevTarget: Target = .target(
-      name: "\(name)-QA",
-      destinations: destinations,
-      product: product,
-      bundleId: "\(bundleId)",
-      deploymentTargets: deploymentTarget,
-      infoPlist: infoPlist,
-      sources: sources,
-      resources: resources,
-      entitlements: entitlements,
-      scripts: scripts,
-      dependencies: dependencies
-    )
-    
-    var targets = [appTarget, appDevTarget]
+
+    var targets = [appTarget]
 
     if hasTests {
       let appTestTarget : Target = .target(

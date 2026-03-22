@@ -4,7 +4,7 @@ import DependencyPlugin
 import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
-let project = Project.makeAppModule(
+let project = Project.makeModule(
   name: "UseCase",
   bundleId: .appBundleID(name: ".UseCase"),
   product: .staticFramework,
@@ -15,5 +15,6 @@ let project = Project.makeAppModule(
     .SPM.composableArchitecture,
     .SPM.weaveDI,
   ],
-  sources: ["Sources/**"]
+  sources: ["Sources/**"],
+  hasTests: true
 )

@@ -7,46 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13DE8D65CBCBEBD85DB756FE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB36F3E3113CB12097CEE33F /* CFNetwork.framework */; };
-		1AAD8FD03DF44186D184B91F /* Clocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB05E6FB859A404C4F8B57C9 /* Clocks.framework */; };
-		2962C53364D8038E7E0F72AC /* WeaveDI.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 85281779B12DB7BD6BD706E9 /* WeaveDI.framework */; };
-		30FB27A9386C9B95727B3DD1 /* AsyncMoya.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 418E5288CB0BEAE3E0DD1B2F /* AsyncMoya.framework */; };
-		32058E5583B296EF42A1127E /* WeaveDI.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 85281779B12DB7BD6BD706E9 /* WeaveDI.framework */; };
-		45459E147427FEE31325ADA8 /* ThirdPartys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E3C7DBC481003424E66686 /* ThirdPartys.framework */; };
-		466B1839067CC7388EC3C789 /* LogMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C9AD428E38906272D5A0BA /* LogMacro.framework */; };
-		4A5878C605CDB184786670D7 /* Alamofire_Alamofire.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B4DCA2CAA91EDC31D7392CF3 /* Alamofire_Alamofire.bundle */; };
-		4EBD9A1B42E03BE85CF8EA53 /* XCTestDynamicOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9815E16AD45FE9DAE99DD3 /* XCTestDynamicOverlay.framework */; };
-		50594726AAD1F2531F6B0BF8 /* CombineMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869F824C6D4122AF57701C22 /* CombineMoya.framework */; };
-		53EFD6577465FDD9C8671E63 /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330231294888599416CE6A80 /* OSLog.framework */; };
-		59473D3095FEC47B93BC8E55 /* AsyncMoya.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 418E5288CB0BEAE3E0DD1B2F /* AsyncMoya.framework */; };
-		65802231CD67CE00BA5C01C7 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C180B7DDD48B28FC871C6D89 /* RxMoya.framework */; };
-		66DC7313C1566AF1DB62FDC8 /* Alamofire_Alamofire.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = B4DCA2CAA91EDC31D7392CF3 /* Alamofire_Alamofire.bundle */; };
-		67C423E36AD8CB2F8EC913EB /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F411ED6BEE577BEF5BDD13B /* Dependencies.framework */; };
-		73D0B74966B2368C1221ECD1 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FDD6E43E3110E1935F82EE /* Moya.framework */; };
-		77552F6FDA98AC0A90DDDC1F /* IssueReportingPackageSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9486C07E56BC282AA2047F01 /* IssueReportingPackageSupport.framework */; };
-		77CF6A01DDE91E1B719577AF /* WeaveDI.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 85281779B12DB7BD6BD706E9 /* WeaveDI.framework */; };
-		82783EBCB1461CC9DEC213F1 /* AsyncMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418E5288CB0BEAE3E0DD1B2F /* AsyncMoya.framework */; };
 		84F545E663424CBC30FEFF3E /* WeaveDI.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 85281779B12DB7BD6BD706E9 /* WeaveDI.framework */; };
-		88DA66FA29E1EE35E4B4CF6F /* IssueReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C27DF670A7639CA996FB872 /* IssueReporting.framework */; };
-		911177BD559969967156DB58 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F4CCAFCDABFD7473CBC370 /* Alamofire.framework */; };
-		95BE3CC671CF973C92402A92 /* AsyncMoya.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 418E5288CB0BEAE3E0DD1B2F /* AsyncMoya.framework */; };
-		A15B62C36A8C103FA605CB86 /* WeaveDICore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7F7717F829AD1E740B964 /* WeaveDICore.framework */; };
-		AC7ADD9413247B854BCB4E78 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B0F85F029D5FB4D0FFCCF1 /* RxSwift.framework */; };
 		CFDD45A550AFC3397966EF50 /* AsyncMoya.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 418E5288CB0BEAE3E0DD1B2F /* AsyncMoya.framework */; };
-		D55428B049F885E879399103 /* WeaveDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85281779B12DB7BD6BD706E9 /* WeaveDI.framework */; };
-		DE44464E07124F9D5E9D5640 /* CombineSchedulers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02128E331664121E2E033C4E /* CombineSchedulers.framework */; };
-		FA244E900E781567B1A0CF79 /* ConcurrencyExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A9B6AD24EE3102B3ED36B4 /* ConcurrencyExtras.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A10B3ADDF33C37A982CB4518 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33FD96535C7A39AA45EF3030 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B150DAABCA20E2A378E03328;
-			remoteInfo = ThirdPartys;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1E3E2A4234C84A44FA5644E3 /* Embed Frameworks */ = {
@@ -59,79 +22,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20C94CC44D99391ACFCE95D9 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				95BE3CC671CF973C92402A92 /* AsyncMoya.framework in Dependencies */,
-				2962C53364D8038E7E0F72AC /* WeaveDI.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		2ED5DBF5225B497550ABC62A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3376AD2743FA9AC1B02D70FE /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				59473D3095FEC47B93BC8E55 /* AsyncMoya.framework in Dependencies */,
-				32058E5583B296EF42A1127E /* WeaveDI.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		6302E4D5ED9762944E78F22D /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				66DC7313C1566AF1DB62FDC8 /* Alamofire_Alamofire.bundle in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		6B34F1A1325ACB9025D9281B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F552CCBF9AE03081724FC1C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8ECDFFADC207395CF49891BA /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				30FB27A9386C9B95727B3DD1 /* AsyncMoya.framework in Dependencies */,
-				77CF6A01DDE91E1B719577AF /* WeaveDI.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		993CAB31D933AA49BE9DCECB /* Dependencies */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
@@ -143,99 +33,17 @@
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		FF6A3BEC01B95842FD424E91 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02128E331664121E2E033C4E /* CombineSchedulers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineSchedulers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0245F0AB1DFE2ED0B60980C1 /* ThirdPartys-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdPartys-Debug-Info.plist"; sourceTree = "<group>"; };
-		13C9AD428E38906272D5A0BA /* LogMacro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogMacro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19FDD6E43E3110E1935F82EE /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F9815E16AD45FE9DAE99DD3 /* XCTestDynamicOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTestDynamicOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C27DF670A7639CA996FB872 /* IssueReporting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReporting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F411ED6BEE577BEF5BDD13B /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		330231294888599416CE6A80 /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/OSLog.framework; sourceTree = DEVELOPER_DIR; };
 		35E3C7DBC481003424E66686 /* ThirdPartys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		418E5288CB0BEAE3E0DD1B2F /* AsyncMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AsyncMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42B0F85F029D5FB4D0FFCCF1 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		556A6836D5FA49E090283154 /* ThirdPartys-Prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdPartys-Prod-Info.plist"; sourceTree = "<group>"; };
-		5B56FD4AC919B97DD112F4B9 /* ThirdPartys_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartys_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		64B7F7717F829AD1E740B964 /* WeaveDICore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeaveDICore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D1BBD7A51CFD75CB8DBF785 /* ThirdPartys_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartys_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		792C821D5C6073B1A4E85FD0 /* ThirdPartys-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdPartys-Info.plist"; sourceTree = "<group>"; };
 		85281779B12DB7BD6BD706E9 /* WeaveDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeaveDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		869F824C6D4122AF57701C22 /* CombineMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9486C07E56BC282AA2047F01 /* IssueReportingPackageSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueReportingPackageSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6F4CCAFCDABFD7473CBC370 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB36F3E3113CB12097CEE33F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		B4DCA2CAA91EDC31D7392CF3 /* Alamofire_Alamofire.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alamofire_Alamofire.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		C180B7DDD48B28FC871C6D89 /* RxMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB05E6FB859A404C4F8B57C9 /* Clocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9A9B6AD24EE3102B3ED36B4 /* ConcurrencyExtras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConcurrencyExtras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E143A5E4F080AE68FDCD5BFD /* ThirdPartys_Stage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartys_Stage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3AB17CD464C07ECC17A2F5F /* ThirdPartysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdPartysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6CBCE80E063243DDEDB3600 /* ThirdPartys-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdPartys-Stage-Info.plist"; sourceTree = "<group>"; };
-		E79D2DD6D861222B794DFAFD /* ThirdPartysTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdPartysTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		030860B761650E8444150F00 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A0ED4212A0577117FAEDD4B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C4D1D87A639A7CEDF718561 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F38B78A27D56201168276AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				13DE8D65CBCBEBD85DB756FE /* CFNetwork.framework in Frameworks */,
-				53EFD6577465FDD9C8671E63 /* OSLog.framework in Frameworks */,
-				911177BD559969967156DB58 /* Alamofire.framework in Frameworks */,
-				82783EBCB1461CC9DEC213F1 /* AsyncMoya.framework in Frameworks */,
-				1AAD8FD03DF44186D184B91F /* Clocks.framework in Frameworks */,
-				50594726AAD1F2531F6B0BF8 /* CombineMoya.framework in Frameworks */,
-				DE44464E07124F9D5E9D5640 /* CombineSchedulers.framework in Frameworks */,
-				FA244E900E781567B1A0CF79 /* ConcurrencyExtras.framework in Frameworks */,
-				67C423E36AD8CB2F8EC913EB /* Dependencies.framework in Frameworks */,
-				88DA66FA29E1EE35E4B4CF6F /* IssueReporting.framework in Frameworks */,
-				77552F6FDA98AC0A90DDDC1F /* IssueReportingPackageSupport.framework in Frameworks */,
-				466B1839067CC7388EC3C789 /* LogMacro.framework in Frameworks */,
-				73D0B74966B2368C1221ECD1 /* Moya.framework in Frameworks */,
-				65802231CD67CE00BA5C01C7 /* RxMoya.framework in Frameworks */,
-				AC7ADD9413247B854BCB4E78 /* RxSwift.framework in Frameworks */,
-				45459E147427FEE31325ADA8 /* ThirdPartys.framework in Frameworks */,
-				D55428B049F885E879399103 /* WeaveDI.framework in Frameworks */,
-				A15B62C36A8C103FA605CB86 /* WeaveDICore.framework in Frameworks */,
-				4EBD9A1B42E03BE85CF8EA53 /* XCTestDynamicOverlay.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		97FFE6A5B2E6ACF88E7311E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,18 +74,13 @@
 			children = (
 				E4653F098A21639217B80121 /* Products */,
 				216D4BBFFE2AE4184465765D /* Project */,
-				EE2E45FAAE7827BE48D3DCCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D883D5FBE087ECB917E895C9 /* InfoPlists */ = {
 			isa = PBXGroup;
 			children = (
-				0245F0AB1DFE2ED0B60980C1 /* ThirdPartys-Debug-Info.plist */,
 				792C821D5C6073B1A4E85FD0 /* ThirdPartys-Info.plist */,
-				556A6836D5FA49E090283154 /* ThirdPartys-Prod-Info.plist */,
-				E6CBCE80E063243DDEDB3600 /* ThirdPartys-Stage-Info.plist */,
-				E79D2DD6D861222B794DFAFD /* ThirdPartysTests-Info.plist */,
 			);
 			path = InfoPlists;
 			sourceTree = "<group>";
@@ -285,129 +88,16 @@
 		E4653F098A21639217B80121 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4DCA2CAA91EDC31D7392CF3 /* Alamofire_Alamofire.bundle */,
-				A6F4CCAFCDABFD7473CBC370 /* Alamofire.framework */,
 				418E5288CB0BEAE3E0DD1B2F /* AsyncMoya.framework */,
-				CB05E6FB859A404C4F8B57C9 /* Clocks.framework */,
-				869F824C6D4122AF57701C22 /* CombineMoya.framework */,
-				02128E331664121E2E033C4E /* CombineSchedulers.framework */,
-				D9A9B6AD24EE3102B3ED36B4 /* ConcurrencyExtras.framework */,
-				2F411ED6BEE577BEF5BDD13B /* Dependencies.framework */,
-				2C27DF670A7639CA996FB872 /* IssueReporting.framework */,
-				9486C07E56BC282AA2047F01 /* IssueReportingPackageSupport.framework */,
-				13C9AD428E38906272D5A0BA /* LogMacro.framework */,
-				19FDD6E43E3110E1935F82EE /* Moya.framework */,
-				C180B7DDD48B28FC871C6D89 /* RxMoya.framework */,
-				42B0F85F029D5FB4D0FFCCF1 /* RxSwift.framework */,
-				5B56FD4AC919B97DD112F4B9 /* ThirdPartys_Debug.framework */,
-				6D1BBD7A51CFD75CB8DBF785 /* ThirdPartys_Prod.framework */,
-				E143A5E4F080AE68FDCD5BFD /* ThirdPartys_Stage.framework */,
 				35E3C7DBC481003424E66686 /* ThirdPartys.framework */,
-				E3AB17CD464C07ECC17A2F5F /* ThirdPartysTests.xctest */,
 				85281779B12DB7BD6BD706E9 /* WeaveDI.framework */,
-				64B7F7717F829AD1E740B964 /* WeaveDICore.framework */,
-				1F9815E16AD45FE9DAE99DD3 /* XCTestDynamicOverlay.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EE2E45FAAE7827BE48D3DCCE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AB36F3E3113CB12097CEE33F /* CFNetwork.framework */,
-				330231294888599416CE6A80 /* OSLog.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		282270BA1B2D8B2CFC21866E /* ThirdPartys-Debug */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 85F1E1247B238D9DEE8F76E6 /* Build configuration list for PBXNativeTarget "ThirdPartys-Debug" */;
-			buildPhases = (
-				9CDDFEA912699102A4684D8A /* Sources */,
-				EE525972EDBFCA54B40DA978 /* Resources */,
-				0A0ED4212A0577117FAEDD4B /* Frameworks */,
-				2ED5DBF5225B497550ABC62A /* Embed Frameworks */,
-				3376AD2743FA9AC1B02D70FE /* Dependencies */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ThirdPartys-Debug";
-			packageProductDependencies = (
-			);
-			productName = ThirdPartys_Debug;
-			productReference = 5B56FD4AC919B97DD112F4B9 /* ThirdPartys_Debug.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3CBA0526703385E4DC5D1F27 /* ThirdPartys-Prod */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEAAE27C07179F2D8A752A70 /* Build configuration list for PBXNativeTarget "ThirdPartys-Prod" */;
-			buildPhases = (
-				C06A8CCB47E91863B881AE68 /* Sources */,
-				BD9A1F74E2FF1B9D01E76745 /* Resources */,
-				1C4D1D87A639A7CEDF718561 /* Frameworks */,
-				7F552CCBF9AE03081724FC1C /* Embed Frameworks */,
-				8ECDFFADC207395CF49891BA /* Dependencies */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ThirdPartys-Prod";
-			packageProductDependencies = (
-			);
-			productName = ThirdPartys_Prod;
-			productReference = 6D1BBD7A51CFD75CB8DBF785 /* ThirdPartys_Prod.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4AC54705827147BCFA8D0549 /* ThirdPartys-Stage */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5F86904018C8955811F6527 /* Build configuration list for PBXNativeTarget "ThirdPartys-Stage" */;
-			buildPhases = (
-				CA590CE420998F7E38CD0FA0 /* Sources */,
-				0A610D4C393A242538A1D311 /* Resources */,
-				97FFE6A5B2E6ACF88E7311E7 /* Frameworks */,
-				6B34F1A1325ACB9025D9281B /* Embed Frameworks */,
-				20C94CC44D99391ACFCE95D9 /* Dependencies */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ThirdPartys-Stage";
-			packageProductDependencies = (
-			);
-			productName = ThirdPartys_Stage;
-			productReference = E143A5E4F080AE68FDCD5BFD /* ThirdPartys_Stage.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A34C9948C48F0E2919366C5C /* ThirdPartysTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06A158B7FCA6CE147C948CB1 /* Build configuration list for PBXNativeTarget "ThirdPartysTests" */;
-			buildPhases = (
-				12F18BBA9D9BC71F2C933E38 /* Sources */,
-				95FDFDCDB00C0D66362520EA /* Resources */,
-				2F38B78A27D56201168276AF /* Frameworks */,
-				FF6A3BEC01B95842FD424E91 /* Embed Frameworks */,
-				6302E4D5ED9762944E78F22D /* Dependencies */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E5DBA0EB4276B4CD74ACA142 /* PBXTargetDependency */,
-			);
-			name = ThirdPartysTests;
-			packageProductDependencies = (
-			);
-			productName = ThirdPartysTests;
-			productReference = E3AB17CD464C07ECC17A2F5F /* ThirdPartysTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		B150DAABCA20E2A378E03328 /* ThirdPartys */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8449DFEC7A307AF293672992 /* Build configuration list for PBXNativeTarget "ThirdPartys" */;
@@ -441,11 +131,11 @@
 			};
 			buildConfigurationList = 46DB48B0B93845959C7D5D84 /* Build configuration list for PBXProject "ThirdPartys" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = ko;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				Base,
 				en,
-				ko,
 			);
 			mainGroup = 746ECCF93D4A3AFC6FC2B714;
 			productRefGroup = E4653F098A21639217B80121 /* Products */;
@@ -453,45 +143,12 @@
 			projectRoot = "";
 			targets = (
 				B150DAABCA20E2A378E03328 /* ThirdPartys */,
-				282270BA1B2D8B2CFC21866E /* ThirdPartys-Debug */,
-				3CBA0526703385E4DC5D1F27 /* ThirdPartys-Prod */,
-				4AC54705827147BCFA8D0549 /* ThirdPartys-Stage */,
-				A34C9948C48F0E2919366C5C /* ThirdPartysTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A610D4C393A242538A1D311 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4B32FCA525FD5D65F9B9818A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95FDFDCDB00C0D66362520EA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A5878C605CDB184786670D7 /* Alamofire_Alamofire.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD9A1F74E2FF1B9D01E76745 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE525972EDBFCA54B40DA978 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,35 +158,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		12F18BBA9D9BC71F2C933E38 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		82FCA707E4125279A4177CE7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CDDFEA912699102A4684D8A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C06A8CCB47E91863B881AE68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA590CE420998F7E38CD0FA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -538,108 +167,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		E5DBA0EB4276B4CD74ACA142 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ThirdPartys;
-			target = B150DAABCA20E2A378E03328 /* ThirdPartys */;
-			targetProxy = A10B3ADDF33C37A982CB4518 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		06F07E5966473666C6964129 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
-				INFOPLIST_FILE = "Derived/InfoPlists/ThirdPartysTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys.ThirdPartysTests;
-				PRODUCT_NAME = ThirdPartysTests;
-				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		125E55EBDBFB6A9778E6CF4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
-				INFOPLIST_FILE = "Derived/InfoPlists/ThirdPartys-Debug-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys;
-				PRODUCT_NAME = ThirdPartys_Debug;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		1A97C2DBF405F586630FB5F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -691,102 +219,6 @@
 			};
 			name = Release;
 		};
-		1B3844A8E9A9A237E17A32DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
-				INFOPLIST_FILE = "Derived/InfoPlists/ThirdPartysTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys.ThirdPartysTests;
-				PRODUCT_NAME = ThirdPartysTests;
-				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		2DA3F83268703AC56BD6EE55 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
-				INFOPLIST_FILE = "Derived/InfoPlists/ThirdPartys-Stage-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys;
-				PRODUCT_NAME = ThirdPartys_Stage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3BC55A6FD0C194F7202E5630 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -824,61 +256,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys;
 				PRODUCT_NAME = ThirdPartys;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8263A27F016938A6D61DBDE8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
-				INFOPLIST_FILE = "Derived/InfoPlists/ThirdPartys-Prod-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys;
-				PRODUCT_NAME = ThirdPartys_Prod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -950,61 +327,6 @@
 			};
 			name = Release;
 		};
-		D2197364DEA60AF10026529B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
-				INFOPLIST_FILE = "Derived/InfoPlists/ThirdPartys-Debug-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys;
-				PRODUCT_NAME = ThirdPartys_Debug;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D6C54ADDCC4CA4A5378C2231 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1064,124 +386,9 @@
 			};
 			name = Debug;
 		};
-		DF454D13B02B7119DAE9FABB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
-				INFOPLIST_FILE = "Derived/InfoPlists/ThirdPartys-Prod-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys;
-				PRODUCT_NAME = ThirdPartys_Prod;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F0141E597B6C03A3208120CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include",
-				);
-				INFOPLIST_FILE = "Derived/InfoPlists/ThirdPartys-Stage-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../../Tuist/.build/checkouts/swift-syntax/Sources/_SwiftSyntaxCShims/include/module.modulemap",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/LogMacroMacro#LogMacroMacro",
-					"-load-plugin-executable",
-					"$BUILD_DIR/Debug$EFFECTIVE_PLATFORM_NAME/WeaveDIMacros#WeaveDIMacros",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.ThirdPartys;
-				PRODUCT_NAME = ThirdPartys_Stage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06A158B7FCA6CE147C948CB1 /* Build configuration list for PBXNativeTarget "ThirdPartysTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1B3844A8E9A9A237E17A32DB /* Debug */,
-				06F07E5966473666C6964129 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		46DB48B0B93845959C7D5D84 /* Build configuration list for PBXProject "ThirdPartys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1196,33 +403,6 @@
 			buildConfigurations = (
 				3BC55A6FD0C194F7202E5630 /* Debug */,
 				1A97C2DBF405F586630FB5F4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		85F1E1247B238D9DEE8F76E6 /* Build configuration list for PBXNativeTarget "ThirdPartys-Debug" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2197364DEA60AF10026529B /* Debug */,
-				125E55EBDBFB6A9778E6CF4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEAAE27C07179F2D8A752A70 /* Build configuration list for PBXNativeTarget "ThirdPartys-Prod" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8263A27F016938A6D61DBDE8 /* Debug */,
-				DF454D13B02B7119DAE9FABB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5F86904018C8955811F6527 /* Build configuration list for PBXNativeTarget "ThirdPartys-Stage" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F0141E597B6C03A3208120CC /* Debug */,
-				2DA3F83268703AC56BD6EE55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

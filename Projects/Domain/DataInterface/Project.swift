@@ -5,7 +5,7 @@ import ProjectTemplatePlugin
 import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
-let project = Project.makeAppModule(
+let project = Project.makeModule(
   name: "DataInterface",
   bundleId: .appBundleID(name: ".DataInterface"),
   product: .staticFramework,
@@ -13,5 +13,6 @@ let project = Project.makeAppModule(
   dependencies: [
   .Data(implements: .Model),
   ],
-  sources: ["Sources/**"]
+  sources: ["Sources/**"],
+  hasTests: false
 )

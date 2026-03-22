@@ -4,7 +4,7 @@ import DependencyPlugin
 import ProjectTemplatePlugin
 import DependencyPackagePlugin
 
-let project = Project.makeAppModule(
+let project = Project.makeModule(
   name: "ThirdPartys",
   bundleId: .appBundleID(name: ".ThirdPartys"),
   product: .staticFramework,
@@ -13,5 +13,6 @@ let project = Project.makeAppModule(
     .SPM.asyncMoya,
     .SPM.weaveDI
   ],
-  sources: ["Sources/**"]
+  sources: ["Sources/**"],
+  hasTests: false
 )
