@@ -17,7 +17,11 @@ let tuist = Tuist(
 
       // ⚠️ 사이드 이펙트(스크립트 등) 경고를 어떤 타겟에 표시할지
       //   .all / .selected([...]) / .none
-      staticSideEffectsWarningTargets: .all
+      staticSideEffectsWarningTargets: .all,
+
+      // 🆕 4.174.0: 기본 Swift 버전 자동 생성 옵션
+      //   패키지에서 선언한 Swift 버전을 존중하고 자동으로 설정
+      defaultSwiftVersion: "6.0.0"
 
       // 🧰 Xcode 기본 빌드 구성(스킴 선택 기본값)
       // defaultConfiguration: .debug,   // 또는 .release

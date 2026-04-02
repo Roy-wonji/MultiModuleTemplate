@@ -4,6 +4,9 @@
 
 import Foundation
 
+// 🆕 Tuist 4.174.0+ 경로 상수
+private let tuistPath = "/Users/suhwonji/.local/share/mise/installs/tuist/4.174.0/bin/tuist"
+
 @discardableResult
 func run(_ command: String, arguments: [String] = []) -> Int32 {
   let process = Process()
@@ -76,24 +79,24 @@ func generate() {
   // 📁 기존 hasTests: true 모듈들의 Tests/Sources 디렉토리 확인 (하위 호환성)
   ensureTestsDirectoriesForHasTestsModules()
 
-  // ✅ tuist generate 실행
-  run("tuist", arguments: ["generate"])
+  // ✅ tuist generate 실행 (4.174.0+)
+  run(tuistPath, arguments: ["generate"])
 }
 
 // tuist 4.97.2 새로운 기능들
 func inspect() {
     print("🔍 사용 가능한 inspect 명령어들:")
-    run("tuist", arguments: ["inspect", "--help"])
+    run(tuistPath, arguments: ["inspect", "--help"])
 }
 
 func inspectImplicitImports() {
     print("🔍 암시적 의존성 검사 중...")
-    run("tuist", arguments: ["inspect", "implicit-imports"])
+    run(tuistPath, arguments: ["inspect", "implicit-imports"])
 }
 
 func inspectCodeCoverage() {
     print("📊 코드 커버리지 분석 중...")
-    run("tuist", arguments: ["inspect", "code-coverage"])
+    run(tuistPath, arguments: ["inspect", "code-coverage"])
 }
 
 // MARK: - 새 프로젝트 생성
@@ -247,7 +250,7 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
     }
 
     print("🧹 기존 프로젝트 정리 중...")
-    _ = run("tuist", arguments: ["clean"])
+    _ = run(tuistPath, arguments: ["clean"])
 
     // 기존 워크스페이스 파일들 삭제
     let filesToRemove = [
@@ -267,7 +270,7 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
     }
 
     print("🔧 Tuist dependencies 설치 중...")
-    let installResult = run("tuist", arguments: ["install"])
+    let installResult = run(tuistPath, arguments: ["install"])
     if installResult != 0 {
         print("❌ Dependencies 설치에 실패했습니다.")
         return
@@ -297,7 +300,7 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
     }
 
     print("🔧 Tuist 프로젝트 생성 중...")
-    let result = run("tuist", arguments: ["generate"])
+    let result = run(tuistPath, arguments: ["generate"])
 
     if result == 0 {
         print("✅ Tuist 프로젝트 생성 성공!")
@@ -715,14 +718,14 @@ private func verifyNameChange(oldName: String, newName: String) {
     }
 }
 
-func fetch()    { run("tuist", arguments: ["fetch"]) }
+func fetch()    { run(tuistPath, arguments: ["fetch"]) }
 func build()    { clean(); install(); generate() }  // fetch -> install로 변경 (tuist 4.97.2)
-func edit()     { run("tuist", arguments: ["edit"]) }
-func clean()    { run("tuist", arguments: ["clean"]) }
-func install()  { run("tuist", arguments: ["install"]) }  // 새로운 install 명령어 사용
+func edit()     { run(tuistPath, arguments: ["edit"]) }
+func clean()    { run(tuistPath, arguments: ["clean"]) }
+func install()  { run(tuistPath, arguments: ["install"]) }  // 새로운 install 명령어 사용
 func cache()    {
     print("🚀 바이너리 캐시 생성 중...")
-    run("tuist", arguments: ["cache"])  // 프로젝트명 제거하고 일반화
+    run(tuistPath, arguments: ["cache"])  // 프로젝트명 제거하고 일반화
 }
 func reset() {
   print("🧹 캐시 및 로컬 빌드 정리 중...")
@@ -924,7 +927,7 @@ func registerModule() {
     else { return "Shared" }  // 기본값을 Shared로 변경
   }()
 
-  let result = run("tuist", arguments: [
+  let result = run(tuistPath, arguments: [
     "scaffold", "Module",
     "--layer", layer,
     "--name", moduleName,

@@ -305,6 +305,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Repository.RepositoryTests;
 				PRODUCT_NAME = RepositoryTests;
 				SDKROOT = iphoneos;
@@ -313,7 +317,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -329,6 +333,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.Module.Repository.RepositoryTests;
 				PRODUCT_NAME = RepositoryTests;
 				SDKROOT = iphoneos;
@@ -341,7 +349,7 @@
 				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -373,7 +381,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -523,7 +531,7 @@
 				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
