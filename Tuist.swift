@@ -19,7 +19,7 @@ let tuist = Tuist(
       //   .all / .selected([...]) / .none
       staticSideEffectsWarningTargets: .all,
 
-      // 🆕 4.174.0: 기본 Swift 버전 자동 생성 옵션
+      // 🆕 4.174.0+: 기본 Swift 버전 자동 생성 옵션
       //   패키지에서 선언한 Swift 버전을 존중하고 자동으로 설정
       defaultSwiftVersion: "6.0.0"
 
