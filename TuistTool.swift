@@ -73,7 +73,7 @@ func generate() {
   // ✅ 프리뷰 모드 환경 변수 추가
   setenv("TUIST_FOR_PREVIEW", "TRUE", 1)
 
-  // 📁 hasTests: true인 모듈들의 Tests/Sources 디렉토리 자동 생성
+  // 📁 기존 hasTests: true 모듈들의 Tests/Sources 디렉토리 확인 (하위 호환성)
   ensureTestsDirectoriesForHasTestsModules()
 
   // ✅ tuist generate 실행
@@ -963,64 +963,9 @@ let project = Project.makeAppModule(
         print("✅ 의존성 추가: \(dependencies.count)개")
       }
       if hasTests {
-        print("✅ hasTests: true 추가")
-
-        // Tests 디렉토리 생성 및 잘못된 폴더 정리
-        let testsDir = "Projects/\(layer)/\(moduleName)/Tests/Sources"
-        let wrongTestsDir = "Projects/\(layer)/\(moduleName)/\(moduleName)Tests"
-
-        // 잘못 생성된 폴더 삭제
-        if FileManager.default.fileExists(atPath: wrongTestsDir) {
-          do {
-            try FileManager.default.removeItem(atPath: wrongTestsDir)
-            print("🗑️ 잘못된 테스트 폴더 삭제: \(moduleName)Tests")
-          } catch {
-            print("⚠️ 테스트 폴더 삭제 실패: \(error)")
-          }
-        }
-
-        ensureDirectoryExists(at: testsDir)
-        print("✅ Tests/Sources 디렉토리 생성")
-
-        // 기본 테스트 파일 생성
-        let testFilePath = "\(testsDir)/\(moduleName)Tests.swift"
-        if !FileManager.default.fileExists(atPath: testFilePath) {
-          let testFileContent = """
-          //
-          //  \(moduleName)Tests.swift
-          //  \(layer).\(moduleName)Tests
-          //
-          //  Created by \(author) on \(currentDate).
-          //
-
-          import Testing
-          @testable import \(moduleName)
-
-          struct \(moduleName)Tests {
-
-              @Test
-              func \(moduleName.lowercased())Example() {
-                  // This is an example of a test case.
-                  #expect(true)
-              }
-
-              @Test
-              func \(moduleName.lowercased())LogicTest() {
-                  // Add your test logic here.
-                  let result = true
-                  #expect(result == true)
-              }
-
-          }
-          """
-
-          do {
-            try testFileContent.write(toFile: testFilePath, atomically: true, encoding: .utf8)
-            print("✅ 기본 테스트 파일 생성: \(moduleName)Tests.swift")
-          } catch {
-            print("⚠️ 테스트 파일 생성 실패: \(error)")
-          }
-        }
+        print("✅ hasTests: true 추가 - 템플릿에서 Tests/Sources 구조 자동 생성됨")
+      } else {
+        print("ℹ️ hasTests: false - Tests 폴더는 생성되지만 프로젝트에 포함되지 않음")
       }
     } catch {
       print("❌ Project.swift 파일 작성 실패: \(error)")

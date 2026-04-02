@@ -43,7 +43,7 @@ enum ModuleTemplate: CaseIterable {
             return .file(path: .basePath + "/Sources/Base.swift", templatePath: "base.stencil")
             
         case .testProject:
-            return .file(path:  .testBasePath + "/Sources/Test.swift", templatePath: "test.stencil")
+            return .file(path:  .testBasePath + "/Sources/\(name)Tests.swift", templatePath: "test.stencil")
             
         }
     }
@@ -55,7 +55,7 @@ extension String {
         return "Projects/\(layer)/\(name)"
     }
     static var testBasePath: Self {
-        return "Projects/\(layer)/\(name)/\(name)Tests"
+        return "Projects/\(layer)/\(name)/Tests"
     }
 }
 
