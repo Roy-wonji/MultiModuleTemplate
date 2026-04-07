@@ -187,9 +187,9 @@ extension Scheme {
           codeCoverageTargets: [.target(name)]
         )
       ),
-      runAction: .runAction(configuration: configuration),
+      runAction: RunAction.runAction(configuration: configuration),
       archiveAction: .archiveAction(configuration: configuration),
-      profileAction: .profileAction(configuration: configuration),
+      profileAction: ProfileAction.profileAction(configuration: configuration),
       analyzeAction: .analyzeAction(configuration: configuration)
     )
   }
@@ -200,9 +200,9 @@ extension Scheme {
       shared: true,
       buildAction: .buildAction(targets: ["\(name)", "\(name)Tests"]),
       testAction: .testPlans(["Tests/Sources/\(name)TestPlan.xctestplan"]),
-      runAction: .runAction(configuration: "Debug"),
+      runAction: RunAction.runAction(configuration: "Debug"),
       archiveAction: .archiveAction(configuration: "Debug"),
-      profileAction: .profileAction(configuration: "Debug"),
+      profileAction: ProfileAction.profileAction(configuration: "Debug"),
       analyzeAction: .analyzeAction(configuration: "Debug")
     )
   }
@@ -231,9 +231,9 @@ public extension Scheme {
                     codeCoverageTargets: [.target(name)]
                   )
             ),
-            runAction: .runAction(configuration: environment.configurationName),
+            runAction: RunAction.runAction(configuration: environment.configurationName),
             archiveAction: .archiveAction(configuration: .release),
-            profileAction: .profileAction(configuration: .release),
+            profileAction: ProfileAction.profileAction(configuration: .release),
             analyzeAction: .analyzeAction(configuration: environment.configurationName)
         )
     }

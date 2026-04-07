@@ -197,30 +197,30 @@ func generateProjectWithSettings(name: String, bundleIdPrefix: String, teamId: S
     print("📁 필수 디렉토리 사전 생성 중...")
 
     // 1. 기본 테스트 디렉토리 생성 (템플릿에 필요)
-    ensureDirectoryExists(at: "Projects/App/MultiModuleTemplateTests")
-    ensureDirectoryExists(at: "Projects/App/MultiModuleTemplateTests/Sources")
+    ensureDirectoryExists(at: "Projects/App/Tests")
+    ensureDirectoryExists(at: "Projects/App/Tests/Sources")
 
     // 2. FontAsset 디렉토리 생성 (경고 해결)
     ensureDirectoryExists(at: "Projects/Shared/DesignSystem/FontAsset")
 
     print("📁 디렉토리 생성 완료:")
-    print("   - MultiModuleTemplateTests: \(FileManager.default.fileExists(atPath: "Projects/App/MultiModuleTemplateTests") ? "✅" : "❌")")
+    print("   - Tests: \(FileManager.default.fileExists(atPath: "Projects/App/Tests") ? "✅" : "❌")")
     print("   - FontAsset: \(FileManager.default.fileExists(atPath: "Projects/Shared/DesignSystem/FontAsset") ? "✅" : "❌")")
 
     // 기본 테스트 파일 생성 (없으면)
-    let originalTestFilePath = "Projects/App/MultiModuleTemplateTests/Sources/MultiModuleTemplateTests.swift"
+    let originalTestFilePath = "Projects/App/Tests/Sources/\(name)Tests.swift"
     if !FileManager.default.fileExists(atPath: originalTestFilePath) {
         let testFileContent = """
         //
-        //  MultiModuleTemplateTests.swift
-        //  MultiModuleTemplateTests
+        //  \(name)Tests.swift
+        //  \(name)Tests
         //
         //  Created by TuistTool.
         //
 
         import XCTest
 
-        final class MultiModuleTemplateTests: XCTestCase {
+        final class \(name)Tests: XCTestCase {
 
             override func setUpWithError() throws {
                 // Put setup code here.
