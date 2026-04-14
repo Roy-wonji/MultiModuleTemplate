@@ -117,6 +117,9 @@ Data/Model → Domain (Entity 변환)
 - Swift 6.0+
 - **Tuist 4.97.2** (최신 최적화 적용)
 
+### 버전 호환성
+- **Xcode 26.4 사용 시**: WeaveDI 3.4.1 버전 사용 권장
+
 ## 사용 라이브러리
 
 - **ComposableArchitecture**: 상태 관리 및 아키텍처
