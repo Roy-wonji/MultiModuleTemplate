@@ -7,6 +7,11 @@
 
 import ProjectDescription
 
+// MARK: - Suppress Warnings Setting
+private let suppressWarningsSettings: ProjectDescription.Settings = .settings(
+  base: ["OTHER_SWIFT_FLAGS": "$(inherited) -suppress-warnings"]
+)
+
 public extension Project {
   static func makeAppModule(
     name: String = Environment.appName,
@@ -23,9 +28,9 @@ public extension Project {
     resources: ProjectDescription.ResourceFileElements? = nil,
     infoPlist: ProjectDescription.InfoPlist = .default,
     entitlements: ProjectDescription.Entitlements? = nil,
-    schemes: [ProjectDescription.Scheme] = []
+    schemes: [ProjectDescription.Scheme] = [],
+    hasTests: Bool = false
   ) -> Project {
-
     let appTarget: Target = .target(
       name: name,
       destinations: destinations,
@@ -37,9 +42,10 @@ public extension Project {
       resources: resources,
       entitlements: entitlements,
       scripts: scripts,
-      dependencies: dependencies
+      dependencies: dependencies,
+      settings: suppressWarningsSettings
     )
-
+    
     let appProdTarget: Target = .target(
       name: "\(name)-Prod",
       destinations: destinations,
@@ -51,10 +57,11 @@ public extension Project {
       resources: resources,
       entitlements: entitlements,
       scripts: scripts,
-      dependencies: dependencies
+      dependencies: dependencies,
+      settings: suppressWarningsSettings
     )
-
-
+    
+    
     let appStageTarget: Target = .target(
       name: "\(name)-Stage",
       destinations: destinations,
@@ -66,10 +73,11 @@ public extension Project {
       resources: resources,
       entitlements: entitlements,
       scripts: scripts,
-      dependencies: dependencies
+      dependencies: dependencies,
+      settings: suppressWarningsSettings
     )
-
-
+    
+    
     let appDevTarget: Target = .target(
       name: "\(name)-Debug",
       destinations: destinations,
@@ -81,22 +89,27 @@ public extension Project {
       resources: resources,
       entitlements: entitlements,
       scripts: scripts,
-      dependencies: dependencies
+      dependencies: dependencies,
+      settings: suppressWarningsSettings
     )
-
-    let appTestTarget : Target = .target(
-      name: "\(name)Tests",
-      destinations: destinations,
-      product: .unitTests,
-      bundleId: "\(bundleId).\(name)Tests",
-      deploymentTargets: deploymentTarget,
-      infoPlist: .default,
-      sources: ["Tests/Sources/**"],
-      dependencies: [.target(name: name)]
-    )
-
-    let targets = [appTarget, appDevTarget, appStageTarget, appProdTarget ,appTestTarget]
-
+    
+    var targets: [Target] = [appTarget, appDevTarget, appStageTarget, appProdTarget]
+    
+    if hasTests {
+      let appTestTarget : Target = .target(
+        name: "\(name)Tests",
+        destinations: destinations,
+        product: .unitTests,
+        bundleId: "\(bundleId).\(name)Tests",
+        deploymentTargets: deploymentTarget,
+        infoPlist: .default,
+        sources: ["Tests/Sources/**"],
+        dependencies: [.target(name: name)],
+        settings: suppressWarningsSettings
+      )
+      targets.append(appTestTarget)
+    }
+    
     return Project(
       name: name,
       options: .options(
@@ -109,7 +122,7 @@ public extension Project {
       schemes: schemes
     )
   }
-
+  
   static func makeModule(
     name: String = Environment.appName,
     bundleId: String,
@@ -128,7 +141,6 @@ public extension Project {
     schemes: [ProjectDescription.Scheme] = [],
     hasTests: Bool = false
   ) -> Project {
-    
     let appTarget: Target = .target(
       name: name,
       destinations: destinations,
@@ -140,11 +152,12 @@ public extension Project {
       resources: resources,
       entitlements: entitlements,
       scripts: scripts,
-      dependencies: dependencies
+      dependencies: dependencies,
+      settings: suppressWarningsSettings
     )
-
-    var targets = [appTarget]
-
+    
+    var targets: [Target] = [appTarget]
+    
     if hasTests {
       let appTestTarget : Target = .target(
         name: "\(name)Tests",
@@ -154,7 +167,8 @@ public extension Project {
         deploymentTargets: deploymentTarget,
         infoPlist: .default,
         sources: ["Tests/Sources/**"],
-        dependencies: [.target(name: name)]
+        dependencies: [.target(name: name)],
+        settings: suppressWarningsSettings
       )
       targets.append(appTestTarget)
     }
@@ -172,69 +186,44 @@ public extension Project {
 
 
 extension Scheme {
-  public static func makeScheme(target configuration: ConfigurationName, name: String) -> Scheme {
+  public static func makeScheme(target: ConfigurationName, name: String) -> Scheme {
     return Scheme.scheme(
       name: name,
       shared: true,
-      buildAction: .buildAction(
-        targets: [.target(name)]
-      ),
+      buildAction: .buildAction(targets: ["\(name)"]),
       testAction: .targets(
         ["\(name)Tests"],
-        configuration: configuration,
-        options: .options(
-          coverage: true,
-          codeCoverageTargets: [.target(name)]
-        )
+        configuration: target,
+        options: .options(coverage: true, codeCoverageTargets: ["\(name)"])
       ),
-      runAction: RunAction.runAction(configuration: configuration),
-      archiveAction: .archiveAction(configuration: configuration),
-      profileAction: ProfileAction.profileAction(configuration: configuration),
-      analyzeAction: .analyzeAction(configuration: configuration)
+      runAction: .runAction(configuration: target),
+      archiveAction: .archiveAction(configuration: target),
+      profileAction: .profileAction(configuration: target),
+      analyzeAction: .analyzeAction(configuration: target)
+      
     )
+    
   }
-
-  public static func makeTestPlanScheme(target: ConfigurationName, name: String) -> Scheme {
-    return Scheme.scheme(
-      name: name,
-      shared: true,
-      buildAction: .buildAction(targets: ["\(name)", "\(name)Tests"]),
-      testAction: .testPlans(["Tests/Sources/\(name)TestPlan.xctestplan"]),
-      runAction: RunAction.runAction(configuration: "Debug"),
-      archiveAction: .archiveAction(configuration: "Debug"),
-      profileAction: ProfileAction.profileAction(configuration: "Debug"),
-      analyzeAction: .analyzeAction(configuration: "Debug")
-    )
-  }
+  
+  
 }
 
 
 public extension Scheme {
-    static func scheme(name: String, environment: ConfigurationEnvironment) -> Scheme {
-        let appName = Project.Environment.appName
-        let schemeName: String = (environment == .prod)
-            ? appName
-            : "\(appName)-\(environment.name)"
-
-      return Scheme.scheme(
-            name: schemeName,
-            shared: true,
-            buildAction: .buildAction(
-              targets: [.target(name)]
-            ),
-            testAction: 
-                .targets(
-                  ["\(name)Tests"],
-                  configuration: environment.configurationName,
-                  options:.options(
-                    coverage: true,
-                    codeCoverageTargets: [.target(name)]
-                  )
-            ),
-            runAction: RunAction.runAction(configuration: environment.configurationName),
-            archiveAction: .archiveAction(configuration: .release),
-            profileAction: ProfileAction.profileAction(configuration: .release),
-            analyzeAction: .analyzeAction(configuration: environment.configurationName)
-        )
+  static func scheme(name: String, environment: ConfigurationEnvironment) -> Scheme {
+    let appName = Project.Environment.appName
+    let schemeName = switch environment {
+    case .prod: appName
+    case .dev, .stage: "\(appName)-\(environment.name)"
     }
+    
+    return .scheme(
+      name: schemeName,
+      buildAction: .buildAction(targets: [.target(name)]),
+      runAction: .runAction(configuration: .init(stringLiteral: environment.name)),
+      archiveAction: .archiveAction(configuration: .release),
+      profileAction: .profileAction(configuration: .release),
+      analyzeAction: .analyzeAction(configuration: .debug)
+    )
+  }
 }
